@@ -1,1 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="IAsyncSubscription(TMessage) Events" Url="html/Events_T_NATS_Client_IAsyncSubscription_1.htm"><HelpTOCNode Title="RoundtripMessageHandler Event" Url="html/E_NATS_Client_IAsyncSubscription_1_RoundtripMessageHandler.htm" /></HelpTOCNode>
+<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="IAsyncSubscription(TMessage) Events" Url="Events_T_NATS_Client_IAsyncSubscription_1.htm"><HelpTOCNode Title="RoundtripMessageHandler Event" Url="E_NATS_Client_IAsyncSubscription_1_RoundtripMessageHandler.htm" /></HelpTOCNode>
