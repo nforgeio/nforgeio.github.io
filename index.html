@@ -7,146 +7,165 @@
 
   gtag('config', 'UA-151329628-1');
 </script>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>neonKUBE</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Welcome" /><meta name="Microsoft.Help.Id" content="index" /><meta name="Description" content="This documentation site is still a work in progress. We'll be fleshing this out over the next few months." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="neonKUBE" tocid="6e0122fd-beb8-4334-9fa2-43a79c330dd9">neonKUBE</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="b4a13879-cf87-43e2-8b6e-a122d8809d7a">Neon.Cadence</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Common-Overview.htm" title="Neon.Common" tocid="8d4cab22-393a-468a-96fe-41870fa99b32">Neon.Common</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>neonKUBE</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
-          This documentation site is still a work in progress.  We'll be fleshing this out over the
-          next few months.
-        </p></td></tr></table></div><p>
-        neonKUBE is an open source project released under the MIT license.  This project includes several
-        class general purpose libraries published as nuget packages (known as the Neon libraries) as well as 
-        a nacent Kubernetes distribution called neonKUBE which is still very much a work in progress.
-      </p><p>
-        The central theme behind these projects is to fill in some gaps developers encounter
-        when developing scalable services intended to be hosted on public cloud providers such as AWS,
-        Azure, and Google Cloud, or hosted within in private datacenters.
-      </p><p>
-        We'll touch on the components below.  Visit the table of contents to to locate more details.
-      </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
-          All Neon and neonKUBE packages and utilities are available under the 
-          <a href="https://opensource.org/licenses/MIT" target="_blank">MIT Open Source License</a>.
-        </p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="Downloads"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Downloads and Packages</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
-          Neon and neonKUBE .NET libraries are available as packages on
-          <a href="https://nuget.org" target="_blank">nuget.org</a>.
-          All packages are currently built as <span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span></p><p>
-          neonKUBE applications and tools are available on GitGub Releases here:
-          <a href="https://github.com/nforgeio/neonKUBE/releases" target="_blank">https://github.com/nforgeio/neonKUBE/releases</a>.
-          We currently categorize released binaries with one of four levels of
-          maturity:
-        </p><div class="tableSection"><table><tr><td><p><span class="media"><img alt="release" src="media/release.png" /></span></p></td><td><p>
-              indicates that the release is expected suitable for production use.  Released binary
-              versions follow the semantic version 2.0 specification and don't include a pre-release
-              identifier.
-            </p></td></tr><tr><td><p><span class="media"><img alt="preview" src="media/preview.png" /></span></p></td><td><p>
-              indicates that the released binary still has some work in progress but is relatively stable
-              and also that we expect that we we'll try to avoid making significant breaking changes to
-              the API surface area.  This may be suitable for production but you should take care.
-            </p></td></tr><tr><td><p><span class="media"><img alt="alpha" src="media/alpha.png" /></span></p></td><td><p>
-              indicates that the released binary is not ready for general production use.  There are likely
-              to be serious bugs and implementation gaps and it is also very likely that the API may still
-              see very significant changes.  We do early <strong>alpha</strong> releases to give
-              interested parties a chance to review what we're doing and also so that we and close partners
-              can give these a spin in test and sometimes production.
-            </p></td></tr><tr><td><p><span class="media"><img alt="internal" src="media/internal.png" /></span></p></td><td><p>
-              indicates that the released binary is not intended for general consumption.  These are typically
-              referenced by other neonKUBE libaries and tools.
-            </p><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><p><strong>We reserve the right to change or abandon these components at any time without notice.</strong></p></td></tr></table></div></td></tr></table></div></div><div class="collapsibleAreaRegion" id="Neon.Common"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Common</span></div><div id="ID1RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes 
-          common code used by the other packages as well as classes that may have direct value for your
-          projects.  This package is designed to be relatively small and is compatible with all .NET 
-          enviromments including Xamarin applications.
-        </p></div><div class="collapsibleAreaRegion" id="Neon.Cadence"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Cadence</span></div><div id="ID2RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes
-          a .NET compatible client for the
-          <a href="https://cadenceworkflow.io/docs/" target="_blank">Uber Cadence</a> workflow engine.
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Neon.Cadence</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="index" /><meta name="Description" content="The Neon.Cadence class library is built for NETStandard 2.0 and is capable of connecting to an Uber Cadencehttps://cadenceworkflow.io/docs/ workflow cluster to manage and implement workflows." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="index.html" title="Neon.Cadence" tocid="b4a13879-cf87-43e2-8b6e-a122d8809d7a">Neon.Cadence</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Common-Overview.htm" title="Neon.Common" tocid="8d4cab22-393a-468a-96fe-41870fa99b32">Neon.Common</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Couchbase-Overview.htm" title="Neon.Couchbase" tocid="c9653350-5d9c-4629-bdba-3d05286dadc7">Neon.Couchbase</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Cryptography-Overview.htm" title="Neon.Cryptography" tocid="b5793b0c-a9cd-4e6c-9793-f2e8505e8458">Neon.Cryptography</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Kube-Overview.htm" title="Neon.Kube" tocid="7bc8021c-493a-4512-8532-b8969edf82c8">Neon.Kube</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.ModelGen-Overview.htm" title="Neon.ModelGen" tocid="c9e62b7b-b1a6-4fe5-b295-af3badd66012">Neon.ModelGen</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.NATS-Overview.htm" title="Neon.NATS" tocid="59439cfa-8a94-4034-832b-75fba1756466">Neon.NATS</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.SSH.NET-Overview.htm" title="Neon SSH.NET" tocid="a331f9c6-c9b5-4b21-a827-f717bba4d612">Neon SSH.NET</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Web-Overview.htm" title="Neon.Web" tocid="d9a25b6f-b9e0-4e71-bce0-cc8a93a565e5">Neon.Web</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Neon.Xunit-Overview.htm" title="Neon.Xunit" tocid="900fb12b-112e-41cb-9d94-b0fe7fe97332">Neon.Xunit</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_neon.htm" title="Namespaces" tocid="R_Project_neon">Namespaces</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Neon.Cadence</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The <strong>Neon.Cadence</strong> class library is built for NETStandard 2.0
+        and is capable of connecting to an
+        <a href="https://cadenceworkflow.io/docs/" target="_blank">Uber Cadence</a>
+        workflow cluster to manage and implement workflows.
+      </p><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><p><strong>Neon.Cadence</strong> currently supports 64-bit Windows, OS/X, and Linux runtime environments only.
+        </p></td></tr></table></div></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          Uber Cadence is a wonderful open source solution for developers who need to deploy reliable workflows
+          for small to highly scaled applications and services.  This isn't the first workflow product, but
+          it may be the first one tailored specifically for developers who want to code workflows in a popular
+          language as opposed to drawing flow-charts, editing crazy XML workflow definitions, and/or jumping
+          through multi-step build hoops.
+        </p><p><strong>Neon.Cadence</strong> combined with Uber Cadence lets you implement workflows in
+          any supported .NET language with little friction.  You can even set breakpoints and debug your
+          workflows directly in Visual Studio.
         </p><p>
-          Cadence is a superb workflow engine designed for scale and also for developers
-          who enjoy spending their time writing code rather than messing with workflow
-          editing software or complex build processes.  The <strong>Neon.Cadence</strong>
-          client combined with the <strong>Uber Cadence Server</strong>, you'll be
-          able to author complex workflows in your favorite .NET language.
-        </p><p><strong>Neon.Cadence</strong> is supported on 64-bit computers running Windows, OS/X, or Linux.
-        </p></div><div class="collapsibleAreaRegion" id="Neon.Couchbase"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Couchbase</span></div><div id="ID3RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes some extensions and wrapper
-          classes that enhance the
-          <a href="https://www.couchbase.com/" target="_blank">Couchbase No-SQL Database</a></p></div><div class="collapsibleAreaRegion" id="Neon.Cryptography"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Cryptography</span></div><div id="ID4RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package provides some cryptography related
-          classes that make hashing easy as well <a href="T_Neon_Cryptography_NeonVault.htm">NeonVault</a>
-          which provides a general purpose way for encrypting data (inspired by 
-          <a href="https://docs.ansible.com/ansible/latest/user_guide/vault.html" target="_blank">Ansible Vault</a>.
-        </p><p>
-          This package is suitable for all environments including Xamarin.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Kube</span></div><div id="ID5RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes several 
-          classes used for implementing our neonKUBE Kubernetes distribution.  Most developers won't need to 
-          reference this directly from their code.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Kube.Service</span></div><div id="ID6RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes the 
-          <a href="T_Neon_Kube_Service_KubeService.htm">KubeService</a> 
-          class which handles a lot of the boilerplate code for a Kubernetes or other services including log integration,
-          reacting to termination signals on Linux and OS/X as well as abstracting environment variables and
-          configuration file access such that the same service code can run in unit tests as well as production.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.ModelGen</span></div><div id="ID7RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package is used to automate
-          the generation of classes that include 
-          <a href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged" target="_blank">INotifyPropertyChanged</a>
-          boilerplate code.    This also can be used to generate classes that implement
-          <a href="T_Neon_Data_IRoundtripData.htm">IRoundtripData</a> which
-          provides a way for classes to be future proofed by being able to round-trip data serialization even when
-          data includes properties that are not implemented by the class.
-        </p><p>
-          ModelGen also supports the generation of REST API clients for web services.
-        </p><p>
-          You can use these classes to integrate model generation into your own tooling or use the 
-          <strong>neon-cli</strong> tool.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.Nats</span></div><div id="ID8RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> This package includes some extensions and helpers for
-          <a href="" target="_blank">NATS Open Source Messaging</a>.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0"><img id="ID9RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon.SSH.NET</span></div><div id="ID9RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span> package is used to establish manage SSH connections to
-          remote computers.
-        </p><p>
-          This is a partial clone of the
-          <a href="https://github.com/sshnet/SSH.NET" target="_blank">SSH.NET</a>
-          GitHub project that fixes a
-          <a href="https://github.com/sshnet/SSH.NET/pull/515" target="_blank">serious bug</a>
-          preventing connections to machines running modern Linux distributions.  The parent
-          repo seems to have gone inactive so we cloned this and hacked a fix to solve our
-          immediate problem.  We didn't clone unit tests and we'd rather not sign-on to maintain
-          this long-term, but feel free to use this as you wish.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID10RB')" onkeypress="SectionExpandCollapse_CheckKey('ID10RB', event)" tabindex="0"><img id="ID10RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Neon XUnit packages</span></div><div id="ID10RBSection" class="collapsibleSection"><p><span class="media"><img alt="NETStandard 2.0" src="media/NETStandard2.0.png" /></span>
-          Neon provides three nuget packages with Xunit related helpers
-          and test fixture implementations.  
-        </p><p><strong>Neon.Xunit</strong> includes some Ansible related helpers
-          as well a test fixtures for <strong>ASP.NET</strong>, <strong>containers</strong>, <strong>Docker</strong>, 
-          <strong>environment variables</strong>, <strong>local DNS hosts</strong>, 
-          <a href="T_Neon_Kube_Service_KubeService.htm">KubeService</a>,
-          <strong>NATS Messaging/Streaming</strong>, as well as the
-          <a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture</a>
-          that can be used to combine other fixtures.
-        </p><p><strong>Neon.Xunit.Cadence</strong> provides a test fixture that
-          starts and manages Cadence/Cassendra as a local Docker container while
-          unit tests execute.  We use this for testing <strong>Neon.Cadence</strong>
-          and we expect workflow developers to do the same until we implement a 
-          built-in testing solution like the Java and GO clients have.
-        </p><p><strong>Neon.Xunit.Couchbase</strong> provides a test fixture that
-          starts and manages Cadence as a local Docker container during unit tests.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />neonKUBE Kubernetes Distribution</span></div><div id="ID11RBSection" class="collapsibleSection"><p><span class="media"><img alt="alpha" src="media/alpha.png" /></span> We are working on yet another
-          Kubernetes Distribution called <strong>neonKUBE</strong>.  The ultimate goal is to
-          release an open source, out-of-the-box solution that approaches the capabilities of expensive
-          enterprise grade distributions like 
-          <a href="https://www.openshift.com/" target="_blank">OpenShift</a>
-          and similar offerings.
-        </p><p>
-          This is very much a work in progress and somewhat on the back-burner, but we hope to
-          be able to spend some quality time on this beginning Q2 2020.
-        </p><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><p>
-            We are building and releasing some neonKUBE Kubernetes related binaries at this
-            time, but they should be considered to be at <span class="media"><img alt="internal" src="media/internal.png" /></span>
-            maturity and should be avoided.
-          </p></td></tr></table></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID12RB')" onkeypress="SectionExpandCollapse_CheckKey('ID12RB', event)" tabindex="0"><img id="ID12RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Internal Assemblies and Namespaces</span></div><div id="ID12RBSection" class="collapsibleSection"><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><p><span class="media"><img alt="internal" src="media/internal.png" /></span>
-            Several Neon assemblies are published to nuget but are intended only for internal
-            use by other Neon components.  Documentation for these are included here but you
-            should avoid using these APIs directly.  We reserve the right to make significant
-            changes without notice.
-          </p></td></tr></table></div><p>
-          Avoid referencing these internal packages directly.
-        </p><ul class="noBullet"><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Docker</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.HyperV</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.Aws</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.Azure</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.Google</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.HyperVLocal</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.Machine</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Kube.XenServer</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.XenServer</strong></p></li><li><p><span class="media"><img alt="internal" src="media/internal.png" /></span><strong> Neon.Xunit.Kube</strong></p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID13RB')" onkeypress="SectionExpandCollapse_CheckKey('ID13RB', event)" tabindex="0"><img id="ID13RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID13RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="https://github.com/nforgeio/neonKUBE" target="_blank">neonKUBE GitHub Repository</a></div><div class="seeAlsoStyle"><a href="https://github.com/nforgeio/neonKUBE/releases" target="_blank">neonKUBE releases and downloads</a></div><div class="seeAlsoStyle"><a href="https://semver.org/" target="_blank">Semantic Version 2.0 Specification</a></div><div class="seeAlsoStyle"><a href="https://cadenceworkflow.io/docs/" target="_blank">Uber Cadence</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neonKUBE.chm</a>
-Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body><script type="text/javascript">
-<!--
-    var tocNav = document.getElementById("tocNav");
-    var anchor = tocNav.children[0].children[0];
-    Toggle(anchor);
-    tocNav.children[0].className += " current";
--->
-</script>
-</html>
+          This page describes the key concepts.  Subsequent pages will show you how to get started. 
+        </p></div><div class="collapsibleAreaRegion" id="overview"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Overview</span></div><div id="ID1RBSection" class="collapsibleSection"><p><strong>Write something pithy here! :)</strong></p></div><div class="collapsibleAreaRegion" id="terminology"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Terminology</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          This section describes the primary Cadence workflow concepts and terminology.
+        </p><div class="tableSection"><table><tr><td><p><strong>Activity</strong></p></td><td><p>
+                Workflow implementations are typically organized into <strong>workflows</strong> that
+                make decisions determining what's do be done and <strong>activities</strong> that actually
+                perform the work.  For example, workflows may decide to read/write something to a database or
+                call an external service and then then workflow will call an activity to actually perform
+                the operation.
+              </p><p>
+                You can think of a workflow as the decider and activities as the primary way for
+                workflows to interact with the outside world, which a workflow should never do
+                directly.
+              </p></td></tr><tr><td><p><strong>Client Stub</strong></p></td><td><p>
+                Stubs provide a way define workflows and activities using an
+                <span class="code">interface</span> such that you'll be able to
+                start and interact with workflows and activities using strongly 
+                typed methods that will be verified by the .NET compiler when 
+                building your code.
+              </p><p>
+                This capability was pioneered by Uber with their Java API and we
+                were strongly encouraged to go this route for .NET (which was an 
+                easy decision since it's obviously better).  The Go Cadence client
+                does not implement stubs.
+              </p></td></tr><tr><td><p><strong>Domain</strong></p></td><td><p>
+                A Cadence cluster is designed to support multi-tenant deployments.  Cadence
+                handles workflow and activity state as well as the assignment of work to
+                tenant supplied workers.  Cadence organizes workflows and activities into
+                domains.  Every domain has a name as well as a handful configuration 
+                settings.  Typical deployments will assign workflows and activities by
+                the organization managing these or also by the operation category. 
+              </p><p>
+                For a Cadence cluster supporting multiple teams you could create a
+                domain named for each team.  If these teams need to run test workflows,
+                you could create new domains with the team name plus <strong>-test</strong>.
+                Cadence domain capacity is close to being unconstrained, so you could even
+                create separate domains for each of your developers if needed.
+              </p></td></tr><tr><td><p><strong>TaskList</strong></p></td><td><p>
+                The workflow and activities you develop will need to be hosted in a
+                workflow service that you'll write.  This can be a simple as a Console
+                application that registers the workflows and activities it implements
+                with the Cadence cluster.  You'll need to specify the domain where the
+                workflows and activities will be hosted by Cadence and also a 
+                <strong>task list</strong> string.
+              </p><p>
+                Cadence uses the task list you specify to identify all instances of
+                a workflow service running such that work can be distributed to across
+                these services.
+              </p><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Important note" /> Important</th></tr><tr><td><p>
+                  All instances of your workflow should implement <strong>exact same workflows and activities</strong>
+                  because Cadence doesn't track exactly which workflows and activities are exposed
+                  by each workflow service instance.  Cadence assumes that all service instances
+                  registered with same task list can execute any of the registered workflows
+                  and activities.
+                </p><p>
+                  For example, say you have workflow-A and workflow-B running on server-0 and then workflow-B 
+                  and workflow-C running on server-1, and both of these registred with task lisk MYTASKS.
+                  Then you execute workflow A.  Cadence may attempt execute it on server-1 but this will
+                  fail, because workflow-A isn't implemented there.  Cadence is smart and will retry by
+                  selecting another worker registred for MYTASKS until it finds a worker that can handle
+                  it (or the workflow times out).
+                </p><p>
+                  So Cadence will typically recover and execte the workflow or activity but recognize that
+                  there may be some delay.  You should also keep this in the back of your mind when you're
+                  thinking about how workflow services should be upgraded (e.g. all at once, rolling update,...)
+                </p></td></tr></table></div></td></tr><tr><td><p><strong>Event History</strong></p></td><td><p>
+                Cadence tracks workflow and activity executions such that the 
+                past decisions and workflow state is durably persisted to the
+                cluster database.  This is the secret that allows developers
+                to author workflows as basic code when under the covers, the
+                workflow is essentially a state machine.
+              </p></td></tr><tr><td><p><strong>Query</strong></p></td><td><p>
+                Started workflows can be queried synchronously by client applications
+                to retrieve information about the current state of the workflow.  This
+                is a read-only operation and a query must never modify workflow state.
+              </p></td></tr><tr><td><p><strong>Run ID</strong></p></td><td><p>
+                Cadence assigns a UUID to each execution of a workflow so they can
+                be uniquely identified.  This differs from the workflow ID which
+                is essentially the name of the workflow.  For example, you could
+                start a workflow managing a user's junk email folder with a 
+                workflow ID like <strong>jeff@lilltek.com-JUNK</strong>.
+                Then you could manage, query, or signal the workflow using this
+                stable name.  Cadence will assign a UUID as the run ID and if
+                the workflow restarts itself, the new run will retain the same
+                workflow ID, but will be assigned a new run ID.
+              </p></td></tr><tr><td><p><strong>Signal</strong></p></td><td><p>
+                Signals provides a convienent way to inform a workflow that something
+                external happened.  Signals may include arbitrary parameters but 
+                signals don't return a result.  Signals are delivered asynchronously,
+                meaning the caller may see the signal method return before the
+                workflow actually received the signal.
+              </p><p>
+                Workflow signal methods will typically use a <span class="nolink">WorkflowQueue</span>
+                to interact with the workflow decision logic.
+              </p></td></tr><tr><td><p><strong>Task Token</strong></p></td><td><p>
+                Cadence supports external activity completion.  This is a less convienent 
+                an alternative to signalling.  You can take advantage of this by starting
+                an activity that instead of completing the operation itself, obtains a
+                task token from Cadence and then signals Cadence that the activity will
+                be completed externally.
+              </p><p>
+                Before the activity returns, it will need to put the token somewhere 
+                (like a database) and then you'll have an external service waiting for
+                something to happen that indicates that activity can be completed and
+                then use the task token to complete the activity, specifying the return
+                value if necessary.
+              </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Tip" /> Tip</th></tr><tr><td><p>
+                  External activity completion implementions are generally more difficulit to
+                  code because you need to worry about saving the token somewhere and you also
+                  need to code an external service that may need to do activity heartbeating.
+                </p><p>
+                  We recommend that you use signals for most situations.
+                </p></td></tr></table></div></td></tr><tr><td><p><strong>Worker/Service</strong></p></td><td><p>
+                This is an application or service that implements one or more workflows
+                and/or activities.  When a worker or worker service starts, it will
+                register its workflows and activities with Cadcence.  Then Cadence
+                will assign workflows and activities to each worker service as it
+                sees fit.
+              </p><p>
+                Your workflow and activity code will be executed as required with
+                Cadence recording state as the workflow progresses as well as the
+                results returned by the activities and workflow.
+              </p></td></tr><tr><td><p><strong>Workflow</strong></p></td><td><p>
+                Essentially, a workflow is a method that runs some logic and optionally returns
+                a result.  The method is written in C# or some other compatible .NET language.
+                Workflows always interact with the external world via activities.  Workflows
+                use activities to query external state so that can impact decisions made
+                by the workflow and workflows also use activities to impact the outside world
+                by writting to a database, sending an email, etc.
+              </p><p>
+                Workflows can be configured to run for very long times.  Years and perhaps even 
+                centuries.  Cadence ensures that the state of an executing workflow will be
+                durably persisted such that the workflow can be reassigned to a different worker
+                in response to server failures, load-balancing, etc.
+              </p></td></tr><tr><td><p><strong>Workflow Execution</strong></p></td><td><p>
+                A <a href="T_Neon_Cadence_WorkflowExecution.htm">WorkflowExecution</a> 
+                is used to identify an instance of a workflow.  This included the workflow and
+                run IDs and may reference a workflow that's still in progress or a completed workflow.
+              </p></td></tr><tr><td><p><strong>Workflow ID</strong></p></td><td><p>
+                A workflow ID is essentially the name of the workflow.  This is an arbitrary
+                string.  It's often handy to set this to some kind of business identifier like
+                the name of the entity the workflow is handling.
+              </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                  A Workflow IDs uniquely identify workflows within a Cadence domain.
+                </p></td></tr></table></div></td></tr></table></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID3RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="https://cadenceworkflow.io/docs/" target="_blank">Uber Cadence</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neonKUBE.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>
