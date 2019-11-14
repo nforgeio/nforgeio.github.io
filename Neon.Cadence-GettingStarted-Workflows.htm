@@ -1,0 +1,113 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Workflows</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Cadence-GettingStarted-Workflows" /><meta name="Description" content="This page describes how to code your first workflow in .NET." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="3de9d87b-8606-4781-87c4-d794c3bf5576">Neon.Cadence</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-GettingStarted-Workflows.htm" title="Getting Started" tocid="34f842cd-96dc-4ec4-ac4f-de25cbd6e330">Getting Started</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-GettingStarted-Workflows.htm" title="Workflows" tocid="1576a65f-94bd-4bed-9ff6-935b1c20fd87">Workflows</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Workflows</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        This page describes how to code your first workflow in .NET.
+      </p></div><div class="collapsibleAreaRegion" id="WorkflowDefinition"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Workflow Definition</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
+          .NET Cadence workflows are defined by an <span class="code">interface</span> and then implemented
+          as a <span class="code">class</span>.  Here's a simple <strong>HelloWorld</strong> example:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EALABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EALABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EALABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EALABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> System;
+<span class="highlight-keyword">using</span> System.Collections.Generic;
+<span class="highlight-keyword">using</span> System.Threading.Tasks;
+
+<span class="highlight-keyword">using</span> Neon.Common;
+<span class="highlight-keyword">using</span> Neon.Cadence;
+
+<span class="highlight-keyword">namespace</span> HelloWorld
+{
+    [WorkflowInterface(TaskList = <span class="highlight-literal">"my-tasks"</span>)]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IHelloWorkflow : IWorkflow
+    {
+        Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name);
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> HelloWorkflow : WorkflowBase, IHelloWorkflow
+    {
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name)
+        {
+            <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult($<span class="highlight-literal">"Hello {name}!"</span>);
+        }
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
+    {
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        {
+            <span class="highlight-keyword">var</span> settings = <span class="highlight-keyword">new</span> CadenceSettings()
+            {
+                DefaultDomain = <span class="highlight-literal">"my-domain"</span>,
+                CreateDomain  = <span class="highlight-keyword">true</span>,
+                Servers       = <span class="highlight-keyword">new</span> List&lt;<span class="highlight-keyword">string</span>&gt;() { <span class="highlight-literal">"cadence://localhost:7933"</span> }
+            };
+
+            <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">await</span> CadenceClient.ConnectAsync(settings))
+            {
+                <span class="highlight-keyword">await</span> client.RegisterWorkflowAsync&lt;HelloWorkflow&gt;();
+
+                <span class="highlight-keyword">using</span> (<span class="highlight-keyword">await</span> client.StartWorkerAsync(<span class="highlight-literal">"my-tasks"</span>))
+                {
+                    <span class="highlight-keyword">var</span> stub = client.NewWorkflowStub&lt;IHelloWorkflow&gt;();
+
+                    Console.WriteLine(<span class="highlight-keyword">await</span> stub.HelloAsync(<span class="highlight-literal">"Jeff"</span>));
+                }
+            }
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EALABAAA");</script><p>
+          Here we define <span class="code">IHelloWorkflow</span> which defines the <span class="code">HelloAsync</span> 
+          workflow method which implements your workflow.  Workflow interfaces have a couple requirements:
+        </p><ul><li><p>Workflow interfaces need to inherit <a href="T_Neon_Cadence_IWorkflow.htm">IWorkflow</a></p></li><li><p>All workflow interface methods must be <span class="code">async</span></p></li></ul><p>
+          The <a href="T_Neon_Cadence_WorkflowInterfaceAttribute.htm">WorkflowInterfaceAttribute</a> is optional
+          but can be used to specify workflow related options.  In this example, we're indicating that the workflow will be registered
+          with Cadence in the <strong>my-tasks</strong> task list (we'll be discussing task lists in depth later).
+        </p><p>
+          Next, we define the <strong>HelloWorkflow</strong><span class="code">class</span> that actually implements
+          the workflow.  All workflow implementations must inherit <a href="T_Neon_Cadence_WorkflowBase.htm">WorkflowBase</a>
+          and also implement the workflow interface you defined.  In this case, the <span class="code">HelloAsync()</span> workflow
+          method simply returns a string value.
+        </p><p>
+          The example above is coded as a basic console application with the <span class="code">Main()</span> method:
+        </p><ol><li><p>
+              Initializes the connection settings to connect Cadence running on the local machine, configuring <strong>my-domain</strong>
+              as the default domain where your workflows and activities will be registered and run, and indicating that the default domain
+              should be created it it doesn't already exist (handy for testing).
+            </p></li><li><p>Establishes a connection to Cadence.</p></li><li><p>Registers the workflow implementation.</p></li><li><p>
+              Starts the workflow worker.  This tells Cadence that you've finished registering workflow and activity implementations
+              and your workflow service is ready to be assigned tasks by Cadence.  We tell Cadence that this worker handles work
+              within the <strong>my-tasks</strong> task list.
+            </p></li><li><p>
+              Creates a type-safe stub that implements the specified workflow interface such that calling the method actually
+              executes the workflow.  The program then calls the stub's <span class="code">HelloAsync()</span> method and 
+              prints the result to the console.
+            </p></li></ol><p>
+          Running a workflow really couldn't be much simpler.  Here's what's happening under the covers:
+        </p><ol><li><p>
+              The stub <span class="code">HelloAsync()</span> method tells the Cadence server to start the workflow,
+              with any arguments passed.  Note that the stub method doesn't return until the the workflow completes.
+            </p></li><li><p>
+              Cadence receives this requests and persists the details to Cassandra for reliability and then 
+              looks for a workflow service that is registered for <strong>my-tasks</strong>.
+            </p></li><li><p>
+              Cadence will see that our sample application has registered itself and will schedule the workflow
+              to be executed by our application.
+            </p></li><li><p>
+              The application's <a href="T_Neon_Cadence_CadenceClient.htm">CadenceClient</a>
+              receives the workflow execution request from Cadence, instantiates an instance of the <span class="code">HelloWorkflow</span>
+              workflow class and then calls the <span class="code">HelloAsync()</span> method.
+            </p></li><li><p><span class="code">HelloAsync()</span> does its thing and returns the result string.
+            </p></li><li><p>
+               Cadence persists the result to Cassandra, marks the workflow as complete, and then signals
+               the pending stub <span class="code">HelloAsync()</span> call that it can return with the
+               value returned by your workflow implementation.
+            </p></li></ol><p>
+          This may not look like much, but Cadence makes this operation inheritly reliable by:
+        </p><ul><li><p>Holding the workflow until a workflow service is available to handle it.</p></li><li><p>Reassigning the workflow if the workflow service executing it is restarted or fails.</p></li><li><p>Ensuring that the workflow is idempotent such that steps that have already been completed won't be reexecuted due to workflow service failures.</p></li><li><p>Load balancing work across multiple registered workflow service instances.</p></li><li><p>Recording the history of the workflow execution along with the final result.</p></li></ul><p>
+          This example is super simple of course but even here, Cadence delivers substantial benefits.
+        </p></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>
