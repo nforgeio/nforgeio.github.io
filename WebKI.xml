@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="AAA field" Url="F_Neon_Net_NetworkPorts_AAA.htm" />
+  <HelpKINode Title="ABANDON enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="Abandon enumeration member" Url="T_Neon_Cadence_ParentClosePolicy.htm" />
   <HelpKINode Title="Abs method" Url="M_Renci_SshNet_Common_BigInteger_Abs.htm" />
   <HelpKINode Title="AccessDeniedException class">
@@ -85,8 +86,8 @@
   <HelpKINode Title="ActivityHeartbeatTimeoutSeconds property" Url="P_Neon_Cadence_CadenceSettings_ActivityHeartbeatTimeoutSeconds.htm" />
   <HelpKINode Title="ActivityId property">
     <HelpKINode Title="ActivityTask.ActivityId Property " Url="P_Neon_Cadence_ActivityTask_ActivityId.htm" />
-    <HelpKINode Title="NeonControllerBase.ActivityId Property " Url="P_Neon_Web_NeonControllerBase_ActivityId.htm" />
     <HelpKINode Title="NeonController.ActivityId Property " Url="P_Neon_Web_NeonController_ActivityId.htm" />
+    <HelpKINode Title="NeonControllerBase.ActivityId Property " Url="P_Neon_Web_NeonControllerBase_ActivityId.htm" />
   </HelpKINode>
   <HelpKINode Title="ActivityID property" Url="P_Neon_Cadence_PendingActivityInfo_ActivityID.htm" />
   <HelpKINode Title="ActivityInterfaceAttribute class">
@@ -230,8 +231,8 @@
     <HelpKINode Title="fields" Url="Fields_T_Neon_Cryptography_AesCipher.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Cryptography_AesCipher.htm" />
-    <HelpKINode Title="properties" Url="Properties_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cryptography_AesCipher.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
   </HelpKINode>
   <HelpKINode Title="AesCipher.AesCipher constructor">
     <HelpKINode Title="AesCipher Constructor " Url="Overload_Neon_Cryptography_AesCipher__ctor.htm" />
@@ -1224,6 +1225,7 @@
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_CadenceCustomException.htm" />
   </HelpKINode>
   <HelpKINode Title="CadenceCustomException.CadenceCustomException constructor" Url="M_Neon_Cadence_CadenceCustomException__ctor.htm" />
+  <HelpKINode Title="CadenceErrorTypes enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
   <HelpKINode Title="CadenceException class">
     <HelpKINode Title="CadenceException Class" Url="T_Neon_Cadence_CadenceException.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_CadenceException__ctor.htm" />
@@ -1259,6 +1261,12 @@
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_CadenceGenericException.htm" />
   </HelpKINode>
   <HelpKINode Title="CadenceGenericException.CadenceGenericException constructor" Url="M_Neon_Cadence_CadenceGenericException__ctor.htm" />
+  <HelpKINode Title="CadenceHelper class">
+    <HelpKINode Title="CadenceHelper Class" Url="T_Neon_Cadence_Internal_CadenceHelper.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_Internal_CadenceHelper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CadenceHelper.GetWorkflowTypeName(Of TWorkflowInterface) method" Url="M_Neon_Cadence_Internal_CadenceHelper_GetWorkflowTypeName__1.htm" />
+  <HelpKINode Title="CadenceHelper.GetWorkflowTypeName&lt;TWorkflowInterface&gt; method" Url="M_Neon_Cadence_Internal_CadenceHelper_GetWorkflowTypeName__1.htm" />
   <HelpKINode Title="CadenceInternalException class">
     <HelpKINode Title="CadenceInternalException Class" Url="T_Neon_Cadence_CadenceInternalException.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_CadenceInternalException__ctor.htm" />
@@ -1349,7 +1357,10 @@
     <HelpKINode Title="AsyncPeriodicTask.CancellationTokenSource Property " Url="P_Neon_Tasks_AsyncPeriodicTask_CancellationTokenSource.htm" />
     <HelpKINode Title="ProcessTerminator.CancellationTokenSource Property " Url="P_Neon_Kube_Service_ProcessTerminator_CancellationTokenSource.htm" />
   </HelpKINode>
-  <HelpKINode Title="Cancelled enumeration member" Url="T_Neon_Cadence_WorkflowExecutionCloseStatus.htm" />
+  <HelpKINode Title="Cancelled enumeration member">
+    <HelpKINode Title="CadenceErrorTypes Enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
+    <HelpKINode Title="WorkflowExecutionCloseStatus Enumeration" Url="T_Neon_Cadence_WorkflowExecutionCloseStatus.htm" />
+  </HelpKINode>
   <HelpKINode Title="CancelledException class">
     <HelpKINode Title="CancelledException Class" Url="T_Neon_Cadence_CancelledException.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_CancelledException__ctor.htm" />
@@ -1629,6 +1640,14 @@
     <HelpKINode Title="TestFixture.CheckDisposed Method " Url="M_Neon_Xunit_TestFixture_CheckDisposed.htm" />
   </HelpKINode>
   <HelpKINode Title="CheckWithinAction method" Url="M_Neon_Xunit_TestFixture_CheckWithinAction.htm" />
+  <HelpKINode Title="ChildExecution class">
+    <HelpKINode Title="ChildExecution Class" Url="T_Neon_Cadence_Internal_ChildExecution.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_Internal_ChildExecution.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_Internal_ChildExecution.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChildExecution.ChildId property" Url="P_Neon_Cadence_Internal_ChildExecution_ChildId.htm" />
+  <HelpKINode Title="ChildExecution.Execution property" Url="P_Neon_Cadence_Internal_ChildExecution_Execution.htm" />
+  <HelpKINode Title="ChildId property" Url="P_Neon_Cadence_Internal_ChildExecution_ChildId.htm" />
   <HelpKINode Title="ChildPolicy property" Url="P_Neon_Cadence_ChildWorkflowOptions_ChildPolicy.htm" />
   <HelpKINode Title="Children property" Url="P_Neon_Xunit_ComposedFixture_Children.htm" />
   <HelpKINode Title="ChildWorkflowFuture class">
@@ -2683,7 +2702,10 @@
   <HelpKINode Title="CurrentServerCompressionAlgorithm property" Url="P_Renci_SshNet_ConnectionInfo_CurrentServerCompressionAlgorithm.htm" />
   <HelpKINode Title="CurrentServerEncryption property" Url="P_Renci_SshNet_ConnectionInfo_CurrentServerEncryption.htm" />
   <HelpKINode Title="CurrentServerHmacAlgorithm property" Url="P_Renci_SshNet_ConnectionInfo_CurrentServerHmacAlgorithm.htm" />
-  <HelpKINode Title="Custom enumeration member" Url="T_Neon_Kube_AzureCloudEnvironments.htm" />
+  <HelpKINode Title="Custom enumeration member">
+    <HelpKINode Title="AzureCloudEnvironments Enumeration" Url="T_Neon_Kube_AzureCloudEnvironments.htm" />
+    <HelpKINode Title="CadenceErrorTypes Enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
+  </HelpKINode>
   <HelpKINode Title="Custom method" Url="M_Neon_Cadence_NonRetriableErrors_Custom.htm" />
   <HelpKINode Title="Custom property" Url="P_Neon_Kube_NodeLabels_Custom.htm" />
   <HelpKINode Title="D property" Url="P_Renci_SshNet_Security_RsaKey_D.htm" />
@@ -3618,6 +3640,7 @@
   <HelpKINode Title="ExecuteShell method" Url="M_Neon_Common_NeonHelper_ExecuteShell.htm" />
   <HelpKINode Title="ExecuteWithInput method" Url="Overload_Neon_Common_ProgramRunner_ExecuteWithInput.htm" />
   <HelpKINode Title="Execution property">
+    <HelpKINode Title="ChildExecution.Execution Property " Url="P_Neon_Cadence_Internal_ChildExecution_Execution.htm" />
     <HelpKINode Title="ChildWorkflowFuture(TResult).Execution Property " Url="P_Neon_Cadence_ChildWorkflowFuture_1_Execution.htm" />
     <HelpKINode Title="ChildWorkflowFuture.Execution Property " Url="P_Neon_Cadence_ChildWorkflowFuture_Execution.htm" />
     <HelpKINode Title="ChildWorkflowFutureStub.Execution Property " Url="P_Neon_Cadence_ChildWorkflowFutureStub_Execution.htm" />
@@ -4029,6 +4052,7 @@
   <HelpKINode Title="GenerateKey method" Url="M_Neon_Cryptography_AesCipher_GenerateKey.htm" />
   <HelpKINode Title="GenerateWorkingKey method" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_DesCipher_GenerateWorkingKey.htm" />
   <HelpKINode Title="GeneratorVersion property" Url="P_Neon_Data_IGeneratedServiceClient_GeneratorVersion.htm" />
+  <HelpKINode Title="Generic enumeration member" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
   <HelpKINode Title="Generic method" Url="M_Neon_Cadence_NonRetriableErrors_Generic.htm" />
   <HelpKINode Title="GenKey method" Url="M_Couchbase_CouchbaseExtensions_GenKey.htm" />
   <HelpKINode Title="GermanCloud enumeration member" Url="T_Neon_Kube_AzureCloudEnvironments.htm" />
@@ -4125,6 +4149,7 @@
     <HelpKINode Title="ServiceContainer.GetEnumerator Method " Url="M_Neon_Common_ServiceContainer_GetEnumerator.htm" />
   </HelpKINode>
   <HelpKINode Title="GetEnvironmentVariable method" Url="M_Neon_Kube_Service_KubeService_GetEnvironmentVariable.htm" />
+  <HelpKINode Title="GetExecution method" Url="M_Neon_Cadence_Internal_ITypedWorkflowStub_GetExecution.htm" />
   <HelpKINode Title="GetExtension method" Url="M_Neon_IO_LinuxPath_GetExtension.htm" />
   <HelpKINode Title="GetFileBytes method" Url="M_Neon_Xunit_TestContext_GetFileBytes.htm" />
   <HelpKINode Title="GetFileName method" Url="M_Neon_IO_LinuxPath_GetFileName.htm" />
@@ -4249,6 +4274,8 @@
   <HelpKINode Title="GetWithLockAsync method" Url="Overload_Couchbase_NeonBucket_GetWithLockAsync.htm" />
   <HelpKINode Title="GetWorkflowCacheSizeAsync method" Url="M_Neon_Cadence_CadenceClient_GetWorkflowCacheSizeAsync.htm" />
   <HelpKINode Title="GetWorkflowExecutionAsync method" Url="M_Neon_Cadence_Workflow_GetWorkflowExecutionAsync.htm" />
+  <HelpKINode Title="GetWorkflowTypeName(Of TWorkflowInterface) method" Url="M_Neon_Cadence_Internal_CadenceHelper_GetWorkflowTypeName__1.htm" />
+  <HelpKINode Title="GetWorkflowTypeName&lt;TWorkflowInterface&gt; method" Url="M_Neon_Cadence_Internal_CadenceHelper_GetWorkflowTypeName__1.htm" />
   <HelpKINode Title="GetWriteLockAsync method" Url="M_Neon_Tasks_AsyncReaderWriterLock_GetWriteLockAsync.htm" />
   <HelpKINode Title="GibiBytes field" Url="F_Neon_Common_ByteUnits_GibiBytes.htm" />
   <HelpKINode Title="GigaBytes field" Url="F_Neon_Common_ByteUnits_GigaBytes.htm" />
@@ -4846,11 +4873,11 @@
   <HelpKINode Title="ICSharpCode.SharpZipLib.Zip.StaticBytesDataSource class" Url="T_ICSharpCode_SharpZipLib_Zip_StaticBytesDataSource.htm" />
   <HelpKINode Title="ICSharpCode.SharpZipLib.Zip.StaticStringDataSource class" Url="T_ICSharpCode_SharpZipLib_Zip_StaticStringDataSource.htm" />
   <HelpKINode Title="ID property">
+    <HelpKINode Title="DockerFixture.ConfigInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ConfigInfo_ID.htm" />
     <HelpKINode Title="DockerFixture.ContainerInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ContainerInfo_ID.htm" />
+    <HelpKINode Title="DockerFixture.NetworkInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_NetworkInfo_ID.htm" />
     <HelpKINode Title="DockerFixture.SecretInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_SecretInfo_ID.htm" />
     <HelpKINode Title="DockerFixture.ServiceInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ServiceInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.ConfigInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ConfigInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.NetworkInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_NetworkInfo_ID.htm" />
   </HelpKINode>
   <HelpKINode Title="Id property">
     <HelpKINode Title="AuthenticationPrompt.Id Property " Url="P_Renci_SshNet_Common_AuthenticationPrompt_Id.htm" />
@@ -4865,6 +4892,7 @@
   <HelpKINode Title="IDataConverter.ToData method" Url="M_Neon_Cadence_IDataConverter_ToData.htm" />
   <HelpKINode Title="Identifiers property" Url="P_Renci_SshNet_Common_ObjectIdentifier_Identifiers.htm" />
   <HelpKINode Title="Identity property">
+    <HelpKINode Title="InternalPollerInfo.Identity Property " Url="P_Neon_Cadence_Internal_InternalPollerInfo_Identity.htm" />
     <HelpKINode Title="PollerInfo.Identity Property " Url="P_Neon_Cadence_PollerInfo_Identity.htm" />
     <HelpKINode Title="WorkerOptions.Identity Property " Url="P_Neon_Cadence_WorkerOptions_Identity.htm" />
   </HelpKINode>
@@ -5072,10 +5100,22 @@
   <HelpKINode Title="Int16 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_1.htm" />
   <HelpKINode Title="Int32 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_2.htm" />
   <HelpKINode Title="Int64 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_3.htm" />
+  <HelpKINode Title="InternaChildClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="InternalActivityId property">
     <HelpKINode Title="NeonController.InternalActivityId Property " Url="P_Neon_Web_NeonController_InternalActivityId.htm" />
     <HelpKINode Title="NeonControllerBase.InternalActivityId Property " Url="P_Neon_Web_NeonControllerBase_InternalActivityId.htm" />
   </HelpKINode>
+  <HelpKINode Title="InternalPollerInfo class">
+    <HelpKINode Title="InternalPollerInfo Class" Url="T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
+    <HelpKINode Title="constructor" Url="M_Neon_Cadence_Internal_InternalPollerInfo__ctor.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InternalPollerInfo.Identity property" Url="P_Neon_Cadence_Internal_InternalPollerInfo_Identity.htm" />
+  <HelpKINode Title="InternalPollerInfo.InternalPollerInfo constructor" Url="M_Neon_Cadence_Internal_InternalPollerInfo__ctor.htm" />
+  <HelpKINode Title="InternalPollerInfo.LastAccessTime property" Url="P_Neon_Cadence_Internal_InternalPollerInfo_LastAccessTime.htm" />
+  <HelpKINode Title="InternalPollerInfo.RatePerSecond property" Url="P_Neon_Cadence_Internal_InternalPollerInfo_RatePerSecond.htm" />
+  <HelpKINode Title="InternalPollerInfo.ToPublic method" Url="M_Neon_Cadence_Internal_InternalPollerInfo_ToPublic.htm" />
   <HelpKINode Title="InternalServiceException class">
     <HelpKINode Title="InternalServiceException Class" Url="T_Neon_Cadence_InternalServiceException.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_InternalServiceException__ctor.htm" />
@@ -5084,6 +5124,16 @@
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_InternalServiceException.htm" />
   </HelpKINode>
   <HelpKINode Title="InternalServiceException.InternalServiceException constructor" Url="M_Neon_Cadence_InternalServiceException__ctor.htm" />
+  <HelpKINode Title="InternalTaskList class">
+    <HelpKINode Title="InternalTaskList Class" Url="T_Neon_Cadence_Internal_InternalTaskList.htm" />
+    <HelpKINode Title="constructor" Url="M_Neon_Cadence_Internal_InternalTaskList__ctor.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_Internal_InternalTaskList.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_Internal_InternalTaskList.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InternalTaskList.InternalTaskList constructor" Url="M_Neon_Cadence_Internal_InternalTaskList__ctor.htm" />
+  <HelpKINode Title="InternalTaskList.Name property" Url="P_Neon_Cadence_Internal_InternalTaskList_Name.htm" />
+  <HelpKINode Title="InternalTaskList.TaskListKind property" Url="P_Neon_Cadence_Internal_InternalTaskList_TaskListKind.htm" />
+  <HelpKINode Title="InternalTaskListKind enumeration" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
   <HelpKINode Title="Interval enumeration member" Url="T_Neon_Time_RecurringTimerType.htm" />
   <HelpKINode Title="Interval property">
     <HelpKINode Title="AsyncPeriodicTask.Interval Property " Url="P_Neon_Tasks_AsyncPeriodicTask_Interval.htm" />
@@ -5403,6 +5453,12 @@
   <HelpKINode Title="ITestFixture.OnRestart method" Url="M_Neon_Xunit_ITestFixture_OnRestart.htm" />
   <HelpKINode Title="ITestFixture.Reset method" Url="M_Neon_Xunit_ITestFixture_Reset.htm" />
   <HelpKINode Title="ITestFixture.Start method" Url="M_Neon_Xunit_ITestFixture_Start.htm" />
+  <HelpKINode Title="ITypedWorkflowStub interface">
+    <HelpKINode Title="ITypedWorkflowStub Interface" Url="T_Neon_Cadence_Internal_ITypedWorkflowStub.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_Internal_ITypedWorkflowStub.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITypedWorkflowStub.GetExecution method" Url="M_Neon_Cadence_Internal_ITypedWorkflowStub_GetExecution.htm" />
+  <HelpKINode Title="ITypedWorkflowStub.ToUntyped method" Url="M_Neon_Cadence_Internal_ITypedWorkflowStub_ToUntyped.htm" />
   <HelpKINode Title="IUCLC enumeration member" Url="T_Renci_SshNet_Common_TerminalModes.htm" />
   <HelpKINode Title="IUTF8 enumeration member" Url="T_Renci_SshNet_Common_TerminalModes.htm" />
   <HelpKINode Title="IV field" Url="F_Renci_SshNet_Security_Cryptography_Ciphers_CipherMode_IV.htm" />
@@ -5422,8 +5478,8 @@
     <HelpKINode Title="methods" Url="Methods_T_Neon_Net_JsonClient.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Neon_Net_JsonClient.htm" />
   </HelpKINode>
-  <HelpKINode Title="jsonClient property" Url="P_Neon_Xunit_Couchbase_CouchbaseFixture_jsonClient.htm" />
   <HelpKINode Title="JsonClient property" Url="P_Neon_Xunit_AspNetFixture_JsonClient.htm" />
+  <HelpKINode Title="jsonClient property" Url="P_Neon_Xunit_Couchbase_CouchbaseFixture_jsonClient.htm" />
   <HelpKINode Title="JsonClient.BaseAddress property" Url="P_Neon_Net_JsonClient_BaseAddress.htm" />
   <HelpKINode Title="JsonClient.DefaultRequestHeaders property" Url="P_Neon_Net_JsonClient_DefaultRequestHeaders.htm" />
   <HelpKINode Title="JsonClient.DeleteAsync method" Url="Overload_Neon_Net_JsonClient_DeleteAsync.htm" />
@@ -5474,8 +5530,8 @@
   <HelpKINode Title="JsonExtensions class">
     <HelpKINode Title="JsonExtensions Class" Url="T_Newtonsoft_Json_Linq_JsonExtensions.htm" />
     <HelpKINode Title="JsonExtensions Class" Url="T_Neon_Data_JsonExtensions.htm" />
-    <HelpKINode Title="methods" Url="Methods_T_Neon_Data_JsonExtensions.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Newtonsoft_Json_Linq_JsonExtensions.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Data_JsonExtensions.htm" />
   </HelpKINode>
   <HelpKINode Title="JsonExtensions.CopyTo method" Url="M_Neon_Data_JsonExtensions_CopyTo.htm" />
   <HelpKINode Title="JsonExtensions.TryGetValue(Of T) method" Url="M_Newtonsoft_Json_Linq_JsonExtensions_TryGetValue__1.htm" />
@@ -6201,6 +6257,7 @@
   <HelpKINode Title="LanguagesClientToServer property" Url="P_Renci_SshNet_Messages_Transport_KeyExchangeInitMessage_LanguagesClientToServer.htm" />
   <HelpKINode Title="LanguagesServerToClient property" Url="P_Renci_SshNet_Messages_Transport_KeyExchangeInitMessage_LanguagesServerToClient.htm" />
   <HelpKINode Title="LastAccessTime property">
+    <HelpKINode Title="InternalPollerInfo.LastAccessTime Property " Url="P_Neon_Cadence_Internal_InternalPollerInfo_LastAccessTime.htm" />
     <HelpKINode Title="PollerInfo.LastAccessTime Property " Url="P_Neon_Cadence_PollerInfo_LastAccessTime.htm" />
     <HelpKINode Title="SftpFile.LastAccessTime Property " Url="P_Renci_SshNet_Sftp_SftpFile_LastAccessTime.htm" />
     <HelpKINode Title="SftpFileAttributes.LastAccessTime Property " Url="P_Renci_SshNet_Sftp_SftpFileAttributes_LastAccessTime.htm" />
@@ -6924,6 +6981,7 @@
     <HelpKINode Title="HypervisorHost.Name Property " Url="P_Neon_Kube_HypervisorHost_Name.htm" />
     <HelpKINode Title="IKeyExchange.Name Property " Url="P_Renci_SshNet_Security_IKeyExchange_Name.htm" />
     <HelpKINode Title="Ingress.Name Property " Url="P_Neon_Kube_Ingress_Name.htm" />
+    <HelpKINode Title="InternalTaskList.Name Property " Url="P_Neon_Cadence_Internal_InternalTaskList_Name.htm" />
     <HelpKINode Title="IXenClient.Name Property " Url="P_Neon_Kube_IXenClient_Name.htm" />
     <HelpKINode Title="KeyboardInteractiveAuthenticationMethod.Name Property " Url="P_Renci_SshNet_KeyboardInteractiveAuthenticationMethod_Name.htm" />
     <HelpKINode Title="KubeConfigCluster.Name Property " Url="P_Neon_Kube_KubeConfigCluster_Name.htm" />
@@ -7075,6 +7133,15 @@
   <HelpKINode Title="Neon.Cadence.ExternalWorkflowStub class" Url="T_Neon_Cadence_ExternalWorkflowStub.htm" />
   <HelpKINode Title="Neon.Cadence.IActivity interface" Url="T_Neon_Cadence_IActivity.htm" />
   <HelpKINode Title="Neon.Cadence.IDataConverter interface" Url="T_Neon_Cadence_IDataConverter.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal namespace" Url="N_Neon_Cadence_Internal.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.CadenceErrorTypes enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.CadenceHelper class" Url="T_Neon_Cadence_Internal_CadenceHelper.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.ChildExecution class" Url="T_Neon_Cadence_Internal_ChildExecution.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.InternaChildClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.InternalPollerInfo class" Url="T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.InternalTaskList class" Url="T_Neon_Cadence_Internal_InternalTaskList.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.InternalTaskListKind enumeration" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.ITypedWorkflowStub interface" Url="T_Neon_Cadence_Internal_ITypedWorkflowStub.htm" />
   <HelpKINode Title="Neon.Cadence.InternalServiceException class" Url="T_Neon_Cadence_InternalServiceException.htm" />
   <HelpKINode Title="Neon.Cadence.IWorkflow interface" Url="T_Neon_Cadence_IWorkflow.htm" />
   <HelpKINode Title="Neon.Cadence.JsonDataConverter class" Url="T_Neon_Cadence_JsonDataConverter.htm" />
@@ -8326,6 +8393,7 @@
   <HelpKINode Title="NoRetryPolicy.NoRetryPolicy constructor" Url="M_Neon_Retry_NoRetryPolicy__ctor.htm" />
   <HelpKINode Title="NoRetryPolicy.Timeout property" Url="P_Neon_Retry_NoRetryPolicy_Timeout.htm" />
   <HelpKINode Title="Normal enumeration member" Url="T_Neon_Cadence_TaskListKind.htm" />
+  <HelpKINode Title="NORMAL enumeration member" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
   <HelpKINode Title="Normalize method">
     <HelpKINode Title="ChildWorkflowOptions.Normalize Method " Url="M_Neon_Cadence_ChildWorkflowOptions_Normalize.htm" />
     <HelpKINode Title="NetworkCidr.Normalize Method " Url="M_Neon_Net_NetworkCidr_Normalize.htm" />
@@ -8530,6 +8598,7 @@
     <HelpKINode Title="PKCS5Padding.Pad Method " Url="Overload_Renci_SshNet_Security_Cryptography_Ciphers_Paddings_PKCS5Padding_Pad.htm" />
     <HelpKINode Title="PKCS7Padding.Pad Method " Url="Overload_Renci_SshNet_Security_Cryptography_Ciphers_Paddings_PKCS7Padding_Pad.htm" />
   </HelpKINode>
+  <HelpKINode Title="Panic enumeration member" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
   <HelpKINode Title="Panic method" Url="M_Neon_Cadence_NonRetriableErrors_Panic.htm" />
   <HelpKINode Title="Param field" Url="F_Neon_Common_Stub_Param.htm" />
   <HelpKINode Title="PARENB enumeration member" Url="T_Renci_SshNet_Common_TerminalModes.htm" />
@@ -9126,7 +9195,10 @@
   <HelpKINode Title="RandomExtensions.NextIndex method" Url="M_System_RandomExtensions_NextIndex.htm" />
   <HelpKINode Title="RandomExtensions.RandomTimespan method" Url="Overload_System_RandomExtensions_RandomTimespan.htm" />
   <HelpKINode Title="RandomTimespan method" Url="Overload_System_RandomExtensions_RandomTimespan.htm" />
-  <HelpKINode Title="RatePerSecond property" Url="P_Neon_Cadence_PollerInfo_RatePerSecond.htm" />
+  <HelpKINode Title="RatePerSecond property">
+    <HelpKINode Title="InternalPollerInfo.RatePerSecond Property " Url="P_Neon_Cadence_Internal_InternalPollerInfo_RatePerSecond.htm" />
+    <HelpKINode Title="PollerInfo.RatePerSecond Property " Url="P_Neon_Cadence_PollerInfo_RatePerSecond.htm" />
+  </HelpKINode>
   <HelpKINode Title="RawBlockArray property" Url="P_Neon_IO_BlockStream_RawBlockArray.htm" />
   <HelpKINode Title="RawResults property">
     <HelpKINode Title="AnsiblePlayResults.RawResults Property " Url="P_Neon_Xunit_AnsiblePlayResults_RawResults.htm" />
@@ -9609,6 +9681,7 @@
     <HelpKINode Title="HttpException.RequestUri Property " Url="P_Neon_Net_HttpException_RequestUri.htm" />
     <HelpKINode Title="JsonResponse.RequestUri Property " Url="P_Neon_Net_JsonResponse_RequestUri.htm" />
   </HelpKINode>
+  <HelpKINode Title="REQUEST_CANCEL enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="Requires method" Url="Overload_System_Diagnostics_Contracts_Covenant_Requires.htm" />
   <HelpKINode Title="RequiresAdminPrivileges property">
     <HelpKINode Title="HostingManager.RequiresAdminPrivileges Property " Url="P_Neon_Kube_HostingManager_RequiresAdminPrivileges.htm" />
@@ -11356,6 +11429,7 @@
   <HelpKINode Title="StepCount property" Url="P_Neon_Kube_SetupController_1_StepCount.htm" />
   <HelpKINode Title="StepStaggerSeconds property" Url="P_Neon_Kube_SetupOptions_StepStaggerSeconds.htm" />
   <HelpKINode Title="Sticky enumeration member" Url="T_Neon_Cadence_TaskListKind.htm" />
+  <HelpKINode Title="STICKY enumeration member" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
   <HelpKINode Title="StickyScheduleToStartTimeout property" Url="P_Neon_Cadence_WorkerOptions_StickyScheduleToStartTimeout.htm" />
   <HelpKINode Title="Stop method">
     <HelpKINode Title="ForwardedPort.Stop Method " Url="M_Renci_SshNet_ForwardedPort_Stop.htm" />
@@ -11606,7 +11680,10 @@
   <HelpKINode Title="TaskListDescription.Pollers property" Url="P_Neon_Cadence_TaskListDescription_Pollers.htm" />
   <HelpKINode Title="TaskListDescription.TaskListDescription constructor" Url="M_Neon_Cadence_TaskListDescription__ctor.htm" />
   <HelpKINode Title="TaskListKind enumeration" Url="T_Neon_Cadence_TaskListKind.htm" />
-  <HelpKINode Title="TaskListKind property" Url="P_Neon_Cadence_WorkflowConfig_TaskListKind.htm" />
+  <HelpKINode Title="TaskListKind property">
+    <HelpKINode Title="InternalTaskList.TaskListKind Property " Url="P_Neon_Cadence_Internal_InternalTaskList_TaskListKind.htm" />
+    <HelpKINode Title="WorkflowConfig.TaskListKind Property " Url="P_Neon_Cadence_WorkflowConfig_TaskListKind.htm" />
+  </HelpKINode>
   <HelpKINode Title="TaskListType enumeration" Url="T_Neon_Cadence_TaskListType.htm" />
   <HelpKINode Title="TaskName property" Url="P_Neon_Xunit_AnsibleTaskResult_TaskName.htm" />
   <HelpKINode Title="TaskResults property" Url="P_Neon_Xunit_AnsiblePlayResults_TaskResults.htm" />
@@ -11662,8 +11739,10 @@
   <HelpKINode Title="TenantId property" Url="P_Neon_Kube_AzureOptions_TenantId.htm" />
   <HelpKINode Title="TeraBytes field" Url="F_Neon_Common_ByteUnits_TeraBytes.htm" />
   <HelpKINode Title="TerminalModes enumeration" Url="T_Renci_SshNet_Common_TerminalModes.htm" />
+  <HelpKINode Title="TERMINATE enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="Terminate enumeration member" Url="T_Neon_Cadence_ParentClosePolicy.htm" />
   <HelpKINode Title="Terminated enumeration member">
+    <HelpKINode Title="CadenceErrorTypes Enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
     <HelpKINode Title="KubeServiceStatus Enumeration" Url="T_Neon_Kube_Service_KubeServiceStatus.htm" />
     <HelpKINode Title="WorkflowExecutionCloseStatus Enumeration" Url="T_Neon_Cadence_WorkflowExecutionCloseStatus.htm" />
   </HelpKINode>
@@ -11822,6 +11901,7 @@
   <HelpKINode Title="TimeOfDay.ToString method" Url="M_Neon_Time_TimeOfDay_ToString.htm" />
   <HelpKINode Title="TimeOfDay.TryParse method" Url="M_Neon_Time_TimeOfDay_TryParse.htm" />
   <HelpKINode Title="TimeOffset property" Url="P_Neon_Time_RecurringTimer_TimeOffset.htm" />
+  <HelpKINode Title="Timeout enumeration member" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
   <HelpKINode Title="Timeout property">
     <HelpKINode Title="ConnectionInfo.Timeout Property " Url="P_Renci_SshNet_ConnectionInfo_Timeout.htm" />
     <HelpKINode Title="IRetryPolicy.Timeout Property " Url="P_Neon_Retry_IRetryPolicy_Timeout.htm" />
@@ -11947,6 +12027,7 @@
   <HelpKINode Title="TooManyConnections enumeration member" Url="T_Renci_SshNet_Messages_Transport_DisconnectReason.htm" />
   <HelpKINode Title="ToPiString method" Url="M_Neon_Common_ByteUnits_ToPiString.htm" />
   <HelpKINode Title="ToPString method" Url="M_Neon_Common_ByteUnits_ToPString.htm" />
+  <HelpKINode Title="ToPublic method" Url="M_Neon_Cadence_Internal_InternalPollerInfo_ToPublic.htm" />
   <HelpKINode Title="ToSimpleString method">
     <HelpKINode Title="DateTimeJsonConverter.ToSimpleString Method " Url="M_Neon_Data_DateTimeJsonConverter_ToSimpleString.htm" />
     <HelpKINode Title="DateTimeOffsetJsonConverter.ToSimpleString Method " Url="M_Neon_Data_DateTimeOffsetJsonConverter_ToSimpleString.htm" />
@@ -11992,6 +12073,7 @@
   <HelpKINode Title="Touch method" Url="Overload_Couchbase_NeonBucket_Touch.htm" />
   <HelpKINode Title="TouchAsync method" Url="Overload_Couchbase_NeonBucket_TouchAsync.htm" />
   <HelpKINode Title="TouchSafeAsync method" Url="Overload_Couchbase_CouchbaseExtensions_TouchSafeAsync.htm" />
+  <HelpKINode Title="ToUntyped method" Url="M_Neon_Cadence_Internal_ITypedWorkflowStub_ToUntyped.htm" />
   <HelpKINode Title="ToX509 method" Url="M_Neon_Cryptography_TlsCertificate_ToX509.htm" />
   <HelpKINode Title="Transform method" Url="M_Renci_SshNet_IRemotePathTransformation_Transform.htm" />
   <HelpKINode Title="TransientDetector class">
