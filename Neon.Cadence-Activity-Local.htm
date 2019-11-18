@@ -1,0 +1,63 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Local Activities</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Cadence-Activity-Local" /><meta name="Description" content="Cadence supports local activities which can be more convienent to use. Local activities don't need to be registered like normal activities and they are always executed on the same machine as the calling workflow so they may be somewhat more performant." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="5a2f1b06-c0d2-4e7b-82b8-39c0ae16321a">Neon.Cadence</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Activity-Basics.htm" title="Activity details" tocid="a88f8b30-5c93-4b4b-ac44-6a6bb1b6f0d9">Activity details</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Activity-Basics.htm" title="Basics" tocid="6ed1f1f9-cfde-40ed-81d9-e8bfe259f925">Basics</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Activity-Local.htm" title="Local Activities" tocid="58aa9345-7eb8-4087-9648-6775bc1352e9">Local Activities</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Local Activities</h1></td></tr></table><span class="introStyle"></span> <div id="ID1RBSection" class="collapsibleSection"><p>
+          Cadence supports <strong>local activities</strong> which can be more convienent to use.
+          Local activities don't need to be registered like normal activities and they are always executed
+          on the same machine as the calling workflow so they may be somewhat more performant.
+        </p><p>
+          Here's an example of a workflow executing a local activity:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[ActivityInterface]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMyActivity : IActivity
+{
+    [ActivityMethod]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name);
+}
+
+[Activity]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyActivity : ActivityBase, IMyActivity
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name)
+    {
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult($<span class="highlight-literal">"Hello {name}!"</span>);
+    }
+}
+
+[WorkflowInterface(TaskList = <span class="highlight-literal">"my-tasks"</span>)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMyWorkflow : IWorkflow
+{
+    [WorkflowMethod]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; RunAsync();
+}
+
+[Workflow(AutoRegister = <span class="highlight-keyword">true</span>)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyWorkflow : WorkflowBase, IMyWorkflow
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; RunAsync()
+    {
+        <span class="highlight-keyword">var</span> stub = Workflow.NewLocalActivityStub&lt;IMyActivity, MyActivity&gt;();
+
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> stub.HelloAsync(<span class="highlight-literal">"Jeff"</span>);
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADABAAA");</script><p>
+          First, notice that we didn't specify a task list in the <span class="code">[ActivityInterface]</span>
+          attribute this time.   This is no necessary for local activities because these always run on on the
+          same machine as the workflow.  Next, notice that we're using 
+          <a href="M_Neon_Cadence_Workflow_NewActivityStub__1.htm">NewActivityStub<span id="LST89D66CD_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST89D66CD_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TActivityInterface<span id="LST89D66CD_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST89D66CD_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script></a>
+          to create the local activity stub, specifying the activity interface as well as the implementation
+          class.  The workflow can then call the local action stub just like it could for normal activities.
+        </p><p>
+          Local activities work almost the same as normal ones, the only real difference is that heartbeats and
+          checkpoints don't work for local activities because Cadence is tracking these differently than normal
+          activities.
+        </p><p>
+          It's very common for most of your activities to executed locally, especially for activities that are
+          really just internal workflow related operations.
+        </p></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

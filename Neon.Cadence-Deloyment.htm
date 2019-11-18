@@ -1,0 +1,46 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Deployment</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Cadence-Deloyment" /><meta name="Description" content="A Cadence deployment is composed of three components: one or more Cadence service servers, one or more Cassandra noSQL database servers (or MySQL), and machines running your worker services." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="5a2f1b06-c0d2-4e7b-82b8-39c0ae16321a">Neon.Cadence</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Overview.htm" title="Overview" tocid="b4a13879-cf87-43e2-8b6e-a122d8809d7a">Overview</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Glossary.htm" title="Glossary" tocid="c169d35c-2fe4-439d-a7f8-298f39e252be">Glossary</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Deloyment.htm" title="Deployment" tocid="e7611458-d70d-458a-9dfe-09bd8811ec11">Deployment</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-GettingStarted-BasicWorkflow.htm" title="Getting started" tocid="b136abb1-2b1a-481d-ae33-4a3f3c8844ce">Getting started</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Workflow-CodingRules.htm" title="Workflow details" tocid="4753b4d2-994e-429c-aad3-0b9d9e45c0fb">Workflow details</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Activity-Basics.htm" title="Activity details" tocid="a88f8b30-5c93-4b4b-ac44-6a6bb1b6f0d9">Activity details</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Logging.htm" title="Logging" tocid="907cf0a2-3f54-4c9f-a93f-3e54f5e2f806">Logging</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="62735281-ac6d-4ddb-944a-8a4bb70fb180.htm" title="Java client differences" tocid="62735281-ac6d-4ddb-944a-8a4bb70fb180">Java client differences</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Deployment</h1></td></tr></table><span class="introStyle"></span> <div id="ID0RBSection" class="collapsibleSection"><p>
+          A Cadence deployment is composed of three components: one or more Cadence service servers, one or more Cassandra noSQL 
+          database servers (or MySQL), and machines running your worker services.
+        </p><div class="tableSection"><table><tr><td><p><strong>Cadence service</strong></p></td><td><p>
+                is resonsible for persisting workflow state to the database as well as scheduling
+                workflows and activities on specific worker service instances.
+              </p></td></tr><tr><td><p><strong>Cassandra</strong></p></td><td><p>
+                is responsible for reliably storing workflow and activity state.
+              </p></td></tr><tr><td><p><strong>Worker Service</strong></p></td><td><p>
+                hosts your workflow and activity code.  With <strong>Neon.Cadence</strong>, you
+                can code your workflows in any supported .NET language.  You'll typically deploy
+                your workflow service as a console application that connects to a Cadence cluster via a
+                <a href="T_Neon_Cadence_CadenceClient.htm">CadenceClient</a>,
+                registers one or more workflows and/or activities, informs Cadence that the service
+                is ready, and then waits for Cadence to assign workflows and activities for execution.
+              </p></td></tr></table></div><p>
+          A most simple Cadence solution deployment will have a single Cadence server, a Cassandra
+          database node, and a worker service instance:
+        </p><div class="mediaNear"><div class="caption" /><img alt="deployment-simple" src="media/deployment-simple.png" /></div><p>
+          Cadence can be scaled horizontally by adding more Cassandra, Cadence, and Workflow Service machines.
+          You can do this manually with bare metal hardware, using clusters of virtual machines, or 
+          machanisms provided by public cloud providers like AWS, Azure and Google or deploying on platforms
+          like Kubernetes.  Cadence is agnostic to all of this though.  It just needs servers to run on
+          and expects worker service instances to connect over the network via a compatible client.
+        </p><div class="mediaNear"><div class="caption" /><img alt="deployment-scaled" src="media/deployment-scaled.png" /></div><p>
+          Cadence supports multi-tenancy by allowing workflow and activity implementations to isolated
+          into multiple domains.  Domains are simply a name that can be used to separate workflows much
+          like namespaces can be used to separate pods running in a Kubernetes cluster.  It's common
+          to deploy a Cadence cluster that defines domains for different teams running workflows on the
+          cluster and even for individual users.  Cadence can support thousands of domains.
+        </p><div class="mediaNear"><div class="caption" /><img alt="deployment-multi-tenant" src="media/deployment-multi-tenant.png" /></div><p>
+          The diagram above depicts three Cadence domains, each with its own set of worker services 
+          processing workflows and activities.  In these situations, it's common for a central team
+          to manage the Cadence/Cassandra servers with each tenant team managing their own servers
+          hosting their workflow services.
+        </p></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>
