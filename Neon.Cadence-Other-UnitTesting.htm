@@ -1,0 +1,122 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Unit testing</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Cadence-Other-UnitTesting" /><meta name="Description" content="The Uber Java and Go Cadence clients provide powerful mechanisms for unit testing your workflows and activities. These clients have can emulate Cadence server in-process. The .NET client is not at this level yet but we plans on getting there in the future." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="bd213d37-fbe8-4c49-843f-067841bfa887">Neon.Cadence</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Other-Logging.htm" title="Other Topics" tocid="5870036b-1bd8-4d08-b6f8-ab565726046e">Other Topics</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Other-Logging.htm" title="Logging" tocid="907cf0a2-3f54-4c9f-a93f-3e54f5e2f806">Logging</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Other-Serialization.htm" title="Data serialization" tocid="41335d55-fbda-49f1-9187-fffeafb41352">Data serialization</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Other-UnitTesting.htm" title="Unit testing" tocid="824a3ec2-5cc2-4fe8-94c1-1038ffbdc5e2">Unit testing</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Interop.htm" title="Interop" tocid="47f856e1-c10b-4c33-bbca-a02cd79aec9d">Interop</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="62735281-ac6d-4ddb-944a-8a4bb70fb180.htm" title="Java differences" tocid="62735281-ac6d-4ddb-944a-8a4bb70fb180">Java differences</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Unit testing</h1></td></tr></table><span class="introStyle"></span> <div id="ID1RBSection" class="collapsibleSection"><p>
+          The Uber Java and Go Cadence clients provide powerful mechanisms for unit testing
+          your workflows and activities.  These clients have can emulate Cadence server in-process.
+          The .NET client is not at this level yet but we plans on getting there in the future.
+        </p><p>
+          In the meantime, the <strong>Neon.Xunit.Cadence</strong> nuget package provides
+          the <a href="T_Neon_Xunit_Cadence_CadenceFixture.htm">CadenceFixture</a>
+          for use by tests authored for the popular Xunit test framework.  This fixture spins up
+          <a href="https://hub.docker.com/repository/docker/nkubeio/cadence-dev" target="_blank">nkubeio/cadence-dev</a>
+          as a Docker container on the local machine.  This combines Cadence server and UX with
+          a Cassandra database node into a single managable entity that starts out in a pristine
+          state.
+        </p><p>
+          This is pretty easy to use.  Create an Xunit test project and reference the 
+          <strong>Neon.Common</strong>, <strong>Neon.Cadence</strong>,
+          <strong>Neon.Xunit</strong>, and <strong>Neon.Xunit.Cadence</strong>
+          nuget packages.  Then code your tests to look something like:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> System;
+<span class="highlight-keyword">using</span> System.Collections.Generic;
+<span class="highlight-keyword">using</span> System.Net.Mail;
+<span class="highlight-keyword">using</span> System.Reflection;
+<span class="highlight-keyword">using</span> System.Threading.Tasks;
+
+<span class="highlight-keyword">using</span> Neon.Cadence;
+<span class="highlight-keyword">using</span> Neon.Common;
+<span class="highlight-keyword">using</span> Neon.Diagnostics;
+<span class="highlight-keyword">using</span> Neon.Xunit;
+<span class="highlight-keyword">using</span> Neon.Xunit.Cadence;
+
+<span class="highlight-keyword">using</span> Xunit;
+
+<span class="highlight-keyword">namespace</span> MyTests
+{
+    [WorkflowInterface(TaskList = <span class="highlight-literal">"test-tasks"</span>)]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IHelloWorkflow : IWorkflow
+    {
+        [WorkflowMethod]
+        Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name);
+    }
+
+    [Workflow(AutoRegister = <span class="highlight-keyword">true</span>)]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> HelloWorkflow : WorkflowBase, IHelloWorkflow
+    {
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name)
+        {
+            <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult($<span class="highlight-literal">"Hello {name}!"</span>);
+        }
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> CadenceTests : IClassFixture&lt;CadenceFixture&gt;
+    {
+        <span class="highlight-keyword">private</span> CadenceFixture  fixture;
+        <span class="highlight-keyword">private</span> CadenceClient   client;
+
+        <span class="highlight-keyword">public</span> CadenceTests(CadenceFixture fixture)
+        {
+            <span class="highlight-keyword">var</span> settings = <span class="highlight-keyword">new</span> CadenceSettings()
+            {
+                DefaultDomain = <span class="highlight-literal">"test-domain"</span>,
+                LogLevel      = LogLevel.Info,
+                CreateDomain  = <span class="highlight-keyword">true</span>            <span class="highlight-comment">// &lt;-- this ensures that the default domain exists</span>
+            };
+
+            <span class="highlight-comment">// This starts/restarts the [nforgeio/cadence-dev] container for the first test</span>
+            <span class="highlight-comment">// run in this class.  Subsequent tests run from the class will use the existing</span>
+            <span class="highlight-comment">// container instance, saving time by not having to wait for Cadence and Cassandra</span>
+            <span class="highlight-comment">// to spin up and be ready for business.</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">// The [keepOpen=true] parameter tells the fixture to let the container continue running</span>
+            <span class="highlight-comment">// after all of the tests have completed.  This is useful for examining workflow histories</span>
+            <span class="highlight-comment">// via the Cadence UX after the tests have completed.  You can view the Cadence portal at</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">//      http://localhost:8088</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">// You can pass [keepOpen=false] to have the fixture remove the container after the</span>
+            <span class="highlight-comment">// test run if you wish.</span>
+
+            <span class="highlight-keyword">if</span> (fixture.Start(settings, keepConnection: <span class="highlight-keyword">true</span>, keepOpen: <span class="highlight-keyword">true</span>) == TestFixtureStatus.Started)
+            {
+                <span class="highlight-comment">// Register the test workflow and activity implementations</span>
+                <span class="highlight-comment">// from this assembly and start the worker.</span>
+
+                client.RegisterAssemblyAsync(Assembly.GetExecutingAssembly()).Wait();
+                client.StartWorkerAsync(<span class="highlight-literal">"test-tasks"</span>).Wait();
+            }
+
+            <span class="highlight-keyword">this</span>.fixture = fixture;
+            <span class="highlight-keyword">this</span>.client  = fixture.Client;
+        }
+
+        [Fact]
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task HelloWorld()
+        {
+            <span class="highlight-keyword">var</span> stub   = client.NewWorkflowStub&lt;IHelloWorkflow&gt;();
+            <span class="highlight-keyword">var</span> result = <span class="highlight-keyword">await</span> stub.HelloAsync(<span class="highlight-literal">"Jeff"</span>);
+
+            Assert.Equal(<span class="highlight-literal">"Hello Jeff!"</span>, result);
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACABAAA");</script><p>
+          This example defines a simple workflow interface and implementation along with an Xunit
+          test class.  The interesting part happens in the constructor.  Essentially what's happening
+          here is that Xunit and the <a href="T_Neon_Xunit_Cadence_CadenceFixture.htm">CadenceFixture</a>
+          are coordinating such that the <strong>nkubeio/cadence-dev</strong> container is
+          started or restarted for the first test executed and then is reused for subsequent tests
+          defined by the class.
+        </p><p>
+          This scheme let's you test the happy path where everything works as expected.  What's missing
+          is a way to test how your workflows react when the unexpected happens, like verifying that the
+          workflow is deterministic when it's replayed from history or how it reacts in the face of
+          timeouts or other errors.
+        </p></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2019 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>
