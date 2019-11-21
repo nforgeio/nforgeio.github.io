@@ -11,12 +11,18 @@
 The Neon class libraries organizes classes in several namespaces.  Most classes are defined in <b>Neon.*</b> namespaces but we do define some extension methods within non-Neon namespaces so they'll for convienence.
 </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Namespaces</span></div><div id="ID0RBSection" class="collapsibleSection"><table id="namespaceList" class="members"><tr><th>Namespace</th><th>Description</th></tr><tr><td><a href="N_Couchbase.htm">Couchbase</a></td><td /></tr><tr><td><a href="N_ICSharpCode_SharpZipLib_Zip.htm">ICSharpCode.SharpZipLib.Zip</a></td><td /></tr><tr><td><a href="N_Microsoft_Net_Http_Client.htm">Microsoft.Net.Http.Client</a></td><td /></tr><tr><td><a href="N_NATS_Client.htm">NATS.Client</a></td><td><div class="summary">
             This namespace extends the standard NATS messaging types.
-            </div></td></tr><tr><td><a href="N_Neon.htm">Neon</a></td><td /></tr><tr><td><a href="N_Neon_Cadence.htm">Neon.Cadence</a></td><td /></tr><tr><td><a href="N_Neon_Cadence_Internal.htm">Neon.Cadence.Internal</a></td><td /></tr><tr><td><a href="N_Neon_Collections.htm">Neon.Collections</a></td><td><div class="summary">
+            </div></td></tr><tr><td><a href="N_Neon.htm">Neon</a></td><td /></tr><tr><td><a href="N_Neon_Cadence.htm">Neon.Cadence</a></td><td><div class="summary">
+            This namespace defines the Neon .NET client for the Uber Cadence workflow service.
+            </div></td></tr><tr><td><a href="N_Neon_Cadence_Internal.htm">Neon.Cadence.Internal</a></td><td /></tr><tr><td><a href="N_Neon_Collections.htm">Neon.Collections</a></td><td><div class="summary">
             This namespace defines a handful of probably archaic custom collection classes.
             </div></td></tr><tr><td><a href="N_Neon_Common.htm">Neon.Common</a></td><td><div class="summary">
             This namespace includes a a lot of types used by the remaining class libraries. 
             You might find some of these useful as well.
-            </div></td></tr><tr><td><a href="N_Neon_Cryptography.htm">Neon.Cryptography</a></td><td /></tr><tr><td><a href="N_Neon_Csv.htm">Neon.Csv</a></td><td><div class="summary">
+            </div></td></tr><tr><td><a href="N_Neon_Cryptography.htm">Neon.Cryptography</a></td><td><div class="summary">
+            This namespace Includes some cryptographic helper methods and extensuions making operations like
+            MD5 or SHA-* hashing easier as well as the <b>NeonVault</b> class which can be used to persist 
+            encrypted data (inspired by Ansible Vault).
+            </div></td></tr><tr><td><a href="N_Neon_Csv.htm">Neon.Csv</a></td><td><div class="summary">
             This namespace includes types for reading and writing Comma Separated Value (CSV) formatted data.
             </div></td></tr><tr><td><a href="N_Neon_Data.htm">Neon.Data</a></td><td><div class="summary">
             This namespace defines some data converters as well as types and interfaces supporting ModelGen generated data types.
@@ -26,7 +32,12 @@ The Neon class libraries organizes classes in several namespaces.  Most classes 
             This namespace includes some handy file and stream related types.
             </div></td></tr><tr><td><a href="N_Neon_Kube.htm">Neon.Kube</a></td><td><div class="summary">
             This namespace includes neonKUBE Kubernetes distribution related types.
-            </div></td></tr><tr><td><a href="N_Neon_Kube_Service.htm">Neon.Kube.Service</a></td><td /></tr><tr><td><a href="N_Neon_ModelGen.htm">Neon.ModelGen</a></td><td><div class="summary">
+            </div></td></tr><tr><td><a href="N_Neon_Kube_Service.htm">Neon.Kube.Service</a></td><td><div class="summary">
+            This namespace includes types that implement much of the boilerplate code for a service 
+            application suitable for deploying as a Docker container, a Kubernetes pod, or just a 
+            stand alone service.  This namespace is probably misnamed because it can be used completely 
+            independently from the <b>Neon.Kube</b> package.
+            </div></td></tr><tr><td><a href="N_Neon_ModelGen.htm">Neon.ModelGen</a></td><td><div class="summary">
             This namespace includes the types used to generate data models from interface definitions. 
             These models can be built to support round-tripping data without loss as well as optionally
             adding <a href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged" target="_blank">INotifyPropertyChanged</a> related code for UX binding.
