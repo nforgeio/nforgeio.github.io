@@ -1,0 +1,141 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Synchronous Signals</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Cadence-Workflow-SyncSignals" /><meta name="Description" content="Ideally, you'd like your workflows to manage all of the logic for a given operation including reacting to external events. Cadence currently provides two ways for doing this: external activities and signals." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Overview.htm" title="Neon.Cadence" tocid="65b19f89-3afe-4947-adfd-dc78e5d7f6b9">Neon.Cadence</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Cadence-Workflow-CodingRules.htm" title="Workflow details" tocid="eac2b8e9-891d-44ca-95ad-14549a7ce4b7">Workflow details</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-CodingRules.htm" title="Coding Rules" tocid="47a2af19-5f1f-4c5f-853e-88d9bc439d5f">Coding Rules</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-IDsExecutions.htm" title="IDs &amp; Executions" tocid="03749f45-4d19-4f65-8aeb-6e24162efdf0">IDs &amp; Executions</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-Scheduling.htm" title="Timeouts" tocid="61af6a0e-5dff-420c-826e-007977c8ecb3">Timeouts</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-ChildWorkflows.htm" title="Child Workflows" tocid="cd6968a4-2e65-48fb-ad94-bb11e19d3b71">Child Workflows</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-GettingStarted-Parallel.htm" title="Parallel Operations" tocid="0cc6a07b-e6d4-4840-9e61-aa8026a26ad4">Parallel Operations</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-Options.htm" title="Options" tocid="28e276cd-ad5b-4194-928f-14d8a42a8958">Options</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-Queries.htm" title="Queries" tocid="9dad47bc-7aa4-4979-9a5b-c68d10b230a7">Queries</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-Queues.htm" title="Signals &amp; Queues" tocid="10a488d2-0ed5-4689-b558-35dcd318889b">Signals &amp; Queues</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-SyncSignals.htm" title="Synchronous Signals" tocid="4b5b88c8-3d86-442b-8015-9aef7f624df0">Synchronous Signals</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Activity-ContinueAsNew.htm" title="Continue as new" tocid="46fb345e-f0fa-4b5e-a67c-ae6f5800d4e9">Continue as new</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Cadence-Workflow-CRON.htm" title="CRON" tocid="5b5de994-c9ca-4c5b-bc8b-85b373d66822">CRON</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Synchronous Signals</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><strong>EXPERIMENTAL:</strong> This is an experimental feature.  Cadence server doesn't
+        currently have a synchronous way to interact with a running workflow, so the Neon Cadence client
+        emulates this behavior using a combination of internal signals and queries.  This will be obsoleted
+        and eventually replaced when Cadence supports this natively.
+      </td></tr></table></div><p>
+        Ideally, you'd like your workflows to manage all of the logic for a given operation including
+        reacting to external events.  Cadence currently provides two ways for doing this: external
+        activities and signals.
+      </p><p>
+        External activities are somewhat difficult configure and use and signals are nice, but they
+        have fire-and-forget semantics, so it's impossible for a signal to indicate to the caller
+        that the signal was processed by the workflow and optionally return a result providing more
+        information about how the workflow handled the signal.
+      </p><p>
+        For example, say you've implemented this order processing workflow:
+      </p><ol><li><p>
+            Customer submits an order to an ecommerce website.
+          </p></li><li><p>
+            The website starts a workflow to process the order.
+          </p></li><li><p>
+            The order workflow sends a packing list to the warehouse, where the order
+            will be packed and shipped.
+          </p></li><li><p>
+            Warehouse workers send a signal to the workflow via a mobile app after
+            the delivery company picks up the package.  This signal includes the
+            tracking ID.
+          </p></li><li><p>
+            The workflow queries the delivery company to obtain the package ETA
+            and then sends an email to the customer with the tracking information.
+          </p></li><li><p>
+            The workflow monitors the delivery status and sends another email to
+            the customer after the package is delivered.
+          </p></li></ol><p>
+        That's pretty straightforward, but imagine that customers are allowed to
+        cancel an order up until the the time when the order is packaged for delivery.
+        So, let's say the customer goes back to the website and cancels the order.  The website
+        could send a standard cancel signal to the workflow but since signals are fire-and-forget,
+        the website will not be able to determine whether the order was actually cancelled
+        or not.  There is no way for the workflow to return this status to the website.
+      </p><p>
+        A workaround would be to have the website query the order database to determine
+        whether it's still possible to cancel the order before sending the signal.
+        Another workaround would be to have the website query the database after
+        sending the signal, checking to see if the order status was changed
+        to cancel.
+      </p><p>
+        There are two problems with both of these approaches: you'll be sprinkling
+        order business logic outside of the workflow which will probably become a
+        maintainece nightmare over time and its very likely these approaches will
+        introduce hard to overcome race conditions.
+      </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Synchronous Signals</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
+          The <strong>Neon.Cadence</strong> package provides a reasonable solution to
+          problems like that outlined above by extending standard Cadence signals so that 
+          clients sending signals will wait for the signal to be procesed by the workflow
+          as well as optionally allowing signals to return a result.  This is accomplished
+          by specifying <span class="code">[SignalMethod(Synchronous=true)]</span> for 
+          signal method definitions in your workflow interfaces:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[WorkflowInterface]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> : IMyWorkflow : IWorkflow
+{
+    [WorkflowMethod()]
+    Task MainAsync();
+
+    [SignalMethod(<span class="highlight-literal">"standard-signal"</span>)]
+    Task SignalAsync(<span class="highlight-keyword">string</span> arg);
+
+    [SignalMethod(<span class="highlight-literal">"sync-signal-void"</span>, Synchronous = <span class="highlight-keyword">true</span>)]
+    Task SyncSignal1Async(<span class="highlight-keyword">string</span> arg);
+
+    [SignalMethod(<span class="highlight-literal">"sync-signal-with-result"</span>, Synchronous = <span class="highlight-keyword">true</span>)]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; SyncSignal2Async(<span class="highlight-keyword">string</span> arg);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACADAAA");</script><p>
+          This interface defines a workflow with a main workflow method, <span class="code">SignalAsyc()</span>
+          as a standard fire-and-forget signal, <span class="code">SyncSignal1Async()</span> which is a
+          synchronous signal that doesn't return a result and <span class="code">SyncSignal1Async()</span>,
+          a synchronous signal that does return a result.
+        </p><p>
+          The Neon Cadence client will include the synchronous signal methods the stubs generated
+          for the workflow and you can simply call these like you would a standard signal.  The 
+          difference is that the synchronous methods won't return until after the workflow has 
+          actually processed the signal.  Standard signals return immediately after the signal
+          has been submitted to Cadence and you'll never be sure when or even if the signal was 
+          actually received and processed by the workflow.
+        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Implementation Notes</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          Neon implements synchronous signals using a combination of standard Cadence signals and queries.
+          This works roughly like this:
+        </p><ol><li><p>
+              Your application calls a synchronous signal stub method.
+            </p></li><li><p>
+              The stub polls Cadence for a reasonable period of time to ensure that the
+              workflow actually running.
+            </p></li><li><p>
+              The stub sends a standard signal to an internal signal method implemented by
+              Neon.Cadence.  The signal is dispatched to your synchronous signal method
+              where your logic can do its thing and then ultimately returns.
+            </p></li><li><p>
+              Neon.Cadence maintains an internal table tracking each synchronous signal
+              received.  We track whether or not the your signal method has returned and
+              also persist any result there.
+            </p></li><li><p>
+              After the client stub has sent the internal signal in step 2, it begins 
+              polling the workflow for signal completion by sending queries to an
+              internal method.  This method returns the signal status from the internal
+              tracking table.  The stub will stop querying when it sees that the 
+              signal method has returned.  At this point, the stub will return to
+              the caller.
+            </p></li></ol><p>
+          This all is pretty clean, but there are some caveats:
+        </p><ul><li><p>
+              This is a <strong>Neon-only feature</strong>.  You can not use this to send
+              synchronous signals to workflows implemented in other lanmguages like Java or Go
+              (they don't support this).
+            </p></li><li><p>
+              By default synchronous signals will wait up to 60 seconds for the workflow
+              to process a synchronous signal and return.  This relies on your workflow
+              processing decision tasks promptly.  You can customize this timeout by 
+              assigning a custom retry policy to 
+              <a href="P_Neon_Cadence_CadenceClient_SyncSignalRetry.htm">SyncSignalRetry</a>.
+            </p></li><li><p>
+              Workflows that have seen synchronous signals will be delayed for a period
+              of time after returning to give the client stub a chance to query for any
+              pending signal results.  By default, the workflow will be delayed for a
+              maximum of <strong>30 seconds</strong>.  This means that when
+              a workflow will be held up for this long if the signalling client stops
+              (for some reason) before all signals have been acknowledged.
+            </p><p>
+              You can customize this timeout via <a href="P_Neon_Cadence_CadenceSettings_MaxWorkflowDelaySeconds.htm">MaxWorkflowDelaySeconds</a>.
+            </p></li><li><p>
+              This worflow delay will also add one sleep operation per second the workflow
+              is delayed to the history.  Typically, only a handful of these will be recorded.
+            </p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID3RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Cadence.htm">Neon.Cadence</a></div><div class="seeAlsoStyle"><span class="nolink">SignalInvocation</span></div><div class="seeAlsoStyle"><span class="nolink">SignalInvocation</span></div><div class="seeAlsoStyle"><a href="P_Neon_Cadence_SignalMethodAttribute_Synchronous.htm">Synchronous</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

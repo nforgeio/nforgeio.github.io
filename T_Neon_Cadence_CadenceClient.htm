@@ -32,7 +32,13 @@
             Returns the URI the associated <b>cadence-proxy</b> instance is listening on.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceClient_Settings.htm">Settings</a></td><td><div class="summary">
             Returns the settings used to create the client.
-            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Methods</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceClient_SyncSignalRetry.htm">SyncSignalRetry</a></td><td><div class="summary"><p>
+            Controls how synchronous signals operations are polled until the signal operation is
+            completed.  This defaults to something reasonable.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            The transient detector function specified by the policy passed is ignore and is
+            replaced by a function that considers all exceptions to be transient.
+            </td></tr></table></div></div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Methods</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_ActivityCancelByIdAsync.htm">ActivityCancelByIdAsync</a></td><td><div class="summary">
             Used to externally cancel an activity identified by <a href="T_Neon_Cadence_WorkflowExecution.htm">WorkflowExecution</a> and activity ID.
@@ -60,7 +66,7 @@
             Returns information about pollers (AKA workers) that have communicated 
             with the Cadence cluster in the last few minutes.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_DescribeWorkflowExecutionAsync.htm">DescribeWorkflowExecutionAsync</a></td><td><div class="summary">
-            Describes a workflow execution.
+            Describes a workflow execution by explicit IDs.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_Dispose.htm">Dispose<span id="LST9CEBF761_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST9CEBF761_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</div></td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Cadence_CadenceClient_Dispose_1.htm">Dispose(Boolean)</a></td><td><div class="summary">
             Releases all associated resources.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;static;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Neon_Cadence_CadenceClient_ExtractCadenceProxy.htm">ExtractCadenceProxy</a></td><td><div class="summary"><p>
@@ -143,9 +149,11 @@
             Signals Cadence that the application is capable of executing workflows and/or activities for a specific
             domain and task list.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_TerminateWorkflowAsync.htm">TerminateWorkflowAsync</a></td><td><div class="summary">
-            Terninates a workflow if it has not already finished.
+            Terminates a workflow if it has not already finished.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_UpdateDomainAsync.htm">UpdateDomainAsync</a></td><td><div class="summary">
             Updates the named Cadence domain.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_WaitUntilWorkflowRunningAsync.htm">WaitUntilWorkflowRunningAsync</a></td><td><div class="summary">
+            Waits for a resonable period of time for Cadence to start a workflow.
             </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Events</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="eventList"><tr><th class="iconColumn">
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubevent.gif" alt="Public event" title="Public event" /></td><td><a href="E_Neon_Cadence_CadenceClient_ConnectionClosed.htm">ConnectionClosed</a></td><td><div class="summary">
@@ -298,4 +306,4 @@
             and activities implemented by your application.  One common approach is to name the task list
             after the service or application that implements the workflow anbd activities.
             </p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Cadence.htm">Neon.Cadence Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
-Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2016-2020 by neonFORGE, LLC.  All rights reserved.</p> </div></body></html>
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p> </div></body></html>
