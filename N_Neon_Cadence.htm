@@ -129,6 +129,10 @@
             Implements <a href="T_Neon_Cadence_IDataConverter.htm">IDataConverter</a> by serializing data to/from
             UTF-8 encoded JSON text.
             </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            This converter uses the Newtonsoft <a href="https://www.newtonsoft.com/json">JSON.NET</a>
+            package so you can decorate your data types with attributes such as <span class="code">[JsonProperty]</span>,
+            <span class="code">[JsonIgnore]</span>,... to control how your data is serialized.
+            </td></tr></table></div><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
             This implementation also supports values that implement <a href="T_Neon_Data_IRoundtripData.htm">IRoundtripData</a> to make
             it easier to manage data schema changes. 
             </td></tr></table></div></div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Cadence_LimitExceededException.htm">LimitExceededException</a></td><td><div class="summary">
@@ -304,7 +308,7 @@
             (presumably arising from non-deterministic workflow definitions). 
             </div></td></tr><tr data="enumeration; public"><td><img src="icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_Neon_Cadence_ParentClosePolicy.htm">ParentClosePolicy</a></td><td><div class="summary">
             Enumerates the possible child workflow behaviors when the parent
-            workflow is terminated.
+            workflow is closed.
             </div></td></tr><tr data="enumeration; public"><td><img src="icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_Neon_Cadence_TaskListKind.htm">TaskListKind</a></td><td><div class="summary">
             Enumerates the different kinds of task lists.
             </div></td></tr><tr data="enumeration; public"><td><img src="icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_Neon_Cadence_TaskListType.htm">TaskListType</a></td><td><div class="summary">

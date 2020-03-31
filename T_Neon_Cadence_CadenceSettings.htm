@@ -66,10 +66,20 @@
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_ConnectRetryDelaySeconds.htm">ConnectRetryDelaySeconds</a></td><td><div class="summary">
             Specifies the number of seconds to delay between cluster connection attempts.
             This defaults to <b>5.0 seconds</b>.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_CreateDomain.htm">CreateDomain</a></td><td><div class="summary">
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_CreateDomain.htm">CreateDomain</a></td><td><div class="summary"><p>
             Optionally create the <a href="P_Neon_Cadence_CadenceSettings_DefaultDomain.htm">DefaultDomain</a> if it doesn't already exist.
             This defaults to <span class="code">false</span>.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_Debug.htm">Debug</a></td><td><div class="summary">
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            Enabling this can be handy for unit testing where you'll likely be starting
+            off with a virgin Cadence server when the test start.  We don't recommend
+            enabling this for production services.  For production, you should explicitly
+            create your domains with suitable setttings such has how long workflow histories
+            are to be retained.
+            </td></tr></table></div><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            If the default domain doesn't exist when <a href="P_Neon_Cadence_CadenceSettings_CreateDomain.htm">CreateDomain</a><span class="code">=true</span> when a
+            connection is established, it will be initialized to retain workflow histories for
+            up to <b>7 days</b>.
+            </td></tr></table></div></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_Debug.htm">Debug</a></td><td><div class="summary">
             Optionally specifies that the connection should run in DEBUG mode.  This currently
             launches the <b>cadence-proxy</b> with a command window (on Windows only) to make 
             it easy to see any output it generates and also has <b>cadence-proxy</b>.  This
@@ -127,7 +137,7 @@
             the workflow method returns to handle any oustanding synchronous signal queries.  This defaults
             to <b>30.0 seconds</b>.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_MaxWorkflowWaitUntilRunningSeconds.htm">MaxWorkflowWaitUntilRunningSeconds</a></td><td><div class="summary">
-            The default maximum time the <a href="M_Neon_Cadence_CadenceClient_WaitUntilWorkflowRunningAsync.htm">WaitUntilWorkflowRunningAsync(WorkflowExecution, String, Nullable<span id="LST3244F771_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST3244F771_5?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TimeSpan<span id="LST3244F771_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST3244F771_6?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> method
+            The default maximum time the <a href="M_Neon_Cadence_CadenceClient_WaitForWorkflowStartAsync.htm">WaitForWorkflowStartAsync(WorkflowExecution, String, Nullable<span id="LST3244F771_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST3244F771_5?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TimeSpan<span id="LST3244F771_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST3244F771_6?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> method
             will wait for a workflow to start.  This defaults to <b>30.0 seconds</b>.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_ProxyTimeoutSeconds.htm">ProxyTimeoutSeconds</a></td><td><div class="summary">
             Optionally specifies the maximum time to allow the <b>cadence-proxy</b>

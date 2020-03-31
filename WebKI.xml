@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="AAA field" Url="F_Neon_Net_NetworkPorts_AAA.htm" />
-  <HelpKINode Title="ABANDON enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="Abandon enumeration member" Url="T_Neon_Cadence_ParentClosePolicy.htm" />
+  <HelpKINode Title="ABANDON enumeration member" Url="T_Neon_Cadence_Internal_InternalParentClosePolicy.htm" />
   <HelpKINode Title="Abs method" Url="M_Renci_SshNet_Common_BigInteger_Abs.htm" />
   <HelpKINode Title="AccessDeniedException class">
     <HelpKINode Title="AccessDeniedException Class" Url="T_Neon_Cadence_AccessDeniedException.htm" />
@@ -84,12 +84,12 @@
   </HelpKINode>
   <HelpKINode Title="ActivityHeartbeatTimeoutException.ActivityHeartbeatTimeoutException constructor" Url="M_Neon_Cadence_ActivityHeartbeatTimeoutException__ctor.htm" />
   <HelpKINode Title="ActivityHeartbeatTimeoutSeconds property" Url="P_Neon_Cadence_CadenceSettings_ActivityHeartbeatTimeoutSeconds.htm" />
+  <HelpKINode Title="ActivityID property" Url="P_Neon_Cadence_PendingActivityInfo_ActivityID.htm" />
   <HelpKINode Title="ActivityId property">
+    <HelpKINode Title="ActivityTask.ActivityId Property " Url="P_Neon_Cadence_ActivityTask_ActivityId.htm" />
     <HelpKINode Title="NeonController.ActivityId Property " Url="P_Neon_Web_NeonController_ActivityId.htm" />
     <HelpKINode Title="NeonControllerBase.ActivityId Property " Url="P_Neon_Web_NeonControllerBase_ActivityId.htm" />
-    <HelpKINode Title="ActivityTask.ActivityId Property " Url="P_Neon_Cadence_ActivityTask_ActivityId.htm" />
   </HelpKINode>
-  <HelpKINode Title="ActivityID property" Url="P_Neon_Cadence_PendingActivityInfo_ActivityID.htm" />
   <HelpKINode Title="ActivityInterfaceAttribute class">
     <HelpKINode Title="ActivityInterfaceAttribute Class" Url="T_Neon_Cadence_ActivityInterfaceAttribute.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_ActivityInterfaceAttribute__ctor.htm" />
@@ -226,11 +226,11 @@
   <HelpKINode Title="AesCipher class">
     <HelpKINode Title="AesCipher Class" Url="T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
     <HelpKINode Title="AesCipher Class" Url="T_Neon_Cryptography_AesCipher.htm" />
-    <HelpKINode Title="constructor" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher__ctor.htm" />
     <HelpKINode Title="constructor" Url="Overload_Neon_Cryptography_AesCipher__ctor.htm" />
+    <HelpKINode Title="constructor" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher__ctor.htm" />
     <HelpKINode Title="fields" Url="Fields_T_Neon_Cryptography_AesCipher.htm" />
-    <HelpKINode Title="methods" Url="Methods_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Cryptography_AesCipher.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cryptography_AesCipher.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Renci_SshNet_Security_Cryptography_Ciphers_AesCipher.htm" />
   </HelpKINode>
@@ -1195,6 +1195,7 @@
   <HelpKINode Title="CadenceClient.ConnectAsync method" Url="M_Neon_Cadence_CadenceClient_ConnectAsync.htm" />
   <HelpKINode Title="CadenceClient.ConnectionClosed event" Url="E_Neon_Cadence_CadenceClient_ConnectionClosed.htm" />
   <HelpKINode Title="CadenceClient.DataConverter property" Url="P_Neon_Cadence_CadenceClient_DataConverter.htm" />
+  <HelpKINode Title="CadenceClient.DebugLog method" Url="M_Neon_Cadence_CadenceClient_DebugLog.htm" />
   <HelpKINode Title="CadenceClient.DescribeDomainAsync method" Url="M_Neon_Cadence_CadenceClient_DescribeDomainAsync.htm" />
   <HelpKINode Title="CadenceClient.DescribeDomainByIdAsync method" Url="M_Neon_Cadence_CadenceClient_DescribeDomainByIdAsync.htm" />
   <HelpKINode Title="CadenceClient.DescribeTaskListAsync method" Url="M_Neon_Cadence_CadenceClient_DescribeTaskListAsync.htm" />
@@ -1225,7 +1226,7 @@
   <HelpKINode Title="CadenceClient.SyncSignalRetry property" Url="P_Neon_Cadence_CadenceClient_SyncSignalRetry.htm" />
   <HelpKINode Title="CadenceClient.TerminateWorkflowAsync method" Url="M_Neon_Cadence_CadenceClient_TerminateWorkflowAsync.htm" />
   <HelpKINode Title="CadenceClient.UpdateDomainAsync method" Url="M_Neon_Cadence_CadenceClient_UpdateDomainAsync.htm" />
-  <HelpKINode Title="CadenceClient.WaitUntilWorkflowRunningAsync method" Url="M_Neon_Cadence_CadenceClient_WaitUntilWorkflowRunningAsync.htm" />
+  <HelpKINode Title="CadenceClient.WaitForWorkflowStartAsync method" Url="M_Neon_Cadence_CadenceClient_WaitForWorkflowStartAsync.htm" />
   <HelpKINode Title="CadenceClientClosedArgs class">
     <HelpKINode Title="CadenceClientClosedArgs Class" Url="T_Neon_Cadence_CadenceClientClosedArgs.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_CadenceClientClosedArgs__ctor.htm" />
@@ -1428,6 +1429,15 @@
   <HelpKINode Title="CastCipher.CastCipher constructor" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_CastCipher__ctor.htm" />
   <HelpKINode Title="CastCipher.DecryptBlock method" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_CastCipher_DecryptBlock.htm" />
   <HelpKINode Title="CastCipher.EncryptBlock method" Url="M_Renci_SshNet_Security_Cryptography_Ciphers_CastCipher_EncryptBlock.htm" />
+  <HelpKINode Title="CatchAllException class">
+    <HelpKINode Title="CatchAllException Class" Url="T_Neon_Common_CatchAllException.htm" />
+    <HelpKINode Title="constructor" Url="Overload_Neon_Common_CatchAllException__ctor.htm" />
+    <HelpKINode Title="events" Url="Events_T_Neon_Common_CatchAllException.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Common_CatchAllException.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Common_CatchAllException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CatchAllException.CatchAllException constructor" Url="Overload_Neon_Common_CatchAllException__ctor.htm" />
+  <HelpKINode Title="CatchAllException.ExceptionType property" Url="P_Neon_Common_CatchAllException_ExceptionType.htm" />
   <HelpKINode Title="CategoryTrait field" Url="F_Neon_Xunit_TestCategory_CategoryTrait.htm" />
   <HelpKINode Title="CbcCipherMode class">
     <HelpKINode Title="CbcCipherMode Class" Url="T_Renci_SshNet_Security_Cryptography_Ciphers_Modes_CbcCipherMode.htm" />
@@ -2418,7 +2428,10 @@
   <HelpKINode Title="CouchbaseExtensions.GetAndTouchDocumentSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetAndTouchDocumentSafeAsync__1.htm" />
   <HelpKINode Title="CouchbaseExtensions.GetAndTouchSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetAndTouchSafeAsync__1.htm" />
   <HelpKINode Title="CouchbaseExtensions.GetAndTouchSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetAndTouchSafeAsync__1.htm" />
-  <HelpKINode Title="CouchbaseExtensions.GetDocumentSafeAsync method" Url="Overload_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync.htm" />
+  <HelpKINode Title="CouchbaseExtensions.GetDocumentSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync__1.htm" />
+  <HelpKINode Title="CouchbaseExtensions.GetDocumentSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync__1.htm" />
+  <HelpKINode Title="CouchbaseExtensions.GetDocumentsSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentsSafeAsync__1.htm" />
+  <HelpKINode Title="CouchbaseExtensions.GetDocumentsSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentsSafeAsync__1.htm" />
   <HelpKINode Title="CouchbaseExtensions.GetFromReplicaSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetFromReplicaSafeAsync__1.htm" />
   <HelpKINode Title="CouchbaseExtensions.GetFromReplicaSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetFromReplicaSafeAsync__1.htm" />
   <HelpKINode Title="CouchbaseExtensions.GetIndexAsync method" Url="M_Couchbase_CouchbaseExtensions_GetIndexAsync.htm" />
@@ -2805,7 +2818,10 @@
   <HelpKINode Title="DebugHttpTimeout property" Url="P_Neon_Cadence_CadenceSettings_DebugHttpTimeout.htm" />
   <HelpKINode Title="DebugIgnoreHeartbeats property" Url="P_Neon_Cadence_CadenceSettings_DebugIgnoreHeartbeats.htm" />
   <HelpKINode Title="DebugIgnoreTimeouts property" Url="P_Neon_Cadence_CadenceSettings_DebugIgnoreTimeouts.htm" />
-  <HelpKINode Title="DebugLog method" Url="M_Neon_Cadence_Internal_CadenceHelper_DebugLog.htm" />
+  <HelpKINode Title="DebugLog method">
+    <HelpKINode Title="CadenceClient.DebugLog Method " Url="M_Neon_Cadence_CadenceClient_DebugLog.htm" />
+    <HelpKINode Title="CadenceHelper.DebugLog Method " Url="M_Neon_Cadence_Internal_CadenceHelper_DebugLog.htm" />
+  </HelpKINode>
   <HelpKINode Title="DebugMessage class">
     <HelpKINode Title="DebugMessage Class" Url="T_Renci_SshNet_Messages_Transport_DebugMessage.htm" />
     <HelpKINode Title="constructor" Url="M_Renci_SshNet_Messages_Transport_DebugMessage__ctor.htm" />
@@ -3619,7 +3635,38 @@
   <HelpKINode Title="ExceptionExtensions.Contains(Of T) method" Url="M_System_ExceptionExtensions_Contains__1.htm" />
   <HelpKINode Title="ExceptionExtensions.Contains&lt;T&gt; method" Url="M_System_ExceptionExtensions_Contains__1.htm" />
   <HelpKINode Title="ExceptionExtensions.Find method" Url="Overload_System_ExceptionExtensions_Find.htm" />
+  <HelpKINode Title="ExceptionMessage property" Url="P_Neon_Common_ExceptionResult_ExceptionMessage.htm" />
   <HelpKINode Title="ExceptionName property" Url="P_Neon_Cadence_SyncSignalException_ExceptionName.htm" />
+  <HelpKINode Title="ExceptionResult class">
+    <HelpKINode Title="ExceptionResult Class" Url="T_Neon_Common_ExceptionResult.htm" />
+    <HelpKINode Title="constructor" Url="Overload_Neon_Common_ExceptionResult__ctor.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Common_ExceptionResult.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Common_ExceptionResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExceptionResult(Of TResult) class">
+    <HelpKINode Title="ExceptionResult(TResult) Class" Url="T_Neon_Common_ExceptionResult_1.htm" />
+    <HelpKINode Title="constructor" Url="M_Neon_Common_ExceptionResult_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Common_ExceptionResult_1.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Common_ExceptionResult_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExceptionResult(Of TResult).ExceptionResult constructor" Url="M_Neon_Common_ExceptionResult_1__ctor.htm" />
+  <HelpKINode Title="ExceptionResult(Of TResult).Result property" Url="P_Neon_Common_ExceptionResult_1_Result.htm" />
+  <HelpKINode Title="ExceptionResult.ExceptionMessage property" Url="P_Neon_Common_ExceptionResult_ExceptionMessage.htm" />
+  <HelpKINode Title="ExceptionResult.ExceptionResult constructor" Url="Overload_Neon_Common_ExceptionResult__ctor.htm" />
+  <HelpKINode Title="ExceptionResult.ExceptionType property" Url="P_Neon_Common_ExceptionResult_ExceptionType.htm" />
+  <HelpKINode Title="ExceptionResult.ThrowOnError method" Url="M_Neon_Common_ExceptionResult_ThrowOnError.htm" />
+  <HelpKINode Title="ExceptionResult&lt;TResult&gt; class">
+    <HelpKINode Title="ExceptionResult(TResult) Class" Url="T_Neon_Common_ExceptionResult_1.htm" />
+    <HelpKINode Title="constructor" Url="M_Neon_Common_ExceptionResult_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="Methods_T_Neon_Common_ExceptionResult_1.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Common_ExceptionResult_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExceptionResult&lt;TResult&gt;.ExceptionResult constructor" Url="M_Neon_Common_ExceptionResult_1__ctor.htm" />
+  <HelpKINode Title="ExceptionResult&lt;TResult&gt;.Result property" Url="P_Neon_Common_ExceptionResult_1_Result.htm" />
+  <HelpKINode Title="ExceptionType property">
+    <HelpKINode Title="CatchAllException.ExceptionType Property " Url="P_Neon_Common_CatchAllException_ExceptionType.htm" />
+    <HelpKINode Title="ExceptionResult.ExceptionType Property " Url="P_Neon_Common_ExceptionResult_ExceptionType.htm" />
+  </HelpKINode>
   <HelpKINode Title="ExchangeHash property">
     <HelpKINode Title="IKeyExchange.ExchangeHash Property " Url="P_Renci_SshNet_Security_IKeyExchange_ExchangeHash.htm" />
     <HelpKINode Title="KeyExchange.ExchangeHash Property " Url="P_Renci_SshNet_Security_KeyExchange_ExchangeHash.htm" />
@@ -4161,8 +4208,11 @@
   <HelpKINode Title="GetDocumentAsync method" Url="Overload_Couchbase_NeonBucket_GetDocumentAsync.htm" />
   <HelpKINode Title="GetDocumentFromReplica method" Url="Overload_Couchbase_NeonBucket_GetDocumentFromReplica.htm" />
   <HelpKINode Title="GetDocumentFromReplicaAsync method" Url="Overload_Couchbase_NeonBucket_GetDocumentFromReplicaAsync.htm" />
-  <HelpKINode Title="GetDocumentSafeAsync method" Url="Overload_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync.htm" />
+  <HelpKINode Title="GetDocumentSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync__1.htm" />
+  <HelpKINode Title="GetDocumentSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentSafeAsync__1.htm" />
   <HelpKINode Title="GetDocumentsAsync method" Url="Overload_Couchbase_NeonBucket_GetDocumentsAsync.htm" />
+  <HelpKINode Title="GetDocumentsSafeAsync(Of T) method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentsSafeAsync__1.htm" />
+  <HelpKINode Title="GetDocumentsSafeAsync&lt;T&gt; method" Url="M_Couchbase_CouchbaseExtensions_GetDocumentsSafeAsync__1.htm" />
   <HelpKINode Title="GetEnhancedJsonConverters method" Url="M_Neon_Common_NeonHelper_GetEnhancedJsonConverters.htm" />
   <HelpKINode Title="GetEntityKey method" Url="Overload_Neon_Data_EntityHelper_GetEntityKey.htm" />
   <HelpKINode Title="GetEntityProperties(Of TEntity) method" Url="M_Neon_Data_EntityHelper_GetEntityProperties__1.htm" />
@@ -4901,16 +4951,16 @@
   <HelpKINode Title="ICSharpCode.SharpZipLib.Zip namespace" Url="N_ICSharpCode_SharpZipLib_Zip.htm" />
   <HelpKINode Title="ICSharpCode.SharpZipLib.Zip.StaticBytesDataSource class" Url="T_ICSharpCode_SharpZipLib_Zip_StaticBytesDataSource.htm" />
   <HelpKINode Title="ICSharpCode.SharpZipLib.Zip.StaticStringDataSource class" Url="T_ICSharpCode_SharpZipLib_Zip_StaticStringDataSource.htm" />
-  <HelpKINode Title="ID property">
-    <HelpKINode Title="DockerFixture.ContainerInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ContainerInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.NetworkInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_NetworkInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.ConfigInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ConfigInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.SecretInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_SecretInfo_ID.htm" />
-    <HelpKINode Title="DockerFixture.ServiceInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ServiceInfo_ID.htm" />
-  </HelpKINode>
   <HelpKINode Title="Id property">
     <HelpKINode Title="AuthenticationPrompt.Id Property " Url="P_Renci_SshNet_Common_AuthenticationPrompt_Id.htm" />
     <HelpKINode Title="LogActivity.Id Property " Url="P_Neon_Diagnostics_LogActivity_Id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ID property">
+    <HelpKINode Title="DockerFixture.ConfigInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ConfigInfo_ID.htm" />
+    <HelpKINode Title="DockerFixture.ContainerInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ContainerInfo_ID.htm" />
+    <HelpKINode Title="DockerFixture.NetworkInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_NetworkInfo_ID.htm" />
+    <HelpKINode Title="DockerFixture.SecretInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_SecretInfo_ID.htm" />
+    <HelpKINode Title="DockerFixture.ServiceInfo.ID Property " Url="P_Neon_Xunit_DockerFixture_ServiceInfo_ID.htm" />
   </HelpKINode>
   <HelpKINode Title="IDataConverter interface">
     <HelpKINode Title="IDataConverter Interface" Url="T_Neon_Cadence_IDataConverter.htm" />
@@ -5054,6 +5104,7 @@
   <HelpKINode Title="INeonLogger.IsLogLevelEnabled method" Url="M_Neon_Diagnostics_INeonLogger_IsLogLevelEnabled.htm" />
   <HelpKINode Title="INeonLogger.IsLogSErrorEnabled property" Url="P_Neon_Diagnostics_INeonLogger_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="INeonLogger.IsLogSInfoEnabled property" Url="P_Neon_Diagnostics_INeonLogger_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="INeonLogger.IsLogTransientEnabled property" Url="P_Neon_Diagnostics_INeonLogger_IsLogTransientEnabled.htm" />
   <HelpKINode Title="INeonLogger.IsLogWarnEnabled property" Url="P_Neon_Diagnostics_INeonLogger_IsLogWarnEnabled.htm" />
   <HelpKINode Title="INeonLogger.LogCritical method" Url="Overload_Neon_Diagnostics_INeonLogger_LogCritical.htm" />
   <HelpKINode Title="INeonLogger.LogDebug method" Url="Overload_Neon_Diagnostics_INeonLogger_LogDebug.htm" />
@@ -5061,6 +5112,7 @@
   <HelpKINode Title="INeonLogger.LogInfo method" Url="Overload_Neon_Diagnostics_INeonLogger_LogInfo.htm" />
   <HelpKINode Title="INeonLogger.LogSError method" Url="Overload_Neon_Diagnostics_INeonLogger_LogSError.htm" />
   <HelpKINode Title="INeonLogger.LogSInfo method" Url="Overload_Neon_Diagnostics_INeonLogger_LogSInfo.htm" />
+  <HelpKINode Title="INeonLogger.LogTransient method" Url="Overload_Neon_Diagnostics_INeonLogger_LogTransient.htm" />
   <HelpKINode Title="INeonLogger.LogWarn method" Url="Overload_Neon_Diagnostics_INeonLogger_LogWarn.htm" />
   <HelpKINode Title="Inequality operator">
     <HelpKINode Title="BigInteger.Inequality Operator " Url="Overload_Renci_SshNet_Common_BigInteger_op_Inequality.htm" />
@@ -5092,6 +5144,8 @@
   <HelpKINode Title="Ingress.NodePort property" Url="P_Neon_Kube_Ingress_NodePort.htm" />
   <HelpKINode Title="Ingress.Port property" Url="P_Neon_Kube_Ingress_Port.htm" />
   <HelpKINode Title="Ingress.TargetPort property" Url="P_Neon_Kube_Ingress_TargetPort.htm" />
+  <HelpKINode Title="Inherits(Of TBase) method" Url="M_System_ReflectionExtensions_Inherits__1.htm" />
+  <HelpKINode Title="Inherits&lt;TBase&gt; method" Url="M_System_ReflectionExtensions_Inherits__1.htm" />
   <HelpKINode Title="Init method">
     <HelpKINode Title="Compressor.Init Method " Url="M_Renci_SshNet_Compression_Compressor_Init.htm" />
     <HelpKINode Title="ZlibOpenSsh.Init Method " Url="M_Renci_SshNet_Compression_ZlibOpenSsh_Init.htm" />
@@ -5123,17 +5177,18 @@
   <HelpKINode Title="InstallKubeCtl method" Url="M_Neon_Kube_KubeHelper_InstallKubeCtl.htm" />
   <HelpKINode Title="Instance property">
     <HelpKINode Title="ByteEncoding.Instance Property " Url="P_Neon_Common_ByteEncoding_Instance.htm" />
+    <HelpKINode Title="JsonDataConverter.Instance Property " Url="P_Neon_Cadence_JsonDataConverter_Instance.htm" />
     <HelpKINode Title="NoRetryPolicy.Instance Property " Url="P_Neon_Retry_NoRetryPolicy_Instance.htm" />
   </HelpKINode>
   <HelpKINode Title="Instruction property" Url="P_Renci_SshNet_Common_AuthenticationPromptEventArgs_Instruction.htm" />
   <HelpKINode Title="Int16 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_1.htm" />
   <HelpKINode Title="Int32 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_2.htm" />
   <HelpKINode Title="Int64 to BigInteger conversion" Url="M_Renci_SshNet_Common_BigInteger_op_Implicit_3.htm" />
-  <HelpKINode Title="InternaChildClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="InternalActivityId property">
     <HelpKINode Title="NeonController.InternalActivityId Property " Url="P_Neon_Web_NeonController_InternalActivityId.htm" />
     <HelpKINode Title="NeonControllerBase.InternalActivityId Property " Url="P_Neon_Web_NeonControllerBase_InternalActivityId.htm" />
   </HelpKINode>
+  <HelpKINode Title="InternalParentClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternalParentClosePolicy.htm" />
   <HelpKINode Title="InternalPollerInfo class">
     <HelpKINode Title="InternalPollerInfo Class" Url="T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_Internal_InternalPollerInfo__ctor.htm" />
@@ -5363,6 +5418,14 @@
     <HelpKINode Title="NeonLogger.IsLogSInfoEnabled Property " Url="P_Neon_Diagnostics_NeonLogger_IsLogSInfoEnabled.htm" />
     <HelpKINode Title="NeonLoggerShim.IsLogSInfoEnabled Property " Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogSInfoEnabled.htm" />
   </HelpKINode>
+  <HelpKINode Title="IsLogTransientEnabled property">
+    <HelpKINode Title="INeonLogger.IsLogTransientEnabled Property " Url="P_Neon_Diagnostics_INeonLogger_IsLogTransientEnabled.htm" />
+    <HelpKINode Title="LogRecorder.IsLogTransientEnabled Property " Url="P_Neon_Diagnostics_LogRecorder_IsLogTransientEnabled.htm" />
+    <HelpKINode Title="NeonController.IsLogTransientEnabled Property " Url="P_Neon_Web_NeonController_IsLogTransientEnabled.htm" />
+    <HelpKINode Title="NeonControllerBase.IsLogTransientEnabled Property " Url="P_Neon_Web_NeonControllerBase_IsLogTransientEnabled.htm" />
+    <HelpKINode Title="NeonLogger.IsLogTransientEnabled Property " Url="P_Neon_Diagnostics_NeonLogger_IsLogTransientEnabled.htm" />
+    <HelpKINode Title="NeonLoggerShim.IsLogTransientEnabled Property " Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogTransientEnabled.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsLogWarnEnabled property">
     <HelpKINode Title="INeonLogger.IsLogWarnEnabled Property " Url="P_Neon_Diagnostics_INeonLogger_IsLogWarnEnabled.htm" />
     <HelpKINode Title="LogRecorder.IsLogWarnEnabled Property " Url="P_Neon_Diagnostics_LogRecorder_IsLogWarnEnabled.htm" />
@@ -5511,8 +5574,8 @@
     <HelpKINode Title="methods" Url="Methods_T_Neon_Net_JsonClient.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Neon_Net_JsonClient.htm" />
   </HelpKINode>
-  <HelpKINode Title="JsonClient property" Url="P_Neon_Xunit_AspNetFixture_JsonClient.htm" />
   <HelpKINode Title="jsonClient property" Url="P_Neon_Xunit_Couchbase_CouchbaseFixture_jsonClient.htm" />
+  <HelpKINode Title="JsonClient property" Url="P_Neon_Xunit_AspNetFixture_JsonClient.htm" />
   <HelpKINode Title="JsonClient.BaseAddress property" Url="P_Neon_Net_JsonClient_BaseAddress.htm" />
   <HelpKINode Title="JsonClient.DefaultRequestHeaders property" Url="P_Neon_Net_JsonClient_DefaultRequestHeaders.htm" />
   <HelpKINode Title="JsonClient.DeleteAsync method" Url="Overload_Neon_Net_JsonClient_DeleteAsync.htm" />
@@ -5553,16 +5616,18 @@
     <HelpKINode Title="JsonDataConverter Class" Url="T_Neon_Cadence_JsonDataConverter.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_JsonDataConverter__ctor.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_JsonDataConverter.htm" />
+    <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_JsonDataConverter.htm" />
   </HelpKINode>
   <HelpKINode Title="JsonDataConverter.FromData method" Url="Overload_Neon_Cadence_JsonDataConverter_FromData.htm" />
   <HelpKINode Title="JsonDataConverter.FromDataArray method" Url="M_Neon_Cadence_JsonDataConverter_FromDataArray.htm" />
+  <HelpKINode Title="JsonDataConverter.Instance property" Url="P_Neon_Cadence_JsonDataConverter_Instance.htm" />
   <HelpKINode Title="JsonDataConverter.JsonDataConverter constructor" Url="M_Neon_Cadence_JsonDataConverter__ctor.htm" />
   <HelpKINode Title="JsonDataConverter.ToData method" Url="M_Neon_Cadence_JsonDataConverter_ToData.htm" />
   <HelpKINode Title="JsonDeserialize method" Url="Overload_Neon_Common_NeonHelper_JsonDeserialize.htm" />
   <HelpKINode Title="JsonEquals method" Url="M_Neon_Common_NeonHelper_JsonEquals.htm" />
   <HelpKINode Title="JsonExtensions class">
-    <HelpKINode Title="JsonExtensions Class" Url="T_Neon_Data_JsonExtensions.htm" />
     <HelpKINode Title="JsonExtensions Class" Url="T_Newtonsoft_Json_Linq_JsonExtensions.htm" />
+    <HelpKINode Title="JsonExtensions Class" Url="T_Neon_Data_JsonExtensions.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Data_JsonExtensions.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Newtonsoft_Json_Linq_JsonExtensions.htm" />
   </HelpKINode>
@@ -6147,7 +6212,8 @@
   <HelpKINode Title="KubeService.SetConfigFile method" Url="Overload_Neon_Kube_Service_KubeService_SetConfigFile.htm" />
   <HelpKINode Title="KubeService.SetConfigFilePath method" Url="M_Neon_Kube_Service_KubeService_SetConfigFilePath.htm" />
   <HelpKINode Title="KubeService.SetEnvironmentVariable method" Url="M_Neon_Kube_Service_KubeService_SetEnvironmentVariable.htm" />
-  <HelpKINode Title="KubeService.SetRunning method" Url="M_Neon_Kube_Service_KubeService_SetRunning.htm" />
+  <HelpKINode Title="KubeService.SetRunningAsync method" Url="M_Neon_Kube_Service_KubeService_SetRunningAsync.htm" />
+  <HelpKINode Title="KubeService.SetStatusAsync method" Url="M_Neon_Kube_Service_KubeService_SetStatusAsync.htm" />
   <HelpKINode Title="KubeService.Status property" Url="P_Neon_Kube_Service_KubeService_Status.htm" />
   <HelpKINode Title="KubeService.Stop method" Url="M_Neon_Kube_Service_KubeService_Stop.htm" />
   <HelpKINode Title="KubeService.Terminator property" Url="P_Neon_Kube_Service_KubeService_Terminator.htm" />
@@ -6576,6 +6642,7 @@
   <HelpKINode Title="LogExtensions.LogDebug method" Url="Overload_Neon_Diagnostics_LogExtensions_LogDebug.htm" />
   <HelpKINode Title="LogExtensions.LogError method" Url="Overload_Neon_Diagnostics_LogExtensions_LogError.htm" />
   <HelpKINode Title="LogExtensions.LogInfo method" Url="Overload_Neon_Diagnostics_LogExtensions_LogInfo.htm" />
+  <HelpKINode Title="LogExtensions.LogTransient method" Url="Overload_Neon_Diagnostics_LogExtensions_LogTransient.htm" />
   <HelpKINode Title="LogExtensions.LogWarn method" Url="Overload_Neon_Diagnostics_LogExtensions_LogWarn.htm" />
   <HelpKINode Title="LogFlush method" Url="M_Neon_Kube_SshProxy_1_LogFlush.htm" />
   <HelpKINode Title="LogFolder property" Url="P_Neon_Kube_KubeHelper_LogFolder.htm" />
@@ -6638,6 +6705,7 @@
   <HelpKINode Title="LogRecorder.IsLogLevelEnabled method" Url="M_Neon_Diagnostics_LogRecorder_IsLogLevelEnabled.htm" />
   <HelpKINode Title="LogRecorder.IsLogSErrorEnabled property" Url="P_Neon_Diagnostics_LogRecorder_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="LogRecorder.IsLogSInfoEnabled property" Url="P_Neon_Diagnostics_LogRecorder_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="LogRecorder.IsLogTransientEnabled property" Url="P_Neon_Diagnostics_LogRecorder_IsLogTransientEnabled.htm" />
   <HelpKINode Title="LogRecorder.IsLogWarnEnabled property" Url="P_Neon_Diagnostics_LogRecorder_IsLogWarnEnabled.htm" />
   <HelpKINode Title="LogRecorder.LogCritical method" Url="Overload_Neon_Diagnostics_LogRecorder_LogCritical.htm" />
   <HelpKINode Title="LogRecorder.LogDebug method" Url="Overload_Neon_Diagnostics_LogRecorder_LogDebug.htm" />
@@ -6646,6 +6714,7 @@
   <HelpKINode Title="LogRecorder.LogRecorder constructor" Url="M_Neon_Diagnostics_LogRecorder__ctor.htm" />
   <HelpKINode Title="LogRecorder.LogSError method" Url="Overload_Neon_Diagnostics_LogRecorder_LogSError.htm" />
   <HelpKINode Title="LogRecorder.LogSInfo method" Url="Overload_Neon_Diagnostics_LogRecorder_LogSInfo.htm" />
+  <HelpKINode Title="LogRecorder.LogTransient method" Url="Overload_Neon_Diagnostics_LogRecorder_LogTransient.htm" />
   <HelpKINode Title="LogRecorder.LogWarn method" Url="Overload_Neon_Diagnostics_LogRecorder_LogWarn.htm" />
   <HelpKINode Title="LogRecorder.Record method" Url="M_Neon_Diagnostics_LogRecorder_Record.htm" />
   <HelpKINode Title="LogRecorder.ToString method" Url="M_Neon_Diagnostics_LogRecorder_ToString.htm" />
@@ -6667,6 +6736,13 @@
     <HelpKINode Title="NeonLoggerShim.LogSInfo Method " Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogSInfo.htm" />
   </HelpKINode>
   <HelpKINode Title="LogTransient method">
+    <HelpKINode Title="INeonLogger.LogTransient Method " Url="Overload_Neon_Diagnostics_INeonLogger_LogTransient.htm" />
+    <HelpKINode Title="LogExtensions.LogTransient Method " Url="Overload_Neon_Diagnostics_LogExtensions_LogTransient.htm" />
+    <HelpKINode Title="LogRecorder.LogTransient Method " Url="Overload_Neon_Diagnostics_LogRecorder_LogTransient.htm" />
+    <HelpKINode Title="NeonController.LogTransient Method " Url="Overload_Neon_Web_NeonController_LogTransient.htm" />
+    <HelpKINode Title="NeonControllerBase.LogTransient Method " Url="Overload_Neon_Web_NeonControllerBase_LogTransient.htm" />
+    <HelpKINode Title="NeonLogger.LogTransient Method " Url="Overload_Neon_Diagnostics_NeonLogger_LogTransient.htm" />
+    <HelpKINode Title="NeonLoggerShim.LogTransient Method " Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogTransient.htm" />
     <HelpKINode Title="RetryPolicy.LogTransient Method " Url="M_Neon_Retry_RetryPolicy_LogTransient.htm" />
     <HelpKINode Title="RetryPolicyBase.LogTransient Method " Url="M_Neon_Retry_RetryPolicyBase_LogTransient.htm" />
   </HelpKINode>
@@ -6934,6 +7010,7 @@
   <HelpKINode Title="ModelGeneratorSettings.TargetNamespace property" Url="P_Neon_ModelGen_ModelGeneratorSettings_TargetNamespace.htm" />
   <HelpKINode Title="ModelGeneratorSettings.Targets property" Url="P_Neon_ModelGen_ModelGeneratorSettings_Targets.htm" />
   <HelpKINode Title="ModelGeneratorSettings.UxFramework property" Url="P_Neon_ModelGen_ModelGeneratorSettings_UxFramework.htm" />
+  <HelpKINode Title="ModelGeneratorSettings.V1Compatible property" Url="P_Neon_ModelGen_ModelGeneratorSettings_V1Compatible.htm" />
   <HelpKINode Title="ModifyLocalHosts method" Url="M_Neon_Net_NetHelper_ModifyLocalHosts.htm" />
   <HelpKINode Title="ModInverse method" Url="M_Renci_SshNet_Common_BigInteger_ModInverse.htm" />
   <HelpKINode Title="ModPow method" Url="M_Renci_SshNet_Common_BigInteger_ModPow.htm" />
@@ -7184,7 +7261,7 @@
   <HelpKINode Title="Neon.Cadence.Internal.CadenceErrorTypes enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
   <HelpKINode Title="Neon.Cadence.Internal.CadenceHelper class" Url="T_Neon_Cadence_Internal_CadenceHelper.htm" />
   <HelpKINode Title="Neon.Cadence.Internal.ChildExecution class" Url="T_Neon_Cadence_Internal_ChildExecution.htm" />
-  <HelpKINode Title="Neon.Cadence.Internal.InternaChildClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
+  <HelpKINode Title="Neon.Cadence.Internal.InternalParentClosePolicy enumeration" Url="T_Neon_Cadence_Internal_InternalParentClosePolicy.htm" />
   <HelpKINode Title="Neon.Cadence.Internal.InternalPollerInfo class" Url="T_Neon_Cadence_Internal_InternalPollerInfo.htm" />
   <HelpKINode Title="Neon.Cadence.Internal.InternalTaskList class" Url="T_Neon_Cadence_Internal_InternalTaskList.htm" />
   <HelpKINode Title="Neon.Cadence.Internal.InternalTaskListKind enumeration" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
@@ -7261,6 +7338,7 @@
   <HelpKINode Title="Neon.Common.BlockArray class" Url="T_Neon_Common_BlockArray.htm" />
   <HelpKINode Title="Neon.Common.ByteEncoding class" Url="T_Neon_Common_ByteEncoding.htm" />
   <HelpKINode Title="Neon.Common.ByteUnits class" Url="T_Neon_Common_ByteUnits.htm" />
+  <HelpKINode Title="Neon.Common.CatchAllException class" Url="T_Neon_Common_CatchAllException.htm" />
   <HelpKINode Title="Neon.Common.CommandLine class" Url="T_Neon_Common_CommandLine.htm" />
   <HelpKINode Title="Neon.Common.CommandLine.OptionDefinition class" Url="T_Neon_Common_CommandLine_OptionDefinition.htm" />
   <HelpKINode Title="Neon.Common.Credentials class" Url="T_Neon_Common_Credentials.htm" />
@@ -7269,6 +7347,9 @@
   <HelpKINode Title="Neon.Common.EnvironmentParser.Parser&lt;T&gt; delegate" Url="T_Neon_Common_EnvironmentParser_Parser_1.htm" />
   <HelpKINode Title="Neon.Common.EnvironmentParser.Validator(Of T) delegate" Url="T_Neon_Common_EnvironmentParser_Validator_1.htm" />
   <HelpKINode Title="Neon.Common.EnvironmentParser.Validator&lt;T&gt; delegate" Url="T_Neon_Common_EnvironmentParser_Validator_1.htm" />
+  <HelpKINode Title="Neon.Common.ExceptionResult class" Url="T_Neon_Common_ExceptionResult.htm" />
+  <HelpKINode Title="Neon.Common.ExceptionResult(Of TResult) class" Url="T_Neon_Common_ExceptionResult_1.htm" />
+  <HelpKINode Title="Neon.Common.ExceptionResult&lt;TResult&gt; class" Url="T_Neon_Common_ExceptionResult_1.htm" />
   <HelpKINode Title="Neon.Common.ExecuteException class" Url="T_Neon_Common_ExecuteException.htm" />
   <HelpKINode Title="Neon.Common.ExecuteResponse class" Url="T_Neon_Common_ExecuteResponse.htm" />
   <HelpKINode Title="Neon.Common.GlobPattern class" Url="T_Neon_Common_GlobPattern.htm" />
@@ -7715,6 +7796,7 @@
   <HelpKINode Title="NeonController.IsLogLevelEnabled method" Url="M_Neon_Web_NeonController_IsLogLevelEnabled.htm" />
   <HelpKINode Title="NeonController.IsLogSErrorEnabled property" Url="P_Neon_Web_NeonController_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="NeonController.IsLogSInfoEnabled property" Url="P_Neon_Web_NeonController_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="NeonController.IsLogTransientEnabled property" Url="P_Neon_Web_NeonController_IsLogTransientEnabled.htm" />
   <HelpKINode Title="NeonController.IsLogWarnEnabled property" Url="P_Neon_Web_NeonController_IsLogWarnEnabled.htm" />
   <HelpKINode Title="NeonController.LogCritical method" Url="Overload_Neon_Web_NeonController_LogCritical.htm" />
   <HelpKINode Title="NeonController.LogDebug method" Url="Overload_Neon_Web_NeonController_LogDebug.htm" />
@@ -7722,10 +7804,12 @@
   <HelpKINode Title="NeonController.LogInfo method" Url="Overload_Neon_Web_NeonController_LogInfo.htm" />
   <HelpKINode Title="NeonController.LogSError method" Url="Overload_Neon_Web_NeonController_LogSError.htm" />
   <HelpKINode Title="NeonController.LogSInfo method" Url="Overload_Neon_Web_NeonController_LogSInfo.htm" />
+  <HelpKINode Title="NeonController.LogTransient method" Url="Overload_Neon_Web_NeonController_LogTransient.htm" />
   <HelpKINode Title="NeonController.LogWarn method" Url="Overload_Neon_Web_NeonController_LogWarn.htm" />
   <HelpKINode Title="NeonController.NeonController constructor" Url="M_Neon_Web_NeonController__ctor.htm" />
   <HelpKINode Title="NeonController.SError method" Url="Overload_Neon_Web_NeonController_SError.htm" />
   <HelpKINode Title="NeonController.SInfo method" Url="Overload_Neon_Web_NeonController_SInfo.htm" />
+  <HelpKINode Title="NeonController.Transient method" Url="Overload_Neon_Web_NeonController_Transient.htm" />
   <HelpKINode Title="NeonController.Warn method" Url="Overload_Neon_Web_NeonController_Warn.htm" />
   <HelpKINode Title="NeonControllerBase class">
     <HelpKINode Title="NeonControllerBase Class" Url="T_Neon_Web_NeonControllerBase.htm" />
@@ -7747,6 +7831,7 @@
   <HelpKINode Title="NeonControllerBase.IsLogLevelEnabled method" Url="M_Neon_Web_NeonControllerBase_IsLogLevelEnabled.htm" />
   <HelpKINode Title="NeonControllerBase.IsLogSErrorEnabled property" Url="P_Neon_Web_NeonControllerBase_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="NeonControllerBase.IsLogSInfoEnabled property" Url="P_Neon_Web_NeonControllerBase_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="NeonControllerBase.IsLogTransientEnabled property" Url="P_Neon_Web_NeonControllerBase_IsLogTransientEnabled.htm" />
   <HelpKINode Title="NeonControllerBase.IsLogWarnEnabled property" Url="P_Neon_Web_NeonControllerBase_IsLogWarnEnabled.htm" />
   <HelpKINode Title="NeonControllerBase.LogCritical method" Url="Overload_Neon_Web_NeonControllerBase_LogCritical.htm" />
   <HelpKINode Title="NeonControllerBase.LogDebug method" Url="Overload_Neon_Web_NeonControllerBase_LogDebug.htm" />
@@ -7754,10 +7839,12 @@
   <HelpKINode Title="NeonControllerBase.LogInfo method" Url="Overload_Neon_Web_NeonControllerBase_LogInfo.htm" />
   <HelpKINode Title="NeonControllerBase.LogSError method" Url="Overload_Neon_Web_NeonControllerBase_LogSError.htm" />
   <HelpKINode Title="NeonControllerBase.LogSInfo method" Url="Overload_Neon_Web_NeonControllerBase_LogSInfo.htm" />
+  <HelpKINode Title="NeonControllerBase.LogTransient method" Url="Overload_Neon_Web_NeonControllerBase_LogTransient.htm" />
   <HelpKINode Title="NeonControllerBase.LogWarn method" Url="Overload_Neon_Web_NeonControllerBase_LogWarn.htm" />
   <HelpKINode Title="NeonControllerBase.NeonControllerBase constructor" Url="M_Neon_Web_NeonControllerBase__ctor.htm" />
   <HelpKINode Title="NeonControllerBase.SError method" Url="Overload_Neon_Web_NeonControllerBase_SError.htm" />
   <HelpKINode Title="NeonControllerBase.SInfo method" Url="Overload_Neon_Web_NeonControllerBase_SInfo.htm" />
+  <HelpKINode Title="NeonControllerBase.Transient method" Url="Overload_Neon_Web_NeonControllerBase_Transient.htm" />
   <HelpKINode Title="NeonControllerBase.Warn method" Url="Overload_Neon_Web_NeonControllerBase_Warn.htm" />
   <HelpKINode Title="NeonCouchbase field" Url="F_Neon_Xunit_TestCategory_NeonCouchbase.htm" />
   <HelpKINode Title="NeonCryptography field" Url="F_Neon_Xunit_TestCategory_NeonCryptography.htm" />
@@ -7919,6 +8006,7 @@
   <HelpKINode Title="NeonLogger.IsLogLevelEnabled method" Url="M_Neon_Diagnostics_NeonLogger_IsLogLevelEnabled.htm" />
   <HelpKINode Title="NeonLogger.IsLogSErrorEnabled property" Url="P_Neon_Diagnostics_NeonLogger_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="NeonLogger.IsLogSInfoEnabled property" Url="P_Neon_Diagnostics_NeonLogger_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="NeonLogger.IsLogTransientEnabled property" Url="P_Neon_Diagnostics_NeonLogger_IsLogTransientEnabled.htm" />
   <HelpKINode Title="NeonLogger.IsLogWarnEnabled property" Url="P_Neon_Diagnostics_NeonLogger_IsLogWarnEnabled.htm" />
   <HelpKINode Title="NeonLogger.Log(Of TState) method" Url="M_Neon_Diagnostics_NeonLogger_Log__1.htm" />
   <HelpKINode Title="NeonLogger.Log&lt;TState&gt; method" Url="M_Neon_Diagnostics_NeonLogger_Log__1.htm" />
@@ -7928,6 +8016,7 @@
   <HelpKINode Title="NeonLogger.LogInfo method" Url="Overload_Neon_Diagnostics_NeonLogger_LogInfo.htm" />
   <HelpKINode Title="NeonLogger.LogSError method" Url="Overload_Neon_Diagnostics_NeonLogger_LogSError.htm" />
   <HelpKINode Title="NeonLogger.LogSInfo method" Url="Overload_Neon_Diagnostics_NeonLogger_LogSInfo.htm" />
+  <HelpKINode Title="NeonLogger.LogTransient method" Url="Overload_Neon_Diagnostics_NeonLogger_LogTransient.htm" />
   <HelpKINode Title="NeonLogger.LogWarn method" Url="Overload_Neon_Diagnostics_NeonLogger_LogWarn.htm" />
   <HelpKINode Title="NeonLogger.NeonLogger constructor" Url="M_Neon_Diagnostics_NeonLogger__ctor.htm" />
   <HelpKINode Title="NeonLogger.Scope class" Url="T_Neon_Diagnostics_NeonLogger_Scope.htm" />
@@ -7949,6 +8038,7 @@
   <HelpKINode Title="NeonLoggerShim.IsLogLevelEnabled method" Url="M_Neon_Diagnostics_NeonLoggerShim_IsLogLevelEnabled.htm" />
   <HelpKINode Title="NeonLoggerShim.IsLogSErrorEnabled property" Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogSErrorEnabled.htm" />
   <HelpKINode Title="NeonLoggerShim.IsLogSInfoEnabled property" Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogSInfoEnabled.htm" />
+  <HelpKINode Title="NeonLoggerShim.IsLogTransientEnabled property" Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogTransientEnabled.htm" />
   <HelpKINode Title="NeonLoggerShim.IsLogWarnEnabled property" Url="P_Neon_Diagnostics_NeonLoggerShim_IsLogWarnEnabled.htm" />
   <HelpKINode Title="NeonLoggerShim.Log(Of TState) method" Url="M_Neon_Diagnostics_NeonLoggerShim_Log__1.htm" />
   <HelpKINode Title="NeonLoggerShim.Log&lt;TState&gt; method" Url="M_Neon_Diagnostics_NeonLoggerShim_Log__1.htm" />
@@ -7958,6 +8048,7 @@
   <HelpKINode Title="NeonLoggerShim.LogInfo method" Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogInfo.htm" />
   <HelpKINode Title="NeonLoggerShim.LogSError method" Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogSError.htm" />
   <HelpKINode Title="NeonLoggerShim.LogSInfo method" Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogSInfo.htm" />
+  <HelpKINode Title="NeonLoggerShim.LogTransient method" Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogTransient.htm" />
   <HelpKINode Title="NeonLoggerShim.LogWarn method" Url="Overload_Neon_Diagnostics_NeonLoggerShim_LogWarn.htm" />
   <HelpKINode Title="NeonLoggerShim.NeonLoggerShim constructor" Url="M_Neon_Diagnostics_NeonLoggerShim__ctor.htm" />
   <HelpKINode Title="NeonLoggerShim.WrapLogger method" Url="M_Neon_Diagnostics_NeonLoggerShim_WrapLogger.htm" />
@@ -8452,8 +8543,8 @@
   <HelpKINode Title="NoRetryPolicy.InvokeAsync method" Url="Overload_Neon_Retry_NoRetryPolicy_InvokeAsync.htm" />
   <HelpKINode Title="NoRetryPolicy.NoRetryPolicy constructor" Url="M_Neon_Retry_NoRetryPolicy__ctor.htm" />
   <HelpKINode Title="NoRetryPolicy.Timeout property" Url="P_Neon_Retry_NoRetryPolicy_Timeout.htm" />
-  <HelpKINode Title="NORMAL enumeration member" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
   <HelpKINode Title="Normal enumeration member" Url="T_Neon_Cadence_TaskListKind.htm" />
+  <HelpKINode Title="NORMAL enumeration member" Url="T_Neon_Cadence_Internal_InternalTaskListKind.htm" />
   <HelpKINode Title="Normalize method">
     <HelpKINode Title="ChildWorkflowOptions.Normalize Method " Url="M_Neon_Cadence_ChildWorkflowOptions_Normalize.htm" />
     <HelpKINode Title="NetworkCidr.Normalize Method " Url="M_Neon_Net_NetworkCidr_Normalize.htm" />
@@ -8620,6 +8711,7 @@
     <HelpKINode Title="SftpFile.OthersCanWrite Property " Url="P_Renci_SshNet_Sftp_SftpFile_OthersCanWrite.htm" />
     <HelpKINode Title="SftpFileAttributes.OthersCanWrite Property " Url="P_Renci_SshNet_Sftp_SftpFileAttributes_OthersCanWrite.htm" />
   </HelpKINode>
+  <HelpKINode Title="OtherStackTraces property" Url="P_Neon_Cadence_WorkflowParallelOperationException_OtherStackTraces.htm" />
   <HelpKINode Title="Output property" Url="P_Neon_ModelGen_ModelGenerator_Output.htm" />
   <HelpKINode Title="OutputBinary property" Url="P_Neon_Kube_CommandResponse_OutputBinary.htm" />
   <HelpKINode Title="OutputStream property" Url="P_Renci_SshNet_SshCommand_OutputStream.htm" />
@@ -9403,6 +9495,8 @@
   </HelpKINode>
   <HelpKINode Title="ReflectionExtensions.GetParameterTypes method" Url="M_System_ReflectionExtensions_GetParameterTypes.htm" />
   <HelpKINode Title="ReflectionExtensions.Implements method" Url="Overload_System_ReflectionExtensions_Implements.htm" />
+  <HelpKINode Title="ReflectionExtensions.Inherits(Of TBase) method" Url="M_System_ReflectionExtensions_Inherits__1.htm" />
+  <HelpKINode Title="ReflectionExtensions.Inherits&lt;TBase&gt; method" Url="M_System_ReflectionExtensions_Inherits__1.htm" />
   <HelpKINode Title="ReflectionExtensions.Is method" Url="Overload_System_ReflectionExtensions_Is.htm" />
   <HelpKINode Title="Regex property" Url="P_Neon_Common_GlobPattern_Regex.htm" />
   <HelpKINode Title="RegexPattern property" Url="P_Neon_Common_GlobPattern_RegexPattern.htm" />
@@ -9766,7 +9860,7 @@
     <HelpKINode Title="HttpException.RequestUri Property " Url="P_Neon_Net_HttpException_RequestUri.htm" />
     <HelpKINode Title="JsonResponse.RequestUri Property " Url="P_Neon_Net_JsonResponse_RequestUri.htm" />
   </HelpKINode>
-  <HelpKINode Title="REQUEST_CANCEL enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
+  <HelpKINode Title="REQUEST_CANCEL enumeration member" Url="T_Neon_Cadence_Internal_InternalParentClosePolicy.htm" />
   <HelpKINode Title="Requires method" Url="Overload_System_Diagnostics_Contracts_Covenant_Requires.htm" />
   <HelpKINode Title="RequiresAdminPrivileges property">
     <HelpKINode Title="HostingManager.RequiresAdminPrivileges Property " Url="P_Neon_Kube_HostingManager_RequiresAdminPrivileges.htm" />
@@ -9825,7 +9919,10 @@
   <HelpKINode Title="Restarted enumeration member" Url="T_Neon_Cadence_WorkflowExecutionCloseStatus.htm" />
   <HelpKINode Title="RestartService method" Url="M_Neon_Xunit_DockerFixture_RestartService.htm" />
   <HelpKINode Title="Restore method" Url="M_Neon_Xunit_EnvironmentFixture_Restore.htm" />
-  <HelpKINode Title="Result property" Url="P_Renci_SshNet_SshCommand_Result.htm" />
+  <HelpKINode Title="Result property">
+    <HelpKINode Title="ExceptionResult(TResult).Result Property " Url="P_Neon_Common_ExceptionResult_1_Result.htm" />
+    <HelpKINode Title="SshCommand.Result Property " Url="P_Renci_SshNet_SshCommand_Result.htm" />
+  </HelpKINode>
   <HelpKINode Title="RetentionDays property" Url="P_Neon_Cadence_DomainConfiguration_RetentionDays.htm" />
   <HelpKINode Title="RetryAttempts property" Url="P_Renci_SshNet_ConnectionInfo_RetryAttempts.htm" />
   <HelpKINode Title="RetryCount property" Url="P_Neon_Kube_SshProxy_1_RetryCount.htm" />
@@ -10511,9 +10608,10 @@
   </HelpKINode>
   <HelpKINode Title="SetRemove method" Url="Overload_Couchbase_NeonBucket_SetRemove.htm" />
   <HelpKINode Title="SetRemoveAsync method" Url="Overload_Couchbase_NeonBucket_SetRemoveAsync.htm" />
-  <HelpKINode Title="SetRunning method" Url="M_Neon_Kube_Service_KubeService_SetRunning.htm" />
+  <HelpKINode Title="SetRunningAsync method" Url="M_Neon_Kube_Service_KubeService_SetRunningAsync.htm" />
   <HelpKINode Title="SetSize method" Url="Overload_Couchbase_NeonBucket_SetSize.htm" />
   <HelpKINode Title="SetSizeAsync method" Url="Overload_Couchbase_NeonBucket_SetSizeAsync.htm" />
+  <HelpKINode Title="SetStatusAsync method" Url="M_Neon_Kube_Service_KubeService_SetStatusAsync.htm" />
   <HelpKINode Title="SetTestMode method" Url="M_Neon_Kube_KubeHelper_SetTestMode.htm" />
   <HelpKINode Title="Settings property">
     <HelpKINode Title="CadenceClient.Settings Property " Url="P_Neon_Cadence_CadenceClient_Settings.htm" />
@@ -11688,6 +11786,7 @@
   <HelpKINode Title="SyncContext.OnCompleted method" Url="M_Neon_Tasks_SyncContext_OnCompleted.htm" />
   <HelpKINode Title="SynchronizeDirectories method" Url="M_Renci_SshNet_SftpClient_SynchronizeDirectories.htm" />
   <HelpKINode Title="Synchronous property" Url="P_Neon_Cadence_SignalMethodAttribute_Synchronous.htm" />
+  <HelpKINode Title="SyncSignalAsync method" Url="Overload_Neon_Cadence_WorkflowFutureStub_1_SyncSignalAsync.htm" />
   <HelpKINode Title="SyncSignalCall class">
     <HelpKINode Title="SyncSignalCall Class" Url="T_Neon_Cadence_Internal_SyncSignalCall.htm" />
     <HelpKINode Title="constructor" Url="M_Neon_Cadence_Internal_SyncSignalCall__ctor.htm" />
@@ -11897,8 +11996,8 @@
   <HelpKINode Title="TenantId property" Url="P_Neon_Kube_AzureOptions_TenantId.htm" />
   <HelpKINode Title="TeraBytes field" Url="F_Neon_Common_ByteUnits_TeraBytes.htm" />
   <HelpKINode Title="TerminalModes enumeration" Url="T_Renci_SshNet_Common_TerminalModes.htm" />
+  <HelpKINode Title="TERMINATE enumeration member" Url="T_Neon_Cadence_Internal_InternalParentClosePolicy.htm" />
   <HelpKINode Title="Terminate enumeration member" Url="T_Neon_Cadence_ParentClosePolicy.htm" />
-  <HelpKINode Title="TERMINATE enumeration member" Url="T_Neon_Cadence_Internal_InternaChildClosePolicy.htm" />
   <HelpKINode Title="Terminated enumeration member">
     <HelpKINode Title="CadenceErrorTypes Enumeration" Url="T_Neon_Cadence_Internal_CadenceErrorTypes.htm" />
     <HelpKINode Title="KubeServiceStatus Enumeration" Url="T_Neon_Kube_Service_KubeServiceStatus.htm" />
@@ -12032,7 +12131,10 @@
   <HelpKINode Title="TFTP field" Url="F_Neon_Net_NetworkPorts_TFTP.htm" />
   <HelpKINode Title="ThreadRun method" Url="M_Neon_Common_NeonHelper_ThreadRun.htm" />
   <HelpKINode Title="Throw enumeration member" Url="T_Neon_Net_ReachableHostMode.htm" />
-  <HelpKINode Title="ThrowOnError method" Url="M_Neon_Kube_SetupController_1_ThrowOnError.htm" />
+  <HelpKINode Title="ThrowOnError method">
+    <HelpKINode Title="ExceptionResult.ThrowOnError Method " Url="M_Neon_Common_ExceptionResult_ThrowOnError.htm" />
+    <HelpKINode Title="SetupController(NodeMetadata).ThrowOnError Method " Url="M_Neon_Kube_SetupController_1_ThrowOnError.htm" />
+  </HelpKINode>
   <HelpKINode Title="Thumbprint property" Url="P_Neon_Cryptography_TlsCertificate_Thumbprint.htm" />
   <HelpKINode Title="Ticks property" Url="P_Neon_Time_GoTimeSpan_Ticks.htm" />
   <HelpKINode Title="TicksPerHour field" Url="F_Neon_Time_GoTimeSpan_TicksPerHour.htm" />
@@ -12235,6 +12337,11 @@
   <HelpKINode Title="ToUntypedAsync method" Url="M_Neon_Cadence_Internal_ITypedWorkflowStub_ToUntypedAsync.htm" />
   <HelpKINode Title="ToX509 method" Url="M_Neon_Cryptography_TlsCertificate_ToX509.htm" />
   <HelpKINode Title="Transform method" Url="M_Renci_SshNet_IRemotePathTransformation_Transform.htm" />
+  <HelpKINode Title="Transient enumeration member" Url="T_Neon_Diagnostics_LogLevel.htm" />
+  <HelpKINode Title="Transient method">
+    <HelpKINode Title="NeonController.Transient Method " Url="Overload_Neon_Web_NeonController_Transient.htm" />
+    <HelpKINode Title="NeonControllerBase.Transient Method " Url="Overload_Neon_Web_NeonControllerBase_Transient.htm" />
+  </HelpKINode>
   <HelpKINode Title="TransientDetector class">
     <HelpKINode Title="TransientDetector Class" Url="T_Neon_Retry_TransientDetector.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Retry_TransientDetector.htm" />
@@ -12316,6 +12423,7 @@
   <HelpKINode Title="UintToAddress method" Url="M_Neon_Net_NetHelper_UintToAddress.htm" />
   <HelpKINode Title="UnaryNegation operator" Url="M_Renci_SshNet_Common_BigInteger_op_UnaryNegation.htm" />
   <HelpKINode Title="UnaryPlus operator" Url="M_Renci_SshNet_Common_BigInteger_op_UnaryPlus.htm" />
+  <HelpKINode Title="Unhealthy enumeration member" Url="T_Neon_Kube_Service_KubeServiceStatus.htm" />
   <HelpKINode Title="UnimplementedMessage class">
     <HelpKINode Title="UnimplementedMessage Class" Url="T_Renci_SshNet_Messages_Transport_UnimplementedMessage.htm" />
     <HelpKINode Title="constructor" Url="M_Renci_SshNet_Messages_Transport_UnimplementedMessage__ctor.htm" />
@@ -12457,6 +12565,7 @@
   <HelpKINode Title="UtcNowAsync method" Url="M_Neon_Cadence_Workflow_UtcNowAsync.htm" />
   <HelpKINode Title="UxFramework property" Url="P_Neon_ModelGen_ModelGeneratorSettings_UxFramework.htm" />
   <HelpKINode Title="UxFrameworks enumeration" Url="T_Neon_ModelGen_UxFrameworks.htm" />
+  <HelpKINode Title="V1Compatible property" Url="P_Neon_ModelGen_ModelGeneratorSettings_V1Compatible.htm" />
   <HelpKINode Title="Validate method">
     <HelpKINode Title="AwsOptions.Validate Method " Url="M_Neon_Kube_AwsOptions_Validate.htm" />
     <HelpKINode Title="AzureCloudEnvironment.Validate Method " Url="M_Neon_Kube_AzureCloudEnvironment_Validate.htm" />
@@ -12611,10 +12720,10 @@
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_WaitForSignalReplyException.htm" />
   </HelpKINode>
   <HelpKINode Title="WaitForSignalReplyException.WaitForSignalReplyException constructor" Url="M_Neon_Cadence_WaitForSignalReplyException__ctor.htm" />
+  <HelpKINode Title="WaitForWorkflowStartAsync method" Url="M_Neon_Cadence_CadenceClient_WaitForWorkflowStartAsync.htm" />
   <HelpKINode Title="WaitSeconds property" Url="P_Neon_Kube_HostingManager_WaitSeconds.htm" />
   <HelpKINode Title="WaitUntilFinished property" Url="P_Neon_Cadence_ChildWorkflowOptions_WaitUntilFinished.htm" />
   <HelpKINode Title="WaitUntilReadyAsync method" Url="M_Couchbase_CouchbaseExtensions_WaitUntilReadyAsync.htm" />
-  <HelpKINode Title="WaitUntilWorkflowRunningAsync method" Url="M_Neon_Cadence_CadenceClient_WaitUntilWorkflowRunningAsync.htm" />
   <HelpKINode Title="WantReply property">
     <HelpKINode Title="GlobalRequestMessage.WantReply Property " Url="P_Renci_SshNet_Messages_Connection_GlobalRequestMessage_WantReply.htm" />
     <HelpKINode Title="RequestInfo.WantReply Property " Url="P_Renci_SshNet_Messages_Connection_RequestInfo_WantReply.htm" />
@@ -12817,6 +12926,7 @@
   <HelpKINode Title="WorkflowFutureStub(Of WorkflowInterface).QueryAsync(Of TQueryResult) method" Url="M_Neon_Cadence_WorkflowFutureStub_1_QueryAsync__1.htm" />
   <HelpKINode Title="WorkflowFutureStub(Of WorkflowInterface).SignalAsync method" Url="M_Neon_Cadence_WorkflowFutureStub_1_SignalAsync.htm" />
   <HelpKINode Title="WorkflowFutureStub(Of WorkflowInterface).StartAsync method" Url="Overload_Neon_Cadence_WorkflowFutureStub_1_StartAsync.htm" />
+  <HelpKINode Title="WorkflowFutureStub(Of WorkflowInterface).SyncSignalAsync method" Url="Overload_Neon_Cadence_WorkflowFutureStub_1_SyncSignalAsync.htm" />
   <HelpKINode Title="WorkflowFutureStub&lt;WorkflowInterface&gt; class">
     <HelpKINode Title="WorkflowFutureStub(WorkflowInterface) Class" Url="T_Neon_Cadence_WorkflowFutureStub_1.htm" />
     <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_WorkflowFutureStub_1.htm" />
@@ -12826,6 +12936,7 @@
   <HelpKINode Title="WorkflowFutureStub&lt;WorkflowInterface&gt;.QueryAsync&lt;TQueryResult&gt; method" Url="M_Neon_Cadence_WorkflowFutureStub_1_QueryAsync__1.htm" />
   <HelpKINode Title="WorkflowFutureStub&lt;WorkflowInterface&gt;.SignalAsync method" Url="M_Neon_Cadence_WorkflowFutureStub_1_SignalAsync.htm" />
   <HelpKINode Title="WorkflowFutureStub&lt;WorkflowInterface&gt;.StartAsync method" Url="Overload_Neon_Cadence_WorkflowFutureStub_1_StartAsync.htm" />
+  <HelpKINode Title="WorkflowFutureStub&lt;WorkflowInterface&gt;.SyncSignalAsync method" Url="Overload_Neon_Cadence_WorkflowFutureStub_1_SyncSignalAsync.htm" />
   <HelpKINode Title="WorkflowId property">
     <HelpKINode Title="ChildWorkflowOptions.WorkflowId Property " Url="P_Neon_Cadence_ChildWorkflowOptions_WorkflowId.htm" />
     <HelpKINode Title="PendingChildExecutionInfo.WorkflowId Property " Url="P_Neon_Cadence_PendingChildExecutionInfo_WorkflowId.htm" />
@@ -12901,6 +13012,7 @@
     <HelpKINode Title="methods" Url="Methods_T_Neon_Cadence_WorkflowParallelOperationException.htm" />
     <HelpKINode Title="properties" Url="Properties_T_Neon_Cadence_WorkflowParallelOperationException.htm" />
   </HelpKINode>
+  <HelpKINode Title="WorkflowParallelOperationException.OtherStackTraces property" Url="P_Neon_Cadence_WorkflowParallelOperationException_OtherStackTraces.htm" />
   <HelpKINode Title="WorkflowParallelOperationException.WorkflowParallelOperationException constructor" Url="M_Neon_Cadence_WorkflowParallelOperationException__ctor.htm" />
   <HelpKINode Title="WorkflowQueue(Of T) class">
     <HelpKINode Title="WorkflowQueue(T) Class" Url="T_Neon_Cadence_WorkflowQueue_1.htm" />

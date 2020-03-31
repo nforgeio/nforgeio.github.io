@@ -58,7 +58,14 @@
             Used to send record activity heartbeat externally by task token.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Neon_Cadence_CadenceClient_ConnectAsync.htm">ConnectAsync</a></td><td><div class="summary">
             Establishes a connection to a Cadence cluster.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_DescribeDomainAsync.htm">DescribeDomainAsync</a></td><td><div class="summary">
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_DebugLog.htm">DebugLog</a></td><td><div class="summary"><p><b>INTERNAL USE ONLY:</b> Appends a line of text to the debug log which is
+            used internally to debug generated code like stubs.  This hardcodes its
+            output to <b>C:\Temp\cadence-debug.log</b> so this currently only works
+            on Windows.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            This method doesn't actually log anything unless <a href="P_Neon_Cadence_CadenceSettings_Debug.htm">Debug</a>
+            is set to <span class="code">true</span>.
+            </td></tr></table></div></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_DescribeDomainAsync.htm">DescribeDomainAsync</a></td><td><div class="summary">
             Describes the named Cadence domain.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_DescribeDomainByIdAsync.htm">DescribeDomainByIdAsync</a></td><td><div class="summary">
             Describes a Cadence domain by UUID.
@@ -152,7 +159,7 @@
             Terminates a workflow if it has not already finished.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_UpdateDomainAsync.htm">UpdateDomainAsync</a></td><td><div class="summary">
             Updates the named Cadence domain.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_WaitUntilWorkflowRunningAsync.htm">WaitUntilWorkflowRunningAsync</a></td><td><div class="summary">
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Cadence_CadenceClient_WaitForWorkflowStartAsync.htm">WaitForWorkflowStartAsync</a></td><td><div class="summary">
             Waits for a resonable period of time for Cadence to start a workflow.
             </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Events</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="eventList"><tr><th class="iconColumn">
 								 
