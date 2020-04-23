@@ -1,0 +1,137 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Signals &amp; queues</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Temporal-Workflow-SignalQueues" /><meta name="Description" content="Many workflows need to be notified when an event happens in the real world. For example, a food delivery workflow may work something like:" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Overview.htm" title="Neon.Temporal" tocid="388889da-a265-44a6-98c4-ed5250130c04">Neon.Temporal</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Workflow-CodingRules.htm" title="Workflow details" tocid="d18f0d65-9e9e-4c56-9262-f6f3bd57544e">Workflow details</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-CodingRules.htm" title="Coding rules" tocid="7377a962-2a8a-498b-b9ad-2de58541bccb">Coding rules</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-IDsExecutions.htm" title="IDs &amp; executions" tocid="1e741adc-714f-4a77-82aa-ff1756ee1c9a">IDs &amp; executions</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Scheduling.htm" title="Timeouts" tocid="b86e3e81-ffe5-4a59-b840-aebe31bd5014">Timeouts</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-ChildWorkflows.htm" title="Child workflows" tocid="fef3cdc8-41e8-4c31-a81d-a6857d202faa">Child workflows</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-GettingStarted-Parallel.htm" title="Parallel operations" tocid="82d58fc1-98ce-4872-bf3d-7530f9be1a9e">Parallel operations</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Options.htm" title="Options" tocid="e74d1092-9a9d-429f-bbe2-7ad595d7a6fe">Options</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Queries.htm" title="Queries" tocid="2de5ef53-412c-4f8d-b40b-69f06db7762b">Queries</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-SignalQueues.htm" title="Signals &amp; queues" tocid="fef4f5f1-ee69-479c-9321-6586ec5d45f9">Signals &amp; queues</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-SyncSignals.htm" title="Synchronous signals" tocid="1284aec5-7464-4243-aa38-75366c26a031">Synchronous signals</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Activity-ContinueAsNew.htm" title="Continue as new" tocid="397dcfd2-0d7a-4148-b2a5-372f77807184">Continue as new</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-CRON.htm" title="Distributed CRON" tocid="fd66b149-f9e7-4ac4-90d6-64c1310b38f3">Distributed CRON</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Signals &amp; queues</h1></td></tr></table><span class="introStyle"></span> <div id="ID1RBSection" class="collapsibleSection"><p>
+          Many workflows need to be notified when an event happens in the real world.  For example,
+          a food delivery workflow may work something like:
+        </p><ol><li><p>Submit order to restaurant</p></li><li><p>Wait for restaurant to accept the order</p></li><li><p>Process the customer payment</p></li><li><p>Wait for resturant to report the order ETA</p></li><li><p>Schedule the driver pickup</p></li></ol><p>
+          Steps #2 and #4 are waiting for events from the external restaurant systems which
+          themselves may wait for an employee to manually interact with an application.
+          So, how can we do this waiting in a Temporal workflow?
+        </p><p>
+          There are three ways to wait for an external event in Temporal.  One bad way,
+          one inconvienent way, and one supper cool way:
+        </p><ol><li><p>
+              The bad approach is to simply have your workflow spin in a loop, polling an
+              external source via an activity until it sees a status change indicating that the event has
+              occurred.  You'd probably use <a href="M_Neon_Temporal_Workflow_SleepAsync.htm">SleepAsync</a>
+              to slow your loop down.
+            </p><p>
+              Although this will work, every call to your activity as well as every sleep call will
+              be recorded to the workflow's history.  This means your history might grow very large
+              (which is bad) and it also means that your workflow is consuming compute resources 
+              while it's waiting.
+            </p></li><li><p>
+              The inconvienent approach is to write an activity that will be completed externally.
+              You can accomplish this by obtaining the activity's task token, an opaque byte array
+              value that identifies the specific activity, storing this somewhere that will be available
+              to an external system, and then calling <a href="M_Neon_Temporal_Activity_DoNotCompleteOnReturn.htm">DoNotCompleteOnReturn</a>
+              and returning from your activity method.
+            </p><p>
+              Then you'll need an external system that determines when an event related to the activity
+              happens and then calls <a href="M_Neon_Temporal_TemporalClient_ActivityCompleteByTokenAsync.htm">ActivityCompleteByTokenAsync</a>,
+              passing the activity token and the data to be returned by the activity.  The external code
+              may also need to send activity heartbeats to Temporal, depending on the configured heartbeat
+              timeout.
+            </p><p>
+              Coordinating all of this can be pretty difficult and error prone.
+            </p></li><li><p>
+              The better way is just to signal the workflow when the event happens.  You'll define a signal workflow
+              method and use a <a href="T_Neon_Temporal_WorkflowQueue_1.htm">WorkflowQueue<span id="LST8258DB1E_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8258DB1E_0?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LST8258DB1E_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8258DB1E_1?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              to notify your workflow method logic.
+            </p></li></ol><p>
+          Here's a sample showing how a workflow uses a queue to react to received signals.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[WorkflowInterface(TaskList = <span class="highlight-literal">"my-tasks"</span>)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMyWorkflow : IWorkflow
+{
+    [WorkflowMethod]
+    Task DoItAsync();
+
+    [SignalMethod(<span class="highlight-literal">"signal"</span>)]
+    Task SignalAsync(<span class="highlight-keyword">string</span> message);
+
+    [QueryMethod(<span class="highlight-literal">"get-status"</span>)]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; GetStatusAsync();
+}
+
+[Workflow]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyWorkflow : WorkflowBase, IMyWorkflow
+{
+    <span class="highlight-keyword">private</span> <span class="highlight-keyword">string</span>                  state = <span class="highlight-literal">"started"</span>;
+    <span class="highlight-keyword">private</span> WorkflowQueue&lt;<span class="highlight-keyword">string</span>&gt;   signalQueue;
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task DoItAsync()
+    {
+        signalQueue = <span class="highlight-keyword">await</span> Workflow.NewQueueAsync&lt;<span class="highlight-keyword">string</span>&gt;();
+
+        <span class="highlight-keyword">while</span> (<span class="highlight-keyword">true</span>)
+        {
+            state = <span class="highlight-keyword">await</span> signalQueue.DequeueAsync();
+
+            <span class="highlight-keyword">if</span> (state == <span class="highlight-literal">"done"</span>)
+            {
+                <span class="highlight-keyword">break</span>;
+            }
+        }
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task SignalAsync(<span class="highlight-keyword">string</span> message)
+    {
+        <span class="highlight-keyword">await</span> signalQueue.EnqueueAsync(message);
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; GetStatusAsync()
+    {
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult(state);
+    }
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+    {
+        <span class="highlight-keyword">var</span> settings = <span class="highlight-keyword">new</span> TemporalSettings()
+        {
+            DefaulNamespace = <span class="highlight-literal">"ny-namespace"</span>,
+            CreateNamespace  = <span class="highlight-keyword">true</span>,
+            HostPort      = <span class="highlight-literal">"localhost:7933"</span>
+        };
+
+        <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">await</span> TemporalClient.ConnectAsync(settings))
+        {
+            <span class="highlight-keyword">await</span> client.RegisterAssemblyAsync(System.Reflection.Assembly.GetExecutingAssembly());
+            <span class="highlight-keyword">await</span> client.StartWorkerAsync(<span class="highlight-literal">"my-tasks"</span>);
+
+            <span class="highlight-comment">// Invoke the workflow, send it some signals and very that</span>
+            <span class="highlight-comment">// it changed its state to the signal value.</span>
+
+            <span class="highlight-keyword">var</span> stub = client.NewWorkflowStub&lt;IMyWorkflow&gt;();
+            <span class="highlight-keyword">var</span> task = stub.DoItAsync();
+
+            <span class="highlight-keyword">await</span> stub.SignalAsync(<span class="highlight-literal">"signal #1"</span>);
+            Console.WriteLine(<span class="highlight-keyword">await</span> stub.GetStatusAsync());
+
+            <span class="highlight-keyword">await</span> stub.SignalAsync(<span class="highlight-literal">"signal #2"</span>);
+            Console.WriteLine(<span class="highlight-keyword">await</span> stub.GetStatusAsync());
+
+            <span class="highlight-comment">// This signal completes the workflow.</span>
+
+            <span class="highlight-keyword">await</span> stub.SignalAsync(<span class="highlight-literal">"done"</span>);
+            <span class="highlight-keyword">await</span> task;
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACABAAA");</script><p>
+          The workflow above creates a queue and then loops, waiting for signals to be received and 
+          be added to to the queue.  It reads these signals, updates its state and returns when it
+          sees a "done" signal.
+        </p><p>
+          Signals are delivered to workflows asynchronously.  This means that the the signal method may
+          return to the caller before the workflow has actually receieved it.
+        </p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Temporal.htm">Neon.Temporal</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

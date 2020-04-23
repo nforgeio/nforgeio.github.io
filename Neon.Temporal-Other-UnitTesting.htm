@@ -1,0 +1,127 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Unit testing</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Temporal-Other-UnitTesting" /><meta name="Description" content="The Temporal Java and Go clients provide powerful mechanisms for unit testing your workflows and activities. These clients have can emulate Temporal server in-process. The .NET client is not at this level yet but we plans on getting there in the future." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Overview.htm" title="Neon.Temporal" tocid="388889da-a265-44a6-98c4-ed5250130c04">Neon.Temporal</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Other-Logging.htm" title="Other topics" tocid="aa91d615-b4f3-4179-9fc1-7e4483cbe783">Other topics</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Other-Logging.htm" title="Logging" tocid="42d7a404-e508-4030-9a2b-8c44b61a3070">Logging</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Other-Serialization.htm" title="Data serialization" tocid="0d34f0bf-ad1b-4ce1-ad9b-9b70cc1b29d1">Data serialization</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Other-UnitTesting.htm" title="Unit testing" tocid="e5b8f3ca-e30d-4915-b9c3-2c630fca5b32">Unit testing</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="6a2a88e2-7e4b-4ae5-a871-36ddb012ed04.htm" title="Java differences" tocid="6a2a88e2-7e4b-4ae5-a871-36ddb012ed04">Java differences</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-CrossPlatform.htm" title="Cross-platform" tocid="d5556812-b5b4-4aa4-93be-13a0a11458cf">Cross-platform</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Unit testing</h1></td></tr></table><span class="introStyle"></span> <div id="ID1RBSection" class="collapsibleSection"><p>
+          The Temporal Java and Go clients provide powerful mechanisms for unit testing
+          your workflows and activities.  These clients have can emulate Temporal server in-process.
+          The .NET client is not at this level yet but we plans on getting there in the future.
+        </p><p>
+          In the meantime, the <strong>Neon.Xunit.Temporal</strong> nuget package provides
+          the <a href="T_Neon_Xunit_Temporal_TemporalFixture.htm">TemporalFixture</a>
+          for use by tests authored for the popular Xunit test framework.  This fixture spins up
+          <a href="https://hub.docker.com/repository/docker/nkubeio/Temporal-dev" target="_blank">nkubeio/Temporal-dev</a>
+          as a Docker container on the local machine.  This combines Temporal server and UX with
+          a Cassandra database node into a single managable entity that starts out in a pristine
+          state.
+        </p><p>
+          This is pretty easy to use.  Create an Xunit test project and reference the 
+          <strong>Neon.Common</strong>, <strong>Neon.Temporal</strong>,
+          <strong>Neon.Xunit</strong>, and <strong>Neon.Xunit.Temporal</strong>
+          nuget packages.  Then code your tests to look something like:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> System;
+<span class="highlight-keyword">using</span> System.Collections.Generic;
+<span class="highlight-keyword">using</span> System.Net.Mail;
+<span class="highlight-keyword">using</span> System.Reflection;
+<span class="highlight-keyword">using</span> System.Threading.Tasks;
+
+<span class="highlight-keyword">using</span> Neon.Common;
+<span class="highlight-keyword">using</span> Neon.Diagnostics;
+<span class="highlight-keyword">using</span> Neon.Temporal;
+<span class="highlight-keyword">using</span> Neon.Xunit;
+<span class="highlight-keyword">using</span> Neon.Xunit.Temporal;
+
+<span class="highlight-keyword">using</span> Xunit;
+
+<span class="highlight-keyword">namespace</span> MyTests
+{
+    [WorkflowInterface(TaskList = <span class="highlight-literal">"test-tasks"</span>)]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IHelloWorkflow : IWorkflow
+    {
+        [WorkflowMethod]
+        Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name);
+    }
+
+    [Workflow(AutoRegister = <span class="highlight-keyword">true</span>)]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> HelloWorkflow : WorkflowBase, IHelloWorkflow
+    {
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name)
+        {
+            <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult($<span class="highlight-literal">"Hello {name}!"</span>);
+        }
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> TemporalTests : IClassFixture&lt;TemporalFixture&gt;
+    {
+        <span class="highlight-keyword">private</span> TemporalFixture     fixture;
+        <span class="highlight-keyword">private</span> TemporalClient      client;
+
+        <span class="highlight-keyword">public</span> TemporalTests(TemporalFixture fixture)
+        {
+            <span class="highlight-keyword">var</span> settings = <span class="highlight-keyword">new</span> TemporalSettings()
+            {
+                DefaulNamespace = <span class="highlight-literal">"test-domain"</span>,
+                LogLevel      = LogLevel.Info,
+                CreateNamespace  = <span class="highlight-keyword">true</span>            <span class="highlight-comment">// &lt;-- this ensures that the default domain exists</span>
+            };
+
+            <span class="highlight-comment">// This starts/restarts the [nforgeio/temporal-dev] container for the first test</span>
+            <span class="highlight-comment">// run in this class.  Subsequent tests run from the class will use the existing</span>
+            <span class="highlight-comment">// container instance, saving time by not having to wait for Temporal and Cassandra</span>
+            <span class="highlight-comment">// to spin up and be ready for business.</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">// The [keepOpen=true] parameter tells the fixture to let the container continue running</span>
+            <span class="highlight-comment">// after all of the tests have completed.  This is useful for examining workflow histories</span>
+            <span class="highlight-comment">// via the Temporal UX after the tests have completed.  You can view the Temporal portal at</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">//      http://localhost:8088</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">// You can pass [keepOpen=false] to have the fixture remove the container after the</span>
+            <span class="highlight-comment">// test run if you wish.</span>
+
+            <span class="highlight-keyword">if</span> (fixture.Start(settings, keepConnection: <span class="highlight-keyword">true</span>, keepOpen: <span class="highlight-keyword">true</span>) == TestFixtureStatus.Started)
+            {
+                <span class="highlight-keyword">this</span>.fixture = fixture;
+                <span class="highlight-keyword">this</span>.client  = fixture.Client;
+
+                <span class="highlight-comment">// Register the test workflow and activity implementations</span>
+                <span class="highlight-comment">// from this assembly and start the worker.</span>
+
+                client.RegisterAssemblyAsync(Assembly.GetExecutingAssembly()).Wait();
+                client.StartWorkerAsync(<span class="highlight-literal">"test-tasks"</span>).Wait();
+            }
+            <span class="highlight-keyword">else</span>
+            {
+                <span class="highlight-keyword">this</span>.fixture = fixture;
+                <span class="highlight-keyword">this</span>.client  = fixture.Client;
+            }
+        }
+
+        [Fact]
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task HelloWorld()
+        {
+            <span class="highlight-keyword">var</span> stub   = client.NewWorkflowStub&lt;IHelloWorkflow&gt;();
+            <span class="highlight-keyword">var</span> result = <span class="highlight-keyword">await</span> stub.HelloAsync(<span class="highlight-literal">"Jeff"</span>);
+
+            Assert.Equal(<span class="highlight-literal">"Hello Jeff!"</span>, result);
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACABAAA");</script><p>
+          This example defines a simple workflow interface and implementation along with an Xunit
+          test class.  The interesting part happens in the constructor.  Essentially what's happening
+          here is that Xunit and the <a href="T_Neon_Xunit_Temporal_TemporalFixture.htm">TemporalFixture</a>
+          are coordinating such that the <strong>nkubeio/Temporal-dev</strong> container is
+          started or restarted for the first test executed and then is reused for subsequent tests
+          defined by the class.
+        </p><p>
+          This scheme let's you test the happy path where everything works as expected.  What's missing
+          is a way to test how your workflows react when the unexpected happens, like verifying that the
+          workflow is deterministic when it's replayed from history or how it reacts in the face of
+          timeouts or other errors.
+        </p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Temporal.htm">Neon.Temporal</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

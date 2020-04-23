@@ -1,0 +1,68 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Coding rules</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Temporal-Workflow-CodingRules" /><meta name="Description" content="Workflow entry point methods must follow certain coding rules so that Temporal will be able to do its magic. You must code your workflow methods such that they are absolutely deterministic and repeatable." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Overview.htm" title="Neon.Temporal" tocid="388889da-a265-44a6-98c4-ed5250130c04">Neon.Temporal</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Workflow-CodingRules.htm" title="Workflow details" tocid="d18f0d65-9e9e-4c56-9262-f6f3bd57544e">Workflow details</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-CodingRules.htm" title="Coding rules" tocid="7377a962-2a8a-498b-b9ad-2de58541bccb">Coding rules</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-IDsExecutions.htm" title="IDs &amp; executions" tocid="1e741adc-714f-4a77-82aa-ff1756ee1c9a">IDs &amp; executions</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Scheduling.htm" title="Timeouts" tocid="b86e3e81-ffe5-4a59-b840-aebe31bd5014">Timeouts</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-ChildWorkflows.htm" title="Child workflows" tocid="fef3cdc8-41e8-4c31-a81d-a6857d202faa">Child workflows</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-GettingStarted-Parallel.htm" title="Parallel operations" tocid="82d58fc1-98ce-4872-bf3d-7530f9be1a9e">Parallel operations</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Options.htm" title="Options" tocid="e74d1092-9a9d-429f-bbe2-7ad595d7a6fe">Options</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-Queries.htm" title="Queries" tocid="2de5ef53-412c-4f8d-b40b-69f06db7762b">Queries</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-SignalQueues.htm" title="Signals &amp; queues" tocid="fef4f5f1-ee69-479c-9321-6586ec5d45f9">Signals &amp; queues</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-SyncSignals.htm" title="Synchronous signals" tocid="1284aec5-7464-4243-aa38-75366c26a031">Synchronous signals</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Activity-ContinueAsNew.htm" title="Continue as new" tocid="397dcfd2-0d7a-4148-b2a5-372f77807184">Continue as new</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Workflow-CRON.htm" title="Distributed CRON" tocid="fd66b149-f9e7-4ac4-90d6-64c1310b38f3">Distributed CRON</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Coding rules</h1></td></tr></table><span class="introStyle"></span> <div id="ID0RBSection" class="collapsibleSection"><p>
+          Workflow entry point methods must follow certain coding rules so that Temporal will be able to do its
+          magic.  You must code your workflow methods such that they are absolutely deterministic and repeatable.
+          Your workflows must make the same decisions the first time it's invoked as it would if Temporal had
+          to restart the workflow and replay operations from history to restore the workflow to its latest state.
+        </p><p>
+          You'll need to follow these rules:
+        </p><ol><li><p>
+              Never reference static global propeties or methods whose values may change of the course of the workflow
+              execution or that may change if the workflow is relocated from one machine to another.  Use activtities
+              instead for these.  Activtities record their result to workflow history the first time they're called
+              and return the same result from history on subsequent calls.
+            </p></li><li><p>
+              Never call non-deterministic methods that return things like GUIDs or random numbers directly
+              from your workflow code.  These will typically return different results on subsequent calls
+              and this would break the workflow repeatability requirement.  Instead, use methods like
+              <a href="M_Neon_Temporal_Workflow_NewGuidAsync.htm">NewGuidAsync</a>,
+              <a href="Overload_Neon_Temporal_Workflow_NextRandomAsync.htm">NextRandomAsync</a> or
+              <a href="M_Neon_Temporal_Workflow_NextRandomBytesAsync.htm">NextRandomBytesAsync</a>.
+              These methods ensure the result is recorded to history on the first call and returned from
+              history on subseqent calls.
+            </p></li><li><p>
+              Never perform network, I/O, database or network operations directly from workflow code.  These operations are generally
+              not deterministic: network packets get lost, database content can change, REST APIs can be down or modified, and files 
+              can be modified or deleted out from under you.  Perform these operations in activities so they'll be recorded
+              to history.
+            </p></li><li><p>
+              Never use things like <a href="https://docs.microsoft.com/dotnet/api/system.datetime.now#System_DateTime_Now" target="_blank">Now</a>
+              to obtain the current time and date.  This is a variation of rule #1.  This property will likely return a different value
+              every time it's called.  Use <a href="M_Neon_Temporal_Workflow_UtcNowAsync.htm">UtcNowAsync</a>
+              or call an activity.
+            </p></li><li><p>
+              Workflows must never create and execute additional tasks in parallel.  You must immediately <span class="code">await</span>
+              all async methods in your workflow.  Not doing this implicitly starts a parallel task and the completion order of tasks
+              (or any multi-thread operation) is non-deterministic.  You can run activities and child workflows in parallel though via
+              <a href="M_Neon_Temporal_Workflow_NewActivityFutureStub__1.htm">NewActivityFutureStub<span id="LSTDBF665F5_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDBF665F5_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TActivityInterface<span id="LSTDBF665F5_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDBF665F5_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script></a> and
+              <a href="M_Neon_Temporal_Workflow_NewChildWorkflowFutureStub__1.htm">NewChildWorkflowFutureStub<span id="LSTDBF665F5_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDBF665F5_2?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TWorkflowInterface<span id="LSTDBF665F5_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDBF665F5_3?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script></a>.
+            </p></li><li><p>
+              Workflows must not execute code on new threads.
+            </p></li><li><p>
+              Workflows must not call things like <a href="https://docs.microsoft.com/dotnet/api/system.threading.thread.sleep#System_Threading_Thread_Sleep_System_Int32_" target="_blank">Sleep</a>
+              or <span class="nolink">DelayAsync</span>.
+              Use <a href="M_Neon_Temporal_Workflow_SleepAsync.htm">SleepAsync</a> or
+              <a href="M_Neon_Temporal_Workflow_SleepUntilUtcAsync.htm">SleepUntilUtcAsync</a> instead.
+            </p></li><li><p>
+              You'll need to take care when releasing updated workflow code because the history for workflows
+              already in flight may not match up with the changed algorithm.  You can use
+              <a href="M_Neon_Temporal_Workflow_GetVersionAsync.htm">GetVersionAsync</a>
+              in your upgraded workflow to detect whether to implement the original algorithm for
+              a workflow execution or to implement the new algorithm.
+            </p></li><li><p>
+              A workflow stub may only be used execute a single workflow entry point method.  Reusing a stub will fail with an exception.  The
+              reason for this is that the stub will remain attached to the running workflow so that you can signal or query it by calling
+              signal or query methods.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                Activity stubs work differently, these do allow you to reuse a stub by allowing calls to multiple activity
+                methods.  This makes sense because activities don't have anything equivalent to signals or queries.
+              </p></td></tr></table></div></li></ol></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Temporal.htm">Neon.Temporal</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

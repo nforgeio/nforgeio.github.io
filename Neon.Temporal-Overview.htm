@@ -1,0 +1,189 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Overview</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Temporal-Overview" /><meta name="Description" content="The Neon.Temporal class library is built for NETStandard 2.0 and is capable of connecting to a Temporalhttps://Temporalworkflow.io/docs/ workflow cluster to manage and implement workflows." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Overview.htm" title="Neon.Temporal" tocid="388889da-a265-44a6-98c4-ed5250130c04">Neon.Temporal</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Overview.htm" title="Overview" tocid="0605d399-be1e-44c7-bc1f-d143bc1a041f">Overview</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Glossary.htm" title="Glossary" tocid="2c7bb40f-5da8-402a-90ae-a26521bd23b1">Glossary</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Deloyment.htm" title="Deployment" tocid="7e2e1d4c-1782-4872-9c59-c600f50eb546">Deployment</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-GettingStarted-BasicWorkflow.htm" title="Getting started" tocid="aa315b03-42bc-46db-a384-0f9845392149">Getting started</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Workflow-CodingRules.htm" title="Workflow details" tocid="d18f0d65-9e9e-4c56-9262-f6f3bd57544e">Workflow details</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Activity-Basics.htm" title="Activity details" tocid="0eed2054-928a-42b4-83d5-ec32262f4b9f">Activity details</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Other-Logging.htm" title="Other topics" tocid="aa91d615-b4f3-4179-9fc1-7e4483cbe783">Other topics</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Overview</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The <strong>Neon.Temporal</strong> class library is built for NETStandard 2.0
+        and is capable of connecting to a
+        <a href="https://Temporalworkflow.io/docs/" target="_blank">Temporal</a>
+        workflow cluster to manage and implement workflows.
+      </p><div class="alert"><table><tr><th><img src="icons/AlertCaution.png" alt="Caution note" /> Caution</th></tr><tr><td><p><strong>Neon.Temporal</strong> currently supports AMD 64-bit Windows, OS/X, and Linux 
+          runtime environments only.
+        </p></td></tr></table></div></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          Temporal is a wonderful open source solution for developers who need to deploy reliable workflows
+          for small to highly scaled applications and services.  This isn't the first workflow product, but
+          it may be the first one tailored specifically for developers who want to code workflows in a popular
+          language as opposed to drawing flow-charts, editing crazy XML workflow definitions, and/or jumping
+          through multi-step build hoops.
+        </p><p><strong>Neon.Temporal</strong> combined with Temporal Server lets you implement workflows in
+          any supported .NET language with little friction.  You can even set breakpoints and debug your
+          workflows directly in Visual Studio.
+        </p><p>
+          This page describes the key concepts.  Subsequent pages will show you how to get started. 
+        </p></div><div class="collapsibleAreaRegion" id="overview"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Overview</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
+          Temporal is a general purpose platform that can handle workflows that exist for just a moment or two
+          or workflows that run for days months or even years.  Temporal persists the state of running workflows
+          using the Cassandra or MySQL database to ensure that workflows will execute correctly even in the
+          face of hardware failures.  Temporal and Cassandra can be easily scaled horizontally for fault
+          tolerance and to handle very high loads.  Uber has Temporal deployments that can handle millions
+          of simultaneous workflows.
+        </p><p>
+          Here's a video by <strong>Maxim Fateev</strong>, the creator of Temporal, describing what
+          Temporal is and how it works:
+        </p><p><a href="https://www.youtube.com/watch?v=llmsBGKOuWI" target="_blank">Temporal: The Only Workflow Platform You'll Ever Need</a></p><p>
+          and here's a link to the Neon Temporal client namespace documentation if you want
+          to dive in immediately:
+        </p><p><a href="N_Neon_Temporal.htm">Neon.Temporal</a></p><p>
+          To supplement Maxim's video, we'll discuss how this works at a high-level below so you'll have
+          some understanding of the key concepts and how they fit together:
+        </p><dl><dt>Temporal Server</dt><dd><p>
+              Responsible for coordinating and tracking workflows and activities.  From the perspective of
+              a workflow developer, this includes the Temporal Server itself as well as the database where
+              Temporal perisits its state.  Temporal supports Cassandra for data storage as well as MySQL,
+              Postgres, as well as a plugin architecture for custom database integrations.  Cassandra is
+              free, scalable, and battle tested and is what we've been using for the Neon related projects.
+            </p><p>
+              When we use the term Temporal Server this typically includes the 
+              associated database as well.  Production deployments may include multiple Temporal Servers
+              for reliability and scalability.  This may be referred to as a <strong>Temporal Cluster</strong>
+              or perhaps as the <strong>Temporal Server</strong> since the cluster-ness is mostly abstracted
+              from a workflow author's perspective.
+            </p></dd><dt>Temporal Client</dt><dd><p>
+              Provides the APIs for accessing a Temporal Server or Cluster.  This is implemented by
+              <a href="T_Neon_Temporal_TemporalClient.htm">TemporalClient</a>
+              and you'll establish a connection to a Temporalr server by calling
+              <a href="M_Neon_Temporal_TemporalClient_ConnectAsync.htm">ConnectAsync</a>,
+              passing settings that specify the IP address or host name for one or more of the
+              Temporal servers in the cluster.
+            </p><p>
+              Once you have a connection, you can use it to deploy, call, as well as manage workflows
+              and activities.
+            </p></dd><dt>Workflows</dt><dd><p>
+              A fault-oblivious stateful function that orchestrates activities. A Workflow has full control over 
+              which activities are executed, and in which order. A Workflow must not affect the external world 
+              directly, only through activities. What makes workflow code a Workflow is that its state is preserved
+              by Temporal. Therefore any failure of a worker process that hosts the workflow code does not affect
+              the workflow execution. The Workflow continues as if these failures did not happen. 
+              At the same time, activities can fail any moment for any reason. Because workflow code is fully
+              fault-oblivious, it is guaranteed to get notifications about activity failures or timeouts and
+              act accordingly. There is no limit on potential workflow duration.
+            </p></dd><dt>Activities</dt><dd><p>
+              A business-level function that implements your application logic such as calling a service or transcoding
+              a media file. An activity usually implements a single well-defined action; it can be short or long running. 
+              An activity can be implemented as a synchronous method or fully asynchronously involving multiple processes.
+              An activity can be retried indefinitely according to the provided exponential retry policy. If for any reason
+              an activity is not completed within the specified timeout, an error is reported to the workflow and the workflow 
+              decides how to handle it. There is no limit on potential activity duration.
+            </p></dd><dt>Local Activities</dt><dd><p>
+              An activity that is invoked directly in the same process by a workflow code. It consumes much less resources
+              than a normal activity, but imposes a lot of limitations like low duration and lack of rate limiting.  These
+              are commonly used for things like making a REST call or performing a database operation.
+            </p></dd><dt>Workers</dt><dd><p>
+              Workers are responsible for actually implementing workflows and activities.  This is code that a workflow
+              developer will write and deploy.  You'll need to establish a connection a Temporal cluster anmd then
+              register your workflow and activity implementations with the cluster.  Then, Temporal will schedule
+              workflows and activities on these workers by instantiating and invoking your workflow and activity
+              classes.
+            </p></dd><dt>Decisions and History</dt><dd><p>
+              A decision is any action taken by a workflow implementation.  This may include calling an activity or
+              child workflow as well as other built-in operations like sleeping for a period of time or generating a
+              UUID or random number.  Typically, the workflow code consists of just the logic around coordinating
+              activities and child workflows that actually perform the workflow operations.
+            </p><p>
+              In legacy workflow platforms, a decision task would be modeled as conditional nodes in a flow chart along
+              with nodes that do something like call a REST API, do a database operation, send an email, etc.  Temporal
+              is code centric, so a decision task is more of a virtual concept.  It's essentially the bit of logic
+              in your workflows between activity calls as well as the built-in APIs.
+            </p><p>
+              Temporal maintains a durable history of the results of all activities and built-in APIs so that 
+              any workflow can be rescheduled on a different worker instance and end up in the same state as
+              it had before.  This is central to how Temporal works.
+            </p><p>
+              Note that workflow logic must never access or modify global or external state directly.  This includes
+              things like performing database or REST operations but also includes things like getting the time,
+              generating UUIDs and random numbers, or sleeping for a period of time.  You must use activities,
+              child workflows or the built-in APIs to ensure that the workflow will end up in the same state after
+              being rescheduled.  Workflow logic has a limited amount of time to make decisions between activity,
+              child workflow, or built-in API calls.  By default, a workflow has 10 seconds to decide what to do
+              next.  This can be increased to a maximum of 60 seconds via configuration.
+            </p></dd><dt>Namespaces and Task Lists</dt><dd><p>
+              Temporal is a multi-tenant service and uses namespaces to isolate each tenant from any others.  A namespace
+              is simply a unique namespace where workflows and activities as well as their worker implementations
+              are registered.
+            </p></dd><dt>Workflow and Run IDs</dt><dd><p>
+              Workflows are identifyed by Workflow ID.  This can be the name of a business entity like
+              <strong>order-00001234</strong> that identifies a product order in a database or
+              <strong>ltv-jeff@lilltek.com</strong> that identifies a workflow that periodically
+              computes the life-time-value (LTV) of the user with ID <strong>jeff@lilltek.com</strong>.
+              Workflow IDs can be any string including a UUID.
+            </p><p>
+              Workflow Run IDs are UUIDs generated by Temporal for each run of a workflow.  Workflows
+              are allowed (via configuration) to be able to scheduled multiple times using the same
+              Workflow ID.  This is handy when workflow IDs map to business entities.  In this case,
+              you can use the Run ID to identify exactly which run of the workflow you're interested in.
+              The most workflow recent run is assumed when you don't specify a Run ID.
+            </p></dd></dl><div class="mediaNear"><div class="caption" /><img alt="overview-components" src="media/overview-components.png" /></div><p>
+          The diagram above depicts how these components fit together.  The two <strong>RED</strong>
+          boxes show the Temporal Cluster (one or more Temporal server instances) along with its backing database.
+          You'll need to deploy and configure these as outlined here:
+          <a href="https://github.com/uber/Temporal/tree/master/docker" target="_blank">Temporal Deployment</a></p><p>
+          You'll be responsible for implementing and deploying the <strong>GREEN</strong>
+          boxes including one or more workers with your workflow and activity implementations as
+          well as any applications that need to run or monitor workflows.  We'll do a very high
+          level workflow of how this works:
+        </p><ol><li><p>
+              Deploy and start the Temporal cluster along with its database.
+            </p></li><li><p>
+              Author your workflows and activities as a deployable process.  This is typically just a
+              .NET Console application that runs on its own or perhaps as a Docker image in a Kubernetes
+              cluster.  These workers will register their workflow and activity implementations with Temporal
+              under a task list (<strong>Acme-PROD</strong> in this case) to isolate these registrations
+              from other cluster users.
+            </p><p>
+              For this example, we each worker registers a workflow that is designed to send an email
+              and the underlying activity that actually sends the email.  The workflow essentially consists
+              of a single decision task that just calls the activity or perhaps something including more complex
+              that customizes retry handling.
+            </p></li><li><p>
+            Once one or more workers have registered their workflow/activity implementations and started,
+            the Temporal cluster will be ready to schedule workflow and activity executions on them.
+            </p></li><li><p>
+            The last <strong>GREEN</strong> box represents your application code.  This can
+            be anything such as a website, REST API backend, console application, etc.  This is
+            typically where workflows will be invoked.
+            </p></li><li><p>
+              Let's say the application needs to send an email.  The application will need to connect
+              to the Temporal cluster with the <strong>Acme-PROD</strong> task list and invoke
+              the <strong>Send()</strong> workflow, passing the target address, subject, message,
+              and such.
+            </p></li><li><p>
+              Temporal receives the workflow call and persists it to the database.
+            </p></li><li><p>
+              Temporal then looks for any workers that have registered the workflow implementation.
+              It chooses one and invokes the workflow there.
+            </p></li><li><p>
+              Workflows are registered on workers as interfaces and classes.  From the workflow developer's
+              perspective, a workflow invocation means that an instance of your workflow class will be
+              constructed and your workflow entry point method will be called.
+            </p></li><li><p>
+              For this example, the <strong>Send()</strong> workflow simply calls the <strong>Send()</strong>
+              activity to actually send the email.
+            </p></li><li><p>
+              Temporal receives the <strong>Send()</strong> activity call, persists it to the database
+              and then looks for any workers that have registered the activity, chooses one and invokes the
+              activity there.  Activity implementations work essentially the same as workflows: an activity
+              class will be instantiated and its entry point method will be called.
+            </p></li><li><p>
+              The activity sends the message and returns any results to Temporal.  Temporal server persists
+              the result into the workflow history and then returns the reslt to the workflow.
+            </p></li><li><p>
+              Temporal server returns the activity result to the workflow when then returns its result
+              back to Temporal which records it to the database and then returns the result back to
+              the original calling application.
+            </p></li></ol></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Temporal.htm">Neon.Temporal</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="https://www.youtube.com/watch?v=llmsBGKOuWI" target="_blank">Temporal: The Only Workflow Platform You'll Ever Need</a></div><div class="seeAlsoStyle"><a href="https://github.com/nforgeio/neonKUBE/tree/master/Lib/Neon.Temporal" target="_blank">.NET Temporal GitHub Repository</a></div><div class="seeAlsoStyle"><a href="https://github.com/nforgeio/neonKUBE/issues?q=is%3Aopen+is%3Aissue+label%3ATemporal" target="_blank">.NET Temporal Open Issues</a></div><div class="seeAlsoStyle"><a href="https://github.com/nforgeio/Temporal-samples" target="_blank">.NET Temporal Samples</a></div><div class="seeAlsoStyle"><a href="https://Temporalworkflow.io/docs/" target="_blank">Uber Temporal</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>

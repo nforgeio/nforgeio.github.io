@@ -1,0 +1,63 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Local activities</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="Neon.Temporal-Activity-Local" /><meta name="Description" content="Temporal supports local activities which can be more convienent to use. Local activities don't need to be registered like normal activities and they are always executed on the same machine as the calling workflow so they may be somewhat more performant." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Overview.htm" title="Neon.Temporal" tocid="388889da-a265-44a6-98c4-ed5250130c04">Neon.Temporal</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Neon.Temporal-Activity-Basics.htm" title="Activity details" tocid="0eed2054-928a-42b4-83d5-ec32262f4b9f">Activity details</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Activity-Basics.htm" title="Basics" tocid="e2732a69-7898-45c6-9eb4-a6be3f10a497">Basics</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Activity-Local.htm" title="Local activities" tocid="103020d4-c043-4195-a9e3-56f88a28553c">Local activities</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="Neon.Temporal-Activity-ExternalCompletion.htm" title="External completion" tocid="7defa7c7-1124-464f-bf49-16987d2bb8f0">External completion</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>Local activities</h1></td></tr></table><span class="introStyle"></span> <div id="ID1RBSection" class="collapsibleSection"><p>
+          Temporal supports <strong>local activities</strong> which can be more convienent to use.
+          Local activities don't need to be registered like normal activities and they are always executed
+          on the same machine as the calling workflow so they may be somewhat more performant.
+        </p><p>
+          Here's an example of a workflow executing a local activity:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[ActivityInterface]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMyActivity : IActivity
+{
+    [ActivityMethod]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name);
+}
+
+[Activity]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyActivity : ActivityBase, IMyActivity
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; HelloAsync(<span class="highlight-keyword">string</span> name)
+    {
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> Task.FromResult($<span class="highlight-literal">"Hello {name}!"</span>);
+    }
+}
+
+[WorkflowInterface(TaskList = <span class="highlight-literal">"my-tasks"</span>)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMyWorkflow : IWorkflow
+{
+    [WorkflowMethod]
+    Task&lt;<span class="highlight-keyword">string</span>&gt; RunAsync();
+}
+
+[Workflow(AutoRegister = <span class="highlight-keyword">true</span>)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyWorkflow : WorkflowBase, IMyWorkflow
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> Task&lt;<span class="highlight-keyword">string</span>&gt; RunAsync()
+    {
+        <span class="highlight-keyword">var</span> stub = Workflow.NewLocalActivityStub&lt;IMyActivity, MyActivity&gt;();
+
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">await</span> stub.HelloAsync(<span class="highlight-literal">"Jeff"</span>);
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADABAAA");</script><p>
+          First, notice that we didn't specify a task list in the <span class="code">[ActivityInterface]</span>
+          attribute this time.   This is no necessary for local activities because these always run on on the
+          same machine as the workflow.  Next, notice that we're using 
+          <a href="M_Neon_Temporal_Workflow_NewActivityStub__1.htm">NewActivityStub<span id="LST1BF5B5FD_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST1BF5B5FD_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TActivityInterface<span id="LST1BF5B5FD_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST1BF5B5FD_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script></a>
+          to create the local activity stub, specifying the activity interface as well as the implementation
+          class.  The workflow can then call the local action stub just like it could for normal activities.
+        </p><p>
+          Local activities work almost the same as normal ones, the only real difference is that heartbeats and
+          checkpoints don't work for local activities because Temporal is tracking these differently than normal
+          activities.
+        </p><p>
+          It's very common for most of your activities to executed locally, especially for activities that are
+          really just internal workflow related operations.
+        </p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Temporal.htm">Neon.Temporal</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p></div></body></html>
