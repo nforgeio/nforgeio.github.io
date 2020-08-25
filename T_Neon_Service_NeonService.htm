@@ -1,0 +1,280 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NeonService Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NeonService class" /><meta name="System.Keywords" content="Neon.Service.NeonService class" /><meta name="Microsoft.Help.F1" content="Neon.Service.NeonService" /><meta name="Microsoft.Help.Id" content="T:Neon.Service.NeonService" /><meta name="Description" content="Base class for Kubernetes services that wish to use the neonKUBE unit testing conventions." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Neon.Service" /><meta name="file" content="T_Neon_Service_NeonService" /><meta name="guid" content="T_Neon_Service_NeonService" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_neon.htm" title="Neon Namespaces" tocid="R_Project_neon">Neon Namespaces</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_Neon_Service.htm" title="Neon.Service" tocid="N_Neon_Service">Neon.Service</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="T_Neon_Service_NeonService.htm" title="NeonService Class" tocid="T_Neon_Service_NeonService">NeonService Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_Neon_Service_NeonService__ctor.htm" title="NeonService Constructor " tocid="M_Neon_Service_NeonService__ctor">NeonService Constructor </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Properties_T_Neon_Service_NeonService.htm" title="NeonService Properties" tocid="Properties_T_Neon_Service_NeonService">NeonService Properties</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Methods_T_Neon_Service_NeonService.htm" title="NeonService Methods" tocid="Methods_T_Neon_Service_NeonService">NeonService Methods</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Fields_T_Neon_Service_NeonService.htm" title="NeonService Fields" tocid="Fields_T_Neon_Service_NeonService">NeonService Fields</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>NeonService Class</h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+            Base class for Kubernetes services that wish to use the neonKUBE unit testing conventions.
+            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Inheritance Hierarchy</span></div><div id="ID0RBSection" class="collapsibleSection"><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">System<span id="LST872A7664_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <span class="selflink">Neon.Service<span id="LST872A7664_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>NeonService</span><br /></div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="N_Neon_Service.htm">Neon.Service</a><br />
+    <strong>Assembly:</strong>
+   Neon.Service (in Neon.Service.dll) Version: 2.2.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cs','1','4');return false;">C#</a></div><div id="ID1EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','vb','2','4');return false;">VB</a></div><div id="ID1EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cpp','3','4');return false;">C++</a></div><div id="ID1EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">NeonService</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">MustInherit</span> <span class="keyword">Class</span> <span class="identifier">NeonService</span>
+	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">NeonService</span> <span class="keyword">abstract</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve">[&lt;<span class="identifier">AbstractClassAttribute</span>&gt;]
+<span class="keyword">type</span> <span class="identifier">NeonService</span> =  
+    <span class="keyword">class</span>
+        <span class="keyword">interface</span> <span class="identifier">IDisposable</span>
+    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EDCA");</script></div><p>The <span class="selflink">NeonService</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Constructors</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="constructorList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService__ctor.htm">NeonService</a></td><td><div class="summary">
+            Constructor.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Arguments.htm">Arguments</a></td><td><div class="summary">
+            Returns the list of command line arguments passed to the service.  This
+            defaults to an empty list.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_BaseUri.htm">BaseUri</a></td><td><div class="summary"><p>
+            For services with exactly one network endpoint, this returns the base
+            URI to be used to access the service.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            This will throw a <a href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception" target="_blank">InvalidOperationException</a> if the service
+            defines no endpoints or has multiple endpoints.
+            </td></tr></table></div></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Description.htm">Description</a></td><td><div class="summary">
+            Returns the service description for this service.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Endpoints.htm">Endpoints</a></td><td><div class="summary">
+            Returns the dictionary mapping case sensitive service endpoint names to endpoint information.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_ExitCode.htm">ExitCode</a></td><td><div class="summary">
+            Returns the exit code returned by the service.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_ExitException.htm">ExitException</a></td><td><div class="summary">
+            Returns any abnormal exception thrown by the derived <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_GitVersion.htm">GitVersion</a></td><td><div class="summary">
+            Returns GIT branch and commit the service was built from as
+            well as an optional indication the the build branch had 
+            uncomitted changes (e.g. was dirty).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_InDevelopment.htm">InDevelopment</a></td><td><div class="summary">
+            Returns <span class="code">true</span> when the service is running in development
+            or test mode, when the <b>DEV_WORKSTATION</b> environment variable is
+            <b>defined</b>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_InProduction.htm">InProduction</a></td><td><div class="summary">
+            Returns <span class="code">true</span> when the service is running in production,
+            when the <b>DEV_WORKSTATION</b> environment variable is
+            <b>not defined</b>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Log.htm">Log</a></td><td><div class="summary">
+            Returns the service's default logger.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_LogManager.htm">LogManager</a></td><td><div class="summary">
+            Returns the service's log manager.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Name.htm">Name</a></td><td><div class="summary">
+            Returns the service name.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_ServiceMap.htm">ServiceMap</a></td><td><div class="summary">
+            Returns the service map.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Status.htm">Status</a></td><td><div class="summary">
+            Returns the service current running status.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Terminator.htm">Terminator</a></td><td><div class="summary">
+            Returns the service's <a href="T_Neon_Service_ProcessTerminator.htm">ProcessTerminator</a>.  This can be used
+            to handle termination signals.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Methods</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_Dispose.htm">Dispose<span id="LST872A7664_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</div></td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Service_NeonService_Dispose_1.htm">Dispose(Boolean)</a></td><td><div class="summary">
+            Releases all associated resources.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_Exit.htm">Exit</a></td><td><div class="summary">
+            Used by services to stop themselves, specifying an optional process exit code.
+            </div></td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Service_NeonService_Finalize.htm">Finalize</a></td><td><div class="summary">
+            Finalizer.
+            </div> (Overrides <a href="https://docs.microsoft.com/dotnet/api/system.object.finalize#System_Object_Finalize" target="_blank">Object<span id="LST872A7664_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_4?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Finalize<span id="LST872A7664_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_5?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_GetConfigFilePath.htm">GetConfigFilePath</a></td><td><div class="summary">
+            Returns the physical path for the confguration file whose logical path is specified.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_GetEnvironmentVariable.htm">GetEnvironmentVariable</a></td><td><div class="summary">
+            Returns the value of an environment variable.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as the default hash function.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="https://docs.microsoft.com/dotnet/api/system.type" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_LoadEnvironmentVariables.htm">LoadEnvironmentVariables</a></td><td><div class="summary"><p>
+            Loads environment variables formatted as <span class="code">NAME=VALUE</span> from a text file as service
+            environment variables.  The file will be decrypted using <a href="T_Neon_Cryptography_NeonVault.htm">NeonVault</a> if necessary.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            Blank lines and lines beginning with '#' will be ignored.
+            </td></tr></table></div></div></td></tr><tr data="protected;inherited;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync</a></td><td><div class="summary">
+            Called to actually implement the service.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_RunAsync.htm">RunAsync</a></td><td><div class="summary">
+            Starts the service if it's not already running.  This will call <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_6?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>,
+            which actually implements the service.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetArguments.htm">SetArguments</a></td><td><div class="summary">
+            Initializes <a href="P_Neon_Service_NeonService_Arguments.htm">Arguments</a> with the command line arguments passed.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetConfigFile.htm">SetConfigFile(String, <span id="LST872A7664_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_7?cpp=array&lt;");</script>Byte<span id="LST872A7664_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_8?cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]");</script>)</a></td><td><div class="summary">
+            Maps a logical configuration file path to a temporary file holding the
+            byte contents passed.  This is typically used initializing confguration
+            files for unit testing.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetConfigFile_1.htm">SetConfigFile(String, String, Boolean)</a></td><td><div class="summary">
+            Maps a logical configuration file path to a temporary file holding the
+            string contents passed encoded as UTF-8.  This is typically used for
+            initializing confguration files for unit testing.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetConfigFilePath.htm">SetConfigFilePath</a></td><td><div class="summary">
+            Maps a logical configuration file path to an actual file on the
+            local machine.  This is used for unit testing to map a file on
+            the local workstation to the path where the service expects the
+            find to be.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetEnvironmentVariable.htm">SetEnvironmentVariable</a></td><td><div class="summary">
+            Sets or deletes a service environment variable.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetRunningAsync.htm">SetRunningAsync</a></td><td><div class="summary">
+            Called by <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_9?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> implementation after they've completed any
+            initialization and are ready for traffic.  This sets <a href="P_Neon_Service_NeonService_Status.htm">Status</a> to
+            <a href="T_Neon_Service_NeonServiceStatus.htm">Running</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_SetStatusAsync.htm">SetStatusAsync</a></td><td><div class="summary">
+            Updates the service status.  This is typically called internally by this
+            class but service code may set this to <a href="T_Neon_Service_NeonServiceStatus.htm">Unhealthy</a>
+            when there's a problem and back to <a href="T_Neon_Service_NeonServiceStatus.htm">Running</a>
+            when the service is healthy again.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Service_NeonService_Stop.htm">Stop</a></td><td><div class="summary"><p>
+            Stops the service if it's not already stopped.  This is intended to be called by
+            external things like unit test fixtures and is not intended to be called by the
+            service itself.
+            </p></div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Fields</span></div><div id="ID6RBSection" class="collapsibleSection"><table class="members" id="fieldList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="icons/pubfield.gif" alt="Public field" title="Public field" /><img src="icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="F_Neon_Service_NeonService_GlobalLogging.htm">GlobalLogging</a></td><td><div class="summary">
+            This controls whether any <span class="selflink">NeonService</span> instances will use the global
+            <a href="P_Neon_Diagnostics_LogManager_Default.htm">Default</a> log manager for logging or maintain its own
+            log manager.  This defaults to <span class="code">true</span> which will be appropriate for most
+            production situations.  It may be useful to disable this for some unit tests.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Remarks</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
+            Basing your service implementations on the <a href="N_Neon_Service.htm">Neon.Service</a> class will
+            make them easier to test via integration with the <b>ServiceFixture</b> from
+            the <b>Neon.Xunit</b> library by providing some useful abstractions over 
+            service configuration, startup and shutdown including a <a href="T_Neon_Service_ProcessTerminator.htm">ProcessTerminator</a>
+            to handle termination signals from Kubernetes.
+            </p><p>
+            This class is pretty easy to use.  Simply derive your service class from <span class="selflink">NeonService</span>
+            and implement the <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_10?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method.  <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_11?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> will be called when 
+            your service is started.  This is where you'll implement your service.  You should perform any
+            initialization and then call <a href="M_Neon_Service_NeonService_SetRunningAsync.htm">SetRunningAsync<span id="LST872A7664_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_12?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to indicate that the service is ready for
+            business.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            Note that calling <a href="M_Neon_Service_NeonService_SetRunningAsync.htm">SetRunningAsync<span id="LST872A7664_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_13?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> after your service has initialized is very important
+            because the <b>NeonServiceFixture</b> requires won't allow tests to proceed until the service
+            indicates that it's ready.  This is necessary to avoid unit test race conditions.
+            </td></tr></table></div><p>
+            Note that your  <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_14?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method should generally not return until the 
+            <a href="P_Neon_Service_NeonService_Terminator.htm">Terminator</a> signals it to stop.  Alternatively, you can throw a <a href="T_Neon_Common_ProgramExitException.htm">ProgramExitException</a>
+            with an optional process exit code to proactively exit your service.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            All services should properly handle <a href="P_Neon_Service_NeonService_Terminator.htm">Terminator</a> stop signals so unit tests will terminate
+            promptly.  Your terminate handler method must return within a set period of time (30 seconds by default) 
+            to avoid having your tests being forced to stop.  This is probably the trickiest implementation
+            task.  For truly asynchronous service implementations, you should consider passing
+            the <a href="P_Neon_Service_ProcessTerminator_CancellationToken.htm">CancellationToken</a> to all async methods you
+            call and then handle any <a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.taskcanceledexception" target="_blank">TaskCanceledException</a> exceptions thrown by
+            returning from <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_15?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.
+            </td></tr></table></div><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            This class uses the <b>DEV_WORKSTATION</b> environment variable to determine whether
+            the service is running in test mode or not.  This variable will typically be defined
+            on developer workstations as well as CI/CD machines.  This variable must never be
+            defined for production environments.  You can use the <a href="P_Neon_Service_NeonService_InProduction.htm">InProduction</a>
+            or <a href="P_Neon_Service_NeonService_InDevelopment.htm">InDevelopment</a> properties to check this.
+            </td></tr></table></div><p><b>CONFIGURATION</b></p><p>
+            Services are generally configured using environment variables and/or configuration
+            files.  In production, environment variables will actually come from the environment
+            after having been initialized by the container image or passed by Kubernetes when
+            starting the service container.  Environment variables are retrieved by name
+            (case sensitive).
+            </p><p>
+            Configuration files work the same way.  They are either present in the service 
+            container image or mounted to the container as a secret or config file by Kubernetes. 
+            Configuration files are specified by their path (case sensitive) within the
+            running container.
+            </p><p>
+            This class provides some abstractions for managing environment variables and 
+            configuration files so that services running in production and services running
+            in a local unit test can configure themselves using the same code for both
+            environments. 
+            </p><p>
+            Services should use the <a href="M_Neon_Service_NeonService_GetEnvironmentVariable.htm">GetEnvironmentVariable(String, String)</a> method to 
+            retrieve important environment variables rather than using <a href="https://docs.microsoft.com/dotnet/api/system.environment.getenvironmentvariable#System_Environment_GetEnvironmentVariable_System_String_" target="_blank">GetEnvironmentVariable(String)</a>.
+            In production, this simply returns the variable directly from the current process.
+            For tests, the environment variable will be returned from a local dictionary
+            that was expicitly initialized by calls to <a href="M_Neon_Service_NeonService_SetEnvironmentVariable.htm">SetEnvironmentVariable(String, String)</a>.
+            This local dictionary allows the testing of multiple services at the same
+            time with each being presented their own environment variables.
+            </p><p>
+            You may also use the <a href="M_Neon_Service_NeonService_LoadEnvironmentVariables.htm">LoadEnvironmentVariables(String, Func<span id="LST872A7664_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_16?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST872A7664_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_17?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>
+            method to load environment variables from a text file (potentially encrypted via
+            <a href="T_Neon_Cryptography_NeonVault.htm">NeonVault</a>).  This will typically be done only for unit tests.
+            </p><p>
+            Configuration files work similarily.  You'll use <a href="M_Neon_Service_NeonService_GetConfigFilePath.htm">GetConfigFilePath(String)</a>
+            to map a logical file path to a physical path.  The logical file path is typically
+            specified as the path where the configuration file will be located in production.
+            This can be any valid path with in a running production container and since we're
+            currently Linux centric, will typically be a Linux file path like <span class="code">/etc/MYSERVICE.yaml</span>
+            or <span class="code">/etc/MYSERVICE/config.yaml</span>.
+            </p><p>
+            For production, <a href="M_Neon_Service_NeonService_GetConfigFilePath.htm">GetConfigFilePath(String)</a> will simply return the file
+            path passed so that the configuration file located there will referenced.  For
+            testing, <a href="M_Neon_Service_NeonService_GetConfigFilePath.htm">GetConfigFilePath(String)</a> will return the path specified by
+            an earlier call to <a href="M_Neon_Service_NeonService_SetConfigFilePath.htm">SetConfigFilePath(String, String, Func<span id="LST872A7664_18"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_18?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST872A7664_19"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_19?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or to a
+            temporary file initialized by previous calls to <a href="M_Neon_Service_NeonService_SetConfigFile_1.htm">SetConfigFile(String, String, Boolean)</a>
+            or <a href="M_Neon_Service_NeonService_SetConfigFile.htm">SetConfigFile(String, <span id="LST872A7664_20"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_20?cpp=array&lt;");</script>Byte<span id="LST872A7664_21"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_21?cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]");</script>)</a>.  This indirection provides a 
+            consistent way to run services in production as well as in tests, including tests
+            running multiple services simultaneously.
+            </p><p><b>SERVICE TERMINATION</b></p><p>
+            All services, especially those that create unmanaged resources like ASP.NET services,
+            sockets, NATS clients, HTTP clients, thread etc. should override and implement 
+            <a href="M_Neon_Service_NeonService_Dispose_1.htm">Dispose(Boolean)</a>  to ensure that any of these resources are proactively 
+            disposed.  Your method should call the base class version of the method first before 
+            disposing these resources.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EANABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EANABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EANABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EANABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> Dispose(<span class="highlight-keyword">bool</span> disposing)
+{
+    <span class="highlight-keyword">base</span>.Dispose(disposing);
+
+    <span class="highlight-keyword">if</span> (appHost != <span class="highlight-keyword">null</span>)
+    {
+        appHost.Dispose();
+        appHost = <span class="highlight-keyword">null</span>;
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EANABA");</script><p>
+            The <b>disposing</b> parameter is passed as <span class="code">true</span> when the base <a href="M_Neon_Service_NeonService_Dispose.htm">Dispose<span id="LST872A7664_22"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_22?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
+            method was called or <span class="code">false</span> if the garbage collector is finalizing the instance
+            before discarding it.  The difference is subtle and most services can safely ignore
+            this parameter (other than passing it through to the base <a href="M_Neon_Service_NeonService_Dispose_1.htm">Dispose(Boolean)</a>
+            method).
+            </p><p>
+            In the example above, the service implements an ASP.NET web service where <span class="code">appHost</span>
+            was initialized as the <span class="code">IWebHost</span> actually implementing the web service.  The code
+            ensures that the <span class="code">appHost</span> isn't already disposed before disposing it.  This will
+            stop the web service and release the underlying listening socket.  You'll want to do
+            something like this for any other unmanaged resources your service might hold.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+            It's very important that you take care to dispose things like running web services and
+            listening sockets within your <a href="M_Neon_Service_NeonService_Dispose_1.htm">Dispose(Boolean)</a> method.  You also need to
+            ensure that any threads you've created are terminated.  This means that you'll need
+            a way to signal threads to exit and then wait for them to actually exit.
+            </p><p>
+            This is important when testing your services with a unit testing framework like
+            Xunit because frameworks like this run all tests within the same Test Runner
+            process and leaving something like a listening socket open on a port (say port 80)
+            may prevent a subsequent test from running successfully due to it not being able 
+            to open its listening socket on port 80. 
+            </p></td></tr></table></div><p><b>LOGGING</b></p><p>
+            Each <span class="selflink">NeonService</span> instance maintains its own <a href="P_Neon_Service_NeonService_LogManager.htm">LogManager</a>
+            instance with the a default logger created at <a href="P_Neon_Service_NeonService_Log.htm">Log</a>.  The log manager
+            is initialized using the <b>LOG_LEVEL</b> environment variable value which defaults
+            to <b>info</b> when not present.  <a href="T_Neon_Diagnostics_LogLevel.htm">LogLevel</a> for the possible values.
+            </p><p>
+            Note that the <a href="P_Neon_Diagnostics_LogManager_Default.htm">Default</a> log manager will
+            also be initialized with the log level when the service is running in a production
+            environment so that logging in production works completely as expected.
+            </p><p>
+            For development environments, the <a href="P_Neon_Diagnostics_LogManager_Default.htm">Default</a>
+            instance's log level will not be modified.  This means that loggers created from
+            <a href="P_Neon_Diagnostics_LogManager_Default.htm">Default</a> may not use the same log
+            level as the service itself.  This means that library classes that create their
+            own loggers won't honor the service log level.  This is an unfortunate consequence
+            of running emulated services in the same process.
+            </p><p>
+            There are two ways to mitigate this.  First, any source code defined within the 
+            service project should be designed to create loggers from the service's <a href="P_Neon_Service_NeonService_LogManager.htm">LogManager</a>
+            rather than using the global one.  Second, you can configure your unit test to
+            set the desired log level like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAEABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">LogManager.Default.SetLogLevel(LogLevel.Debug));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEABA");</script><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            Setting the global default log level like this will impact loggers created for all
+            emulated services, but this shouldn't be a problem for more situations.
+            </td></tr></table></div><p><b>HEALTH PROBES</b></p><p>
+            Hosting environments such as Kubernetes will often require service instances
+            to be able to report their health via health probes.  These probes are typically
+            implemented as a script that is called periodically by the hosting environment
+            with the script return code indicating the service instance health.
+            </p><p>
+            The <span class="selflink">NeonService</span> class supports this by optionally
+            writing a text file with various strings indicating the health status.  This file
+            will consist of a single line of text <b>without line ending characters</b>.  You'll
+            need to specify the fully qualified path to this file as an optional parameter to the 
+            <span class="selflink">NeonService</span> constructor.
+            </p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID8RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Service.htm">Neon.Service Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE, LLC.  All rights reserved.</p> </div></body></html>

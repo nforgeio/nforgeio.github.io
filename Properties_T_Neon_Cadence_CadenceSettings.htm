@@ -121,7 +121,7 @@
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_LogLevel.htm">LogLevel</a></td><td><div class="summary">
             Optionally specifies the logging level for the associated <b>cadence-proxy</b>.
             This defaults to <a href="T_Neon_Diagnostics_LogLevel.htm">None</a> which will be appropriate for most
-            proiduction situations.  You may wish to set this to <a href="T_Neon_Diagnostics_LogLevel.htm">Info</a>
+            production situations.  You may wish to set this to <a href="T_Neon_Diagnostics_LogLevel.htm">Info</a>
             or <a href="T_Neon_Diagnostics_LogLevel.htm">Debug</a> while debugging.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_MaxWorkflowDelaySeconds.htm">MaxWorkflowDelaySeconds</a></td><td><div class="summary"><b>EXPERIMENTAL:</b> Specifies the maximum seconds that a workflow will be kept alive after
             the workflow method returns to handle any oustanding synchronous signal queries.  This defaults
@@ -147,7 +147,7 @@
             This defaults to <b>10 seconds</b>.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Cadence_CadenceSettings_WorkflowIdReusePolicy.htm">WorkflowIdReusePolicy</a></td><td><div class="summary">
             Specifies what happens when Cadence workflows attempt to reuse workflow IDs.
-            This defaults to <a href="T_Neon_Cadence_WorkflowIdReusePolicy.htm">AllowDuplicateFailedOnly</a>.
+            This defaults to <a href="T_Neon_Cadence_WorkflowIdReusePolicy.htm">AllowDuplicate</a>.
             Workflows can customize this via <a href="T_Neon_Cadence_WorkflowOptions.htm">WorkflowOptions</a> or <a href="T_Neon_Cadence_ChildWorkflowOptions.htm">ChildWorkflowOptions</a>
             or by setting this in the <a href="T_Neon_Cadence_WorkflowMethodAttribute.htm">WorkflowMethodAttribute</a> tagging the 
             workflow entry point method

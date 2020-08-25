@@ -13,7 +13,7 @@
     <strong>Namespace:</strong> 
    <a href="N_Neon_Xunit.htm">Neon.Xunit</a><br />
     <strong>Assembly:</strong>
-   Neon.Xunit (in Neon.Xunit.dll) Version: 2.1.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="identifier">RunFixture</span>&lt;T&gt;(
+   Neon.Xunit (in Neon.Xunit.dll) Version: 2.2.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="identifier">RunFixture</span>&lt;T&gt;(
 	<span class="keyword">params</span> <span class="identifier">Object</span>[] <span class="parameter">args</span>
 )
 <span class="keyword">where</span> T : <span class="keyword">class</span>
@@ -31,9 +31,9 @@
             fixture parameter.  Note that the number of parameters and their types
             must match the constructor parameters after the fixture one.
             </dd></dl><h4 class="subHeading">Type Parameters</h4><dl><dt><span class="parameter">T</span></dt><dd>Specifies the test type.</dd></dl></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Remarks</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
-            This is often used to run a <a href="T_Neon_Kube_Service_KubeService.htm">KubeService</a> using <a href="T_Neon_Xunit_KubeServiceFixture_1.htm">KubeServiceFixture<span id="LSTAFD771A1_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_6?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>TService<span id="LSTAFD771A1_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_7?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
-            or a collection of <a href="T_Neon_Kube_Service_KubeService.htm">KubeService</a> instances for debugging purposes using a combination
-            of a <a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture</a> with <a href="T_Neon_Xunit_KubeServiceFixture_1.htm">KubeServiceFixture<span id="LSTAFD771A1_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_8?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>TService<span id="LSTAFD771A1_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_9?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> sub-fixtures.
+            This is often used to run a <a href="T_Neon_Service_NeonService.htm">NeonService</a> using <a href="T_Neon_Xunit_NeonServiceFixture_1.htm">NeonServiceFixture<span id="LSTAFD771A1_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_6?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>TService<span id="LSTAFD771A1_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_7?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+            or a collection of <a href="T_Neon_Service_NeonService.htm">NeonService</a> instances for debugging purposes using a combination
+            of a <a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture</a> with <a href="T_Neon_Xunit_NeonServiceFixture_1.htm">NeonServiceFixture<span id="LSTAFD771A1_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_8?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>TService<span id="LSTAFD771A1_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAFD771A1_9?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> sub-fixtures.
             But, this can also be used for any <a href="T_Neon_Xunit_ITestFixture.htm">ITestFixture</a> implementation.
             </p><p>
             You'll need to implement a test class that derives from a <span class="nolink">IClassFixture</span>
@@ -47,7 +47,7 @@
 {
     <span class="highlight-keyword">private</span> ComposedFixture                     composedFixture;
     <span class="highlight-keyword">private</span> NatsFixture                         natsFixture;
-    <span class="highlight-keyword">private</span> KubeServiceFixture&lt;QueueService&gt;    queueServiceFixture;
+    <span class="highlight-keyword">private</span> NeonServiceFixture&lt;QueueService&gt;    queueServiceFixture;
 
     <span class="highlight-keyword">public</span> MyTestRunner(ComposedFixture fixture)
     {
@@ -62,11 +62,11 @@
                        natsFixture.StartAsComposed();
                     });
 
-                composedFixture.AddServiceFixture(<span class="highlight-literal">"queue-service"</span>, <span class="highlight-keyword">new</span> KubeServiceFixture&lt;QueueService&gt;(), () =&gt; CreateQueueService());
+                composedFixture.AddServiceFixture(<span class="highlight-literal">"queue-service"</span>, <span class="highlight-keyword">new</span> NeonServiceFixture&lt;QueueService&gt;(), () =&gt; CreateQueueService());
             });
 
         <span class="highlight-keyword">this</span>.natsFixture         = (NatsFixture)composedFixture[<span class="highlight-literal">"nats"</span>];
-        <span class="highlight-keyword">this</span>.queueServiceFixture = (KubeServiceFixture&lt;QueueService&gt;)composedFixture[<span class="highlight-literal">"queue-service"</span>];
+        <span class="highlight-keyword">this</span>.queueServiceFixture = (NeonServiceFixture&lt;QueueService&gt;)composedFixture[<span class="highlight-literal">"queue-service"</span>];
     }
 
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Run()
