@@ -24,9 +24,17 @@
             </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Cryptography_NeonVault.htm">NeonVault</a></td><td><div class="summary">
             Manages the encryption and decryption of files using passwords.  This works
             a lot like Ansible Vault.
-            </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Cryptography_TlsCertificate.htm">TlsCertificate</a></td><td><div class="summary">
+            </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Cryptography_TlsCertificate.htm">TlsCertificate</a></td><td> <strong>Obsolete. </strong><div class="summary"><p>
             Holds the public and private parts of a TLS certificate.
-            </div></td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Enumerations</span></div><div id="ID1RBSection" class="collapsibleSection"><table class="members" id="enumerationList"><tr><th class="iconColumn">
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+            This class is a bit of a hack and relies on the presence of the <b>openssl</b>
+            command line tool for Linux, OS/X,... and the <b>certutil</b> tool for Windows.
+            This means that you'll need to take care to ensure <b>openssl</b> is present in
+            your Docker images, etc.
+            </p><p>
+            This class is deprecated.  We recommend that you use the .NET Core 3+ 
+            <span class="code">X509Certificate2</span> or .NETFramework class instead.
+            </p></td></tr></table></div></div></td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Enumerations</span></div><div id="ID1RBSection" class="collapsibleSection"><table class="members" id="enumerationList"><tr><th class="iconColumn">
 					 
 				</th><th>Enumeration</th><th>Description</th></tr><tr data="enumeration; public"><td><img src="icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_Neon_Cryptography_Wildcard.htm">Wildcard</a></td><td><div class="summary">
             Enumerates the possible wildcard certificate generation modes.
