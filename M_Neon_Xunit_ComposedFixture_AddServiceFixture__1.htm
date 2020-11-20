@@ -17,7 +17,7 @@
 	<span class="identifier">string</span> <span class="parameter">name</span>,
 	<span class="identifier">NeonServiceFixture</span>&lt;TService&gt; <span class="parameter">subFixture</span>,
 	<span class="identifier">Func</span>&lt;TService&gt; <span class="parameter">serviceCreator</span>,
-	<span class="identifier">TimeSpan</span> <span class="parameter">runningTimeout</span> = <span class="keyword">null</span>,
+	<span class="identifier">TimeSpan</span> <span class="parameter">startTimeout</span> = <span class="keyword">null</span>,
 	<span class="identifier">int</span> <span class="parameter">group</span> = -1
 )
 <span class="keyword">where</span> TService : <span class="identifier">NeonService</span>
@@ -25,7 +25,7 @@
 	<span class="parameter">name</span> <span class="keyword">As</span> <span class="identifier">String</span>,
 	<span class="parameter">subFixture</span> <span class="keyword">As</span> <span class="identifier">NeonServiceFixture</span>(<span class="keyword">Of</span> TService),
 	<span class="parameter">serviceCreator</span> <span class="keyword">As</span> <span class="identifier">Func</span>(<span class="keyword">Of</span> TService),
-	Optional <span class="parameter">runningTimeout</span> <span class="keyword">As</span> <span class="identifier">TimeSpan</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">startTimeout</span> <span class="keyword">As</span> <span class="identifier">TimeSpan</span> = <span class="keyword">Nothing</span>,
 	Optional <span class="parameter">group</span> <span class="keyword">As</span> <span class="identifier">Integer</span> = -1
 )</pre></div><div id="ID0EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span>:
 <span class="keyword">generic</span>&lt;<span class="keyword">typename</span> TService&gt;
@@ -34,31 +34,28 @@
 	<span class="identifier">String</span>^ <span class="parameter">name</span>, 
 	<span class="identifier">NeonServiceFixture</span>&lt;TService&gt;^ <span class="parameter">subFixture</span>, 
 	<span class="identifier">Func</span>&lt;TService&gt;^ <span class="parameter">serviceCreator</span>, 
-	<span class="identifier">TimeSpan</span> <span class="parameter">runningTimeout</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">TimeSpan</span> <span class="parameter">startTimeout</span> = <span class="keyword">nullptr</span>, 
 	<span class="identifier">int</span> <span class="parameter">group</span> = -1
 )</pre></div><div id="ID0EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">member</span> <span class="identifier">AddServiceFixture</span> : 
         <span class="parameter">name</span> : <span class="identifier">string</span> * 
         <span class="parameter">subFixture</span> : <span class="identifier">NeonServiceFixture</span>&lt;'TService&gt; * 
         <span class="parameter">serviceCreator</span> : <span class="identifier">Func</span>&lt;'TService&gt; * 
-        ?<span class="parameter">runningTimeout</span> : <span class="identifier">TimeSpan</span> * 
+        ?<span class="parameter">startTimeout</span> : <span class="identifier">TimeSpan</span> * 
         ?<span class="parameter">group</span> : <span class="identifier">int</span> 
 (* Defaults:
-        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">runningTimeout</span> = defaultArg <span class="identifier">runningTimeout</span> <span class="keyword">null</span>
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">startTimeout</span> = defaultArg <span class="identifier">startTimeout</span> <span class="keyword">null</span>
         <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">group</span> = defaultArg <span class="identifier">group</span> -1
 *)
 <span class="keyword">-&gt;</span> <span class="keyword">unit</span>  <span class="keyword">when</span> 'TService : <span class="identifier">NeonService</span>
 </pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">name</span></dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.string" target="_blank">System<span id="LST41A4E5D3_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>String</a><br />The fixture name (case insenstitive).</dd><dt><span class="parameter">subFixture</span></dt><dd>Type: <a href="T_Neon_Xunit_NeonServiceFixture_1.htm">Neon.Xunit<span id="LST41A4E5D3_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_6?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>NeonServiceFixture</a><span id="LST41A4E5D3_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_7?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script><span class="selflink"><span class="typeparameter">TService</span></span><span id="LST41A4E5D3_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_8?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><br />The subfixture being added.</dd><dt><span class="parameter">serviceCreator</span></dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.func-1" target="_blank">System<span id="LST41A4E5D3_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_9?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Func</a><span id="LST41A4E5D3_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_10?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script><span class="selflink"><span class="typeparameter">TService</span></span><span id="LST41A4E5D3_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_11?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><br /><p>
             Callback that creates and returns the new service instance.
-            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
-            It's can be useful for the <span class="parameter">serviceCreator</span> the service creator to wait for the
-            service to actually be ready before returning (e.g. that it is listening for requests,...).
-            </td></tr></table></div>
+            </p></dd><dt><span class="parameter">startTimeout</span> (Optional)</dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.timespan" target="_blank">System<span id="LST41A4E5D3_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_12?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>TimeSpan</a><br />
             Optionally specifies maximum time to wait for the service to transition to the running state.
-            
+            </dd><dt><span class="parameter">group</span> (Optional)</dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.int32" target="_blank">System<span id="LST41A4E5D3_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_13?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Int32</a><br />
             Optionally specifies the fixture group.  Fixtures with <span class="parameter">group</span><span class="code">=-1</span> (the default)
             will be started one by one before all other fixtures.  Fixtures with a <span class="code">group &gt;= 0</span> will
             be started in parallel by group starting at the lowest group.  All of the fixtures in the same
             group will be started in parallel on separate threads and the <a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture</a> will
             wait until all fixtures in a group have started before advancing to the next group.
-            </dd><dt><span class="parameter">runningTimeout</span> (Optional)</dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.timespan" target="_blank">System<span id="LST41A4E5D3_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_12?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>TimeSpan</a><br /><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[Missing &lt;param name="runningTimeout"/&gt; documentation for "M:Neon.Xunit.ComposedFixture.AddServiceFixture``1(System.String,Neon.Xunit.NeonServiceFixture{``0},System.Func{``0},System.TimeSpan,System.Int32)"]</p></dd><dt><span class="parameter">group</span> (Optional)</dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.int32" target="_blank">System<span id="LST41A4E5D3_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST41A4E5D3_13?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Int32</a><br /><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[Missing &lt;param name="group"/&gt; documentation for "M:Neon.Xunit.ComposedFixture.AddServiceFixture``1(System.String,Neon.Xunit.NeonServiceFixture{``0},System.Func{``0},System.TimeSpan,System.Int32)"]</p></dd></dl><h4 class="subHeading">Type Parameters</h4><dl><dt><span class="parameter">TService</span></dt><dd>The service type (derived from <a href="T_Neon_Service_NeonService.htm">NeonService</a>.</dd></dl></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture Class</a></div><div class="seeAlsoStyle"><a href="N_Neon_Xunit.htm">Neon.Xunit Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+            </dd></dl><h4 class="subHeading">Type Parameters</h4><dl><dt><span class="parameter">TService</span></dt><dd>The service type (derived from <a href="T_Neon_Service_NeonService.htm">NeonService</a>.</dd></dl></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Neon_Xunit_ComposedFixture.htm">ComposedFixture Class</a></div><div class="seeAlsoStyle"><a href="N_Neon_Xunit.htm">Neon.Xunit Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
 Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE LLC.  All rights reserved.</p> </div></body></html>
