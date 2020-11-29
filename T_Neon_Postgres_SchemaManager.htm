@@ -1,0 +1,232 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>SchemaManager Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="SchemaManager class" /><meta name="System.Keywords" content="Neon.Postgres.SchemaManager class" /><meta name="Microsoft.Help.F1" content="Neon.Postgres.SchemaManager" /><meta name="Microsoft.Help.Id" content="T:Neon.Postgres.SchemaManager" /><meta name="Description" content="Manages the initial creation and schema updates for a Postgres database." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Neon.Postgres" /><meta name="file" content="T_Neon_Postgres_SchemaManager" /><meta name="guid" content="T_Neon_Postgres_SchemaManager" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_neon.htm" title="Neon Namespaces" tocid="R_Project_neon">Neon Namespaces</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_Neon_Postgres.htm" title="Neon.Postgres" tocid="N_Neon_Postgres">Neon.Postgres</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="T_Neon_Postgres_SchemaManager.htm" title="SchemaManager Class" tocid="T_Neon_Postgres_SchemaManager">SchemaManager Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_Neon_Postgres_SchemaManager__ctor.htm" title="SchemaManager Constructor " tocid="Overload_Neon_Postgres_SchemaManager__ctor">SchemaManager Constructor </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Properties_T_Neon_Postgres_SchemaManager.htm" title="SchemaManager Properties" tocid="Properties_T_Neon_Postgres_SchemaManager">SchemaManager Properties</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Methods_T_Neon_Postgres_SchemaManager.htm" title="SchemaManager Methods" tocid="Methods_T_Neon_Postgres_SchemaManager">SchemaManager Methods</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Fields_T_Neon_Postgres_SchemaManager.htm" title="SchemaManager Fields" tocid="Fields_T_Neon_Postgres_SchemaManager">SchemaManager Fields</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>SchemaManager Class</h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+            Manages the initial creation and schema updates for a Postgres database.
+            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Inheritance Hierarchy</span></div><div id="ID0RBSection" class="collapsibleSection"><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">System<span id="LST78491A01_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <span class="selflink">Neon.Postgres<span id="LST78491A01_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>SchemaManager</span><br /></div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="N_Neon_Postgres.htm">Neon.Postgres</a><br />
+    <strong>Assembly:</strong>
+   Neon.Postgres (in Neon.Postgres.dll) Version: 2.10.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cs','1','4');return false;">C#</a></div><div id="ID1EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','vb','2','4');return false;">VB</a></div><div id="ID1EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cpp','3','4');return false;">C++</a></div><div id="ID1EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">SchemaManager</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">SchemaManager</span>
+	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">SchemaManager</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">SchemaManager</span> =  
+    <span class="keyword">class</span>
+        <span class="keyword">interface</span> <span class="identifier">IDisposable</span>
+    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EDCA");</script></div><p>The <span class="selflink">SchemaManager</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Constructors</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="constructorList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager__ctor.htm">SchemaManager(NpgsqlConnection, String, IStaticDirectory, Dictionary<span id="LST78491A01_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_2?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST78491A01_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_3?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a></td><td><div class="summary">
+            Constructs an instance that loads scripts from embedded resources.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager__ctor_1.htm">SchemaManager(NpgsqlConnection, String, String, Dictionary<span id="LST78491A01_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_4?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST78491A01_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_5?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a></td><td><div class="summary">
+            Constructs an instance that loads scripts from files.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Postgres_SchemaManager_TargetConnection.htm">TargetConnection</a></td><td><div class="summary">
+            Returns a connection to the target database if the database exists.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Methods</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager_CreateDatabaseAsync.htm">CreateDatabaseAsync</a></td><td><div class="summary">
+            Creates the database using the <b>schema-0.script</b> file from the script folder.  This also
+            creates the <a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a> table adds a row setting the Version to 0.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager_Dispose.htm">Dispose<span id="LST78491A01_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_6?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</div></td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Postgres_SchemaManager_Dispose_1.htm">Dispose(Boolean)</a></td><td><div class="summary">
+            Handles the actual disposal.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_Neon_Postgres_SchemaManager_Finalize.htm">Finalize</a></td><td><div class="summary">
+            Finalizer.
+            </div> (Overrides <a href="https://docs.microsoft.com/dotnet/api/system.object.finalize#System_Object_Finalize" target="_blank">Object<span id="LST78491A01_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_7?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Finalize<span id="LST78491A01_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_8?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as the default hash function.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager_GetStatusAsync.htm">GetStatusAsync</a></td><td><div class="summary">
+            Returns information about the database schema status and schema scripts.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="https://docs.microsoft.com/dotnet/api/system.type" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Neon_Postgres_SchemaManager_UpgradeDatabaseAsync.htm">UpgradeDatabaseAsync</a></td><td><div class="summary">
+            Upgrades the database by applying any upgrade scripts from the current database
+            version to the latest update script found in the script folder or optionally when
+            the database version equals <span class="parameter">stopVersion</span>.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Fields</span></div><div id="ID6RBSection" class="collapsibleSection"><table class="members" id="fieldList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="icons/pubfield.gif" alt="Public field" title="Public field" /><img src="icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a></td><td><div class="summary">
+            The name of the database information table.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Remarks</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
+            This class uses some simple conventions to make it easy to upgrade a database
+            schema over time as the data model evolves.  This uses the concept of schema
+            version numbers.  A schema version is simply an integer value where the version 
+            will be <b>0</b> when a database is initially created and then the version is
+            incremented by one whenever the database schema is updated.
+            </p><p>
+            This class uses a reserved table named <a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a> that is used to keep
+            track of the current schema version.  This table will have a single row with these
+            columns:
+            </p><div class="tableSection"><table><tr><td><b>Version:integer</b></td><td>
+                    The integer database schema version.  This will be set to <b>0</b> when
+                    the database is first created and will be incremented for each subsequent
+                    update.
+                    </td></tr><tr><td><b>Updater:text</b></td><td>
+                    Used by multiple service instances to coordinate which one actually handles 
+                    the update.  This will be `NULL` when the database isn't being updated and
+                    will be set to a string identifying the entity currently updating the database.
+                    This string can be anything from a GUID, container ID, hostname, or whatever.
+                    </td></tr><tr><td><b>UpdateStartUtc:timestamp</b></td><td>
+                    Time (UTC) when the most recent update was started.
+                    </td></tr><tr><td><b>UpdateFinishUtc:timestamp</b></td><td>
+                    Time (UTC) when the most recent update was completed.  This will be `NULL`
+                    while an update is in progress.
+                    </td></tr></table></div><p>
+            You'll be authoring Postgres SQL script files to create the initial database 
+            as well as to upgrade the database for each subsequent schema change.  By convention,
+            this class assumes that the SQL scripts for each database will be saved to separate
+            folders with each script file named like: <b>schema-#.script</b> where <b>#</b> is the
+            schema version the script will upgrade the database to, with <b>schema-0.script</b>
+            being the script that creates the database as <b>Version 0</b>.  So your script
+            folder will look something like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EA4ABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EA4ABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EA4ABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">schema<span class="highlight-number">-0000</span>.script      &lt;-- database created <span class="highlight-keyword">as</span> v0
+schema<span class="highlight-number">-0001</span>.script      &lt;-- upgrades <span class="highlight-keyword">from</span> v0 to v1
+schema<span class="highlight-number">-0002</span>.script      &lt;-- upgrades <span class="highlight-keyword">from</span> v1 to v2
+schema<span class="highlight-number">-0003</span>.script      &lt;-- upgrades <span class="highlight-keyword">from</span> v2 to v3
+schema<span class="highlight-number">-0004</span>.script      &lt;-- upgrades <span class="highlight-keyword">from</span> v3 to v4
+...
+schema-####.script</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EA4ABA");</script><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
+            This method parses the version number in the file names after the dash so it's perfectly
+            OK to include leading zero digits there (like we did in the example above).  We actually
+            recommend this so that your schema files can be sorted nicely by version when listed by
+            the file system.
+            </td></tr></table></div><p>
+            Each script file is responsible for upgrading the database from the previous version
+            to the next.  This class will help manage the upgrade process by deciding which scripts
+            need to be executed based on the <a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a> table and then executing
+            the required scripts.
+            </p><p>
+            To use, construct an instance via <span class="selflink">SchemaManager</span>, passing a database connection
+            for the Postgres superuser or a user with the <b>CREATEDB</b> privilege.  You'll also need
+            to pass the database name and the path to the file system folder holding the script files.
+            </p><p>
+            Then call <a href="M_Neon_Postgres_SchemaManager_CreateDatabaseAsync.htm">CreateDatabaseAsync<span id="LST78491A01_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_9?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to create the database if it doesn't already
+            exist; this uses the connection passed to the constructor.  Then call 
+            <a href="M_Neon_Postgres_SchemaManager_UpgradeDatabaseAsync.htm">UpgradeDatabaseAsync(String, Int32, Boolean, Action<span id="LST78491A01_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_10?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Boolean, Int32<span id="LST78491A01_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_11?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> to apply
+            any necessary updates; this uses a new connection to the target database using the
+            credentials from the original database connection.
+            </p><p>
+            You may optionally pass a string to <a href="M_Neon_Postgres_SchemaManager_UpgradeDatabaseAsync.htm">UpgradeDatabaseAsync(String, Int32, Boolean, Action<span id="LST78491A01_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_12?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Boolean, Int32<span id="LST78491A01_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_13?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>
+            that identifies the entity performing the upgrade.  This could be an application name,
+            the name of the host the updater is running on, the username of the person performing
+            the upgrade etc.  This method uses this to try to prevent multiple updgrade from happening
+            in parallel on the same database (which would be bad) and the updater string can be used
+            to help identify who else is updating the database.  This parameter defaults to a GUID.
+            </p><p>
+            Most applications will include at least two scripts when they get started with <b>schema-0.script</b>
+            creating the database and <b>schema-1.script</b> creating the tables, views, data types, 
+            stored procedures, etc.
+            </p><p><b>SQL COMMAND BATCHES</b></p><p>
+            It's often necessary to execute a sequence of SQL commands that depend on
+            each other.  One example is a command that creates a table followed by 
+            commands that write rows.  You might think that you could achieve this
+            by executing the following as one command:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAUABA_tab1" class="codeSnippetContainerTabSingle">SQL</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAUABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAUABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAUABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">CREATE</span> <span class="highlight-keyword">TABLE</span> my_table (name text);
+<span class="highlight-keyword">INSERT</span> <span class="highlight-keyword">INTO</span> my_table (name) <span class="highlight-keyword">values</span> (<span class="highlight-literal">'Jack'</span>);
+<span class="highlight-keyword">INSERT</span> <span class="highlight-keyword">INTO</span> my_table (name) <span class="highlight-keyword">values</span> (<span class="highlight-literal">'Jill'</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAUABA");</script><p>
+            But, this won't actually work because the database generates a query plan
+            for the entire command and when it does this and sees the inserts into
+            [my_table] but the table doesn't actually exist at the time the query
+            plan is being created.  So the command will fail.
+            </p><p>
+            What you really need to do is create the table first as a separate
+            command and then do the inserts as one or more subsequent commands.
+            This is not terribly convenient so we've introduced the concept of
+            a batch of commands.  Here's what this would look like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EARABA_tab1" class="codeSnippetContainerTabSingle">SQL</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EARABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EARABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EARABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">CREATE</span> <span class="highlight-keyword">TABLE</span> my_table (name text);
+GO
+<span class="highlight-keyword">INSERT</span> <span class="highlight-keyword">INTO</span> my_table (name) <span class="highlight-keyword">values</span> (<span class="highlight-literal">'Jack'</span>);
+<span class="highlight-keyword">INSERT</span> <span class="highlight-keyword">INTO</span> my_table (name) <span class="highlight-keyword">values</span> (<span class="highlight-literal">'Jill'</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EARABA");</script><p>
+            See how the <b>GO</b> line separates the table creation from the inserts.
+            This method will split the script files into separate commands on any <b>GO</b> 
+            lines and then execute these commands in order.
+            </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p><b>GO</b> is case insensitive and any leading or trailing space on the
+            line will be ignored.
+            </p><p>
+            Batch commands are implemented by <a href="M_Neon_Postgres_ConnectionExtensions_ExecuteBatch.htm">ExecuteBatch(NpgsqlConnection, String, NpgsqlTransaction)</a>
+            and an asynchonous alternative.
+            </p></td></tr></table></div><p><b>SCRIPT VARIABLES</b></p><p>
+            Your schema scripts may include variables of the form <b>${NAME}</b> where <b>NAME</b> is the
+            case sensitive variable name.  The variable references will be replaced by the variable's
+            value when the variable is defined, otherwise the variable reference will be left in place.
+            </p><p>
+            The <b>${database}</b> variable is reserved and will be replaced by the name of the database being managed.
+            You can specify your own variables by passing a dictionary to the constructor.  This can be 
+            useful for specifying things like password, replication factors, etc.
+            </p><p><b>UPGRADE STRATEGIES</b></p><p>
+            The current implementation assumes that applications using the database are offline or can
+            work properly with both the new and old schema.  Here are some siggestions for managing
+            updates:
+            </p><ul><li>
+                Use YugaByte snapshots to backup the keyspace.
+                </li><li>
+                Effectively take the keyspace offline during the upgrade by revoking all rights
+                to all users besides the current one and the superuser before upgrading and then
+                restoring these rights afterwards.
+                </li><li>
+                For services and keyspaces deployed to Kubernetes, we recommend that you handle keyspace
+                schema updates via a custom Kubernetes operator which would stop any services using the
+                keyspace, apply the schema update, and then restart the services, potentially  upgrading 
+                them as well.  You could embed the schema scripts in the operator itself so upgrading the
+                keyspace (and application) would be as simple as upgrading the operator.
+                </li></ul><p><b>HANDLING UPGRADE ERRORS</b></p><p>
+            It's possible for a database upgrade to fail.  Addressing upgrade failures will generally
+            require manual intervention.  You should start out by looking at the <b>version and </b><b>error</b>
+            columns in the <a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a> in your database to diagnose what happened.
+            <b>version</b> indicates the schema version before the update script was executed but that
+            it's possible that the update script was paratially completed which means that the database
+            may be in a state between the old and update schema version.
+            </p><p>
+            Here are the underlying causes for upgrade errors:
+            </p><div class="tableSection"><table><tr><td><b>hardware/cluster</b></td><td><p>
+                    The database cluster or the hardware/platform it's running is having problems
+                    that prevent the updates from being applied.
+                    </p><p>
+                    The <b>error</b> column will describe the error.
+                    </p></td></tr><tr><td><b>script errors</b></td><td><p>
+                    Your upgrade scripts have syntax errors or are otherwise invalid.
+                    </p><p>
+                    The <b>error</b> column will describe the error.
+                    </p></td></tr><tr><td><b>updater conflict</b></td><td><p>
+                    Another updater is currently running or terminated for some reason 
+                    before completing the update.
+                    </p><p>
+                    The <b>updater</b> column will identify the updater instance that is currently 
+                    updating the database or that failed prematurely.
+                    </p></td></tr></table></div><p>
+            For <b>updater conflicts</b>, you'll need to determine whether the identified
+            updater is still running or whether it has failed.  Simply wait for the other
+            updater to finish if it's still running, otherwise you have a failure and will
+            need to follow these recomendations to manually mitigate the situation:
+            </p><div class="tableSection"><table><tr><td><b>Manual Rollback</b></td><td>
+                    It's possible that some but not all of the commands in your update script have 
+                    completed.  Depending on the upgrade details, you may want to manually undo any 
+                    of the statements that completed to get the database back to its state before
+                    the the update started and then call <a href="M_Neon_Postgres_SchemaManager_UpgradeDatabaseAsync.htm">UpgradeDatabaseAsync(String, Int32, Boolean, Action<span id="LST78491A01_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_14?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Boolean, Int32<span id="LST78491A01_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_15?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>
+                    with <span class="code">force: true</span>.
+                    </td></tr><tr><td><b>Manual Upgrade</b></td><td>
+                    As an alternative to <b>Manual Rollback</b>, you could simply execute the remaining
+                    update commands manually and then updating the <a href="F_Neon_Postgres_SchemaManager_DbInfoTableName.htm">DbInfoTableName</a> by setting
+                    <b>version</b> to the new version number and setting the <b>updater</b> and <b>error</b>
+                    fields to <span class="code">NULL</span>.
+                    </td></tr><tr><td><b>Script Corrections</b></td><td>
+                    Be sure to correct any problems with your upgrade script, even if your are
+                    going to manually complete the upgrade so that upgrades will work for new
+                    database instances.
+                    </td></tr></table></div><p><b>SCRIPTS AS EMBEDDED RESOURCES</b></p><p>
+            In addition to reading SQL scripts as standard files, the <span class="selflink">SchemaManager</span> can
+            also read scripts from embedded resources.  This is an easy and clean way to include these
+            scripts in a program or library.  Here's what you need to do:
+            </p><ol><li>
+                Create a folder in your project to hold your SQL script files.
+                </li><li>
+                Add your scripts to the new folder, saving them with **UTF-8 encoding**.
+                </li><li>
+                Select your script files in the <b>Solution Explorer</b> and then left-click
+                on them and select **Properties**.  Set **Build Action** to **Embedded resource**.
+                </li><li>
+                You'll be using the <a href="M_Neon_Postgres_SchemaManager__ctor.htm">SchemaManager(NpgsqlConnection, String, IStaticDirectory, Dictionary<span id="LST78491A01_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_16?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST78491A01_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST78491A01_17?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>
+                override constructor and you'll be passing an <a href="T_Neon_IO_IStaticDirectory.htm">IStaticDirectory</a> that emulates a read-only file system
+                constructed from embedded resources.  You'll need to call <a href="M_System_AssemblyExtensions_GetResourceFileSystem.htm">GetResourceFileSystem(Assembly, String)</a>
+                to obtain this directory, passing a string identifying resource name prefix that identifies your virtual folder.
+                </li></ol></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID8RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Neon_Postgres.htm">Neon.Postgres Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE LLC.  All rights reserved.</p> </div></body></html>

@@ -1,0 +1,130 @@
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151329628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151329628-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="styles/branding.css" /><link rel="stylesheet" type="text/css" href="styles/branding-en-US.css" /><script type="text/javascript" src="scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>AssemblyExtensions.GetResourceFileSystem Method </title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="GetResourceFileSystem method" /><meta name="System.Keywords" content="AssemblyExtensions.GetResourceFileSystem method" /><meta name="Microsoft.Help.F1" content="System.AssemblyExtensions.GetResourceFileSystem" /><meta name="Microsoft.Help.Id" content="M:System.AssemblyExtensions.GetResourceFileSystem(System.Reflection.Assembly,System.String)" /><meta name="Description" content="Returns an eumlated static file system that includes some or all of an assembly's embedded resources. This method returns the root for the file system." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="System" /><meta name="file" content="M_System_AssemblyExtensions_GetResourceFileSystem" /><meta name="guid" content="M_System_AssemblyExtensions_GetResourceFileSystem" /><link type="text/css" rel="stylesheet" href="styles/highlight.css" /><script type="text/javascript" src="scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="styles/branding-Website.css" /><script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="scripts/branding-Website.js"></script><script type="text/javascript" src="scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Neon and neonKUBE class libraries and tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="index.html" title="Neon and neonKUBE class libraries and tools" tocid="roottoc">Neon and neonKUBE class libraries and tools</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_neon.htm" title="Neon Namespaces" tocid="R_Project_neon">Neon Namespaces</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_System.htm" title="System" tocid="N_System">System</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="T_System_AssemblyExtensions.htm" title="AssemblyExtensions Class" tocid="T_System_AssemblyExtensions">AssemblyExtensions Class</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Methods_T_System_AssemblyExtensions.htm" title="AssemblyExtensions Methods" tocid="Methods_T_System_AssemblyExtensions">AssemblyExtensions Methods</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="M_System_AssemblyExtensions_GetResourceFileSystem.htm" title="GetResourceFileSystem Method " tocid="M_System_AssemblyExtensions_GetResourceFileSystem">GetResourceFileSystem Method </a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="icons/Help.png" /></td><td class="titleColumn"><h1>AssemblyExtensions<span id="LSTFA019D94_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFA019D94_0?cpp=::|nu=.");</script>GetResourceFileSystem Method </h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+            Returns an eumlated static file system that includes some or all of an assembly's
+            embedded resources.  This method returns the root <a href="T_Neon_IO_IStaticDirectory.htm">IStaticDirectory</a>
+            for the file system.
+            </div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="N_System.htm">System</a><br />
+    <strong>Assembly:</strong>
+   Neon.Common (in Neon.Common.dll) Version: 2.10.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">static</span> <span class="identifier">IStaticDirectory</span> <span class="identifier">GetResourceFileSystem</span>(
+	<span class="keyword">this</span> <span class="identifier">Assembly</span> <span class="parameter">assembly</span>,
+	<span class="identifier">string</span> <span class="parameter">resourcePrefix</span> = <span class="keyword">null</span>
+)</pre></div><div id="ID0EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve">&lt;<span class="identifier">ExtensionAttribute</span>&gt;
+<span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> <span class="identifier">GetResourceFileSystem</span> ( 
+	<span class="parameter">assembly</span> <span class="keyword">As</span> <span class="identifier">Assembly</span>,
+	Optional <span class="parameter">resourcePrefix</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>
+) <span class="keyword">As</span> <span class="identifier">IStaticDirectory</span></pre></div><div id="ID0EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span>:
+[<span class="identifier">ExtensionAttribute</span>]
+<span class="keyword">static</span> <span class="identifier">IStaticDirectory</span>^ <span class="identifier">GetResourceFileSystem</span>(
+	<span class="identifier">Assembly</span>^ <span class="parameter">assembly</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">resourcePrefix</span> = <span class="keyword">nullptr</span>
+)</pre></div><div id="ID0EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve">[&lt;<span class="identifier">ExtensionAttribute</span>&gt;]
+<span class="keyword">static</span> <span class="keyword">member</span> <span class="identifier">GetResourceFileSystem</span> : 
+        <span class="parameter">assembly</span> : <span class="identifier">Assembly</span> * 
+        ?<span class="parameter">resourcePrefix</span> : <span class="identifier">string</span> 
+(* Defaults:
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">resourcePrefix</span> = defaultArg <span class="identifier">resourcePrefix</span> <span class="keyword">null</span>
+*)
+<span class="keyword">-&gt;</span> <span class="identifier">IStaticDirectory</span> 
+</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">assembly</span></dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly" target="_blank">System.Reflection<span id="LSTFA019D94_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFA019D94_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Assembly</a><br />The target assembly.</dd><dt><span class="parameter">resourcePrefix</span> (Optional)</dt><dd>Type: <a href="https://docs.microsoft.com/dotnet/api/system.string" target="_blank">System<span id="LSTFA019D94_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFA019D94_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>String</a><br /><p>
+            Specifies the resource name prefix to be used to identify the embedded resources
+            to be included in the static file system.  See the remarks for more information.
+            </p></dd></dl><h4 class="subHeading">Return Value</h4>Type: <a href="T_Neon_IO_IStaticDirectory.htm">IStaticDirectory</a><br />The root <a href="T_Neon_IO_IStaticDirectory.htm">IStaticDirectory</a>.<h4 class="subHeading">Usage Note</h4>In Visual Basic and C#, you can call this method as an instance method on any object of type <a href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly" target="_blank">Assembly</a>. When you use instance method syntax to call this method, omit the first parameter. For more information, see <a href="https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/procedures/extension-methods" target="_blank">Extension Methods (Visual Basic)</a> or <a href="https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/extension-methods" target="_blank">Extension Methods (C# Programming Guide)</a>.</div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Remarks</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+            This method maps Linux style paths (using forward not back slashes) to embedded
+            resources in the assembly.  Resources in .NET projects are embedded and named
+            like:
+            </p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Examples</span></div><div id="ID2RBSection" class="collapsibleSection">
+            ASSEMBLY-NAMESPACE [ "." DIR ] "." RESOURCE-FILENAME
+            </div><p>
+            where <b>ASSEMBLY-NAME</b> is the name of the source assembly, <b>DIR</b> optionally
+            specifies the directoriea to the resource and <b>RESOURCE-FILENAME</b> specifies the name
+            of the resource file.
+            </p><p>
+            When a .NET project is built, any source files with build actions set to <b>Embedded Resource</b>
+            will be included in the assembly using the naming convention described above.  The 
+            <b>ASSEMBLY-NAMESPACE</b> will be set to the source projects default namespace and the <b>DIR</b>s
+            will be set to the relative path from the project file to the source resource file.  For
+            example, if your project is structured like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EASABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EASABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EASABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">my-project/
+    my-project.csproj
+
+    top-level.txt
+    resources/
+        resource1.dat
+        resource2.dat
+        tests/
+            test1.txt
+            test2.txt
+        samples/
+            sample1.txt
+            sample2.txt</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EASABA");</script><p>
+            and it's default namespace is <b>company.mproject</b>, then the following resources embedded 
+            in your project assembly:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAQABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAQABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAQABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">company.my-project.top-level.txt
+company.my-project.resources.resource1.dat
+company.my-project.resources.resource2.dat
+company.my-project.resources.tests.test1.txt
+company.my-project.resources.tests.test2.txt
+company.my-project.resources.samples.sample1.txt
+company.my-project.resources.samples.sample2.txt</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAQABA");</script><p>
+            By default, calling <span class="selflink">GetResourceFileSystem(Assembly, String)</span> on your project assembly 
+            will return a <a href="T_Neon_IO_IStaticDirectory.htm">IStaticDirectory</a> with a directory structure holding all of the resources.  
+            The paths are mapped from the resource names by converting any dots except for the last one into forward
+            slashes. 
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAOABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAOABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAOABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">/
+    company/
+        my-project/
+            top-level.txt
+            resources/
+                resource1.dat
+                resource2.dat
+                tests/
+                    test1.txt
+                    test2.txt
+                samples/
+                    sample1.txt
+                    sample2.txt</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAOABA");</script><p>
+            You can also pass an optional resource name prefix so that only a subset of the resources
+            are included in the file system.  For example, by passing <b>company.my-project.resources</b>,
+            file system returned will look like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAMABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAMABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAMABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">/
+    resource1.dat
+    resource2.dat
+    tests/
+        test1.txt
+        test2.txt
+    samples/
+        sample1.txt
+        sample2.txt</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAMABA");</script><p><b>RESOURCE NAMING AMBIGUITIES</b></p><p>
+            When creating the file system from resource names, it's possible to encounter situations
+            where it's not possible to distingish between a a directory and a file name.  For example:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAJABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAJABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAJABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">company.my-project.resources.resource1.dat</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAJABA");</script><p>
+            Here are some possibilities:
+            </p><ul><li>
+                path is <b>/company.my-project.resources.resource1</b> and the file name <b>dat</b></li><li>
+                path is <b>/company.my-project.resources</b> and the file name <b>resource1.dat</b></li><li>
+                path is <b>/company.my-project</b> and the file name <b>.resources.resource1.dat</b></li></ul><p>
+            There is really no way for this method to know what the original resource source files
+            and directory paths were.  To resolve this, we're going to assume that resource file
+            names include a file extension with a single dot and that any additional dots will form
+            the file's parent directory path.  
+            </p><p>
+            What this means is that your resource file names must include a file extension.  So, file 
+            names like this are OK:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAEABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAEABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">schema.sql
+config.json</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAEABA");</script><p>
+            You should avoid file names like:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">schema.<span class="highlight-number">1</span>.sql</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACABA");</script><p>
+            and use something like a dash instead so that <b>schema</b> won't be considered to
+            be part of the file's parent directory path:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">schema<span class="highlight-number">-1</span>.sql</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />See Also</span></div><div id="ID4RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_System_AssemblyExtensions.htm">AssemblyExtensions Class</a></div><div class="seeAlsoStyle"><a href="N_System.htm">System Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Offline help available for Windows: <a href="neon.chm">neon.chm</a><br />
+Report any issues at: <a href="https://github.com/nforgeio/neonKUBE">https://github.com/nforgeio/neonKUBE</a><p>Copyright (c) 2005-2020 by neonFORGE LLC.  All rights reserved.</p> </div></body></html>
