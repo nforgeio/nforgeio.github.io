@@ -15,7 +15,7 @@
     <strong>Namespace:</strong> 
    <a href="N_Neon_Service.htm">Neon.Service</a><br />
     <strong>Assembly:</strong>
-   Neon.Service (in Neon.Service.dll) Version: 2.10.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cs','1','4');return false;">C#</a></div><div id="ID1EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','vb','2','4');return false;">VB</a></div><div id="ID1EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cpp','3','4');return false;">C++</a></div><div id="ID1EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">NeonService</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">MustInherit</span> <span class="keyword">Class</span> <span class="identifier">NeonService</span>
+   Neon.Service (in Neon.Service.dll) Version: 2.11.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EDCA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cs','1','4');return false;">C#</a></div><div id="ID1EDCA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','vb','2','4');return false;">VB</a></div><div id="ID1EDCA_tab3" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','cpp','3','4');return false;">C++</a></div><div id="ID1EDCA_tab4" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID1EDCA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EDCA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID1EDCA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">NeonService</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">MustInherit</span> <span class="keyword">Class</span> <span class="identifier">NeonService</span>
 	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">NeonService</span> <span class="keyword">abstract</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID1EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve">[&lt;<span class="identifier">AbstractClassAttribute</span>&gt;]
 <span class="keyword">type</span> <span class="identifier">NeonService</span> =  
     <span class="keyword">class</span>
@@ -55,12 +55,13 @@
             uncomitted changes (e.g. was dirty).
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_InDevelopment.htm">InDevelopment</a></td><td><div class="summary">
             Returns <span class="code">true</span> when the service is running in development
-            or test mode, when the <b>DEV_WORKSTATION</b> environment variable is
-            <b>defined</b>.
+            or test mode, when the <b>DEV_WORKSTATION</b> environment variable 
+            is <b>defined</b>.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_InProduction.htm">InProduction</a></td><td><div class="summary">
             Returns <span class="code">true</span> when the service is running in production,
             when the <b>DEV_WORKSTATION</b> environment variable is
-            <b>not defined</b>.
+            <b>not defined</b>.  The <span class="code">NeonServiceFixure</span> will set this
+            to <span class="code">true</span> explicitly as well.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_Log.htm">Log</a></td><td><div class="summary">
             Returns the service's default logger.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Neon_Service_NeonService_LogManager.htm">LogManager</a></td><td><div class="summary">
@@ -146,7 +147,7 @@
             make them easier to test via integration with the <b>ServiceFixture</b> from
             the <b>Neon.Xunit</b> library by providing some useful abstractions over 
             service configuration, startup and shutdown including a <a href="T_Neon_Service_ProcessTerminator.htm">ProcessTerminator</a>
-            to handle termination signals from Kubernetes.
+            to handle termination signals from Linux or Kubernetes.
             </p><p>
             This class is pretty easy to use.  Simply derive your service class from <span class="selflink">NeonService</span>
             and implement the <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_12?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method.  <a href="M_Neon_Service_NeonService_OnRunAsync.htm">OnRunAsync<span id="LST872A7664_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_13?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> will be called when 
@@ -163,7 +164,7 @@
             with an optional process exit code to proactively exit your service.
             </p><div class="alert"><table><tr><th><img src="icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>
             All services should properly handle <a href="P_Neon_Service_NeonService_Terminator.htm">Terminator</a> stop signals so services deployed as
-            containers will stop promptly and cleanly (this also applies to services running in unit tests.  
+            containers will stop promptly and cleanly (this also applies to services running in unit tests).  
             Your terminate handler method must return within a set period of time (30 seconds by default) 
             to avoid killed by by Docker or Kubernetes.  This is probably the trickiest thing you'll need to implement.
             For asynchronous service implementations, you consider passing the <a href="P_Neon_Service_ProcessTerminator_CancellationToken.htm">CancellationToken</a>
@@ -185,7 +186,7 @@
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-comment">// Launch the service.</span>
 
@@ -251,9 +252,8 @@
             running container.
             </p><p>
             This class provides some abstractions for managing environment variables and 
-            configuration files so that services running in production and services running
-            in a local unit test can configure themselves using the same code for both
-            environments. 
+            configuration files so that services running in production or as a unit test
+            can configure themselves using the same code for both environments. 
             </p><p>
             Services should use the <a href="M_Neon_Service_NeonService_GetEnvironmentVariable.htm">GetEnvironmentVariable(String, String)</a> method to 
             retrieve important environment variables rather than using <a href="https://docs.microsoft.com/dotnet/api/system.environment.getenvironmentvariable#System_Environment_GetEnvironmentVariable_System_String_" target="_blank">GetEnvironmentVariable(String)</a>.
@@ -264,7 +264,7 @@
             time with each being presented their own environment variables.
             </p><p>
             You may also use the <a href="M_Neon_Service_NeonService_LoadEnvironmentVariables.htm">LoadEnvironmentVariables(String, Func<span id="LST872A7664_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_17?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String, String<span id="LST872A7664_18"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST872A7664_18?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>
-            method to load environment variables from a text file (potentially encrypted via
+            methods to load environment variables from a text file (potentially encrypted via
             <a href="T_Neon_Cryptography_NeonVault.htm">NeonVault</a>).  This will typically be done only for unit tests.
             </p><p>
             Configuration files work similarily.  You'll use <a href="M_Neon_Service_NeonService_GetConfigFilePath.htm">GetConfigFilePath(String)</a>
@@ -385,7 +385,7 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-comment">// Construct the service and configure it to wait for another</span>
             <span class="highlight-comment">// become available before calling the services [OnRunAsync()]</span>
@@ -444,8 +444,8 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAOABA");</script><p><b>PROMETHEUS METRICS</b></p><p><span class="selflink">NeonService</span> can enable services to publish Prometheus metrics with a
             single line of code; simply set <a href="P_Neon_Service_NeonService_MetricsOptions.htm">MetricsOptions</a>.<a href="P_Neon_Service_MetricsOptions_Mode.htm">Mode</a> to
             <a href="T_Neon_Service_MetricsMode.htm">Scrape</a> before calling <a href="M_Neon_Service_NeonService_RunAsync.htm">RunAsync(Boolean)</a>.  This configures
-            your service to publish metrics via HTTP via <b>http://0.0.0.0:</b><a href="F_Neon_Net_NetworkPorts_NeonPrometheus.htm">NeonPrometheus</a><b>/metrics/</b>.
-            We've resistered port <a href="F_Neon_Net_NetworkPorts_NeonPrometheus.htm">NeonPrometheus</a> with Prometheus as a standard port
+            your service to publish metrics via HTTP via <b>http://0.0.0.0:</b><a href="F_Neon_Net_NetworkPorts_NeonPrometheusScrape.htm">NeonPrometheusScrape</a><b>/metrics/</b>.
+            We've resistered port <a href="F_Neon_Net_NetworkPorts_NeonPrometheusScrape.htm">NeonPrometheusScrape</a> with Prometheus as a standard port
             to be used for micro services running in Kubernetes or on other container platforms to make it 
             easy configure scraping for a cluster.
             </p><p>
@@ -465,7 +465,7 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-comment">// Construct the service and configure it to wait for another</span>
             <span class="highlight-comment">// become available before calling the services [OnRunAsync()]</span>
@@ -546,7 +546,7 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-comment">// You can enable Prometheus metrics with just one line of code!</span>
             <span class="highlight-comment">// </span>
@@ -619,7 +619,7 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-keyword">var</span> service = <span class="highlight-keyword">new</span> MyService();
 
@@ -698,7 +698,7 @@ NEON_SERVICE_DEPENDENCIES_WAIT_SECONDS=<span class="highlight-number">5</span></
 {
     <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> Program
     {
-        <span class="highlight-keyword">public</span> <span class="highlight-keyword">async</span> <span class="highlight-keyword">static</span> Task Main(<span class="highlight-keyword">string</span>[] args)
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">async</span> Task Main(<span class="highlight-keyword">string</span>[] args)
         {
             <span class="highlight-keyword">var</span> service = <span class="highlight-keyword">new</span> MyService();
 

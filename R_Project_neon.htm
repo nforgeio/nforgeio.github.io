@@ -18,8 +18,9 @@ The Neon class libraries organizes classes in several namespaces.  Most classes 
             </div></td></tr><tr><td><a href="N_Neon_Collections.htm">Neon.Collections</a></td><td><div class="summary">
             This namespace defines a handful of probably archaic custom collection classes.
             </div></td></tr><tr><td><a href="N_Neon_Common.htm">Neon.Common</a></td><td><div class="summary">
-            This namespace includes a a lot of types used by the remaining class libraries. 
-            You might find some of these useful as well.
+            This namespace includes generally useful types that are consumed by
+            the remaining neonLIBRARY libraries and cal also be useful for
+            end-user applications.
             </div></td></tr><tr><td><a href="N_Neon_Cryptography.htm">Neon.Cryptography</a></td><td><div class="summary">
             This namespace Includes some cryptographic helper methods and extensuions making operations like
             MD5 or SHA-* hashing easier as well as the <b>NeonVault</b> class which can be used to persist 
@@ -34,11 +35,16 @@ The Neon class libraries organizes classes in several namespaces.  Most classes 
             Internal namespace.
             </div></td></tr><tr><td><a href="N_Neon_IO.htm">Neon.IO</a></td><td><div class="summary">
             This namespace includes some handy file and stream related types.
-            </div></td></tr><tr><td><a href="N_Neon_ModelGen.htm">Neon.ModelGen</a></td><td><div class="summary">
+            </div></td></tr><tr><td><a href="N_Neon_ModelGen.htm">Neon.ModelGen</a></td><td><div class="summary"><p>
             This namespace includes the types used to generate data models from interface definitions. 
             These models can be built to support round-tripping data without loss as well as optionally
             adding <a href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged" target="_blank">INotifyPropertyChanged</a> related code for UX binding.
-            </div></td></tr><tr><td><a href="N_Neon_Net.htm">Neon.Net</a></td><td><div class="summary">
+            </p><p>
+            You can use these classes to integrate model generation into your own tooling or use the
+            <b>Neon.ModelGenerator</b> package which includes the pre-built <b>neon-modelgen</b> 
+            command line tool.  You'll add a reference to this package to your project and then
+            add a custom build target to invoke <b>neon-modelgen</b>.
+            </p></div></td></tr><tr><td><a href="N_Neon_Net.htm">Neon.Net</a></td><td><div class="summary">
             This namespace defines <a href="T_Neon_Net_JsonClient.htm">JsonClient</a> which makes calling REST APIs easier as well
             as a handful of other network related utilities provided by <a href="T_Neon_Net_NetHelper.htm">NetHelper</a> and
             <a href="T_Neon_Net_Pinger.htm">Pinger</a>.
