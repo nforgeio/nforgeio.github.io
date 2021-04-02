@@ -14,7 +14,7 @@
             These classes are not entirely general purpose at this point.  neonFORGE maintainers are
             currently using this for CI/CD for opensource and private neonFORGE related projects.
             We may make these more generic in the future.
-            </td></tr></table></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Classes</span></div><div id="ID0RBSection" class="collapsibleSection"><table class="members" id="classList"><tr><th class="iconColumn">
+            </td></tr></table></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Classes</span></div><div id="ID1RBSection" class="collapsibleSection"><table class="members" id="classList"><tr><th class="iconColumn">
 					 
 				</th><th>Class</th><th>Description</th></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Deployment_AwsCli.htm">AwsCli</a></td><td><div class="summary">
             Wraps the AWS-CLI with methods for common operations.
@@ -24,7 +24,7 @@
             Wraps the 1Password CLI.
             </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Deployment_OnePasswordException.htm">OnePasswordException</a></td><td><div class="summary">
             Thrown by the <a href="T_Neon_Deployment_OnePassword.htm">OnePassword</a> for errors.
-            </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Deployment_ProfileClient.htm">ProfileClient</a></td><td><div class="summary"><p>
+            </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /><img src="icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_Neon_Deployment_ProfileClient.htm">ProfileClient</a></td><td><div class="summary"><p>
             Defines the interface for the client used to communicate with the Neon Profile Service
             or a custom service.  These services provides access to user and workstation specific 
             settings including secrets and general properties.  This is used for activities such as 
@@ -41,6 +41,14 @@
             reports when passwords are insecure or duplicated but we have other secrets where these
             checks can be distracting.  Custom implementation can choose to follow this pattern or
             just treat both types of secret the same.
+            </p><p>
+            You can also obtain a specific property from a secret password or value by using this syntax:
+            </p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Examples</span></div><div id="ID0RBSection" class="collapsibleSection">
+            SECRETNAME[PROPERTY]
+            </div><p>
+            This is useful for obtaining both the username and password from a login, or all of the different
+            properties from a credit card, etc.  This blurs the difference between secret passwords and secret
+            values a bit but we're going to retain both concepts anyway.
             </p></li><li><p>
             Profile values are also supported.  These are non-secret name/value pairs used for describing
             the local environment as required for CI/CD.  For example, we use this for describing the
@@ -71,9 +79,9 @@
             running on behalf of the current user.
             </div></td></tr><tr data="class; public"><td><img src="icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_Neon_Deployment_ProfileStatus.htm">ProfileStatus</a></td><td><div class="summary">
             Enumerates the profile error code strings.
-            </div></td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Interfaces</span></div><div id="ID1RBSection" class="collapsibleSection"><table class="members" id="interfaceList"><tr><th class="iconColumn">
+            </div></td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Interfaces</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="interfaceList"><tr><th class="iconColumn">
 					 
-				</th><th>Interface</th><th>Description</th></tr><tr data="interface; public"><td><img src="icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_Neon_Deployment_IProfileClient.htm">IProfileClient</a></td><td><div class="summary"><p>
+				</th><th>Interface</th><th>Description</th></tr><tr data="interface; public"><td><img src="icons/pubinterface.gif" alt="Public interface" title="Public interface" /><img src="icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_Neon_Deployment_IProfileClient.htm">IProfileClient</a></td><td><div class="summary"><p>
             Defines the interface for the client used to communicate with the Neon Profile Service
             or a custom service.  These services provides access to user and workstation specific 
             settings including secrets and general properties.  This is used for activities such as 
@@ -90,6 +98,14 @@
             reports when passwords are insecure or duplicated but we have other secrets where these
             checks can be distracting.  Custom implementation can choose to follow this pattern or
             just treat both types of secret the same.
+            </p><p>
+            You can also obtain a specific property from a secret password or value by using this syntax:
+            </p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="icons/SectionExpanded.png" />Examples</span></div><div id="ID2RBSection" class="collapsibleSection">
+            SECRETNAME[PROPERTY]
+            </div><p>
+            This is useful for obtaining both the username and password from a login, or all of the different
+            properties from a credit card, etc.  This blurs the difference between secret passwords and secret
+            values a bit but we're going to retain both concepts anyway.
             </p></li><li><p>
             Profile values are also supported.  These are non-secret name/value pairs used for describing
             the local environment as required for CI/CD.  For example, we use this for describing the
