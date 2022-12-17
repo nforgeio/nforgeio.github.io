@@ -1,0 +1,2342 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WorkflowAttribute
+   | NeonFORGE documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WorkflowAttribute
+   | NeonFORGE documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/tailwind.css">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc">
+    <meta property="docfx:tocrel" content="../toc">
+    
+    <meta property="docfx:rel" content="../../">
+    
+    <!-- Segment Analytics (analytics.js) -->
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="YOUR_WRITE_KEY";analytics.SNIPPET_VERSION="4.15.2";
+      analytics.load("UmQRyYD43NzthTIcSMCyvU23CSzasW8Z");
+      analytics.page();
+      }}();
+    </script>
+    <!-- End Segment Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N1JLG2HDHZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-N1JLG2HDHZ');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M7N4JS5');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Optimize -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KFDX7QT"></script>
+    <!-- End Google Optimize -->
+    <!-- MSFT Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "dbgxvmcg0h");
+    </script>
+    <!-- End MSFT Clarity -->
+    <!-- MSFT Advertising -->
+      <script>
+        (function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "27033590" }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+      </script>
+    <!-- End MSFT Advertising -->
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../neonsdk/overview.html" title="NeonSDK">NeonSDK</a>
+                      </li>
+                      <li>
+                          <a href="../../neonkube/overview.html" title="NeonKUBE">NeonKUBE</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../overview.html" title="Overview" class="">Overview</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../api/Neon.Blazor.html" title="Neon SDK API" class="">Neon SDK API</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.html" title="Neon" class="">Neon</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Build.html" title="Build" class="">Build</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Blazor.html" title="Neon.Blazor" class="">Neon.Blazor</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.MobileDetector.html" title="MobileDetector" class="">MobileDetector</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.NeonBlazorExtensions.html" title="NeonBlazorExtensions" class="">NeonBlazorExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.SwipeDirection.html" title="SwipeDirection" class="">SwipeDirection</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Blazor.SwipeHandler.html" title="SwipeHandler" class="">SwipeHandler</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.BuildInfo.html" title="Neon.BuildInfo" class="">Neon.BuildInfo</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.BuildInfo.ThisAssembly.html" title="ThisAssembly" class="">ThisAssembly</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.BuildInfo.ThisAssembly.Git.html" title="ThisAssembly.Git" class="">ThisAssembly.Git</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.BuildInfo.ThisAssembly.Git.BaseVersion.html" title="ThisAssembly.Git.BaseVersion" class="">ThisAssembly.Git.BaseVersion</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.BuildInfo.ThisAssembly.Git.SemVer.html" title="ThisAssembly.Git.SemVer" class="">ThisAssembly.Git.SemVer</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Cadence.html" title="Neon.Cadence" class="">Neon.Cadence</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.AccessDeniedException.html" title="AccessDeniedException" class="">AccessDeniedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Activity.html" title="Activity" class="">Activity</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityAttribute.html" title="ActivityAttribute" class="">ActivityAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityBase.html" title="ActivityBase" class="">ActivityBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityFutureStub.html" title="ActivityFutureStub" class="">ActivityFutureStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityFutureStub-1.html" title="ActivityFutureStub&lt;TActivityInterface&gt;" class="">ActivityFutureStub&lt;TActivityInterface&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityHeartbeatTimeoutException.html" title="ActivityHeartbeatTimeoutException" class="">ActivityHeartbeatTimeoutException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityInterfaceAttribute.html" title="ActivityInterfaceAttribute" class="">ActivityInterfaceAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityMethodAttribute.html" title="ActivityMethodAttribute" class="">ActivityMethodAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityOptions.html" title="ActivityOptions" class="">ActivityOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityStatus.html" title="ActivityStatus" class="">ActivityStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityStub.html" title="ActivityStub" class="">ActivityStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityTask.html" title="ActivityTask" class="">ActivityTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityTypeException.html" title="ActivityTypeException" class="">ActivityTypeException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ActivityWorkerStartedException.html" title="ActivityWorkerStartedException" class="">ActivityWorkerStartedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ArchivalStatus.html" title="ArchivalStatus" class="">ArchivalStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.BadRequestException.html" title="BadRequestException" class="">BadRequestException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceClient.html" title="CadenceClient" class="">CadenceClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceClientClosedArgs.html" title="CadenceClientClosedArgs" class="">CadenceClientClosedArgs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceClosedDelegate.html" title="CadenceClosedDelegate" class="">CadenceClosedDelegate</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceCustomException.html" title="CadenceCustomException" class="">CadenceCustomException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceException.html" title="CadenceException" class="">CadenceException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceGenericException.html" title="CadenceGenericException" class="">CadenceGenericException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceInternalException.html" title="CadenceInternalException" class="">CadenceInternalException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceLogTags.html" title="CadenceLogTags" class="">CadenceLogTags</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadencePanicException.html" title="CadencePanicException" class="">CadencePanicException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceSettings.html" title="CadenceSettings" class="">CadenceSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CadenceTimeoutException.html" title="CadenceTimeoutException" class="">CadenceTimeoutException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CancellationAlreadyRequestedException.html" title="CancellationAlreadyRequestedException" class="">CancellationAlreadyRequestedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.CancelledException.html" title="CancelledException" class="">CancelledException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ChildWorkflowFuture.html" title="ChildWorkflowFuture" class="">ChildWorkflowFuture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ChildWorkflowFuture-1.html" title="ChildWorkflowFuture&lt;TResult&gt;" class="">ChildWorkflowFuture&lt;TResult&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ChildWorkflowFutureStub.html" title="ChildWorkflowFutureStub" class="">ChildWorkflowFutureStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ChildWorkflowOptions.html" title="ChildWorkflowOptions" class="">ChildWorkflowOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ChildWorkflowStub-1.html" title="ChildWorkflowStub&lt;TWorkflowInterface&gt;" class="">ChildWorkflowStub&lt;TWorkflowInterface&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ClientVersionNotSupportedException.html" title="ClientVersionNotSupportedException" class="">ClientVersionNotSupportedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ConnectException.html" title="ConnectException" class="">ConnectException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ContinueAsNewException.html" title="ContinueAsNewException" class="">ContinueAsNewException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ContinueAsNewOptions.html" title="ContinueAsNewOptions" class="">ContinueAsNewOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainAlreadyExistsException.html" title="DomainAlreadyExistsException" class="">DomainAlreadyExistsException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainConfiguration.html" title="DomainConfiguration" class="">DomainConfiguration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainDescription.html" title="DomainDescription" class="">DomainDescription</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainInfo.html" title="DomainInfo" class="">DomainInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainListPage.html" title="DomainListPage" class="">DomainListPage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainNotActiveException.html" title="DomainNotActiveException" class="">DomainNotActiveException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.DomainStatus.html" title="DomainStatus" class="">DomainStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.EntityNotExistsException.html" title="EntityNotExistsException" class="">EntityNotExistsException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ExternalWorkflowFuture.html" title="ExternalWorkflowFuture" class="">ExternalWorkflowFuture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ExternalWorkflowFuture-1.html" title="ExternalWorkflowFuture&lt;TResult&gt;" class="">ExternalWorkflowFuture&lt;TResult&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ExternalWorkflowStub.html" title="ExternalWorkflowStub" class="">ExternalWorkflowStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.IActivity.html" title="IActivity" class="">IActivity</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.IDataConverter.html" title="IDataConverter" class="">IDataConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.InternalServiceException.html" title="InternalServiceException" class="">InternalServiceException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.IWorkflow.html" title="IWorkflow" class="">IWorkflow</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.JsonDataConverter.html" title="JsonDataConverter" class="">JsonDataConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.LimitExceededException.html" title="LimitExceededException" class="">LimitExceededException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.LocalActivityFutureStub-2.html" title="LocalActivityFutureStub&lt;TActivityInterface, TActivityImplementation&gt;" class="">LocalActivityFutureStub&lt;TActivityInterface, TActivityImplementation&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.LocalActivityOptions.html" title="LocalActivityOptions" class="">LocalActivityOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.NonDeterministicPolicy.html" title="NonDeterministicPolicy" class="">NonDeterministicPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.NonRetriableErrors.html" title="NonRetriableErrors" class="">NonRetriableErrors</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ParentClosePolicy.html" title="ParentClosePolicy" class="">ParentClosePolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.PendingActivityInfo.html" title="PendingActivityInfo" class="">PendingActivityInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.PendingChildExecutionInfo.html" title="PendingChildExecutionInfo" class="">PendingChildExecutionInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.PollerInfo.html" title="PollerInfo" class="">PollerInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.QueryFailedException.html" title="QueryFailedException" class="">QueryFailedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.QueryMethodAttribute.html" title="QueryMethodAttribute" class="">QueryMethodAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.RetryOptions.html" title="RetryOptions" class="">RetryOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.RetryTaskException.html" title="RetryTaskException" class="">RetryTaskException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.ServiceBusyException.html" title="ServiceBusyException" class="">ServiceBusyException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.SignalMethodAttribute.html" title="SignalMethodAttribute" class="">SignalMethodAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.SignalRequest.html" title="SignalRequest" class="">SignalRequest</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.SignalRequest-1.html" title="SignalRequest&lt;TResult&gt;" class="">SignalRequest&lt;TResult&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.StartToCloseTimeoutException.html" title="StartToCloseTimeoutException" class="">StartToCloseTimeoutException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.StubCompilerException.html" title="StubCompilerException" class="">StubCompilerException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.SyncSignalException.html" title="SyncSignalException" class="">SyncSignalException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.TaskListDescription.html" title="TaskListDescription" class="">TaskListDescription</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.TaskListKind.html" title="TaskListKind" class="">TaskListKind</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.TaskListType.html" title="TaskListType" class="">TaskListType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.TerminatedException.html" title="TerminatedException" class="">TerminatedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.UntypedChildWorkflowFutureStub-1.html" title="UntypedChildWorkflowFutureStub&lt;TResult&gt;" class="">UntypedChildWorkflowFutureStub&lt;TResult&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.UpdateDomainInfo.html" title="UpdateDomainInfo" class="">UpdateDomainInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.UpdateDomainRequest.html" title="UpdateDomainRequest" class="">UpdateDomainRequest</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WaitForSignalReplyException.html" title="WaitForSignalReplyException" class="">WaitForSignalReplyException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Worker.html" title="Worker" class="">Worker</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkerArgs.html" title="WorkerArgs" class="">WorkerArgs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkerOptions.html" title="WorkerOptions" class="">WorkerOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Workflow.html" title="Workflow" class="">Workflow</a>
+                                </li>
+                                <li class="active">
+                                  <a href="../api/Neon.Cadence.WorkflowAttribute.html" title="WorkflowAttribute" class="active">WorkflowAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowBase.html" title="WorkflowBase" class="">WorkflowBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowConfig.html" title="WorkflowConfig" class="">WorkflowConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowDescription.html" title="WorkflowDescription" class="">WorkflowDescription</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowExecution.html" title="WorkflowExecution" class="">WorkflowExecution</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowExecutionAlreadyStartedException.html" title="WorkflowExecutionAlreadyStartedException" class="">WorkflowExecutionAlreadyStartedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowExecutionCloseStatus.html" title="WorkflowExecutionCloseStatus" class="">WorkflowExecutionCloseStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowFutureStub-1.html" title="WorkflowFutureStub&lt;WorkflowInterface&gt;" class="">WorkflowFutureStub&lt;WorkflowInterface&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowIdReusePolicy.html" title="WorkflowIdReusePolicy" class="">WorkflowIdReusePolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowInfo.html" title="WorkflowInfo" class="">WorkflowInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowInterfaceAttribute.html" title="WorkflowInterfaceAttribute" class="">WorkflowInterfaceAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowMethodAttribute.html" title="WorkflowMethodAttribute" class="">WorkflowMethodAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowOptions.html" title="WorkflowOptions" class="">WorkflowOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowParallelOperationException.html" title="WorkflowParallelOperationException" class="">WorkflowParallelOperationException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowQueue-1.html" title="WorkflowQueue&lt;T&gt;" class="">WorkflowQueue&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowQueueClosedException.html" title="WorkflowQueueClosedException" class="">WorkflowQueueClosedException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowRunningException.html" title="WorkflowRunningException" class="">WorkflowRunningException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowStatus.html" title="WorkflowStatus" class="">WorkflowStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowStub.html" title="WorkflowStub" class="">WorkflowStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowTypeException.html" title="WorkflowTypeException" class="">WorkflowTypeException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.WorkflowWorkerStartedException.html" title="WorkflowWorkerStartedException" class="">WorkflowWorkerStartedException</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Cadence.Internal.html" title="Neon.Cadence.Internal" class="">Neon.Cadence.Internal</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.CadenceErrorType.html" title="CadenceErrorType" class="">CadenceErrorType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.CadenceHelper.html" title="CadenceHelper" class="">CadenceHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.ChildExecution.html" title="ChildExecution" class="">ChildExecution</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.InternalParentClosePolicy.html" title="InternalParentClosePolicy" class="">InternalParentClosePolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.InternalPollerInfo.html" title="InternalPollerInfo" class="">InternalPollerInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.InternalTaskList.html" title="InternalTaskList" class="">InternalTaskList</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.InternalTaskListKind.html" title="InternalTaskListKind" class="">InternalTaskListKind</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.ITypedWorkflowStub.html" title="ITypedWorkflowStub" class="">ITypedWorkflowStub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cadence.Internal.SyncSignalCall.html" title="SyncSignalCall" class="">SyncSignalCall</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Cassandra.html" title="Neon.Cassandra" class="">Neon.Cassandra</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.KeyspaceStatus.html" title="KeyspaceStatus" class="">KeyspaceStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.RowSetExtensions.html" title="RowSetExtensions" class="">RowSetExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.SchemaManager.html" title="SchemaManager" class="">SchemaManager</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.SchemaManagerException.html" title="SchemaManagerException" class="">SchemaManagerException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.SchemaStatus.html" title="SchemaStatus" class="">SchemaStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cassandra.SessionExtensions.html" title="SessionExtensions" class="">SessionExtensions</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Collections.html" title="Neon.Collections" class="">Neon.Collections</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Collections.ArgDictionary.html" title="ArgDictionary" class="">ArgDictionary</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Collections.Bits.html" title="Bits" class="">Bits</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Collections.IObjectDictionary.html" title="IObjectDictionary" class="">IObjectDictionary</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Collections.NiceDictionary-2.html" title="NiceDictionary&lt;TKey, TValue&gt;" class="">NiceDictionary&lt;TKey, TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Collections.ObjectDictionary.html" title="ObjectDictionary" class="">ObjectDictionary</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Common.html" title="Neon.Common" class="">Neon.Common</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Common.AppDomainExtensions.html" title="AppDomainExtensions" class="">AppDomainExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.Block.html" title="Block" class="">Block</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.BlockArray.html" title="BlockArray" class="">BlockArray</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ByteEncoding.html" title="ByteEncoding" class="">ByteEncoding</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ByteUnits.html" title="ByteUnits" class="">ByteUnits</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.CommandLine.html" title="CommandLine" class="">CommandLine</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.Credentials.html" title="Credentials" class="">Credentials</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.DateTimeExtensions.html" title="DateTimeExtensions" class="">DateTimeExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.EnumExtensions.html" title="EnumExtensions" class="">EnumExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.EnvironmentParser.html" title="EnvironmentParser" class="">EnvironmentParser</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.EnvironmentParser.Parser-1.html" title="EnvironmentParser.Parser&lt;T&gt;" class="">EnvironmentParser.Parser&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.EnvironmentParser.Validator-1.html" title="EnvironmentParser.Validator&lt;T&gt;" class="">EnvironmentParser.Validator&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.EnvironmentParser.VariableSource.html" title="EnvironmentParser.VariableSource" class="">EnvironmentParser.VariableSource</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ExceptionExtensions.html" title="ExceptionExtensions" class="">ExceptionExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ExecuteException.html" title="ExecuteException" class="">ExecuteException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ExecuteResponse.html" title="ExecuteResponse" class="">ExecuteResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.GlobPattern.html" title="GlobPattern" class="">GlobPattern</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.HexDumpOption.html" title="HexDumpOption" class="">HexDumpOption</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.HttpClientExtensions.html" title="HttpClientExtensions" class="">HttpClientExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.IEnumerableExtensions.html" title="IEnumerableExtensions" class="">IEnumerableExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ILabeled.html" title="ILabeled" class="">ILabeled</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.IOExtensions.html" title="IOExtensions" class="">IOExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.IServiceContainer.html" title="IServiceContainer" class="">IServiceContainer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.IStaticDirectoryExtensions.html" title="IStaticDirectoryExtensions" class="">IStaticDirectoryExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.LabelSelector.html" title="LabelSelector" class="">LabelSelector</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.LabelSelector-1.html" title="LabelSelector&lt;TItem&gt;" class="">LabelSelector&lt;TItem&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.LabelSelectorOptions.html" title="LabelSelectorOptions" class="">LabelSelectorOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.NeonAssemblyExtensions.html" title="NeonAssemblyExtensions" class="">NeonAssemblyExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.NeonHelper.html" title="NeonHelper" class="">NeonHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.NetFramework.html" title="NetFramework" class="">NetFramework</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.NewtonsoftExtensions.html" title="NewtonsoftExtensions" class="">NewtonsoftExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ProgramEntrypointAsync.html" title="ProgramEntrypointAsync" class="">ProgramEntrypointAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ProgramExitException.html" title="ProgramExitException" class="">ProgramExitException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ProgramRunner.html" title="ProgramRunner" class="">ProgramRunner</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.RandomExtensions.html" title="RandomExtensions" class="">RandomExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ReflectionExtensions.html" title="ReflectionExtensions" class="">ReflectionExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.SemanticVersion.html" title="SemanticVersion" class="">SemanticVersion</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ServiceContainer.html" title="ServiceContainer" class="">ServiceContainer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.StaticZipOptions.html" title="StaticZipOptions" class="">StaticZipOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.StringBuilderExtensions.html" title="StringBuilderExtensions" class="">StringBuilderExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.StringExtensions.html" title="StringExtensions" class="">StringExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.Stub.html" title="Stub" class="">Stub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.Stub.Value.html" title="Stub.Value" class="">Stub.Value</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.TaskExtensions.html" title="TaskExtensions" class="">TaskExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.TimeSpanExtensions.html" title="TimeSpanExtensions" class="">TimeSpanExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.ToolException.html" title="ToolException" class="">ToolException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.TriState.html" title="TriState" class="">TriState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.WeakEventController.html" title="WeakEventController" class="">WeakEventController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.WindowsEdition.html" title="WindowsEdition" class="">WindowsEdition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.WindowsFeatureStatus.html" title="WindowsFeatureStatus" class="">WindowsFeatureStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Common.YamlDotNetExtensions.html" title="YamlDotNetExtensions" class="">YamlDotNetExtensions</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Cryptography.html" title="Neon.Cryptography" class="">Neon.Cryptography</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Cryptography.AesCipher.html" title="AesCipher" class="">AesCipher</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cryptography.CryptoExtensions.html" title="CryptoExtensions" class="">CryptoExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cryptography.CryptoHelper.html" title="CryptoHelper" class="">CryptoHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cryptography.NeonVault.html" title="NeonVault" class="">NeonVault</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Cryptography.Wildcard.html" title="Wildcard" class="">Wildcard</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.CSharp.html" title="Neon.CSharp" class="">Neon.CSharp</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.CSharp.CompilerErrorException.html" title="CompilerErrorException" class="">CompilerErrorException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.CSharp.CSharpHelper.html" title="CSharpHelper" class="">CSharpHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.CSharp.MetadataReferences.html" title="MetadataReferences" class="">MetadataReferences</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Csv.html" title="Neon.Csv" class="">Neon.Csv</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Csv.CsvReader.html" title="CsvReader" class="">CsvReader</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Csv.CsvTableReader.html" title="CsvTableReader" class="">CsvTableReader</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Csv.CsvTableWriter.html" title="CsvTableWriter" class="">CsvTableWriter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Csv.CsvWriter.html" title="CsvWriter" class="">CsvWriter</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Data.html" title="Neon.Data" class="">Neon.Data</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Data.CouchbaseImporter.html" title="CouchbaseImporter" class="">CouchbaseImporter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.CouchbaseSettings.html" title="CouchbaseSettings" class="">CouchbaseSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.DateTimeJsonConverter.html" title="DateTimeJsonConverter" class="">DateTimeJsonConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.DateTimeOffsetJsonConverter.html" title="DateTimeOffsetJsonConverter" class="">DateTimeOffsetJsonConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.EntityHelper.html" title="EntityHelper" class="">EntityHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IEnhancedJsonConverter.html" title="IEnhancedJsonConverter" class="">IEnhancedJsonConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IGeneratedServiceClient.html" title="IGeneratedServiceClient" class="">IGeneratedServiceClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IntegerEnumConverter-1.html" title="IntegerEnumConverter&lt;TEnum&gt;" class="">IntegerEnumConverter&lt;TEnum&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IPersistableType.html" title="IPersistableType" class="">IPersistableType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IPersistableType-1.html" title="IPersistableType&lt;T&gt;" class="">IPersistableType&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.IRoundtripData.html" title="IRoundtripData" class="">IRoundtripData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.NotifyPropertyChanged.html" title="NotifyPropertyChanged" class="">NotifyPropertyChanged</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.RoundtripDataFactory.html" title="RoundtripDataFactory" class="">RoundtripDataFactory</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.RoundtripDataHelper.html" title="RoundtripDataHelper" class="">RoundtripDataHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.TimeSpanJsonConverter.html" title="TimeSpanJsonConverter" class="">TimeSpanJsonConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Data.VersionJsonConverter.html" title="VersionJsonConverter" class="">VersionJsonConverter</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Deployment.html" title="Neon.Deployment" class="">Neon.Deployment</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.AwsCli.html" title="AwsCli" class="">AwsCli</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DeploymentException.html" title="DeploymentException" class="">DeploymentException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DeploymentHelper.html" title="DeploymentHelper" class="">DeploymentHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DownloadManifest.html" title="DownloadManifest" class="">DownloadManifest</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DownloadPart.html" title="DownloadPart" class="">DownloadPart</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DownloadProgressDelegate.html" title="DownloadProgressDelegate" class="">DownloadProgressDelegate</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.DownloadProgressType.html" title="DownloadProgressType" class="">DownloadProgressType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHub.html" title="GitHub" class="">GitHub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubActionsApi.html" title="GitHubActionsApi" class="">GitHubActionsApi</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubPackage.html" title="GitHubPackage" class="">GitHubPackage</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubPackageApi.html" title="GitHubPackageApi" class="">GitHubPackageApi</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubPackageType.html" title="GitHubPackageType" class="">GitHubPackageType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubPackageVersion.html" title="GitHubPackageVersion" class="">GitHubPackageVersion</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubPackageVisibility.html" title="GitHubPackageVisibility" class="">GitHubPackageVisibility</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubReleaseApi.html" title="GitHubReleaseApi" class="">GitHubReleaseApi</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubRepoPath.html" title="GitHubRepoPath" class="">GitHubRepoPath</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.GitHubTagApi.html" title="GitHubTagApi" class="">GitHubTagApi</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.IProfileClient.html" title="IProfileClient" class="">IProfileClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.IProfileRequest.html" title="IProfileRequest" class="">IProfileRequest</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.IProfileResponse.html" title="IProfileResponse" class="">IProfileResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.OnePassword.html" title="OnePassword" class="">OnePassword</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.OnePasswordException.html" title="OnePasswordException" class="">OnePasswordException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileClient.html" title="ProfileClient" class="">ProfileClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileException.html" title="ProfileException" class="">ProfileException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileHandlerResult.html" title="ProfileHandlerResult" class="">ProfileHandlerResult</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileRequest.html" title="ProfileRequest" class="">ProfileRequest</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileResponse.html" title="ProfileResponse" class="">ProfileResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileServer.html" title="ProfileServer" class="">ProfileServer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.ProfileStatus.html" title="ProfileStatus" class="">ProfileStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Deployment.XenServer.html" title="XenServer" class="">XenServer</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Diagnostics.html" title="Neon.Diagnostics" class="">Neon.Diagnostics</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.AssertException.html" title="AssertException" class="">AssertException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.ConfigExtensions.html" title="ConfigExtensions" class="">ConfigExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.ConsoleJsonLogExporter.html" title="ConsoleJsonLogExporter" class="">ConsoleJsonLogExporter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.FileLogExporter.html" title="FileLogExporter" class="">FileLogExporter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.FileLogExporterFormat.html" title="FileLogExporterFormat" class="">FileLogExporterFormat</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.FileLogExporterOptions.html" title="FileLogExporterOptions" class="">FileLogExporterOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogAsTraceProcessor.html" title="LogAsTraceProcessor" class="">LogAsTraceProcessor</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogAsTraceProcessorOptions.html" title="LogAsTraceProcessorOptions" class="">LogAsTraceProcessorOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogAttributeNames.html" title="LogAttributeNames" class="">LogAttributeNames</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogAttributes.html" title="LogAttributes" class="">LogAttributes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogEvent.html" title="LogEvent" class="">LogEvent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LogEventInterceptor.html" title="LogEventInterceptor" class="">LogEventInterceptor</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.LoggerExtensions.html" title="LoggerExtensions" class="">LoggerExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.NullLogger.html" title="NullLogger" class="">NullLogger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.TelemetryHub.html" title="TelemetryHub" class="">TelemetryHub</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.TelemetrySpanEventNames.html" title="TelemetrySpanEventNames" class="">TelemetrySpanEventNames</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Diagnostics.TelemetrySpanExtensions.html" title="TelemetrySpanExtensions" class="">TelemetrySpanExtensions</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Docker.html" title="Neon.Docker" class="">Neon.Docker</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerClient.html" title="DockerClient" class="">DockerClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerNetwork.html" title="DockerNetwork" class="">DockerNetwork</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerNetworkContainer.html" title="DockerNetworkContainer" class="">DockerNetworkContainer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerNetworkIpam.html" title="DockerNetworkIpam" class="">DockerNetworkIpam</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerNode.html" title="DockerNode" class="">DockerNode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerNodeManagerStatus.html" title="DockerNodeManagerStatus" class="">DockerNodeManagerStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerResponse.html" title="DockerResponse" class="">DockerResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerSettings.html" title="DockerSettings" class="">DockerSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.DockerVolume.html" title="DockerVolume" class="">DockerVolume</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.NetworkCreateResponse.html" title="NetworkCreateResponse" class="">NetworkCreateResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceBindOptions.html" title="ServiceBindOptions" class="">ServiceBindOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceConfig.html" title="ServiceConfig" class="">ServiceConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceContainerSpec.html" title="ServiceContainerSpec" class="">ServiceContainerSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceCredentialSpec.html" title="ServiceCredentialSpec" class="">ServiceCredentialSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceDetails.html" title="ServiceDetails" class="">ServiceDetails</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceDiscreteResourceSpec.html" title="ServiceDiscreteResourceSpec" class="">ServiceDiscreteResourceSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceDnsConfig.html" title="ServiceDnsConfig" class="">ServiceDnsConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceEndpoint.html" title="ServiceEndpoint" class="">ServiceEndpoint</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceEndpointMode.html" title="ServiceEndpointMode" class="">ServiceEndpointMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceEndpointPortConfig.html" title="ServiceEndpointPortConfig" class="">ServiceEndpointPortConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceEndpointSpec.html" title="ServiceEndpointSpec" class="">ServiceEndpointSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceFile.html" title="ServiceFile" class="">ServiceFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceGenericResources.html" title="ServiceGenericResources" class="">ServiceGenericResources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceGlobalSchedulingMode.html" title="ServiceGlobalSchedulingMode" class="">ServiceGlobalSchedulingMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceHealthCheck.html" title="ServiceHealthCheck" class="">ServiceHealthCheck</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceIsolationMode.html" title="ServiceIsolationMode" class="">ServiceIsolationMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceListResponse.html" title="ServiceListResponse" class="">ServiceListResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceLogDriver.html" title="ServiceLogDriver" class="">ServiceLogDriver</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceMode.html" title="ServiceMode" class="">ServiceMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceMount.html" title="ServiceMount" class="">ServiceMount</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceMountBindPropagation.html" title="ServiceMountBindPropagation" class="">ServiceMountBindPropagation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceMountConsistency.html" title="ServiceMountConsistency" class="">ServiceMountConsistency</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceMountType.html" title="ServiceMountType" class="">ServiceMountType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceNamedResourceSpec.html" title="ServiceNamedResourceSpec" class="">ServiceNamedResourceSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceNetwork.html" title="ServiceNetwork" class="">ServiceNetwork</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePlacement.html" title="ServicePlacement" class="">ServicePlacement</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePlacementPreferences.html" title="ServicePlacementPreferences" class="">ServicePlacementPreferences</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePlacementSpreadSettings.html" title="ServicePlacementSpreadSettings" class="">ServicePlacementSpreadSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePlatform.html" title="ServicePlatform" class="">ServicePlatform</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePortMode.html" title="ServicePortMode" class="">ServicePortMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePortProtocol.html" title="ServicePortProtocol" class="">ServicePortProtocol</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServicePrivileges.html" title="ServicePrivileges" class="">ServicePrivileges</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceReplicatedSchedulingMode.html" title="ServiceReplicatedSchedulingMode" class="">ServiceReplicatedSchedulingMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceResources.html" title="ServiceResources" class="">ServiceResources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceResourceSettings.html" title="ServiceResourceSettings" class="">ServiceResourceSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceRestartCondition.html" title="ServiceRestartCondition" class="">ServiceRestartCondition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceRestartPolicy.html" title="ServiceRestartPolicy" class="">ServiceRestartPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceRollbackConfig.html" title="ServiceRollbackConfig" class="">ServiceRollbackConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceRollbackFailureAction.html" title="ServiceRollbackFailureAction" class="">ServiceRollbackFailureAction</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceRollbackOrder.html" title="ServiceRollbackOrder" class="">ServiceRollbackOrder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceSchedulingMode.html" title="ServiceSchedulingMode" class="">ServiceSchedulingMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceSecret.html" title="ServiceSecret" class="">ServiceSecret</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceSELinuxContext.html" title="ServiceSELinuxContext" class="">ServiceSELinuxContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceSpec.html" title="ServiceSpec" class="">ServiceSpec</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceTaskTemplate.html" title="ServiceTaskTemplate" class="">ServiceTaskTemplate</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceTmpfsOptions.html" title="ServiceTmpfsOptions" class="">ServiceTmpfsOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceUpdateConfig.html" title="ServiceUpdateConfig" class="">ServiceUpdateConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceUpdateFailureAction.html" title="ServiceUpdateFailureAction" class="">ServiceUpdateFailureAction</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceUpdateOrder.html" title="ServiceUpdateOrder" class="">ServiceUpdateOrder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceUpdateState.html" title="ServiceUpdateState" class="">ServiceUpdateState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceUpdateStatus.html" title="ServiceUpdateStatus" class="">ServiceUpdateStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceVersion.html" title="ServiceVersion" class="">ServiceVersion</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceVirtualIP.html" title="ServiceVirtualIP" class="">ServiceVirtualIP</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceVolumeDriverConfig.html" title="ServiceVolumeDriverConfig" class="">ServiceVolumeDriverConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.ServiceVolumeOptions.html" title="ServiceVolumeOptions" class="">ServiceVolumeOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Docker.VolumeListResponse.html" title="VolumeListResponse" class="">VolumeListResponse</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.HyperV.html" title="Neon.HyperV" class="">Neon.HyperV</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.HyperVClient.html" title="HyperVClient" class="">HyperVClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.HyperVException.html" title="HyperVException" class="">HyperVException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualDrive.html" title="VirtualDrive" class="">VirtualDrive</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualIPAddress.html" title="VirtualIPAddress" class="">VirtualIPAddress</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualMachine.html" title="VirtualMachine" class="">VirtualMachine</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualMachineState.html" title="VirtualMachineState" class="">VirtualMachineState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualNat.html" title="VirtualNat" class="">VirtualNat</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualNetworkAdapter.html" title="VirtualNetworkAdapter" class="">VirtualNetworkAdapter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualSwitch.html" title="VirtualSwitch" class="">VirtualSwitch</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.HyperV.VirtualSwitchType.html" title="VirtualSwitchType" class="">VirtualSwitchType</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.IO.html" title="Neon.IO" class="">Neon.IO</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.IO.BlockStream.html" title="BlockStream" class="">BlockStream</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.FixedLengthStream.html" title="FixedLengthStream" class="">FixedLengthStream</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.IStaticDirectory.html" title="IStaticDirectory" class="">IStaticDirectory</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.IStaticFile.html" title="IStaticFile" class="">IStaticFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.LineEnding.html" title="LineEnding" class="">LineEnding</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.LinuxPath.html" title="LinuxPath" class="">LinuxPath</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.LinuxPermissions.html" title="LinuxPermissions" class="">LinuxPermissions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.PreprocessReader.html" title="PreprocessReader" class="">PreprocessReader</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.RelayStream.html" title="RelayStream" class="">RelayStream</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.StaticDirectoryBase.html" title="StaticDirectoryBase" class="">StaticDirectoryBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.StaticFileBase.html" title="StaticFileBase" class="">StaticFileBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.SubStream.html" title="SubStream" class="">SubStream</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.TempFile.html" title="TempFile" class="">TempFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.IO.TempFolder.html" title="TempFolder" class="">TempFolder</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.JsonConverters.html" title="Neon.JsonConverters" class="">Neon.JsonConverters</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.JsonConverters.JsonDateTimeConverter.html" title="JsonDateTimeConverter" class="">JsonDateTimeConverter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.JsonConverters.JsonGenericConverter-1.html" title="JsonGenericConverter&lt;T&gt;" class="">JsonGenericConverter&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.JsonConverters.JsonNullableDateTimeConverter.html" title="JsonNullableDateTimeConverter" class="">JsonNullableDateTimeConverter</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.ModelGen.html" title="Neon.ModelGen" class="">Neon.ModelGen</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ActionResult-1.html" title="ActionResult&lt;T&gt;" class="">ActionResult&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ApiVersion.html" title="ApiVersion" class="">ApiVersion</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ApiVersionAttribute.html" title="ApiVersionAttribute" class="">ApiVersionAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.BodyStreamAttribute.html" title="BodyStreamAttribute" class="">BodyStreamAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ControllerValidationAttribute.html" title="ControllerValidationAttribute" class="">ControllerValidationAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.DataModelAttribute.html" title="DataModelAttribute" class="">DataModelAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.EnumMember.html" title="EnumMember" class="">EnumMember</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.FromBodyAttribute.html" title="FromBodyAttribute" class="">FromBodyAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.FromHeaderAttribute.html" title="FromHeaderAttribute" class="">FromHeaderAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.FromQueryAttribute.html" title="FromQueryAttribute" class="">FromQueryAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.FromRouteAttribute.html" title="FromRouteAttribute" class="">FromRouteAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.GeneratedClientAttribute.html" title="GeneratedClientAttribute" class="">GeneratedClientAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.GeneratedMethodAttribute.html" title="GeneratedMethodAttribute" class="">GeneratedMethodAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.GeneratedParamAttribute.html" title="GeneratedParamAttribute" class="">GeneratedParamAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HashSourceAttribute.html" title="HashSourceAttribute" class="">HashSourceAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpAttribute.html" title="HttpAttribute" class="">HttpAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpDeleteAttribute.html" title="HttpDeleteAttribute" class="">HttpDeleteAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpGetAttribute.html" title="HttpGetAttribute" class="">HttpGetAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpHeadAttribute.html" title="HttpHeadAttribute" class="">HttpHeadAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpOptionsAttribute.html" title="HttpOptionsAttribute" class="">HttpOptionsAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpPatchAttribute.html" title="HttpPatchAttribute" class="">HttpPatchAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpPostAttribute.html" title="HttpPostAttribute" class="">HttpPostAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.HttpPutAttribute.html" title="HttpPutAttribute" class="">HttpPutAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.IActionResult.html" title="IActionResult" class="">IActionResult</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ModelGenerator.html" title="ModelGenerator" class="">ModelGenerator</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ModelGeneratorOutput.html" title="ModelGeneratorOutput" class="">ModelGeneratorOutput</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ModelGeneratorSettings.html" title="ModelGeneratorSettings" class="">ModelGeneratorSettings</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.NoCodeGenAttribute.html" title="NoCodeGenAttribute" class="">NoCodeGenAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.NoControllerValidationAttribute.html" title="NoControllerValidationAttribute" class="">NoControllerValidationAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.PassAs.html" title="PassAs" class="">PassAs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.PersistableAttribute.html" title="PersistableAttribute" class="">PersistableAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.PersistableKeyAttribute.html" title="PersistableKeyAttribute" class="">PersistableKeyAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.RouteAttribute.html" title="RouteAttribute" class="">RouteAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.ServiceModelAttribute.html" title="ServiceModelAttribute" class="">ServiceModelAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.TargetAttribute.html" title="TargetAttribute" class="">TargetAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.ModelGen.UxFrameworks.html" title="UxFrameworks" class="">UxFrameworks</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Net.html" title="Neon.Net" class="">Neon.Net</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Net.HttpApiException.html" title="HttpApiException" class="">HttpApiException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.HttpException.html" title="HttpException" class="">HttpException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.JsonClient.html" title="JsonClient" class="">JsonClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.JsonClientPayload.html" title="JsonClientPayload" class="">JsonClientPayload</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.JsonResponse.html" title="JsonResponse" class="">JsonResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.Jwt.html" title="Jwt" class="">Jwt</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.LocalHostSection.html" title="LocalHostSection" class="">LocalHostSection</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetConst.html" title="NetConst" class="">NetConst</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetHelper.html" title="NetHelper" class="">NetHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetworkCidr.html" title="NetworkCidr" class="">NetworkCidr</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetworkConfiguration.html" title="NetworkConfiguration" class="">NetworkConfiguration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetworkException.html" title="NetworkException" class="">NetworkException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.NetworkPorts.html" title="NetworkPorts" class="">NetworkPorts</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.Pinger.html" title="Pinger" class="">Pinger</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.ReachableHost.html" title="ReachableHost" class="">ReachableHost</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.ReachableHostMode.html" title="ReachableHostMode" class="">ReachableHostMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Net.StreamDocument.html" title="StreamDocument" class="">StreamDocument</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Postgres.html" title="Neon.Postgres" class="">Neon.Postgres</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.ConnectionExtensions.html" title="ConnectionExtensions" class="">ConnectionExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.DatabaseStatus.html" title="DatabaseStatus" class="">DatabaseStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.PreparedCommand.html" title="PreparedCommand" class="">PreparedCommand</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.ReaderAsyncEnumerator.html" title="ReaderAsyncEnumerator" class="">ReaderAsyncEnumerator</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.ReaderEnumerator.html" title="ReaderEnumerator" class="">ReaderEnumerator</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.ReaderExtensions.html" title="ReaderExtensions" class="">ReaderExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.SchemaManager.html" title="SchemaManager" class="">SchemaManager</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.SchemaManagerException.html" title="SchemaManagerException" class="">SchemaManagerException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Postgres.SchemaStatus.html" title="SchemaStatus" class="">SchemaStatus</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Retry.html" title="Neon.Retry" class="">Neon.Retry</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Retry.ExponentialRetryPolicy.html" title="ExponentialRetryPolicy" class="">ExponentialRetryPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.IRetryPolicy.html" title="IRetryPolicy" class="">IRetryPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.LinearRetryPolicy.html" title="LinearRetryPolicy" class="">LinearRetryPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.NoRetryPolicy.html" title="NoRetryPolicy" class="">NoRetryPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.RetryPolicy.html" title="RetryPolicy" class="">RetryPolicy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.RetryPolicyBase.html" title="RetryPolicyBase" class="">RetryPolicyBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.RetryTransientArgs.html" title="RetryTransientArgs" class="">RetryTransientArgs</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.TransientDetector.html" title="TransientDetector" class="">TransientDetector</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Retry.TransientException.html" title="TransientException" class="">TransientException</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Service.html" title="Neon.Service" class="">Neon.Service</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Service.LogMetricsProcessor.html" title="LogMetricsProcessor" class="">LogMetricsProcessor</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.MetricsMode.html" title="MetricsMode" class="">MetricsMode</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.MetricsOptions.html" title="MetricsOptions" class="">MetricsOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.NeonService.html" title="NeonService" class="">NeonService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.NeonServiceOptions.html" title="NeonServiceOptions" class="">NeonServiceOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.NeonServiceStatus.html" title="NeonServiceStatus" class="">NeonServiceStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.OtelConfigExtensions.html" title="OtelConfigExtensions" class="">OtelConfigExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.OtlpCollectorChecker.html" title="OtlpCollectorChecker" class="">OtlpCollectorChecker</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ProcessTerminator.html" title="ProcessTerminator" class="">ProcessTerminator</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceApiContact.html" title="ServiceApiContact" class="">ServiceApiContact</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceApiInfo.html" title="ServiceApiInfo" class="">ServiceApiInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceApiLicense.html" title="ServiceApiLicense" class="">ServiceApiLicense</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceDependencies.html" title="ServiceDependencies" class="">ServiceDependencies</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceDescription.html" title="ServiceDescription" class="">ServiceDescription</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceEndpoint.html" title="ServiceEndpoint" class="">ServiceEndpoint</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceEndpointProtocol.html" title="ServiceEndpointProtocol" class="">ServiceEndpointProtocol</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceEndpoints.html" title="ServiceEndpoints" class="">ServiceEndpoints</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Service.ServiceMap.html" title="ServiceMap" class="">ServiceMap</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.SSH.html" title="Neon.SSH" class="">Neon.SSH</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.SSH.CommandBundle.html" title="CommandBundle" class="">CommandBundle</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.CommandFile.html" title="CommandFile" class="">CommandFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.CommandResponse.html" title="CommandResponse" class="">CommandResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.HostFolders.html" title="HostFolders" class="">HostFolders</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.IBashCommandFormatter.html" title="IBashCommandFormatter" class="">IBashCommandFormatter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.ILinuxSshProxy.html" title="ILinuxSshProxy" class="">ILinuxSshProxy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.LinuxDiskInfo.html" title="LinuxDiskInfo" class="">LinuxDiskInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.LinuxDiskPartition.html" title="LinuxDiskPartition" class="">LinuxDiskPartition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.LinuxSshProxy.html" title="LinuxSshProxy" class="">LinuxSshProxy</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.LinuxSshProxy-1.html" title="LinuxSshProxy&lt;TMetadata&gt;" class="">LinuxSshProxy&lt;TMetadata&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.NamespaceDoc.html" title="NamespaceDoc" class="">NamespaceDoc</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.RemoteCommandException.html" title="RemoteCommandException" class="">RemoteCommandException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.RunOptions.html" title="RunOptions" class="">RunOptions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.SshCredentials.html" title="SshCredentials" class="">SshCredentials</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.SshExtensions.html" title="SshExtensions" class="">SshExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.SSH.SshProxyException.html" title="SshProxyException" class="">SshProxyException</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Tailwind.html" title="Neon.Tailwind" class="">Neon.Tailwind</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.ClickOffEventHandler.html" title="ClickOffEventHandler" class="">ClickOffEventHandler</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.ComponentEventArgs-2.html" title="ComponentEventArgs&lt;TSender, TEventArgs&gt;" class="">ComponentEventArgs&lt;TSender, TEventArgs&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.ComponentEventArgs-1.html" title="ComponentEventArgs&lt;TSender&gt;" class="">ComponentEventArgs&lt;TSender&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.DisclosureState.html" title="DisclosureState" class="">DisclosureState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.EventHandlerComponentBase-1.html" title="EventHandlerComponentBase&lt;TComponent&gt;" class="">EventHandlerComponentBase&lt;TComponent&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessButton.html" title="HeadlessButton" class="">HeadlessButton</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessDialog.html" title="HeadlessDialog" class="">HeadlessDialog</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessDialogPanel.html" title="HeadlessDialogPanel" class="">HeadlessDialogPanel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessDisclosure.html" title="HeadlessDisclosure" class="">HeadlessDisclosure</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessDisclosureButton.html" title="HeadlessDisclosureButton" class="">HeadlessDisclosureButton</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessDisclosurePanel.html" title="HeadlessDisclosurePanel" class="">HeadlessDisclosurePanel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessListbox-1.html" title="HeadlessListbox&lt;TValue&gt;" class="">HeadlessListbox&lt;TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessListboxButton-1.html" title="HeadlessListboxButton&lt;TValue&gt;" class="">HeadlessListboxButton&lt;TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessListboxLabel-1.html" title="HeadlessListboxLabel&lt;TValue&gt;" class="">HeadlessListboxLabel&lt;TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessListboxOption-1.html" title="HeadlessListboxOption&lt;TValue&gt;" class="">HeadlessListboxOption&lt;TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessListboxOptions-1.html" title="HeadlessListboxOptions&lt;TValue&gt;" class="">HeadlessListboxOptions&lt;TValue&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessMenu.html" title="HeadlessMenu" class="">HeadlessMenu</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessMenuButton.html" title="HeadlessMenuButton" class="">HeadlessMenuButton</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessMenuItem.html" title="HeadlessMenuItem" class="">HeadlessMenuItem</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessMenuItems.html" title="HeadlessMenuItems" class="">HeadlessMenuItems</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessSwitch.html" title="HeadlessSwitch" class="">HeadlessSwitch</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessSwitchGroup.html" title="HeadlessSwitchGroup" class="">HeadlessSwitchGroup</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HeadlessSwitchLabel.html" title="HeadlessSwitchLabel" class="">HeadlessSwitchLabel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.IPortalBinder.html" title="IPortalBinder" class="">IPortalBinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.KeyboardKey.html" title="KeyboardKey" class="">KeyboardKey</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.KeyDownEventHandler.html" title="KeyDownEventHandler" class="">KeyDownEventHandler</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.ListboxFocus.html" title="ListboxFocus" class="">ListboxFocus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.ListboxState.html" title="ListboxState" class="">ListboxState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.MenuFocus.html" title="MenuFocus" class="">MenuFocus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.MenuState.html" title="MenuState" class="">MenuState</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.Portal.html" title="Portal" class="">Portal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.PortalBinder.html" title="PortalBinder" class="">PortalBinder</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.PortalContent.html" title="PortalContent" class="">PortalContent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.SearchAssistant.html" title="SearchAssistant" class="">SearchAssistant</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.TailwindExtensions.html" title="TailwindExtensions" class="">TailwindExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.Transition.html" title="Transition" class="">Transition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.TransitionGroup.html" title="TransitionGroup" class="">TransitionGroup</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tailwind.TransitionState.html" title="TransitionState" class="">TransitionState</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Tasks.html" title="Neon.Tasks" class="">Neon.Tasks</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.Async.html" title="Async" class="">Async</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncAutoResetEvent.html" title="AsyncAutoResetEvent" class="">AsyncAutoResetEvent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncManualResetEvent.html" title="AsyncManualResetEvent" class="">AsyncManualResetEvent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncMutex.html" title="AsyncMutex" class="">AsyncMutex</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncPeriodicTask.html" title="AsyncPeriodicTask" class="">AsyncPeriodicTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncReaderWriterLock.html" title="AsyncReaderWriterLock" class="">AsyncReaderWriterLock</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncReentrantMutex.html" title="AsyncReentrantMutex" class="">AsyncReentrantMutex</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.AsyncTimer.html" title="AsyncTimer" class="">AsyncTimer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.IAsyncFuture.html" title="IAsyncFuture" class="">IAsyncFuture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.IAsyncFuture-1.html" title="IAsyncFuture&lt;T&gt;" class="">IAsyncFuture&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.NonDisposableTask.html" title="NonDisposableTask" class="">NonDisposableTask</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.NonDisposableTask-1.html" title="NonDisposableTask&lt;T&gt;" class="">NonDisposableTask&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.SyncContext.html" title="SyncContext" class="">SyncContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Tasks.SyncContextMode.html" title="SyncContextMode" class="">SyncContextMode</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Time.html" title="Neon.Time" class="">Neon.Time</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Time.GatedTimer.html" title="GatedTimer" class="">GatedTimer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.GoDuration.html" title="GoDuration" class="">GoDuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.PolledTimer.html" title="PolledTimer" class="">PolledTimer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.RecurringTimer.html" title="RecurringTimer" class="">RecurringTimer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.RecurringTimerType.html" title="RecurringTimerType" class="">RecurringTimerType</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.SysTime.html" title="SysTime" class="">SysTime</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Time.TimeOfDay.html" title="TimeOfDay" class="">TimeOfDay</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Web.html" title="Neon.Web" class="">Neon.Web</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Web.NeonController.html" title="NeonController" class="">NeonController</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.NeonControllerBase.html" title="NeonControllerBase" class="">NeonControllerBase</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.RoundTripJsonInputFormatter.html" title="RoundTripJsonInputFormatter" class="">RoundTripJsonInputFormatter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Web.SignalR.html" title="Neon.Web.SignalR" class="">Neon.Web.SignalR</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Web.SignalR.DependencyInjectionExtensions.html" title="DependencyInjectionExtensions" class="">DependencyInjectionExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.SignalR.GroupAction.html" title="GroupAction" class="">GroupAction</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.SignalR.GroupCommand.html" title="GroupCommand" class="">GroupCommand</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.SignalR.Invocation.html" title="Invocation" class="">Invocation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Web.SignalR.NatsHubLifetimeManager-1.html" title="NatsHubLifetimeManager&lt;THub&gt;" class="">NatsHubLifetimeManager&lt;THub&gt;</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Windows.html" title="Neon.Windows" class="">Neon.Windows</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Windows.MEMORYSTATUSEX.html" title="MEMORYSTATUSEX" class="">MEMORYSTATUSEX</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Windows.PowerShell.html" title="PowerShell" class="">PowerShell</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Windows.PowerShellException.html" title="PowerShellException" class="">PowerShellException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Windows.Win32.html" title="Win32" class="">Win32</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.WinTTY.html" title="Neon.WinTTY" class="">Neon.WinTTY</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.WinTTY.ConsoleTTY.html" title="ConsoleTTY" class="">ConsoleTTY</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.WSL.html" title="Neon.WSL" class="">Neon.WSL</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.WSL.Wsl2Proxy.html" title="Wsl2Proxy" class="">Wsl2Proxy</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.XenServer.html" title="Neon.XenServer" class="">Neon.XenServer</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.IXenClient.html" title="IXenClient" class="">IXenClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenClient.html" title="XenClient" class="">XenClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenClient.MachineOperations.html" title="XenClient.MachineOperations" class="">XenClient.MachineOperations</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenClient.StorageOperations.html" title="XenClient.StorageOperations" class="">XenClient.StorageOperations</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenClient.TemplateOperations.html" title="XenClient.TemplateOperations" class="">XenClient.TemplateOperations</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenException.html" title="XenException" class="">XenException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenHostInfo.html" title="XenHostInfo" class="">XenHostInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenObject.html" title="XenObject" class="">XenObject</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenResponse.html" title="XenResponse" class="">XenResponse</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenStorageRepository.html" title="XenStorageRepository" class="">XenStorageRepository</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenTempIso.html" title="XenTempIso" class="">XenTempIso</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenTemplate.html" title="XenTemplate" class="">XenTemplate</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenVirtualDisk.html" title="XenVirtualDisk" class="">XenVirtualDisk</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenVirtualMachine.html" title="XenVirtualMachine" class="">XenVirtualMachine</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.XenServer.XenVmPowerState.html" title="XenVmPowerState" class="">XenVmPowerState</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Xunit.html" title="Neon.Xunit" class="">Neon.Xunit</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.AnsiblePlayer.html" title="AnsiblePlayer" class="">AnsiblePlayer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.AnsiblePlayResults.html" title="AnsiblePlayResults" class="">AnsiblePlayResults</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.AnsibleTaskResult.html" title="AnsibleTaskResult" class="">AnsibleTaskResult</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.AspNetFixture.html" title="AspNetFixture" class="">AspNetFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.CodeFixture.html" title="CodeFixture" class="">CodeFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.CollectionComparer-1.html" title="CollectionComparer&lt;T&gt;" class="">CollectionComparer&lt;T&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.ComposedFixture.html" title="ComposedFixture" class="">ComposedFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.ContainerFixture.html" title="ContainerFixture" class="">ContainerFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.ContainerLimits.html" title="ContainerLimits" class="">ContainerLimits</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerComposeFixture.html" title="DockerComposeFixture" class="">DockerComposeFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.html" title="DockerFixture" class="">DockerFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.ConfigInfo.html" title="DockerFixture.ConfigInfo" class="">DockerFixture.ConfigInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.ContainerInfo.html" title="DockerFixture.ContainerInfo" class="">DockerFixture.ContainerInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.NetworkInfo.html" title="DockerFixture.NetworkInfo" class="">DockerFixture.NetworkInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.SecretInfo.html" title="DockerFixture.SecretInfo" class="">DockerFixture.SecretInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.ServiceInfo.html" title="DockerFixture.ServiceInfo" class="">DockerFixture.ServiceInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.StackDefinition.html" title="DockerFixture.StackDefinition" class="">DockerFixture.StackDefinition</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.StackInfo.html" title="DockerFixture.StackInfo" class="">DockerFixture.StackInfo</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.DockerFixture.StackService.html" title="DockerFixture.StackService" class="">DockerFixture.StackService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.EnvironmentFixture.html" title="EnvironmentFixture" class="">EnvironmentFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.HostsFixture.html" title="HostsFixture" class="">HostsFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.IncompatibleServiceException.html" title="IncompatibleServiceException" class="">IncompatibleServiceException</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.ITestFixture.html" title="ITestFixture" class="">ITestFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.MockHttpServerExtensions.html" title="MockHttpServerExtensions" class="">MockHttpServerExtensions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.NatsFixture.html" title="NatsFixture" class="">NatsFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.NatsStreamingFixture.html" title="NatsStreamingFixture" class="">NatsStreamingFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.PlatformFactAttribute.html" title="PlatformFactAttribute" class="">PlatformFactAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.RepeatAttribute.html" title="RepeatAttribute" class="">RepeatAttribute</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TargetPlatforms.html" title="TargetPlatforms" class="">TargetPlatforms</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestArea.html" title="TestArea" class="">TestArea</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestCollection.html" title="TestCollection" class="">TestCollection</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestContext.html" title="TestContext" class="">TestContext</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestFixture.html" title="TestFixture" class="">TestFixture</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestFixtureStatus.html" title="TestFixtureStatus" class="">TestFixtureStatus</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestHelper.html" title="TestHelper" class="">TestHelper</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestHttpClient.html" title="TestHttpClient" class="">TestHttpClient</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestOutputWriter.html" title="TestOutputWriter" class="">TestOutputWriter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.TestTrait.html" title="TestTrait" class="">TestTrait</a>
+                                </li>
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.XunitExtensions.html" title="XunitExtensions" class="">XunitExtensions</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Xunit.Cadence.html" title="Neon.Xunit.Cadence" class="">Neon.Xunit.Cadence</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.Cadence.CadenceFixture.html" title="CadenceFixture" class="">CadenceFixture</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Xunit.Couchbase.html" title="Neon.Xunit.Couchbase" class="">Neon.Xunit.Couchbase</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.Couchbase.CouchbaseFixture.html" title="CouchbaseFixture" class="">CouchbaseFixture</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.Xunit.YugaByte.html" title="Neon.Xunit.YugaByte" class="">Neon.Xunit.YugaByte</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.Xunit.YugaByte.YugaByteFixture.html" title="YugaByteFixture" class="">YugaByteFixture</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../api/Neon.YugaByte.html" title="Neon.YugaByte" class="">Neon.YugaByte</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../api/Neon.YugaByte.YugaByteHelper.html" title="YugaByteHelper" class="">YugaByteHelper</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Neon.Cadence.WorkflowAttribute">
+  
+  
+  <h1 id="Neon_Cadence_WorkflowAttribute" data-uid="Neon.Cadence.WorkflowAttribute" class="text-break">Class WorkflowAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>Used to tag workflow implementations that inherit from
+<a class="xref" href="Neon.Cadence.WorkflowBase.html">WorkflowBase</a> to customize the how the workflow is
+registered.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+    <div class="level2"><span class="xref">WorkflowAttribute</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Neon.Cadence.html">Neon.Cadence</a></h6>
+  <h6><strong>Assembly</strong>: Neon.Cadence.dll</h6>
+  <h5 id="Neon_Cadence_WorkflowAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+public class WorkflowAttribute : Attribute, _Attribute</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Neon_Cadence_WorkflowAttribute__ctor_" data-uid="Neon.Cadence.WorkflowAttribute.#ctor*"></a>
+  <h4 id="Neon_Cadence_WorkflowAttribute__ctor_System_String_" data-uid="Neon.Cadence.WorkflowAttribute.#ctor(System.String)">WorkflowAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorkflowAttribute(string name = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optionally specifies the workflow type name to be used 
+when registering the workflow implementation with Cadence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Neon_Cadence_WorkflowAttribute_AutoRegister_" data-uid="Neon.Cadence.WorkflowAttribute.AutoRegister*"></a>
+  <h4 id="Neon_Cadence_WorkflowAttribute_AutoRegister" data-uid="Neon.Cadence.WorkflowAttribute.AutoRegister">AutoRegister</h4>
+  <div class="markdown level1 summary"><p>Indicates that <a class="xref" href="Neon.Cadence.CadenceClient.html#Neon_Cadence_CadenceClient_RegisterAssemblyWorkflowsAsync_System_Reflection_Assembly_System_String_">RegisterAssemblyWorkflowsAsync(Assembly, String)</a> will
+automatically register the tagged workflow implementation for the specified assembly.
+This defaults to <code>false</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoRegister { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_Cadence_WorkflowAttribute_Name_" data-uid="Neon.Cadence.WorkflowAttribute.Name*"></a>
+  <h4 id="Neon_Cadence_WorkflowAttribute_Name" data-uid="Neon.Cadence.WorkflowAttribute.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The workflow type name.  This defaults to the fully qualified name
+of the implemented workflow interface (without any leading &quot;I&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2005-2022 by NEONFORGE LLC
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

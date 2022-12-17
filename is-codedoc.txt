@@ -1,3 +1,0 @@
-The neonKUBE build and release scripts use the presence of this file to verify
-that this directory actually holds a clone of the [nforgeio/nforgeio.github.io]
-repository.
