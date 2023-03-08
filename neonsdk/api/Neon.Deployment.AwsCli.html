@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1763,6 +1784,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
@@ -2419,13 +2443,13 @@ uploaded file by default.  You may override this behavior by passing <code data-
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">(T1, T2)</a>&lt;<a class="xref" href="Neon.Deployment.DownloadManifest.html">DownloadManifest</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td><p>The <a class="xref" href="Neon.Deployment.DownloadManifest.html">DownloadManifest</a> information.</p>
+        <td><p>The <a class="xref" href="Neon.Deployment.DownloadManifest.html">DownloadManifest</a> information as well as the URI to the uploaded manifest.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Neon_Deployment_AwsCli_S3UploadMultiPart_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Int64_System_Boolean_System_Action_System_Int64___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
+  <div class="markdown level1 remarks"><p><p>
 This method works by splitting the <code data-dev-comment-type="paramref" class="paramref">sourcePath</code> file into parts no larger than 
 <code data-dev-comment-type="paramref" class="paramref">maxPartSize</code> bytes each and the uploading these parts to the specified bucket
 and path along with a file holding <a class="xref" href="Neon.Deployment.DownloadManifest.html">DownloadManifest</a> information describing the download
@@ -2451,7 +2475,7 @@ but this can be overridden via <code data-dev-comment-type="paramref" class="par
 file will be uploaded as <strong>FILENAME.manifest</strong> and the parts will be written to a subfolder named
 <strong>FILENAME.parts</strong>.  For example, uploading a large file named <strong>myfile.json</strong> to <strong><a href="https://s3.uswest.amazonaws.com/mybucket">https://s3.uswest.amazonaws.com/mybucket</a></strong>
 will result S3 file layout like:
-</p>
+</p></p>
 <pre><code>https://s3.uswest.amazonaws.com/mybucket
     myfile.json.manifest
     myfile.json.parts/
@@ -2459,9 +2483,14 @@ will result S3 file layout like:
         part-0001
         part-0002
         ...</code></pre>
-<p>
+<p><p>
 The URI returned in this case will be <strong><a href="https://s3.uswest.amazonaws.com/mybucket/myfile.json.manifest">https://s3.uswest.amazonaws.com/mybucket/myfile.json.manifest</a></strong>.
 </p>
+<div class="NOTE"><h5>note</h5><p>
+This method uses two threads for uploading the parts because it seems to take
+the <strong>AWS CLI</strong> tool several seconds to actually start the upload, resulting
+in a lot of wasted uploading time.
+</p></div></p>
 </div>
   <a id="Neon_Deployment_AwsCli_S3UploadText_" data-uid="Neon.Deployment.AwsCli.S3UploadText*"></a>
   <h4 id="Neon_Deployment_AwsCli_S3UploadText_System_String_System_String_System_Boolean_System_String_System_Boolean_System_Text_Encoding_" data-uid="Neon.Deployment.AwsCli.S3UploadText(System.String,System.String,System.Boolean,System.String,System.Boolean,System.Text.Encoding)">S3UploadText(String, String, Boolean, String, Boolean, Encoding)</h4>

@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1871,20 +1895,20 @@ when you&apos;re done with them.
   <h5 id="Neon_GitHub_GitHubRepo_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
 <strong>To clone a GitHub repository</strong>, call the <code>static</code>
-<a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_CloneAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">CloneAsync(String, String, String, String, String, String, String, IProfileClient)</a>
+<a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_CloneAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">CloneAsync(String, String, String, String, String, String, String, String, IProfileClient)</a>
 method, passing the GitHub repository path, path the the local folder and optionally the branch to
 be checked out as well as the GitHub credentials.  This returns the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a>
 that you&apos;ll use for subsequent operations.
 </p>
 <p>
 <strong>To manage a GitHub repository that doesn&apos;t have a local clone</strong>,
-call <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">ConnectAsync(String, String, String, String, String, IProfileClient)</a>.
+call <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">ConnectAsync(String, String, String, String, String, String, IProfileClient)</a>.
 </p>
 <p>
-<strong>To open an existing local repository</strong>, call <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_OpenAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">OpenAsync(String, String, String, String, String, IProfileClient)</a>.
+<strong>To open an existing local repository</strong>, call <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_OpenAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">OpenAsync(String, String, String, String, String, String, IProfileClient)</a>.
 </p>
 <p>
-<strong>To perform only GitHub account operations</strong> Call the static <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">ConnectAsync(String, String, String, String, String, IProfileClient)</a>
+<strong>To perform only GitHub account operations</strong> Call the static <a class="xref" href="Neon.GitHub.GitHubRepo.html#Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_">ConnectAsync(String, String, String, String, String, String, IProfileClient)</a>
 method to construct an instance without a local repository reference.
 </p>
 <p>
@@ -2074,6 +2098,30 @@ to manage GitGub assets.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Neon_GitHub_GitHubRepo_Name_" data-uid="Neon.GitHub.GitHubRepo.Name*"></a>
+  <h4 id="Neon_GitHub_GitHubRepo_Name" data-uid="Neon.GitHub.GitHubRepo.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Returns the respository name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Neon_GitHub_GitHubRepo_Origin_" data-uid="Neon.GitHub.GitHubRepo.Origin*"></a>
   <h4 id="Neon_GitHub_GitHubRepo_Origin" data-uid="Neon.GitHub.GitHubRepo.Origin">Origin</h4>
   <div class="markdown level1 summary"><p>Returns the repository&apos;s remote GitHub remote origin.</p>
@@ -2172,13 +2220,13 @@ to manage GitGub assets.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Neon_GitHub_GitHubRepo_CloneAsync_" data-uid="Neon.GitHub.GitHubRepo.CloneAsync*"></a>
-  <h4 id="Neon_GitHub_GitHubRepo_CloneAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.CloneAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">CloneAsync(String, String, String, String, String, String, String, IProfileClient)</h4>
+  <h4 id="Neon_GitHub_GitHubRepo_CloneAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.CloneAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">CloneAsync(String, String, String, String, String, String, String, String, IProfileClient)</h4>
   <div class="markdown level1 summary"><p>Clones a GitHub repository to a local folder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; CloneAsync(string remoteRepoPath, string localRepoFolder, string branchName = null, string username = null, string accessToken = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; CloneAsync(string remoteRepoPath, string localRepoFolder, string branchName = null, string username = null, string accessToken = null, string password = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2193,7 +2241,9 @@ to manage GitGub assets.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">remoteRepoPath</span></td>
-        <td><p>Specifies the GitHub remote repository path, like: <strong>[SERVER/]OWNER/REPO</strong></p>
+        <td><p>Specifies the GitHub remote repository path, like: <strong>[SERVER/]OWNER/REPO</strong> or
+<strong>[SERVER/]OWNER/REPO-git</strong>.  You may also include the &quot;.git&quot; suffix if desired,
+but this is optional.</p>
 </td>
       </tr>
       <tr>
@@ -2223,6 +2273,12 @@ This defaults to the GitHub remote repository&apos;s default branch (typically <
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Optionally specifies the GitHub password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">email</span></td>
         <td><p>Optionally specifies the GitHub email address for the current user.</p>
 </td>
@@ -2260,6 +2316,12 @@ when a profile client is available.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Neon_GitHub_GitHubRepo_CloneAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>
+At least one of <strong>accesstoken</strong> or <strong>password</strong> must be passed or be available via
+environment variables or the profile provider.
+</p></div>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -2277,7 +2339,7 @@ when a profile client is available.</p>
     </tbody>
   </table>
   <a id="Neon_GitHub_GitHubRepo_ConnectAsync_" data-uid="Neon.GitHub.GitHubRepo.ConnectAsync*"></a>
-  <h4 id="Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.ConnectAsync(System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">ConnectAsync(String, String, String, String, String, IProfileClient)</h4>
+  <h4 id="Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.ConnectAsync(System.String,System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">ConnectAsync(String, String, String, String, String, String, IProfileClient)</h4>
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> instance that&apos;s connected to GitHub account
 but is not associated with a local git repository.  This is useful when you only
 need to perform GitHub operations.</p>
@@ -2285,7 +2347,7 @@ need to perform GitHub operations.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; ConnectAsync(string remoteRepoPath, string username = null, string accessToken = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; ConnectAsync(string remoteRepoPath, string username = null, string accessToken = null, string password = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2317,6 +2379,12 @@ need to perform GitHub operations.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Optionally specifies the GitHub password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">email</span></td>
         <td><p>Optionally specifies the GitHub email address for the current user.</p>
 </td>
@@ -2354,8 +2422,12 @@ when a profile client is available.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient__remarks">Remarks</h5>
+  <h5 id="Neon_GitHub_GitHubRepo_ConnectAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>
+At least one of <strong>accesstoken</strong> or <strong>password</strong> must be passed or be available via
+environment variables or the profile provider.
+</p></div>
+<div class="NOTE"><h5>note</h5><p>
 <a class="xref" href="Neon.GitHub.NoLocalRepositoryException.html">NoLocalRepositoryException</a> will be thrown whenever operations on the non-existent
 repository are attempted for <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> instance returned by this method.
 </p></div>
@@ -2407,22 +2479,22 @@ this base method.</p>
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
   <a id="Neon_GitHub_GitHubRepo_OpenAsync_" data-uid="Neon.GitHub.GitHubRepo.OpenAsync*"></a>
-  <h4 id="Neon_GitHub_GitHubRepo_OpenAsync_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.OpenAsync(System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">OpenAsync(String, String, String, String, String, IProfileClient)</h4>
+  <h4 id="Neon_GitHub_GitHubRepo_OpenAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient_" data-uid="Neon.GitHub.GitHubRepo.OpenAsync(System.String,System.String,System.String,System.String,System.String,System.String,Neon.Deployment.IProfileClient)">OpenAsync(String, String, String, String, String, String, IProfileClient)</h4>
   <div class="markdown level1 summary"><p>
 Creates a <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> that references an existing local git repository as well as
 the associated GitHub remote repository API.
 </p>
 <p>
 This requires GitHub credentials.  These can be passed explicitly as parameters or can be retrieved 
-automatically  from the <strong>GITHUB_USERNAME</strong> and <strong>GITHUB_PAT</strong> environment variables or from 
-the <strong>GITHUB_PAT[username]</strong> and <code>GITHUB_PAT[password]</code> secrets via an optional
-<a class="xref" href="Neon.Deployment.IProfileClient.html">IProfileClient</a> implementation.
+automatically  from the <strong>GITHUB_USERNAME</strong>, <strong>GITHUB_PASSWPORD</strong>, <strong>GITHUB_PAT</strong> and 
+<strong>GITHUB_EMAIL</strong> environment variables or from the <strong>GITHUB[username]</strong>, <strong>GITHUB[password]</strong>, 
+<strong>GITHUB[accesstoken]</strong> and <strong>GITHUB[email]</strong> secrets via an optional <a class="xref" href="Neon.Deployment.IProfileClient.html">IProfileClient</a>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; OpenAsync(string localRepoFolder, string username = null, string accessToken = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;GitHubRepo&gt; OpenAsync(string localRepoFolder, string username = null, string accessToken = null, string password = null, string email = null, string userAgent = null, IProfileClient profileClient = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2450,6 +2522,12 @@ the <strong>GITHUB_PAT[username]</strong> and <code>GITHUB_PAT[password]</code> 
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">accessToken</span></td>
         <td><p>Optionally specifies the GitHub Personal Access Token (PAT).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Optionally specifies the GitHub password.</p>
 </td>
       </tr>
       <tr>
@@ -2490,6 +2568,12 @@ when a profile client is available.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Neon_GitHub_GitHubRepo_OpenAsync_System_String_System_String_System_String_System_String_System_String_System_String_Neon_Deployment_IProfileClient__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>
+At least one of <strong>accesstoken</strong> or <strong>password</strong> must be passed or be available via
+environment variables or the profile provider.
+</p></div>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

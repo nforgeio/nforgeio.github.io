@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1763,6 +1784,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
@@ -2004,6 +2028,30 @@ precision to strings like: <strong>2018-06-05T14:30:13.000000+00:00</strong></p>
       </tr>
     </tbody>
   </table>
+  <h4 id="Neon_Common_NeonHelper_DateFormatSecondTZ" data-uid="Neon.Common.NeonHelper.DateFormatSecondTZ">DateFormatSecondTZ</h4>
+  <div class="markdown level1 summary"><p>Returns the date format string used for serialize dates with second
+precision to strings like: <strong>2018-06-05T14:30:13Z</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DateFormatSecondTZ = &quot;yyyy-MM-ddTHH:mm:ssZ&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Neon_Common_NeonHelper_DateFormatTZ" data-uid="Neon.Common.NeonHelper.DateFormatTZ">DateFormatTZ</h4>
   <div class="markdown level1 summary"><p>Returns the date format string used for serialize dates with millisecond
 precision to strings like: <strong>2018-06-05T14:30:13.000Z</strong></p>
@@ -2224,7 +2272,7 @@ Collector log and trace information to the local Tempo installation or elsewhere
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string NeonMetricsPrefix = &quot;neon.&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string NeonMetricsPrefix = &quot;neonsdk&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2440,10 +2488,34 @@ You may change this to a different location.
       </tr>
     </tbody>
   </table>
+  <a id="Neon_Common_NeonHelper_DefaultUserHomeFolder_" data-uid="Neon.Common.NeonHelper.DefaultUserHomeFolder*"></a>
+  <h4 id="Neon_Common_NeonHelper_DefaultUserHomeFolder" data-uid="Neon.Common.NeonHelper.DefaultUserHomeFolder">DefaultUserHomeFolder</h4>
+  <div class="markdown level1 summary"><p>Returns the default user home.  This is not affected by calls to <a class="xref" href="Neon.Common.NeonHelper.html#Neon_Common_NeonHelper_SetUserHomeFolder_System_String_">SetUserHomeFolder(String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DefaultUserHomeFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Neon_Common_NeonHelper_DockerCli_" data-uid="Neon.Common.NeonHelper.DockerCli*"></a>
   <h4 id="Neon_Common_NeonHelper_DockerCli" data-uid="Neon.Common.NeonHelper.DockerCli">DockerCli</h4>
   <div class="markdown level1 summary"><p>Returns the name of the Docker CLI execuable for the current platform.  This will
-be the fully qualified pathj to <strong>docker.exe</strong> on Windows and just <strong>docker</strong>
+be the fully qualified path to <strong>docker.exe</strong> on Windows and just <strong>docker</strong>
 on Linux and OS/X.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -4934,7 +5006,7 @@ parameter will not be killed in this case.
 </p></div>
 <p>
 You can optionally specify the <code data-dev-comment-type="paramref" class="paramref">outputAction</code> and/or <code data-dev-comment-type="paramref" class="paramref">errorAction</code>
-callbacks to receive the process output as it is received.  <code data-dev-comment-type="paramref" class="paramref">outputAction</code> will 
+callbacks to receive the process output text as it is received.  <code data-dev-comment-type="paramref" class="paramref">outputAction</code> will 
 be called with both the STDOUT and STDERR streams if <code data-dev-comment-type="paramref" class="paramref">errorAction</code> is <code>null</code>
 otherwise it will called only with STDOUT text.
 </p></p>
@@ -5081,7 +5153,7 @@ parameter will not be killed in this case.
 </p></div>
 <p>
 You can optionally specify the <code data-dev-comment-type="paramref" class="paramref">outputAction</code> and/or <code data-dev-comment-type="paramref" class="paramref">errorAction</code>
-callbacks to receive the process output as it is received.  <code data-dev-comment-type="paramref" class="paramref">outputAction</code> will 
+callbacks to receive the process output text as it is received.  <code data-dev-comment-type="paramref" class="paramref">outputAction</code> will 
 be called with both the STDOUT and STDERR streams if <code data-dev-comment-type="paramref" class="paramref">errorAction</code> is <code>null</code>
 otherwise it will called only with STDOUT text.
 </p></p>
@@ -5693,6 +5765,32 @@ be passed directly with minimal editing.
       </tr>
     </tbody>
   </table>
+  <a id="Neon_Common_NeonHelper_GetApplicationFolder_" data-uid="Neon.Common.NeonHelper.GetApplicationFolder*"></a>
+  <h4 id="Neon_Common_NeonHelper_GetApplicationFolder" data-uid="Neon.Common.NeonHelper.GetApplicationFolder">GetApplicationFolder()</h4>
+  <div class="markdown level1 summary"><p>Returns the fully qualified path to the folder where the current executable 
+resides.  This includes a terminating &quot;&amp;quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetApplicationFolder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Path to the folder holding the executable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Neon_Common_NeonHelper_GetAssemblyFolder_" data-uid="Neon.Common.NeonHelper.GetAssemblyFolder*"></a>
   <h4 id="Neon_Common_NeonHelper_GetAssemblyFolder_System_Reflection_Assembly_" data-uid="Neon.Common.NeonHelper.GetAssemblyFolder(System.Reflection.Assembly)">GetAssemblyFolder(Assembly)</h4>
   <div class="markdown level1 summary"><p>Returns the fully qualified path to the folder holding the
@@ -5778,32 +5876,6 @@ public static string GetAssemblyPath(Assembly assembly)</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>The assembly&apos;s path.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Neon_Common_NeonHelper_GetBaseDirectory_" data-uid="Neon.Common.NeonHelper.GetBaseDirectory*"></a>
-  <h4 id="Neon_Common_NeonHelper_GetBaseDirectory" data-uid="Neon.Common.NeonHelper.GetBaseDirectory">GetBaseDirectory()</h4>
-  <div class="markdown level1 summary"><p>Returns the fully qualified path to the folder where the executable resides.
-This will include the terminating &quot;&amp;quot;.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetBaseDirectory()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>Path to the folder holding the executable</p>
 </td>
       </tr>
     </tbody>
@@ -9617,6 +9689,34 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.
 individual elements.
 </p></div>
 </div>
+  <a id="Neon_Common_NeonHelper_SetUserHomeFolder_" data-uid="Neon.Common.NeonHelper.SetUserHomeFolder*"></a>
+  <h4 id="Neon_Common_NeonHelper_SetUserHomeFolder_System_String_" data-uid="Neon.Common.NeonHelper.SetUserHomeFolder(System.String)">SetUserHomeFolder(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the appropriate variables for the operating system to
+change the current user&apos;s home folder to the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUserHomeFolder(string folder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">folder</span></td>
+        <td><p>Specifies the new home folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Neon_Common_NeonHelper_StartProcess_" data-uid="Neon.Common.NeonHelper.StartProcess*"></a>
   <h4 id="Neon_Common_NeonHelper_StartProcess_System_Reflection_Assembly_System_String_" data-uid="Neon.Common.NeonHelper.StartProcess(System.Reflection.Assembly,System.String)">StartProcess(Assembly, String)</h4>
   <div class="markdown level1 summary"><p>Starts a process for an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a> by calling the assembly&apos;s <strong>main()</strong>

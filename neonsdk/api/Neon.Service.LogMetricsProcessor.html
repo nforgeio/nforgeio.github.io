@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1874,38 +1898,20 @@ This is useful for screening for services that may be logging too many warnings 
 errors, requiring further investigation.
 </p>
 <p>
-This is very easy to use.  Simply call <a class="xref" href="Neon.Service.OtelConfigExtensions.html#Neon_Service_OtelConfigExtensions_AddLogMetricsProcessor_OpenTelemetry_Logs_OpenTelemetryLoggerOptions_System_String_">AddLogMetricsProcessor(OpenTelemetryLoggerOptions, String)</a>.
+This is very easy to use.  Simply call <a class="xref" href="Neon.Service.OtelConfigExtensions.html#Neon_Service_OtelConfigExtensions_AddLogMetricsProcessor_OpenTelemetry_Logs_OpenTelemetryLoggerOptions_">AddLogMetricsProcessor(OpenTelemetryLoggerOptions)</a>.
 </p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Neon_Service_LogMetricsProcessor__ctor_" data-uid="Neon.Service.LogMetricsProcessor.#ctor*"></a>
-  <h4 id="Neon_Service_LogMetricsProcessor__ctor_System_String_" data-uid="Neon.Service.LogMetricsProcessor.#ctor(System.String)">LogMetricsProcessor(String)</h4>
+  <h4 id="Neon_Service_LogMetricsProcessor__ctor" data-uid="Neon.Service.LogMetricsProcessor.#ctor">LogMetricsProcessor()</h4>
   <div class="markdown level1 summary"><p>Constructs a processor that counts logged events by <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LogMetricsProcessor(string metricsPrefix = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public LogMetricsProcessor()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">metricsPrefix</span></td>
-        <td><p>Optionally specifies a prefix to be prepended to to the counter name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Neon_Service_LogMetricsProcessor_OnEnd_" data-uid="Neon.Service.LogMetricsProcessor.OnEnd*"></a>

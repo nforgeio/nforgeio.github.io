@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="active">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="active">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1860,6 +1884,33 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RemoteRepoIssueApi</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Neon_GitHub_RemoteRepoIssueApi_Comment_" data-uid="Neon.GitHub.RemoteRepoIssueApi.Comment*"></a>
+  <h4 id="Neon_GitHub_RemoteRepoIssueApi_Comment" data-uid="Neon.GitHub.RemoteRepoIssueApi.Comment">Comment</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Neon.GitHub.RemoteRepoIssueCommentApi.html">RemoteRepoIssueCommentApi</a> which can be used to
+manage issue comments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RemoteRepoIssueCommentApi Comment { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neon.GitHub.RemoteRepoIssueCommentApi.html">RemoteRepoIssueCommentApi</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Neon_GitHub_RemoteRepoIssueApi_CreateAsync_" data-uid="Neon.GitHub.RemoteRepoIssueApi.CreateAsync*"></a>
@@ -1916,7 +1967,99 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>Thrown then the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
+        <td><p>Thrown when the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_GitHub_RemoteRepoIssueApi_GetAllAsync_" data-uid="Neon.GitHub.RemoteRepoIssueApi.GetAllAsync*"></a>
+  <h4 id="Neon_GitHub_RemoteRepoIssueApi_GetAllAsync_Octokit_ApiOptions_" data-uid="Neon.GitHub.RemoteRepoIssueApi.GetAllAsync(Octokit.ApiOptions)">GetAllAsync(ApiOptions)</h4>
+  <div class="markdown level1 summary"><p>Returns all repository issues, potentially filtered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;Issue&gt;&gt; GetAllAsync(ApiOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Octokit.ApiOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optionally specfies result pagination ootions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Octokit.Issue</span>&gt;&gt;</td>
+        <td><p>The issues.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_GitHub_RemoteRepoIssueApi_GetAllAsync_" data-uid="Neon.GitHub.RemoteRepoIssueApi.GetAllAsync*"></a>
+  <h4 id="Neon_GitHub_RemoteRepoIssueApi_GetAllAsync_Octokit_RepositoryIssueRequest_Octokit_ApiOptions_" data-uid="Neon.GitHub.RemoteRepoIssueApi.GetAllAsync(Octokit.RepositoryIssueRequest,Octokit.ApiOptions)">GetAllAsync(RepositoryIssueRequest, ApiOptions)</h4>
+  <div class="markdown level1 summary"><p>Returns repository issues that satisfy a filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;Issue&gt;&gt; GetAllAsync(RepositoryIssueRequest request, ApiOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Octokit.RepositoryIssueRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Used to filter issues by assignee, mileston, etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Octokit.ApiOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optionally specfies result pagination ootions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Octokit.Issue</span>&gt;&gt;</td>
+        <td><p>The issues.</p>
 </td>
       </tr>
     </tbody>
@@ -1975,12 +2118,100 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>Thrown then the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
+        <td><p>Thrown when the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">Octokit.NotFoundException</span></td>
         <td><p>Thrown when the issue doesn&apos;t exist</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_GitHub_RemoteRepoIssueApi_SearchAllAsync_" data-uid="Neon.GitHub.RemoteRepoIssueApi.SearchAllAsync*"></a>
+  <h4 id="Neon_GitHub_RemoteRepoIssueApi_SearchAllAsync_Octokit_SearchIssuesRequest_" data-uid="Neon.GitHub.RemoteRepoIssueApi.SearchAllAsync(Octokit.SearchIssuesRequest)">SearchAllAsync(SearchIssuesRequest)</h4>
+  <div class="markdown level1 summary"><p>Searches the repository for issues satisfying a search request, returning
+all results (not paged).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IEnumerable&lt;Issue&gt;&gt; SearchAllAsync(SearchIssuesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Octokit.SearchIssuesRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Specifies the search parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Octokit.Issue</span>&gt;&gt;</td>
+        <td><p>The <span class="xref">Octokit.SearchIssuesResult</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_GitHub_RemoteRepoIssueApi_SearchAsync_" data-uid="Neon.GitHub.RemoteRepoIssueApi.SearchAsync*"></a>
+  <h4 id="Neon_GitHub_RemoteRepoIssueApi_SearchAsync_Octokit_SearchIssuesRequest_" data-uid="Neon.GitHub.RemoteRepoIssueApi.SearchAsync(Octokit.SearchIssuesRequest)">SearchAsync(SearchIssuesRequest)</h4>
+  <div class="markdown level1 summary"><p>Searches the repository for issues satisfying a search request, returning
+pages of results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;SearchIssuesResult&gt; SearchAsync(SearchIssuesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Octokit.SearchIssuesRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Specifies the search parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Octokit.SearchIssuesResult</span>&gt;</td>
+        <td><p>The <span class="xref">Octokit.SearchIssuesResult</span></p>
 </td>
       </tr>
     </tbody>
@@ -2045,7 +2276,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>Thrown then the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
+        <td><p>Thrown when the <a class="xref" href="Neon.GitHub.GitHubRepo.html">GitHubRepo</a> has been disposed.</p>
 </td>
       </tr>
     </tbody>

@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1847,12 +1871,17 @@
   <h1 id="Neon_IO_SubStream" data-uid="Neon.IO.SubStream" class="text-break">Class SubStream
   </h1>
   <div class="markdown level0 summary"><p><p>
-Implements a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> that operates on a section of a parent stream.
-The parent stream must be able to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream.canseek#system-io-stream-canseek">CanSeek</a>.
+Implements a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> that operates on a section of a base stream.
+The base stream must be able to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream.canseek#system-io-stream-canseek">CanSeek</a>.
 </p>
 <div class="NOTE"><h5>note</h5><p>
-<strong>WARNING:</strong> Multi-threading operations simultaniously against the parent and substream 
-is not supported and is likely to result in data corruption.
+Thread safety: multiple <a class="xref" href="Neon.IO.SubStream.html">SubStream</a> instances can perform operations on the
+same underlying stream on differents because substreams obtain a lock on the base stream
+before actually performing any I/O operations.
+</p></div>
+<div class="NOTE"><h5>note</h5><p>
+<strong>WARNING:</strong> Avoid performing operations on the underlying stream and any substreams
+within different threads.  This will likey result in unexpected data corruption.
 </p></div></p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -1870,26 +1899,21 @@ is not supported and is likely to result in data corruption.
     <pre><code class="lang-csharp hljs">public class SubStream : Stream, IDisposable</code></pre>
   </div>
   <h5 id="Neon_IO_SubStream_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p><p>
-The <a class="xref" href="Neon.IO.SubStream.html">SubStream</a> instances save the position of the parent stream when constructed
-and restore the parent position when disposed.  The current position of the substream will be
-set to the first byte of the substream data.
-</p>
-<div class="NOTE"><h5>note</h5><p>
+  <div class="markdown level0 remarks"><div class="NOTE"><h5>note</h5><p>
 This class doesn&apos;t currently implement all of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> methods, especially 
 asynchronous methods.  This is something we may add in the future.
-</p></div></p>
+</p></div>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Neon_IO_SubStream__ctor_" data-uid="Neon.IO.SubStream.#ctor*"></a>
   <h4 id="Neon_IO_SubStream__ctor_System_IO_Stream_System_Int64_System_Int64_" data-uid="Neon.IO.SubStream.#ctor(System.IO.Stream,System.Int64,System.Int64)">SubStream(Stream, Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>Constructs a substream that operates on a range of bytes within a parent stream.</p>
+  <div class="markdown level1 summary"><p>Constructs a substream that operates on a range of bytes within a base stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SubStream(Stream parent, long start, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public SubStream(Stream baseStream, long start, long length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1903,14 +1927,14 @@ asynchronous methods.  This is something we may add in the future.
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td><p>The parent stream.</p>
+        <td><span class="parametername">baseStream</span></td>
+        <td><p>The base stream.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">start</span></td>
-        <td><p>The zero-based index of the first byte within the parent stream to be managed by the substream.</p>
+        <td><p>The zero-based index of the first byte within the base stream to be managed by the substream.</p>
 </td>
       </tr>
       <tr>
@@ -1932,7 +1956,7 @@ asynchronous methods.  This is something we may add in the future.
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
-        <td><p>Thrown if the parent stream doesn&apos;t support seek or the starting position or length is invalid.</p>
+        <td><p>Thrown if the base stream doesn&apos;t support seek or the starting position or length is invalid.</p>
 </td>
       </tr>
     </tbody>

@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1763,6 +1784,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
                           </li>
                           <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
@@ -2004,56 +2028,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
-        <td><p>The nullable column value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Neon_Postgres_ReaderExtensions_GetNullableDate_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableDate*"></a>
-  <h4 id="Neon_Postgres_ReaderExtensions_GetNullableDate_Npgsql_NpgsqlDataReader_System_Int32_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableDate(Npgsql.NpgsqlDataReader,System.Int32)">GetNullableDate(NpgsqlDataReader, Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns the column value as a nullable <span class="xref">NpgsqlTypes.NpgsqlDate</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;NpgsqlDate is obsolete&quot;)]
-public static NpgsqlDate? GetNullableDate(this NpgsqlDataReader reader, int ordinal)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Npgsql.NpgsqlDataReader</span></td>
-        <td><span class="parametername">reader</span></td>
-        <td><p>The data reader.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">ordinal</span></td>
-        <td><p>The zero-based column position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">NpgsqlTypes.NpgsqlDate</span>&gt;</td>
         <td><p>The nullable column value.</p>
 </td>
       </tr>
@@ -2451,56 +2425,6 @@ public static NpgsqlDate? GetNullableDate(this NpgsqlDataReader reader, int ordi
       </tr>
     </tbody>
   </table>
-  <a id="Neon_Postgres_ReaderExtensions_GetNullableInterval_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableInterval*"></a>
-  <h4 id="Neon_Postgres_ReaderExtensions_GetNullableInterval_Npgsql_NpgsqlDataReader_System_Int32_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableInterval(Npgsql.NpgsqlDataReader,System.Int32)">GetNullableInterval(NpgsqlDataReader, Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns the column value as a nullable <span class="xref">NpgsqlTypes.NpgsqlTimeSpan</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;NpgsqlTimeSpan is obsolete&quot;)]
-public static NpgsqlTimeSpan? GetNullableInterval(this NpgsqlDataReader reader, int ordinal)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Npgsql.NpgsqlDataReader</span></td>
-        <td><span class="parametername">reader</span></td>
-        <td><p>The data reader.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">ordinal</span></td>
-        <td><p>The zero-based column position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">NpgsqlTypes.NpgsqlTimeSpan</span>&gt;</td>
-        <td><p>The nullable column value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Neon_Postgres_ReaderExtensions_GetNullableString_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableString*"></a>
   <h4 id="Neon_Postgres_ReaderExtensions_GetNullableString_Npgsql_NpgsqlDataReader_System_Int32_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableString(Npgsql.NpgsqlDataReader,System.Int32)">GetNullableString(NpgsqlDataReader, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns the column value as a string.  Unlike <span class="xref">Npgsql.NpgsqlDataReader.GetStream(System.Int32)</span>,
@@ -2595,56 +2519,6 @@ this method can handle <code>null</code> column values.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
-        <td><p>The nullable column value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Neon_Postgres_ReaderExtensions_GetNullableTimeStamp_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableTimeStamp*"></a>
-  <h4 id="Neon_Postgres_ReaderExtensions_GetNullableTimeStamp_Npgsql_NpgsqlDataReader_System_Int32_" data-uid="Neon.Postgres.ReaderExtensions.GetNullableTimeStamp(Npgsql.NpgsqlDataReader,System.Int32)">GetNullableTimeStamp(NpgsqlDataReader, Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns the column value as a nullable <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;NpgsqlDateTime is obsolete&quot;)]
-public static NpgsqlDateTime? GetNullableTimeStamp(this NpgsqlDataReader reader, int ordinal)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Npgsql.NpgsqlDataReader</span></td>
-        <td><span class="parametername">reader</span></td>
-        <td><p>The data reader.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">ordinal</span></td>
-        <td><p>The zero-based column position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">NpgsqlTypes.NpgsqlDateTime</span>&gt;</td>
         <td><p>The nullable column value.</p>
 </td>
       </tr>

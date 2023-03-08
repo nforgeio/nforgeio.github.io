@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1575,6 +1593,9 @@
                           <li class="">
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
+                          <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
                           <li class="active">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="active">WebHelper</a>
                           </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1863,7 +1887,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Neon_Web_WebHelper_AddNeon_" data-uid="Neon.Web.WebHelper.AddNeon*"></a>
-  <h4 id="Neon_Web_WebHelper_AddNeon_Microsoft_Extensions_DependencyInjection_IMvcBuilder_System_Boolean_System_Func_System_Type_System_Boolean__System_Boolean_" data-uid="Neon.Web.WebHelper.AddNeon(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Boolean,System.Func{System.Type,System.Boolean},System.Boolean)">AddNeon(IMvcBuilder, Boolean, Func&lt;Type, Boolean&gt;, Boolean)</h4>
+  <h4 id="Neon_Web_WebHelper_AddNeon_Microsoft_Extensions_DependencyInjection_IMvcBuilder_System_Boolean_System_Func_System_Type_System_Boolean__" data-uid="Neon.Web.WebHelper.AddNeon(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Boolean,System.Func{System.Type,System.Boolean})">AddNeon(IMvcBuilder, Boolean, Func&lt;Type, Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>
 Performs Neon related initialization including adding the the <a class="xref" href="Neon.Web.RoundTripJsonInputFormatter.html">RoundTripJsonInputFormatter</a>,
 <a class="xref" href="Neon.Web.RoundTripJsonOutputFormatter.html">RoundTripJsonOutputFormatter</a> and <strong>Newtonsoft JSON</strong> formatters to the
@@ -1879,7 +1903,7 @@ exceptions and handles exception response formatting.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IMvcBuilder AddNeon(this IMvcBuilder builder, bool disableRoundTripFormatters = false, Func&lt;Type, bool&gt; allowRoundtripFormatter = null, bool disableExceptionFilter = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IMvcBuilder AddNeon(this IMvcBuilder builder, bool disableRoundTripFormatters = false, Func&lt;Type, bool&gt; allowRoundtripFormatter = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1913,12 +1937,6 @@ where this function returns <code>true</code> will be handled by the custom form
 Other types will be passed on to the remaining formatters.</p>
 </td>
       </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">disableExceptionFilter</span></td>
-        <td><p>Optionally disables the addition of the built-in exception filter middleware (see remarks).</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -1937,19 +1955,12 @@ Other types will be passed on to the remaining formatters.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Neon_Web_WebHelper_AddNeon_Microsoft_Extensions_DependencyInjection_IMvcBuilder_System_Boolean_System_Func_System_Type_System_Boolean__System_Boolean__remarks">Remarks</h5>
+  <h5 id="Neon_Web_WebHelper_AddNeon_Microsoft_Extensions_DependencyInjection_IMvcBuilder_System_Boolean_System_Func_System_Type_System_Boolean___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
 This provides both backwards and forwards data compatibility on both the client and service
 side by retaining object properties that one side or the other doesn&apos;t know about.  This enables
 scenarios where new properties are added to a data object but the solution components aren&apos;t
 all upgraded at the same time as a monolithic app.
-</p>
-<p>
-By default, this method adds a an exception filter to the MVC middleware pipeline.  This
-filter handles <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a>, and
-<a class="xref" href="Neon.Net.HttpApiException.html">HttpApiException</a> exceptions by having ASP.NET return a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-badrequest">BadRequest</a>
-for the argument exceptions and the status code and error code (reason phrase) from the
-<a class="xref" href="Neon.Net.HttpApiException.html">HttpApiException</a>.
 </p>
 <p>
 This combined with the <a class="xref" href="Neon.Web.NeonController.html#Neon_Web_NeonController_Requires_System_Boolean_System_String_System_String_System_Net_HttpStatusCode_">Requires(Boolean, String, String, HttpStatusCode)</a>,

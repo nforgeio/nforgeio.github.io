@@ -154,6 +154,9 @@
                             <a href="Neon.Blazor.BodyOutlet.html" title="BodyOutlet" class="">BodyOutlet</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Blazor.FileDownloader.html" title="FileDownloader" class="">FileDownloader</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Blazor.HtmlElement.html" title="HtmlElement" class="">HtmlElement</a>
                           </li>
                           <li class="">
@@ -259,6 +262,9 @@
                             <a href="Neon.Common.CommandLine.OptionDefinition.html" title="CommandLine.OptionDefinition" class="">CommandLine.OptionDefinition</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Common.CommandLine.Redactor.html" title="CommandLine.Redactor" class="">CommandLine.Redactor</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Common.CpuArchitecture.html" title="CpuArchitecture" class="">CpuArchitecture</a>
                           </li>
                           <li class="">
@@ -338,6 +344,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Common.NotReadyException.html" title="NotReadyException" class="">NotReadyException</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Common.ProcessExtensions.html" title="ProcessExtensions" class="">ProcessExtensions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Common.ProgramEntrypoint.html" title="ProgramEntrypoint" class="">ProgramEntrypoint</a>
@@ -622,6 +631,12 @@
                             <a href="Neon.Diagnostics.ConsoleJsonLogExporterOptions.html" title="ConsoleJsonLogExporterOptions" class="">ConsoleJsonLogExporterOptions</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporter.html" title="ConsoleTextLogExporter" class="">ConsoleTextLogExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Diagnostics.ConsoleTextLogExporterOptions.html" title="ConsoleTextLogExporterOptions" class="">ConsoleTextLogExporterOptions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Diagnostics.ExceptionInfo.html" title="ExceptionInfo" class="">ExceptionInfo</a>
                           </li>
                           <li class="">
@@ -899,6 +914,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoIssueApi.html" title="RemoteRepoIssueApi" class="">RemoteRepoIssueApi</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.GitHub.RemoteRepoIssueCommentApi.html" title="RemoteRepoIssueCommentApi" class="">RemoteRepoIssueCommentApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.GitHub.RemoteRepoPath.html" title="RemoteRepoPath" class="">RemoteRepoPath</a>
@@ -1576,6 +1594,9 @@
                             <a href="Neon.Web.RoundTripJsonOutputFormatter.html" title="RoundTripJsonOutputFormatter" class="">RoundTripJsonOutputFormatter</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Web.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Web.WebHelper.html" title="WebHelper" class="">WebHelper</a>
                           </li>
                         </ul>  </li>
@@ -1765,6 +1786,9 @@
                             <a href="Neon.Xunit.MaintainerFactAttribute.html" title="MaintainerFactAttribute" class="">MaintainerFactAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Xunit.MaintainerTheoryAttribute.html" title="MaintainerTheoryAttribute" class="">MaintainerTheoryAttribute</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Xunit.MockHttpServer.html" title="MockHttpServer" class="">MockHttpServer</a>
                           </li>
                           <li class="">
@@ -1886,7 +1910,13 @@ files that match the pattern.
 The <a class="xref" href="Neon.Common.CommandLine.html">CommandLine</a> class can also handles parsing of items
 as command line options.
 </p></p>
-<pre><code class="lang-none">    -&lt;option name>[=&lt;value>]</code></pre>
+<pre><code class="lang-none">    --&lt;option name>[=&lt;value>]
+
+    You can also use single or double quotes around option values that
+    include spaces or other special characters:
+
+    --&lt;option name>[=&apos;&lt;value>&apos;]
+    --&lt;option name>[=&quot;&lt;value>&quot;]</code></pre>
 <p><p>
 will be parsed into name/value pairs and will be available for
 lookup via the string keyed indexer.  Options that specify no
@@ -2109,6 +2139,30 @@ command line options and values).</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_Common_CommandLine_Original_" data-uid="Neon.Common.CommandLine.Original*"></a>
+  <h4 id="Neon_Common_CommandLine_Original" data-uid="Neon.Common.CommandLine.Original">Original</h4>
+  <div class="markdown level1 summary"><p>Returns the original unshifted command line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandLine Original { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neon.Common.CommandLine.html">CommandLine</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2683,9 +2737,25 @@ instance, dealing with quoted parameters, etc.</p>
   <h4 id="Neon_Common_CommandLine_Preprocess_System_Collections_Generic_Dictionary_System_String_System_String__System_Text_RegularExpressions_Regex_" data-uid="Neon.Common.CommandLine.Preprocess(System.Collections.Generic.Dictionary{System.String,System.String},System.Text.RegularExpressions.Regex)">Preprocess(Dictionary&lt;String, String&gt;, Regex)</h4>
   <div class="markdown level1 summary"><p><p>
 Preprocesses the command line by using <a class="xref" href="Neon.IO.PreprocessReader.html">PreprocessReader</a> to replace any 
-environment variable, profile, or secret references like <strong>&lt;password:MY-PASSWORD$gt;</strong>
-in the command line arguments.
+environment variable, profile, or secret references in the command line arguments, like:
 </p>
+<table><tbody><tr><td><code>$(env:VARIABLE)</code></td><td>
+    Replaced with the environment <strong>VARIABLE</strong> 
+</td></tr><tr><td><code>$(profile:VALUE)</code></td><td>
+Replaced with the profile <strong>VALUE</strong>
+</td></tr><tr><td><code>${password:SECRET}</code></td><td>
+Replaced with the password field of the <strong>SECRET</strong>
+</td></tr><tr><td><code>${password:SECRET:SOURCE}</code></td><td>
+Replaced with the password field of the <strong>SECRET</strong> obtained from <strong>SOURCE</strong>
+</td></tr><tr><td><code>${password:SECRET[PROPERTY]}</code></td><td>
+Replaced with the PROPERTY field of the <strong>SECRET</strong>
+</td></tr><tr><td><code>${password:SECRET[PROPERTY]:SOURCE}</code></td><td>
+Replaced with the PROPERTY field of the <strong>SECRET</strong> obtained from <strong>SOURCE</strong>
+</td></tr></tbody></table>
+<div class="NOTE"><h5>note</h5><p>
+<strong>IMORTANT:</strong> You&apos;ll probably need to surround variable references with single
+quotes on Linux to prevent Bash from interpreting these as Bash variables.
+</p></div>
 <div class="NOTE"><h5>note</h5><p>
 <strong>IMPORTANT:</strong> You must register an <a class="xref" href="Neon.Deployment.IProfileClient.html">IProfileClient</a> implementation with
 <a class="xref" href="Neon.Common.NeonHelper.html#Neon_Common_NeonHelper_ServiceContainer">ServiceContainer</a> for this to work.
@@ -2716,7 +2786,7 @@ in the command line arguments.
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex">Regex</a></td>
         <td><span class="parametername">variableRegex</span></td>
         <td><p>Optionally specifies the regular expression that will be used to locate and process
-any variable references.  This defaults to <a class="xref" href="Neon.IO.PreprocessReader.html#Neon_IO_PreprocessReader_AngleVariableExpansionRegex">AngleVariableExpansionRegex</a>
+any variable references.  This defaults to <a class="xref" href="Neon.IO.PreprocessReader.html#Neon_IO_PreprocessReader_CurlyVariableExpansionRegex">CurlyVariableExpansionRegex</a>
 but may be set to any expressions supported by <a class="xref" href="Neon.IO.PreprocessReader.html">PreprocessReader</a>.</p>
 </td>
       </tr>
@@ -2900,6 +2970,68 @@ If there is no split item present, then <strong>Right</strong> will be <code>nul
 The argument comparison is case sensitive.
 </p></div>
 </div>
+  <a id="Neon_Common_CommandLine_ToFormatted_" data-uid="Neon.Common.CommandLine.ToFormatted*"></a>
+  <h4 id="Neon_Common_CommandLine_ToFormatted_System_String_System_Boolean_System_Boolean_Neon_Common_CommandLine_Redactor_" data-uid="Neon.Common.CommandLine.ToFormatted(System.String,System.Boolean,System.Boolean,Neon.Common.CommandLine.Redactor)">ToFormatted(String, Boolean, Boolean, CommandLine.Redactor)</h4>
+  <div class="markdown level1 summary"><p>Converts the command line into a nicely formatted (potentially multi-line) string
+suitable for including in logs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToFormatted(string programName, bool withBars = false, bool withLineContinuation = false, CommandLine.Redactor redactor = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">programName</span></td>
+        <td><p>Specifies the program name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">withBars</span></td>
+        <td><p>Optionally include bars above and below the formatted command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">withLineContinuation</span></td>
+        <td><p>Optionally include line continuation characters appropriate for the current operating system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Neon.Common.CommandLine.Redactor.html">CommandLine.Redactor</a></td>
+        <td><span class="parametername">redactor</span></td>
+        <td><p>Optionally passed as a redactor.  See <a class="xref" href="Neon.Common.CommandLine.Redactor.html">CommandLine.Redactor</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The formatted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Neon_Common_CommandLine_ToString_" data-uid="Neon.Common.CommandLine.ToString*"></a>
   <h4 id="Neon_Common_CommandLine_ToString" data-uid="Neon.Common.CommandLine.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Renders the command line as a string suitable for presenting to a process or
@@ -2929,6 +3061,22 @@ double quotes.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown if a command line argument includes both single and double quotes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
