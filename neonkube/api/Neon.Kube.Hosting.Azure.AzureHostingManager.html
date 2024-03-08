@@ -1,27 +1,25 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AzureHostingManager
-   | NeonKUBE documentation </title>
+    <title>Class AzureHostingManager | NeonKUBE documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AzureHostingManager
-   | NeonKUBE documentation ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
+    <meta name="title" content="Class AzureHostingManager | NeonKUBE documentation ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../../logo-neonkube.png">
     <link rel="stylesheet" href="../../styles/tailwind.css">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc">
-    <meta property="docfx:tocrel" content="toc">
-    
-    <meta property="docfx:rel" content="../../">
-    
+    <meta property="docfx:navrel" content="../../toc.json">
+    <meta property="docfx:tocrel" content="toc.json">
+  
+  <meta property="docfx:rel" content="../../">
+  
     <!-- Segment Analytics (analytics.js) -->
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="YOUR_WRITE_KEY";analytics.SNIPPET_VERSION="4.15.2";
@@ -36,7 +34,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-  
+
       gtag('config', 'G-N1JLG2HDHZ');
     </script>
     <!-- End Google Analytics -->
@@ -70,7 +68,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -80,7 +78,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../../index.html">
                 <img id="logo" class="svg" src="../../logo-neonkube.svg" alt="">
               </a>
@@ -91,7 +89,7 @@
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
-                
+
                 <ul class="nav level1 navbar-nav">
                       <li>
                           <a href="../../neonsdk/api/Neon.html" title="NeonSDK">NeonSDK</a>
@@ -99,10 +97,11 @@
                       <li>
                           <a href="../../neonkube/api/Neon.Kube.html" title="NeonKUBE">NeonKUBE</a>
                       </li>
-                </ul>    </div>
+                </ul>
+            </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -112,7 +111,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -134,12 +133,12 @@
               </div>
               <div class="sidetoc">
                 <div class="toc" id="toc">
-                  
+
                   <ul class="nav level1">
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.html" title="Neon.Kube" class="">Neon.Kube</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.ClusterContainerImage.html" title="ClusterContainerImage" class="">ClusterContainerImage</a>
@@ -149,6 +148,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Kube.ClusterDeploymentStatus.html" title="ClusterDeploymentStatus" class="">ClusterDeploymentStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.ClusterDetails.html" title="ClusterDetails" class="">ClusterDetails</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.ClusterHealth.html" title="ClusterHealth" class="">ClusterHealth</a>
@@ -185,6 +187,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Kube.GrpcTraceExporter.html" title="GrpcTraceExporter" class="">GrpcTraceExporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.HostingReadinessException.html" title="HostingReadinessException" class="">HostingReadinessException</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.KubeClientConfig.html" title="KubeClientConfig" class="">KubeClientConfig</a>
@@ -232,15 +237,6 @@
                             <a href="Neon.Kube.KubePort.html" title="KubePort" class="">KubePort</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.KubernetesExtensions.html" title="KubernetesExtensions" class="">KubernetesExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.KubernetesObjectMetadata.html" title="KubernetesObjectMetadata" class="">KubernetesObjectMetadata</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.KubernetesRetryHandler.html" title="KubernetesRetryHandler" class="">KubernetesRetryHandler</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.KubeSecretName.html" title="KubeSecretName" class="">KubeSecretName</a>
                           </li>
                           <li class="">
@@ -257,12 +253,6 @@
                           </li>
                           <li class="">
                             <a href="Neon.Kube.KubeVersions.html" title="KubeVersions" class="">KubeVersions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.LeaderElectionConfig.html" title="LeaderElectionConfig" class="">LeaderElectionConfig</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.LeaderElector.html" title="LeaderElector" class="">LeaderElector</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.NeonAnnotation.html" title="NeonAnnotation" class="">NeonAnnotation</a>
@@ -295,13 +285,13 @@
                             <a href="Neon.Kube.PrometheusMatrixValue.html" title="PrometheusMatrixValue" class="">PrometheusMatrixValue</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.PrometheusResponse-1.html" title="PrometheusResponse&lt;T&gt;" class="">PrometheusResponse&lt;T&gt;</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.PrometheusResponseData-1.html" title="PrometheusResponseData&lt;T&gt;" class="">PrometheusResponseData&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.PrometheusResponseStatus.html" title="PrometheusResponseStatus" class="">PrometheusResponseStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.PrometheusResponse-1.html" title="PrometheusResponse&lt;T&gt;" class="">PrometheusResponse&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.PrometheusResult.html" title="PrometheusResult" class="">PrometheusResult</a>
@@ -328,22 +318,14 @@
                             <a href="Neon.Kube.TypedSecret-1.html" title="TypedSecret&lt;TSecretData&gt;" class="">TypedSecret&lt;TSecretData&gt;</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.V1CustomObjectList-1.html" title="V1CustomObjectList&lt;T&gt;" class="">V1CustomObjectList&lt;T&gt;</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.VersionException.html" title="VersionException" class="">VersionException</a>
                           </li>
-                          <li class="">
-                            <a href="Neon.Kube.Watcher-1.html" title="Watcher&lt;T&gt;" class="">Watcher&lt;T&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.WatchEvent-1.html" title="WatchEvent&lt;T&gt;" class="">WatchEvent&lt;T&gt;</a>
-                          </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.BuildInfo.html" title="Neon.Kube.BuildInfo" class="">Neon.Kube.BuildInfo</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.BuildInfo.ThisAssembly.html" title="ThisAssembly" class="">ThisAssembly</a>
@@ -357,11 +339,12 @@
                           <li class="">
                             <a href="Neon.Kube.BuildInfo.ThisAssembly.Git.SemVer.html" title="ThisAssembly.Git.SemVer" class="">ThisAssembly.Git.SemVer</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Clients.html" title="Neon.Kube.Clients" class="">Neon.Kube.Clients</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Clients.AzureComputePlan.html" title="AzureComputePlan" class="">AzureComputePlan</a>
@@ -384,11 +367,12 @@
                           <li class="">
                             <a href="Neon.Kube.Clients.HeadendClient.__NeonDesktop.html" title="HeadendClient.__NeonDesktop" class="">HeadendClient.__NeonDesktop</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.ClusterDef.html" title="Neon.Kube.ClusterDef" class="">Neon.Kube.ClusterDef</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.ClusterDef.AcmeOptions.html" title="AcmeOptions" class="">AcmeOptions</a>
@@ -398,6 +382,9 @@
                           </li>
                           <li class="">
                             <a href="Neon.Kube.ClusterDef.AddressRuleAction.html" title="AddressRuleAction" class="">AddressRuleAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.ClusterDef.ApiServerOptions.html" title="ApiServerOptions" class="">ApiServerOptions</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.ClusterDef.AwsHelper.html" title="AwsHelper" class="">AwsHelper</a>
@@ -490,6 +477,12 @@
                             <a href="Neon.Kube.ClusterDef.IngressRule.html" title="IngressRule" class="">IngressRule</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Kube.ClusterDef.JobOptions.html" title="JobOptions" class="">JobOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.ClusterDef.JobSchedule.html" title="JobSchedule" class="">JobSchedule</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Kube.ClusterDef.KubernetesOptions.html" title="KubernetesOptions" class="">KubernetesOptions</a>
                           </li>
                           <li class="">
@@ -549,11 +542,12 @@
                           <li class="">
                             <a href="Neon.Kube.ClusterDef.XenServerHostingOptions.html" title="XenServerHostingOptions" class="">XenServerHostingOptions</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.ClusterMetadata.html" title="Neon.Kube.ClusterMetadata" class="">Neon.Kube.ClusterMetadata</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.ClusterMetadata.ClusterLockState.html" title="ClusterLockState" class="">ClusterLockState</a>
@@ -561,11 +555,12 @@
                           <li class="">
                             <a href="Neon.Kube.ClusterMetadata.ClusterLockStatus.html" title="ClusterLockStatus" class="">ClusterLockStatus</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Config.html" title="Neon.Kube.Config" class="">Neon.Kube.Config</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Config.ClusterLoginExport.html" title="ClusterLoginExport" class="">ClusterLoginExport</a>
@@ -621,11 +616,12 @@
                           <li class="">
                             <a href="Neon.Kube.Config.NeonKubeExtensions.html" title="NeonKubeExtensions" class="">NeonKubeExtensions</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Deployment.html" title="Neon.Kube.Deployment" class="">Neon.Kube.Deployment</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Deployment.ClusterDeployment.html" title="ClusterDeployment" class="">ClusterDeployment</a>
@@ -633,11 +629,12 @@
                           <li class="">
                             <a href="Neon.Kube.Deployment.NodeDeployment.html" title="NodeDeployment" class="">NodeDeployment</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.DesktopService.html" title="Neon.Kube.DesktopService" class="">Neon.Kube.DesktopService</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.DesktopService.DesktopService.html" title="DesktopService" class="">DesktopService</a>
@@ -645,11 +642,12 @@
                           <li class="">
                             <a href="Neon.Kube.DesktopService.GrpcDesktopService.html" title="GrpcDesktopService" class="">GrpcDesktopService</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Glauth.html" title="Neon.Kube.Glauth" class="">Neon.Kube.Glauth</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Glauth.GlauthGroup.html" title="GlauthGroup" class="">GlauthGroup</a>
@@ -660,11 +658,12 @@
                           <li class="">
                             <a href="Neon.Kube.Glauth.GlauthUserCapability.html" title="GlauthUserCapability" class="">GlauthUserCapability</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.GrpcProto.html" title="Neon.Kube.GrpcProto" class="">Neon.Kube.GrpcProto</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.GrpcProto.GrpcError.html" title="GrpcError" class="">GrpcError</a>
@@ -678,14 +677,18 @@
                           <li class="">
                             <a href="Neon.Kube.GrpcProto.NeonGrpcServices.html" title="NeonGrpcServices" class="">NeonGrpcServices</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.GrpcProto.Desktop.html" title="Neon.Kube.GrpcProto.Desktop" class="">Neon.Kube.GrpcProto.Desktop</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.GrpcProto.Desktop.DesktopConverters.html" title="DesktopConverters" class="">DesktopConverters</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.GrpcProto.Desktop.GrpGetVmDrivesReply.html" title="GrpGetVmDrivesReply" class="">GrpGetVmDrivesReply</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.GrpcProto.Desktop.GrpcAddVmDriveRequest.html" title="GrpcAddVmDriveRequest" class="">GrpcAddVmDriveRequest</a>
@@ -838,16 +841,14 @@
                             <a href="Neon.Kube.GrpcProto.Desktop.GrpcVmExistsRequest.html" title="GrpcVmExistsRequest" class="">GrpcVmExistsRequest</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.GrpcProto.Desktop.GrpGetVmDrivesReply.html" title="GrpGetVmDrivesReply" class="">GrpGetVmDrivesReply</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.GrpcProto.Desktop.IGrpcDesktopService.html" title="IGrpcDesktopService" class="">IGrpcDesktopService</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.html" title="Neon.Kube.Hosting" class="">Neon.Kube.Hosting</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.HostedNodeInfo.html" title="HostedNodeInfo" class="">HostedNodeInfo</a>
@@ -871,6 +872,12 @@
                             <a href="Neon.Kube.Hosting.HostingProviderAttribute.html" title="HostingProviderAttribute" class="">HostingProviderAttribute</a>
                           </li>
                           <li class="">
+                            <a href="Neon.Kube.Hosting.HostingReadiness.html" title="HostingReadiness" class="">HostingReadiness</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.Hosting.HostingReadinessProblem.html" title="HostingReadinessProblem" class="">HostingReadinessProblem</a>
+                          </li>
+                          <li class="">
                             <a href="Neon.Kube.Hosting.HostingResourceAvailability.html" title="HostingResourceAvailability" class="">HostingResourceAvailability</a>
                           </li>
                           <li class="">
@@ -888,56 +895,62 @@
                           <li class="">
                             <a href="Neon.Kube.Hosting.StopMode.html" title="StopMode" class="">StopMode</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.Aws.html" title="Neon.Kube.Hosting.Aws" class="">Neon.Kube.Hosting.Aws</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.Aws.AwsHostingManager.html" title="AwsHostingManager" class="">AwsHostingManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.Azure.html" title="Neon.Kube.Hosting.Azure" class="">Neon.Kube.Hosting.Azure</a>
-                        
+
                         <ul class="nav level2">
                           <li class="active">
                             <a href="Neon.Kube.Hosting.Azure.AzureHostingManager.html" title="AzureHostingManager" class="active">AzureHostingManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.BareMetal.html" title="Neon.Kube.Hosting.BareMetal" class="">Neon.Kube.Hosting.BareMetal</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.BareMetal.BareMetalHostingManager.html" title="BareMetalHostingManager" class="">BareMetalHostingManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.Google.html" title="Neon.Kube.Hosting.Google" class="">Neon.Kube.Hosting.Google</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.Google.GoogleHostingManager.html" title="GoogleHostingManager" class="">GoogleHostingManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.HyperV.html" title="Neon.Kube.Hosting.HyperV" class="">Neon.Kube.Hosting.HyperV</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.HyperV.HyperVHostingManager.html" title="HyperVHostingManager" class="">HyperVHostingManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Hosting.XenServer.html" title="Neon.Kube.Hosting.XenServer" class="">Neon.Kube.Hosting.XenServer</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Hosting.XenServer.XenServerHostingManager.html" title="XenServerHostingManager" class="">XenServerHostingManager</a>
@@ -945,11 +958,43 @@
                           <li class="">
                             <a href="Neon.Kube.Hosting.XenServer.XenServerHostingManager.DiskTemplateInfo.html" title="XenServerHostingManager.DiskTemplateInfo" class="">XenServerHostingManager.DiskTemplateInfo</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Neon.Kube.K8s.html" title="Neon.Kube.K8s" class="">Neon.Kube.K8s</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Neon.Kube.K8s.KubernetesExtensions.html" title="KubernetesExtensions" class="">KubernetesExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.KubernetesObjectMetadata.html" title="KubernetesObjectMetadata" class="">KubernetesObjectMetadata</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.KubernetesRetryHandler.html" title="KubernetesRetryHandler" class="">KubernetesRetryHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.LeaderElectionConfig.html" title="LeaderElectionConfig" class="">LeaderElectionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.LeaderElector.html" title="LeaderElector" class="">LeaderElector</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.V1CustomObjectList-1.html" title="V1CustomObjectList&lt;T&gt;" class="">V1CustomObjectList&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.WatchEvent-1.html" title="WatchEvent&lt;T&gt;" class="">WatchEvent&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.K8s.Watcher-1.html" title="Watcher&lt;T&gt;" class="">Watcher&lt;T&gt;</a>
+                          </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Models.html" title="Neon.Kube.Models" class="">Neon.Kube.Models</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Models.AzureComputePlan.html" title="AzureComputePlan" class="">AzureComputePlan</a>
@@ -960,29 +1005,31 @@
                           <li class="">
                             <a href="Neon.Kube.Models.AzureImageReference.html" title="AzureImageReference" class="">AzureImageReference</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Models.Headend.html" title="Neon.Kube.Models.Headend" class="">Neon.Kube.Models.Headend</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
-                            <a href="Neon.Kube.Models.Headend.IClusterController.html" title="IClusterController" class="">IClusterController</a>
+                            <a href="Neon.Kube.Models.Headend.IClusterApi.html" title="IClusterApi" class="">IClusterApi</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Models.Headend.IClusterSetupController.html" title="IClusterSetupController" class="">IClusterSetupController</a>
+                            <a href="Neon.Kube.Models.Headend.IClusterSetupApi.html" title="IClusterSetupApi" class="">IClusterSetupApi</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Models.Headend.INeonDesktopController.html" title="INeonDesktopController" class="">INeonDesktopController</a>
+                            <a href="Neon.Kube.Models.Headend.INeonDesktopApi.html" title="INeonDesktopApi" class="">INeonDesktopApi</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Models.Headend.Stub.html" title="Stub" class="">Stub</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Oauth2Proxy.html" title="Neon.Kube.Oauth2Proxy" class="">Neon.Kube.Oauth2Proxy</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Oauth2Proxy.Oauth2ProxyConfig.html" title="Oauth2ProxyConfig" class="">Oauth2ProxyConfig</a>
@@ -1023,227 +1070,12 @@
                           <li class="">
                             <a href="Neon.Kube.Oauth2Proxy.Oauth2ProxyUpstreamConfig.html" title="Oauth2ProxyUpstreamConfig" class="">Oauth2ProxyUpstreamConfig</a>
                           </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.html" title="Neon.Kube.Operator" class="">Neon.Kube.Operator</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ApplicationBuilderExtensions.html" title="ApplicationBuilderExtensions" class="">ApplicationBuilderExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.EntityExtensions.html" title="EntityExtensions" class="">EntityExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.IKubernetesOperatorHost.html" title="IKubernetesOperatorHost" class="">IKubernetesOperatorHost</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.IKubernetesOperatorHostBuilder.html" title="IKubernetesOperatorHostBuilder" class="">IKubernetesOperatorHostBuilder</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.IOperatorBuilder.html" title="IOperatorBuilder" class="">IOperatorBuilder</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.KubernetesOperatorExtensions.html" title="KubernetesOperatorExtensions" class="">KubernetesOperatorExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.KubernetesOperatorHost.html" title="KubernetesOperatorHost" class="">KubernetesOperatorHost</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.KubernetesOperatorHostBuilder.html" title="KubernetesOperatorHostBuilder" class="">KubernetesOperatorHostBuilder</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.OperatorBuilderExtensions.html" title="OperatorBuilderExtensions" class="">OperatorBuilderExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.OperatorSettings.html" title="OperatorSettings" class="">OperatorSettings</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.TracerProviderBuilderExtensions.html" title="TracerProviderBuilderExtensions" class="">TracerProviderBuilderExtensions</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Attributes.html" title="Neon.Kube.Operator.Attributes" class="">Neon.Kube.Operator.Attributes</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.ControllerAttribute.html" title="ControllerAttribute" class="">ControllerAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.DependentResourceAttribute-1.html" title="DependentResourceAttribute&lt;TEntity&gt;" class="">DependentResourceAttribute&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.EntityVersionAttribute.html" title="EntityVersionAttribute" class="">EntityVersionAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.FinalizerAttribute.html" title="FinalizerAttribute" class="">FinalizerAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.MutatingWebhookAttribute.html" title="MutatingWebhookAttribute" class="">MutatingWebhookAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Attributes.ValidatingWebhookAttribute.html" title="ValidatingWebhookAttribute" class="">ValidatingWebhookAttribute</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Builder.html" title="Neon.Kube.Operator.Builder" class="">Neon.Kube.Operator.Builder</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Builder.CertManagerOptions.html" title="CertManagerOptions" class="">CertManagerOptions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Builder.OperatorBuilder.html" title="OperatorBuilder" class="">OperatorBuilder</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Controller.html" title="Neon.Kube.Operator.Controller" class="">Neon.Kube.Operator.Controller</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Controller.IResourceController.html" title="IResourceController" class="">IResourceController</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Controller.IResourceController-1.html" title="IResourceController&lt;TEntity&gt;" class="">IResourceController&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Controller.ResourceControllerBase-1.html" title="ResourceControllerBase&lt;T&gt;" class="">ResourceControllerBase&lt;T&gt;</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Entities.html" title="Neon.Kube.Operator.Entities" class="">Neon.Kube.Operator.Entities</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Entities.CustomResourceGenerator.html" title="CustomResourceGenerator" class="">CustomResourceGenerator</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Finalizer.html" title="Neon.Kube.Operator.Finalizer" class="">Neon.Kube.Operator.Finalizer</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Finalizer.IFinalizerManager-1.html" title="IFinalizerManager&lt;TEntity&gt;" class="">IFinalizerManager&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Finalizer.IResourceFinalizer-1.html" title="IResourceFinalizer&lt;TEntity&gt;" class="">IResourceFinalizer&lt;TEntity&gt;</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Rbac.html" title="Neon.Kube.Operator.Rbac" class="">Neon.Kube.Operator.Rbac</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Rbac.IRbacRule.html" title="IRbacRule" class="">IRbacRule</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Rbac.RbacRule-1.html" title="RbacRule&lt;TEntity&gt;" class="">RbacRule&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Rbac.RbacRuleAttribute-1.html" title="RbacRuleAttribute&lt;TEntity&gt;" class="">RbacRuleAttribute&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Rbac.RbacVerb.html" title="RbacVerb" class="">RbacVerb</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.ResourceManager.html" title="Neon.Kube.Operator.ResourceManager" class="">Neon.Kube.Operator.ResourceManager</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.DependentResource-1.html" title="DependentResource&lt;TEntity&gt;" class="">DependentResource&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.EntityFilter-2.html" title="EntityFilter&lt;TController, TEntity&gt;" class="">EntityFilter&lt;TController, TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.ErrorPolicyResult.html" title="ErrorPolicyResult" class="">ErrorPolicyResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.IDependentResource.html" title="IDependentResource" class="">IDependentResource</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.IEntityFilter-2.html" title="IEntityFilter&lt;TController, TEntity&gt;" class="">IEntityFilter&lt;TController, TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.ModifiedEventType.html" title="ModifiedEventType" class="">ModifiedEventType</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.ResourceControllerResult.html" title="ResourceControllerResult" class="">ResourceControllerResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.ResourceManager-2.html" title="ResourceManager&lt;TEntity, TController&gt;" class="">ResourceManager&lt;TEntity, TController&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.ResourceManager.ResourceManagerOptions.html" title="ResourceManagerOptions" class="">ResourceManagerOptions</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Util.html" title="Neon.Kube.Operator.Util" class="">Neon.Kube.Operator.Util</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Util.OperatorHelper.html" title="OperatorHelper" class="">OperatorHelper</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Util.Pod.html" title="Pod" class="">Pod</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Operator.Webhook.html" title="Neon.Kube.Operator.Webhook" class="">Neon.Kube.Operator.Webhook</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.AdmissionOperations.html" title="AdmissionOperations" class="">AdmissionOperations</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.AdmissionResult.html" title="AdmissionResult" class="">AdmissionResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.IAdmissionWebhook-2.html" title="IAdmissionWebhook&lt;TEntity, TResult&gt;" class="">IAdmissionWebhook&lt;TEntity, TResult&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.IMutatingWebhook-1.html" title="IMutatingWebhook&lt;TEntity&gt;" class="">IMutatingWebhook&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.IValidatingWebhook-1.html" title="IValidatingWebhook&lt;TEntity&gt;" class="">IValidatingWebhook&lt;TEntity&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.MutationResult.html" title="MutationResult" class="">MutationResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.ValidationResult.html" title="ValidationResult" class="">ValidationResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.WebhookAttribute.html" title="WebhookAttribute" class="">WebhookAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.WebhookHelper.html" title="WebhookHelper" class="">WebhookHelper</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.WebhookRuleAttribute.html" title="WebhookRuleAttribute" class="">WebhookRuleAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Operator.Webhook.WebhookType.html" title="WebhookType" class="">WebhookType</a>
-                          </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.PortForward.html" title="Neon.Kube.PortForward" class="">Neon.Kube.PortForward</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.PortForward.IPortForwardManager.html" title="IPortForwardManager" class="">IPortForwardManager</a>
@@ -1251,11 +1083,12 @@
                           <li class="">
                             <a href="Neon.Kube.PortForward.PortForwardManager.html" title="PortForwardManager" class="">PortForwardManager</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Proxy.html" title="Neon.Kube.Proxy" class="">Neon.Kube.Proxy</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Proxy.ClusterProxy.html" title="ClusterProxy" class="">ClusterProxy</a>
@@ -1269,50 +1102,35 @@
                           <li class="">
                             <a href="Neon.Kube.Proxy.NodeProxyCreator.html" title="NodeProxyCreator" class="">NodeProxyCreator</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.html" title="Neon.Kube.Resources" class="">Neon.Kube.Resources</a>
-                        
+
                         <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Resources.AdditionalPrinterColumnsAttribute.html" title="AdditionalPrinterColumnsAttribute" class="">AdditionalPrinterColumnsAttribute</a>
-                          </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.CustomResourceException.html" title="CustomResourceException" class="">CustomResourceException</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.EntityScope.html" title="EntityScope" class="">EntityScope</a>
+                            <a href="Neon.Kube.Resources.ResourceHelper.html" title="ResourceHelper" class="">ResourceHelper</a>
                           </li>
-                          <li class="">
-                            <a href="Neon.Kube.Resources.EntityScopeAttribute.html" title="EntityScopeAttribute" class="">EntityScopeAttribute</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Resources.ScaleAttribute.html" title="ScaleAttribute" class="">ScaleAttribute</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Resources.Attributes.html" title="Neon.Kube.Resources.Attributes" class="">Neon.Kube.Resources.Attributes</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Resources.Attributes.EntityVersionAttribute.html" title="EntityVersionAttribute" class="">EntityVersionAttribute</a>
-                          </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Calico.html" title="Neon.Kube.Resources.Calico" class="">Neon.Kube.Resources.Calico</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Calico.V1FelixConfiguration.html" title="V1FelixConfiguration" class="">V1FelixConfiguration</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.CertManager.html" title="Neon.Kube.Resources.CertManager" class="">Neon.Kube.Resources.CertManager</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.CertManager.AcmeChallengeSolver.html" title="AcmeChallengeSolver" class="">AcmeChallengeSolver</a>
@@ -1369,10 +1187,10 @@
                             <a href="Neon.Kube.Resources.CertManager.Keystores.html" title="Keystores" class="">Keystores</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.CertManager.PasswordSecretRef.html" title="PasswordSecretRef" class="">PasswordSecretRef</a>
+                            <a href="Neon.Kube.Resources.CertManager.PKCS12.html" title="PKCS12" class="">PKCS12</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.CertManager.PKCS12.html" title="PKCS12" class="">PKCS12</a>
+                            <a href="Neon.Kube.Resources.CertManager.PasswordSecretRef.html" title="PasswordSecretRef" class="">PasswordSecretRef</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.CertManager.PrivateKey.html" title="PrivateKey" class="">PrivateKey</a>
@@ -1401,11 +1219,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.CertManager.X509Usages.html" title="X509Usages" class="">X509Usages</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Cluster.html" title="Neon.Kube.Resources.Cluster" class="">Neon.Kube.Resources.Cluster</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Cluster.TestStatus.html" title="TestStatus" class="">TestStatus</a>
@@ -1417,22 +1236,19 @@
                             <a href="Neon.Kube.Resources.Cluster.V1CrioConfiguration.CrioConfigurationSpec.html" title="V1CrioConfiguration.CrioConfigurationSpec" class="">V1CrioConfiguration.CrioConfigurationSpec</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.html" title="V1NeonClusterOperator" class="">V1NeonClusterOperator</a>
+                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterJobs.html" title="V1NeonClusterJobs" class="">V1NeonClusterJobs</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.OperatorSpec.html" title="V1NeonClusterOperator.OperatorSpec" class="">V1NeonClusterOperator.OperatorSpec</a>
+                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterJobs.JobSchedule.html" title="V1NeonClusterJobs.JobSchedule" class="">V1NeonClusterJobs.JobSchedule</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.OperatorStatus.html" title="V1NeonClusterOperator.OperatorStatus" class="">V1NeonClusterOperator.OperatorStatus</a>
+                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterJobs.JobStatus.html" title="V1NeonClusterJobs.JobStatus" class="">V1NeonClusterJobs.JobStatus</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.Updates.html" title="V1NeonClusterOperator.Updates" class="">V1NeonClusterOperator.Updates</a>
+                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterJobs.NeonClusterJobsSpec.html" title="V1NeonClusterJobs.NeonClusterJobsSpec" class="">V1NeonClusterJobs.NeonClusterJobsSpec</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.UpdateSpec.html" title="V1NeonClusterOperator.UpdateSpec" class="">V1NeonClusterOperator.UpdateSpec</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterOperator.UpdateStatus.html" title="V1NeonClusterOperator.UpdateStatus" class="">V1NeonClusterOperator.UpdateStatus</a>
+                            <a href="Neon.Kube.Resources.Cluster.V1NeonClusterJobs.NeonClusterJobsStatus.html" title="V1NeonClusterJobs.NeonClusterJobsStatus" class="">V1NeonClusterJobs.NeonClusterJobsStatus</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Cluster.V1NeonContainerRegistry.html" title="V1NeonContainerRegistry" class="">V1NeonContainerRegistry</a>
@@ -1485,11 +1301,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Cluster.V1TestSpec.html" title="V1TestSpec" class="">V1TestSpec</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Dex.html" title="Neon.Kube.Resources.Dex" class="">Neon.Kube.Resources.Dex</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Dex.DexConfig.html" title="DexConfig" class="">DexConfig</a>
@@ -1498,13 +1315,13 @@
                             <a href="Neon.Kube.Resources.Dex.DexConnector.html" title="DexConnector" class="">DexConnector</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Dex.DexConnector-1.html" title="DexConnector&lt;T&gt;" class="">DexConnector&lt;T&gt;</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.Resources.Dex.DexConnectorConverter.html" title="DexConnectorConverter" class="">DexConnectorConverter</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Dex.DexConnectorType.html" title="DexConnectorType" class="">DexConnectorType</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.Resources.Dex.DexConnector-1.html" title="DexConnector&lt;T&gt;" class="">DexConnector&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Dex.DexExpiryConfig.html" title="DexExpiryConfig" class="">DexExpiryConfig</a>
@@ -1555,10 +1372,10 @@
                             <a href="Neon.Kube.Resources.Dex.DexWebConfig.html" title="DexWebConfig" class="">DexWebConfig</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Dex.IDexConnector-1.html" title="IDexConnector&lt;T&gt;" class="">IDexConnector&lt;T&gt;</a>
+                            <a href="Neon.Kube.Resources.Dex.IDexConnectorConfig.html" title="IDexConnectorConfig" class="">IDexConnectorConfig</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Dex.IDexConnectorConfig.html" title="IDexConnectorConfig" class="">IDexConnectorConfig</a>
+                            <a href="Neon.Kube.Resources.Dex.IDexConnector-1.html" title="IDexConnector&lt;T&gt;" class="">IDexConnector&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Dex.IV1DexConnector.html" title="IV1DexConnector" class="">IV1DexConnector</a>
@@ -1566,11 +1383,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Dex.Oauth2ResponseType.html" title="Oauth2ResponseType" class="">Oauth2ResponseType</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.ExternalDns.html" title="Neon.Kube.Resources.ExternalDns" class="">Neon.Kube.Resources.ExternalDns</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.ExternalDns.DnsEndpoint.html" title="DnsEndpoint" class="">DnsEndpoint</a>
@@ -1584,11 +1402,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.ExternalDns.V1DnsEndpointSpec.html" title="V1DnsEndpointSpec" class="">V1DnsEndpointSpec</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Grafana.html" title="Neon.Kube.Resources.Grafana" class="">Neon.Kube.Resources.Grafana</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Grafana.V1Grafana.html" title="V1Grafana" class="">V1Grafana</a>
@@ -1602,11 +1421,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Grafana.V1GrafanaDatasource.html" title="V1GrafanaDatasource" class="">V1GrafanaDatasource</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Harbor.html" title="Neon.Kube.Resources.Harbor" class="">Neon.Kube.Resources.Harbor</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Harbor.V1HarborCluster.html" title="V1HarborCluster" class="">V1HarborCluster</a>
@@ -1620,11 +1440,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Harbor.V1HarborNotarySigner.html" title="V1HarborNotarySigner" class="">V1HarborNotarySigner</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Istio.html" title="Neon.Kube.Resources.Istio" class="">Neon.Kube.Resources.Istio</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Istio.Abort.html" title="Abort" class="">Abort</a>
@@ -1666,12 +1487,6 @@
                             <a href="Neon.Kube.Resources.Istio.ExtensionProvider.html" title="ExtensionProvider" class="">ExtensionProvider</a>
                           </li>
                           <li class="">
-                            <a href="Neon.Kube.Resources.Istio.HeaderOperations.html" title="HeaderOperations" class="">HeaderOperations</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Resources.Istio.Headers.html" title="Headers" class="">Headers</a>
-                          </li>
-                          <li class="">
                             <a href="Neon.Kube.Resources.Istio.HTTPFaultInjection.html" title="HTTPFaultInjection" class="">HTTPFaultInjection</a>
                           </li>
                           <li class="">
@@ -1694,6 +1509,12 @@
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Istio.HTTPRouteDestination.html" title="HTTPRouteDestination" class="">HTTPRouteDestination</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.Resources.Istio.HeaderOperations.html" title="HeaderOperations" class="">HeaderOperations</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.Resources.Istio.Headers.html" title="Headers" class="">Headers</a>
                           </li>
                           <li class="">
                             <a href="Neon.Kube.Resources.Istio.L4MatchAttributes.html" title="L4MatchAttributes" class="">L4MatchAttributes</a>
@@ -1797,11 +1618,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Istio.WorkloadSelector.html" title="WorkloadSelector" class="">WorkloadSelector</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.JsonConverters.html" title="Neon.Kube.Resources.JsonConverters" class="">Neon.Kube.Resources.JsonConverters</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.JsonConverters.DexConnectorJsonConverter.html" title="DexConnectorJsonConverter" class="">DexConnectorJsonConverter</a>
@@ -1812,20 +1634,22 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.JsonConverters.JsonV1ResourceConverter.html" title="JsonV1ResourceConverter" class="">JsonV1ResourceConverter</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Kiali.html" title="Neon.Kube.Resources.Kiali" class="">Neon.Kube.Resources.Kiali</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Kiali.V1Kiali.html" title="V1Kiali" class="">V1Kiali</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Minio.html" title="Neon.Kube.Resources.Minio" class="">Neon.Kube.Resources.Minio</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Minio.BucketQuota.html" title="BucketQuota" class="">BucketQuota</a>
@@ -1851,11 +1675,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Minio.VersioningMode.html" title="VersioningMode" class="">VersioningMode</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.OpenEBS.html" title="Neon.Kube.Resources.OpenEBS" class="">Neon.Kube.Resources.OpenEBS</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.OpenEBS.BlockDeviceCapacity.html" title="BlockDeviceCapacity" class="">BlockDeviceCapacity</a>
@@ -1911,11 +1736,12 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.OpenEBS.V1CStorPoolSpec.html" title="V1CStorPoolSpec" class="">V1CStorPoolSpec</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Resources.Prometheus.html" title="Neon.Kube.Resources.Prometheus" class="">Neon.Kube.Resources.Prometheus</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Resources.Prometheus.Endpoint.html" title="Endpoint" class="">Endpoint</a>
@@ -1929,11 +1755,28 @@
                           <li class="">
                             <a href="Neon.Kube.Resources.Prometheus.V1ServiceMonitorSpec.html" title="V1ServiceMonitorSpec" class="">V1ServiceMonitorSpec</a>
                           </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Neon.Kube.SSH.html" title="Neon.Kube.SSH" class="">Neon.Kube.SSH</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Neon.Kube.SSH.INodeSshProxy.html" title="INodeSshProxy" class="">INodeSshProxy</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.SSH.NodeSshProxyExtensions.html" title="NodeSshProxyExtensions" class="">NodeSshProxyExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Neon.Kube.SSH.NodeSshProxy-1.html" title="NodeSshProxy&lt;TMetadata&gt;" class="">NodeSshProxy&lt;TMetadata&gt;</a>
+                          </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Setup.html" title="Neon.Kube.Setup" class="">Neon.Kube.Setup</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Setup.DesktopServiceProxy.html" title="DesktopServiceProxy" class="">DesktopServiceProxy</a>
@@ -1989,26 +1832,12 @@
                           <li class="">
                             <a href="Neon.Kube.Setup.SetupStepStatus.html" title="SetupStepStatus" class="">SetupStepStatus</a>
                           </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.SSH.html" title="Neon.Kube.SSH" class="">Neon.Kube.SSH</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.SSH.INodeSshProxy.html" title="INodeSshProxy" class="">INodeSshProxy</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.SSH.NodeSshProxy-1.html" title="NodeSshProxy&lt;TMetadata&gt;" class="">NodeSshProxy&lt;TMetadata&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.SSH.NodeSshProxyExtensions.html" title="NodeSshProxyExtensions" class="">NodeSshProxyExtensions</a>
-                          </li>
-                        </ul>  </li>
+                        </ul>
+                    </li>
                     <li class="">
                       <span class="expand-stub"></span>
                       <a href="Neon.Kube.Xunit.html" title="Neon.Kube.Xunit" class="">Neon.Kube.Xunit</a>
-                        
+
                         <ul class="nav level2">
                           <li class="">
                             <a href="Neon.Kube.Xunit.AwsClusterDefinitions.html" title="AwsClusterDefinitions" class="">AwsClusterDefinitions</a>
@@ -2040,68 +1869,10 @@
                           <li class="">
                             <a href="Neon.Kube.Xunit.XenServerClustersDefinitions.html" title="XenServerClustersDefinitions" class="">XenServerClustersDefinitions</a>
                           </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Neon.Kube.Xunit.Operator.html" title="Neon.Kube.Xunit.Operator" class="">Neon.Kube.Xunit.Operator</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ITestApiServer.html" title="ITestApiServer" class="">ITestApiServer</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ITestApiServerHost.html" title="ITestApiServerHost" class="">ITestApiServerHost</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ITestOperator.html" title="ITestOperator" class="">ITestOperator</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.JPIF.html" title="JPIF" class="">JPIF</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.KubernetesOperatorTestHost.html" title="KubernetesOperatorTestHost" class="">KubernetesOperatorTestHost</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.KubernetesOperatorTestHostBuilder.html" title="KubernetesOperatorTestHostBuilder" class="">KubernetesOperatorTestHostBuilder</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ResourceApiController.html" title="ResourceApiController" class="">ResourceApiController</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ResourceApiGroupController.html" title="ResourceApiGroupController" class="">ResourceApiGroupController</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ResourceApiGroupStatusController.html" title="ResourceApiGroupStatusController" class="">ResourceApiGroupStatusController</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.ResourceObject.html" title="ResourceObject" class="">ResourceObject</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestApiServer.html" title="TestApiServer" class="">TestApiServer</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestApiServerBuilder.html" title="TestApiServerBuilder" class="">TestApiServerBuilder</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestApiServerHost.html" title="TestApiServerHost" class="">TestApiServerHost</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestApiServerOptions.html" title="TestApiServerOptions" class="">TestApiServerOptions</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestApiServerStartup.html" title="TestApiServerStartup" class="">TestApiServerStartup</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestKubernetesStartup.html" title="TestKubernetesStartup" class="">TestKubernetesStartup</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestOperator.html" title="TestOperator" class="">TestOperator</a>
-                          </li>
-                          <li class="">
-                            <a href="Neon.Kube.Xunit.Operator.TestOperatorFixture.html" title="TestOperatorFixture" class="">TestOperatorFixture</a>
-                          </li>
-                        </ul>  </li>
-                  </ul>        </div>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -2109,16 +1880,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager">
-  
-  
-  <h1 id="Neon_Kube_Hosting_Azure_AzureHostingManager" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager" class="text-break">Class AzureHostingManager
-  </h1>
+
+
+
+  <h1 id="Neon_Kube_Hosting_Azure_AzureHostingManager" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager" class="text-break">Class AzureHostingManager</h1>
   <div class="markdown level0 summary"><p>Manages cluster provisioning on the Google Cloud Platform.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="Neon.Kube.Hosting.HostingManager.html">HostingManager</a></div>
     <div class="level2"><span class="xref">AzureHostingManager</span></div>
   </div>
@@ -2159,7 +1930,7 @@
       <a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_AssignNodeAddresses_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.AssignNodeAddresses(ClusterDefinition)</a>
     </div>
     <div>
-      <a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_ValidateCluster_Neon_Kube_ClusterDef_ClusterDefinition_System_Collections_Generic_List_Neon_Kube_Hosting_HostedNodeInfo__">HostingManager.ValidateCluster(ClusterDefinition, List&lt;HostedNodeInfo&gt;)</a>
+      <a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_ValidateCluster_Neon_Kube_ClusterDef_ClusterDefinition_System_Collections_Generic_List_Neon_Kube_Hosting_HostedNodeInfo__Neon_Kube_Hosting_HostingReadiness_">HostingManager.ValidateCluster(ClusterDefinition, List&lt;HostedNodeInfo&gt;, HostingReadiness)</a>
     </div>
     <div>
       <a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_DefaultStatusTimeout">HostingManager.DefaultStatusTimeout</a>
@@ -2171,42 +1942,42 @@
       <a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_ResumeClusterAsync">HostingManager.ResumeClusterAsync()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Neon.Kube.Hosting.Azure.html">Neon.Kube.Hosting.Azure</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Neon.html">Neon</a>.<a class="xref" href="Neon.Kube.html">Kube</a>.<a class="xref" href="Neon.Kube.Hosting.html">Hosting</a>.<a class="xref" href="Neon.Kube.Hosting.Azure.html">Azure</a></h6>
   <h6><strong>Assembly</strong>: Neon.Kube.Azure.dll</h6>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HostingProvider(HostingEnvironment.Azure)]
-public class AzureHostingManager : HostingManager, IHostingManager, IDisposable</code></pre>
+public class AzureHostingManager : HostingManager, IHostingManager</code></pre>
   </div>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p><p>
+  <div class="markdown level0 remarks"><p>
 Optional capability support:
 </p>
-<table><tbody><tr><td><a class="xref" href="Neon.Kube.Hosting.HostingCapabilities.html#Neon_Kube_Hosting_HostingCapabilities_Pausable">Pausable</a></td><td><strong>NO</strong></td></tr><tr><td><a class="xref" href="Neon.Kube.Hosting.HostingCapabilities.html#Neon_Kube_Hosting_HostingCapabilities_Stoppable">Stoppable</a></td><td><strong>YES</strong></td></tr></tbody></table></p>
+<table><tbody><tr><td class="term"><a class="xref" href="Neon.Kube.Hosting.HostingCapabilities.html#Neon_Kube_Hosting_HostingCapabilities_Pausable">Pausable</a></td><td class="description"><b>NO</b></td></tr><tr><td class="term"><a class="xref" href="Neon.Kube.Hosting.HostingCapabilities.html#Neon_Kube_Hosting_HostingCapabilities_Stoppable">Stoppable</a></td><td class="description"><b>YES</b></td></tr></tbody></table>
 </div>
   <h3 id="constructors">Constructors
-  </h3>
+</h3>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.#ctor*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.#ctor">AzureHostingManager()</h4>
   <div class="markdown level1 summary"><p>Creates an instance that is only capable of validating the hosting
 related options in the cluster definition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AzureHostingManager()</code></pre>
   </div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.#ctor*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor_Neon_Kube_Proxy_ClusterProxy_System_Boolean_System_String_System_String_System_String_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.#ctor(Neon.Kube.Proxy.ClusterProxy,System.Boolean,System.String,System.String,System.String)">AzureHostingManager(ClusterProxy, Boolean, String, String, String)</h4>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor_Neon_Kube_Proxy_ClusterProxy_System_Boolean_System_String_System_String_System_String_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.#ctor(Neon.Kube.Proxy.ClusterProxy,System.Boolean,System.String,System.String,System.String)">AzureHostingManager(ClusterProxy, bool, string, string, string)</h4>
   <div class="markdown level1 summary"><p>Creates an instance that is capable of provisioning a cluster on Azure.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AzureHostingManager(ClusterProxy cluster, bool cloudMarketplace, string nodeImageUri = null, string nodeImagePath = null, string logFolder = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2222,9 +1993,9 @@ related options in the cluster definition.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">cloudMarketplace</span></td>
-        <td><p><p>
+        <td><p>
 For cloud environments, this specifies whether the cluster should be provisioned
 using a VM image from the public cloud marketplace when <code>true</code> or from the
 private NEONFORGE image gallery for testing when <code>false</code>.  This is ignored
@@ -2232,25 +2003,25 @@ for on-premise environments.
 </p>
 <div class="NOTE"><h5>note</h5><p>
 Only NEONFORGE maintainers will have permission to use the private image.
-</p></div></p>
+</p></div>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">nodeImageUri</span></td>
         <td><p>Ignored.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">nodeImagePath</span></td>
         <td><p>Ignored.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">logFolder</span></td>
-        <td><p>The folder where log files are to be written, otherwise or <code>null</code> or 
+        <td><p>The folder where log files are to be written, otherwise or <code>null</code> or
 empty if logging is disabled.</p>
 </td>
       </tr>
@@ -2258,28 +2029,28 @@ empty if logging is disabled.</p>
   </table>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager__ctor_Neon_Kube_Proxy_ClusterProxy_System_Boolean_System_String_System_String_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>
-<strong>WARNING!</strong> All hosting manager constructors must have the same signature
+<b>WARNING!</b> All hosting manager constructors must have the same signature
 because these are constructed via reflection by the <code>HostingLoader</code> class
-in the <strong>Neon.Kube.Hosting</strong> assembly.  The parameter must match what the
+in the <b>Neon.Kube.Hosting</b> assembly.  The parameter must match what the
 <code>HostingLoader</code> expects.
 </p></div>
 </div>
   <h3 id="properties">Properties
-  </h3>
+</h3>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_CanManageRouter_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.CanManageRouter*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_CanManageRouter" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.CanManageRouter">CanManageRouter</h4>
   <div class="markdown level1 summary"><p>Returns <code>true</code> if the hosting manage is capable of updating the upstream
 network router or load balancer.  Cloud based managers will return <code>true</code>
-whereas on-premise managers will return <code>false</code> because we don&apos;t have
+whereas on-premise managers will return <code>false</code> because we don't have
 the ability to manage physical routers yet.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool CanManageRouter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2288,7 +2059,7 @@ the ability to manage physical routers yet.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2300,12 +2071,12 @@ the ability to manage physical routers yet.</p>
   <div class="markdown level1 summary"><p>Returns flags describing any optional capabilities supported by the hosting manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override HostingCapabilities Capabilities { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2326,12 +2097,12 @@ the ability to manage physical routers yet.</p>
   <div class="markdown level1 summary"><p>Returns the hosting environment implemented by the manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override HostingEnvironment HostingEnvironment { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2349,18 +2120,18 @@ the ability to manage physical routers yet.</p>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_HostingEnvironment">HostingManager.HostingEnvironment</a></div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_NodeMtu_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.NodeMtu*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_NodeMtu" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.NodeMtu">NodeMtu</h4>
-  <div class="markdown level1 summary"><p>Returns the MTU (Maximum Transmission Unit) to be configured for network interfaces 
-on node machines created by the hosting manager.  This may return <strong>0</strong> which
-indicates that the default MTU (typically <a class="xref" href="../../neonsdk/api/Neon.Net.NetConst.html#Neon_Net_NetConst_DefaultMTU">DefaultMTU</a> bytes) 
+  <div class="markdown level1 summary"><p>Returns the MTU (Maximum Transmission Unit) to be configured for network interfaces
+on node machines created by the hosting manager.  This may return <b>0</b> which
+indicates that the default MTU (typically <a class="xref" href="../../neonsdk/api/Neon.Net.NetConst.html#Neon_Net_NetConst_DefaultMTU">DefaultMTU</a> bytes)
 should be set or a custom value between [512-9000].</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int NodeMtu { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2369,7 +2140,7 @@ should be set or a custom value between [512-9000].</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2384,12 +2155,12 @@ is typically required only for clusters deployed on-premise because cloud
 clusters are typically provisioned to their own isolated network.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool RequiresNodeAddressCheck { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2398,7 +2169,7 @@ clusters are typically provisioned to their own isolated network.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2406,18 +2177,18 @@ clusters are typically provisioned to their own isolated network.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_RequiresNodeAddressCheck">HostingManager.RequiresNodeAddressCheck</a></div>
   <h3 id="methods">Methods
-  </h3>
+</h3>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_AddPostProvisioningSteps_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.AddPostProvisioningSteps*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_AddPostProvisioningSteps_Neon_Kube_Setup_SetupController_Neon_Kube_ClusterDef_NodeDefinition__" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.AddPostProvisioningSteps(Neon.Kube.Setup.SetupController{Neon.Kube.ClusterDef.NodeDefinition})">AddPostProvisioningSteps(SetupController&lt;NodeDefinition&gt;)</h4>
   <div class="markdown level1 summary"><p>Adds any steps to be performed after the node has been otherwise prepared.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void AddPostProvisioningSteps(SetupController&lt;NodeDefinition&gt; controller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2441,12 +2212,12 @@ clusters are typically provisioned to their own isolated network.</p>
   <div class="markdown level1 summary"><p>Adds any stps to be performed after cluster setup.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void AddPostSetupSteps(SetupController&lt;NodeDefinition&gt; controller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2458,7 +2229,8 @@ clusters are typically provisioned to their own isolated network.</p>
       <tr>
         <td><a class="xref" href="Neon.Kube.Setup.SetupController-1.html">SetupController</a>&lt;<a class="xref" href="Neon.Kube.ClusterDef.NodeDefinition.html">NodeDefinition</a>&gt;</td>
         <td><span class="parametername">controller</span></td>
-        <td></td>
+        <td><p>The target setup controller.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2467,16 +2239,16 @@ clusters are typically provisioned to their own isolated network.</p>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_AddProvisioningSteps_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.AddProvisioningSteps*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_AddProvisioningSteps_Neon_Kube_Setup_SetupController_Neon_Kube_ClusterDef_NodeDefinition__" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.AddProvisioningSteps(Neon.Kube.Setup.SetupController{Neon.Kube.ClusterDef.NodeDefinition})">AddProvisioningSteps(SetupController&lt;NodeDefinition&gt;)</h4>
   <div class="markdown level1 summary"><p>Adds the steps required to the setup controller passed that creates and initializes the
-cluster resources such as the virtual machines, networks, load balancers, network security groups, 
+cluster resources such as the virtual machines, networks, load balancers, network security groups,
 public IP addresses.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void AddProvisioningSteps(SetupController&lt;NodeDefinition&gt; controller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2500,12 +2272,12 @@ public IP addresses.</p>
   <div class="markdown level1 summary"><p>Adds any steps to be performed before starting cluster setup.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void AddSetupSteps(SetupController&lt;NodeDefinition&gt; controller)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2524,195 +2296,17 @@ public IP addresses.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_AddSetupSteps_Neon_Kube_Setup_SetupController_Neon_Kube_ClusterDef_NodeDefinition__">HostingManager.AddSetupSteps(SetupController&lt;NodeDefinition&gt;)</a></div>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_DeleteClusterAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DeleteClusterAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_DeleteClusterAsync_Neon_Kube_ClusterDef_ClusterDefinition_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DeleteClusterAsync(Neon.Kube.ClusterDef.ClusterDefinition)">DeleteClusterAsync(ClusterDefinition)</h4>
-  <div class="markdown level1 summary"><p><p>
-Deletes an existing cluster by terminating any nodes and then removing node VMs
-and any related resources as well as the related local cluster login by default.<br>The cluster does not need to be running.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This operation may not be supported for all environments.
-</p></div></p>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_CheckDeploymentReadinessAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.CheckDeploymentReadinessAsync*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_CheckDeploymentReadinessAsync_Neon_Kube_ClusterDef_ClusterDefinition_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.CheckDeploymentReadinessAsync(Neon.Kube.ClusterDef.ClusterDefinition)">CheckDeploymentReadinessAsync(ClusterDefinition)</h4>
+  <div class="markdown level1 summary"><p>Performs any final hosting environmet readiness check before deploying a cluster.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task DeleteClusterAsync(ClusterDefinition clusterDefinition = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task CheckDeploymentReadinessAsync(ClusterDefinition clusterDefinition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Neon.Kube.ClusterDef.ClusterDefinition.html">ClusterDefinition</a></td>
-        <td><span class="parametername">clusterDefinition</span></td>
-        <td><p>Optionally specifies a cluster definition.  This is used in situations where
-you need to remove a cluster without having its kubeconfig context.  Use this
-with <strong>extreme care</strong> because in the mode, the cluster cannot be queried to
-determine whether it&apos;s locked or not and locked clusters will be deleted too.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>The tracking <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_DeleteClusterAsync_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.DeleteClusterAsync(ClusterDefinition)</a></div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>Thrown if the hosting environment doesn&apos;t support this operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_DisableInternetSshAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DisableInternetSshAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_DisableInternetSshAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DisableInternetSshAsync">DisableInternetSshAsync()</h4>
-  <div class="markdown level1 summary"><p><p>
-Disables public SSH access for every node in the cluster, honoring source
-address limitations specified by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_ManagementAddressRules">ManagementAddressRules</a>
-in the cluster definition.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This currently supported only by cloud hosting managers like: Azure,
-AWS, and Google.  This will do nothing for the on-premise hosting managers
-because we don&apos;t have the ability to manage physical routers yet.
-</p></div></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task DisableInternetSshAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_DisableInternetSshAsync">HostingManager.DisableInternetSshAsync()</a></div>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_Dispose_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Dispose*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_Dispose_System_Boolean_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Releases any important resources associated with the instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose(bool disposing)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">disposing</span></td>
-        <td><p>Pass <code>true</code> if the instance is being disposed as opposed to being finalized.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_Dispose_System_Boolean_">HostingManager.Dispose(Boolean)</a></div>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_EnableInternetSshAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.EnableInternetSshAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_EnableInternetSshAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.EnableInternetSshAsync">EnableInternetSshAsync()</h4>
-  <div class="markdown level1 summary"><p><p>
-Enables public SSH access for every node in the cluster, honoring source
-address limitations specified by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_ManagementAddressRules">ManagementAddressRules</a>
-in the cluster definition.
-</p>
-<p>
-Each node will be assigned a public port that has a NAT rule directing SSH
-traffic to that specific node.  These ports will be in the range of
-<span class="xref">Neon.Kube.ClusterDef.NetworkOptions.FirstExternalSshPort</span> to <span class="xref">Neon.Kube.ClusterDef.NetworkOptions.LastExternalSshPort</span>.
-<a class="xref" href="Neon.Kube.Hosting.IHostingManager.html#Neon_Kube_Hosting_IHostingManager_GetSshEndpoint_System_String_">GetSshEndpoint(String)</a> will return the external endpoint
-for nodes when external SSH is enabled. 
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This currently supported only by cloud hosting managers like: Azure,
-AWS, and Google.  This will do nothing for the on-premise hosting managers
-because we don&apos;t have the ability to manage physical routers yet.
-</p></div></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task EnableInternetSshAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_EnableInternetSshAsync">HostingManager.EnableInternetSshAsync()</a></div>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_FinalValidationAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.FinalValidationAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_FinalValidationAsync_Neon_Kube_ClusterDef_ClusterDefinition_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.FinalValidationAsync(Neon.Kube.ClusterDef.ClusterDefinition)">FinalValidationAsync(ClusterDefinition)</h4>
-  <div class="markdown level1 summary"><p>Performs any final cluster definition validation before deploying a cluster.
-This is <strong>async</strong> so the validator can perform async queries against the
-hosting environment to obtain information about instance types/sizes, etc.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task FinalValidationAsync(ClusterDefinition clusterDefinition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2730,7 +2324,7 @@ hosting environment to obtain information about instance types/sizes, etc.</p>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2746,9 +2340,9 @@ hosting environment to obtain information about instance types/sizes, etc.</p>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_FinalValidationAsync_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.FinalValidationAsync(ClusterDefinition)</a></div>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_CheckDeploymentReadinessAsync_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.CheckDeploymentReadinessAsync(ClusterDefinition)</a></div>
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2757,26 +2351,54 @@ hosting environment to obtain information about instance types/sizes, etc.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Neon.Kube.ClusterDefinitionException.html">ClusterDefinitionException</a></td>
+        <td><a class="xref" href="Neon.Kube.HostingReadinessException.html">HostingReadinessException</a></td>
         <td><p>Thrown if any problems were detected.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterAddresses_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterAddresses*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterAddresses" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterAddresses">GetClusterAddresses()</h4>
-  <div class="markdown level1 summary"><p>Returns the IP address to be used to access the cluster.  For clusters
-deployed the the cloud, this will be the ingress IP address assigned to
-the load balancer.  For on-premise clusters, this returns the private
-IP addresses for the control-plane nodes.</p>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_DeleteClusterAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DeleteClusterAsync*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_DeleteClusterAsync_Neon_Kube_ClusterDef_ClusterDefinition_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DeleteClusterAsync(Neon.Kube.ClusterDef.ClusterDefinition)">DeleteClusterAsync(ClusterDefinition)</h4>
+  <div class="markdown level1 summary"><p>
+    Deletes an existing cluster by terminating any nodes and then removing node VMs
+    and any related resources as well as the related local cluster login by default.  
+    The cluster does not need to be running.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This operation may not be supported for all environments.
+    </p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;string&gt; GetClusterAddresses()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task DeleteClusterAsync(ClusterDefinition clusterDefinition = null)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neon.Kube.ClusterDef.ClusterDefinition.html">ClusterDefinition</a></td>
+        <td><span class="parametername">clusterDefinition</span></td>
+        <td><p>Optionally specifies a cluster definition.  This is used in situations where
+you need to remove a cluster without having its kubeconfig context.  Use this
+with <b>extreme care</b> because in the mode, the cluster cannot be queried to
+determine whether it's locked or not and locked clusters will be deleted too.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2785,7 +2407,165 @@ IP addresses for the control-plane nodes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>The tracking <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_DeleteClusterAsync_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.DeleteClusterAsync(ClusterDefinition)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown if the hosting environment doesn't support this operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_DisableInternetSshAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DisableInternetSshAsync*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_DisableInternetSshAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.DisableInternetSshAsync">DisableInternetSshAsync()</h4>
+  <div class="markdown level1 summary"><p>
+    Disables public SSH access for every node in the cluster, honoring source
+    address limitations specified by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_ManagementAddressRules">ManagementAddressRules</a>
+    in the cluster definition.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This currently supported only by cloud hosting managers like: Azure,
+    AWS, and Google.  This will do nothing for the on-premise hosting managers
+    because we don't have the ability to manage physical routers yet.
+    </p>
+</div>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task DisableInternetSshAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_DisableInternetSshAsync">HostingManager.DisableInternetSshAsync()</a></div>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_Dispose_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Dispose*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_Dispose_System_Boolean_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"><p>Releases any important resources associated with the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>Pass <code>true</code> if the instance is being disposed as opposed to being finalized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_Dispose_System_Boolean_">HostingManager.Dispose(bool)</a></div>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_EnableInternetSshAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.EnableInternetSshAsync*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_EnableInternetSshAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.EnableInternetSshAsync">EnableInternetSshAsync()</h4>
+  <div class="markdown level1 summary"><p>
+    Enables public SSH access for every node in the cluster, honoring source
+    address limitations specified by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_ManagementAddressRules">ManagementAddressRules</a>
+    in the cluster definition.
+    </p>
+<p>
+    Each node will be assigned a public port that has a NAT rule directing SSH
+    traffic to that specific node.  These ports will be in the range of
+    <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_FirstExternalSshPort">FirstExternalSshPort</a> to <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_LastExternalSshPort">LastExternalSshPort</a>.
+    <a class="xref" href="Neon.Kube.Hosting.IHostingManager.html#Neon_Kube_Hosting_IHostingManager_GetSshEndpoint_System_String_">GetSshEndpoint(string)</a> will return the external endpoint
+    for nodes when external SSH is enabled. 
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This currently supported only by cloud hosting managers like: Azure,
+    AWS, and Google.  This will do nothing for the on-premise hosting managers
+    because we don't have the ability to manage physical routers yet.
+    </p>
+</div>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task EnableInternetSshAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_EnableInternetSshAsync">HostingManager.EnableInternetSshAsync()</a></div>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterAddresses_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterAddresses*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterAddresses" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterAddresses">GetClusterAddresses()</h4>
+  <div class="markdown level1 summary"><p>Returns the IP address to be used to access the cluster.  For clusters
+deployed the the cloud, this will be the ingress IP address assigned to
+the load balancer.  For on-premise clusters, this returns the private
+IP addresses for the control-plane nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;string&gt; GetClusterAddresses()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td><p>The list of cluster IP addresses.</p>
 </td>
       </tr>
@@ -2795,16 +2575,16 @@ IP addresses for the control-plane nodes.</p>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetClusterAddresses">HostingManager.GetClusterAddresses()</a></div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterHealthAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterHealthAsync*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetClusterHealthAsync_System_TimeSpan_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetClusterHealthAsync(System.TimeSpan)">GetClusterHealthAsync(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Retrieves the health status of the current cluster from the hosting manager&apos;s perspective
+  <div class="markdown level1 summary"><p>Retrieves the health status of the current cluster from the hosting manager's perspective
 This includes information about the infrastructure provisioned for the cluster.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task&lt;ClusterHealth&gt; GetClusterHealthAsync(TimeSpan timeout = default(TimeSpan))</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;ClusterHealth&gt; GetClusterHealthAsync(TimeSpan timeout = default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2816,13 +2596,13 @@ This includes information about the infrastructure provisioned for the cluster.<
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">timeout</span></td>
-        <td><p>Optionally specifies the maximum time to wait for the result.  This defaults to <strong>15 seconds</strong>.</p>
+        <td><p>Optionally specifies the maximum time to wait for the result.  This defaults to <b>15 seconds</b>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2832,61 +2612,35 @@ This includes information about the infrastructure provisioned for the cluster.<
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Neon.Kube.ClusterHealth.html">ClusterHealth</a>&gt;</td>
-        <td><p><p>
-The <a class="xref" href="Neon.Kube.ClusterHealth.html">ClusterHealth</a> information for the current cluster.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-When there is no current cluster, the health information will return indicating
-that no cluster was found.
-</p></div></p>
+        <td><p>
+    The <a class="xref" href="Neon.Kube.ClusterHealth.html">ClusterHealth</a> information for the current cluster.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    When there is no current cluster, the health information will return indicating
+    that no cluster was found.
+    </p>
+</div>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetClusterHealthAsync_System_TimeSpan_">HostingManager.GetClusterHealthAsync(TimeSpan)</a></div>
-  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDatacenterCoordinatesAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDatacenterCoordinatesAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDatacenterCoordinatesAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDatacenterCoordinatesAsync">GetDatacenterCoordinatesAsync()</h4>
-  <div class="markdown level1 summary"><p>Returns the <strong>lat/long</strong> coordinates of the region or datacenter
-hosting the cluster when possible.  The coordinates will be returned
-as <code>null</code> when this is unknown.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task&lt;(double? Latitude, double? Longitude)&gt; GetDatacenterCoordinatesAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">(T1, T2)</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;&gt;</td>
-        <td><p>The datacenter coordinates or <code>null</code> values.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetDatacenterCoordinatesAsync">HostingManager.GetDatacenterCoordinatesAsync()</a></div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDataDisk_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDataDisk*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDataDisk_Neon_SSH_LinuxSshProxy_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDataDisk(Neon.SSH.LinuxSshProxy)">GetDataDisk(LinuxSshProxy)</h4>
-  <div class="markdown level1 summary"><p>Identifies the data disk device for a node.  This returns the data disk&apos;s device 
+  <div class="markdown level1 summary"><p>Identifies the data disk device for a node.  This returns the data disk's device
 name when an uninitialized data disk exists or &quot;PRIMARY&quot; when the  OS disk
 will be used for data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string GetDataDisk(LinuxSshProxy node)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2903,7 +2657,7 @@ will be used for data.</p>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2912,7 +2666,7 @@ will be used for data.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><p>The disk device name or &quot;PRIMARY&quot;.</p>
 </td>
       </tr>
@@ -2921,21 +2675,53 @@ will be used for data.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetDataDisk_Neon_SSH_LinuxSshProxy_">HostingManager.GetDataDisk(LinuxSshProxy)</a></div>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDataDisk_Neon_SSH_LinuxSshProxy__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>
-This will not work after the node&apos;s data disk has been initialized.
-</p></div>
+  <div class="markdown level1 remarks"><div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This will not work after the node's data disk has been initialized.
+    </p>
 </div>
+</div>
+  <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDatacenterCoordinatesAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDatacenterCoordinatesAsync*"></a>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetDatacenterCoordinatesAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetDatacenterCoordinatesAsync">GetDatacenterCoordinatesAsync()</h4>
+  <div class="markdown level1 summary"><p>Returns the <b>lat/long</b> coordinates of the region or datacenter
+hosting the cluster when possible.  The coordinates will be returned
+as <code>null</code> when this is unknown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;(double? Latitude, double? Longitude)&gt; GetDatacenterCoordinatesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>? <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.nullable-system.double-,system.nullable-system.double--.latitude">Latitude</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>? <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.nullable-system.double-,system.nullable-system.double--.longitude">Longitude</a>)&gt;</td>
+        <td><p>The datacenter coordinates or <code>null</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetDatacenterCoordinatesAsync">HostingManager.GetDatacenterCoordinatesAsync()</a></div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetResourceAvailabilityAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetResourceAvailabilityAsync*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetResourceAvailabilityAsync_System_Int64_System_Int64_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetResourceAvailabilityAsync(System.Int64,System.Int64)">GetResourceAvailabilityAsync(Int64, Int64)</h4>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetResourceAvailabilityAsync_System_Int64_System_Int64_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetResourceAvailabilityAsync(System.Int64,System.Int64)">GetResourceAvailabilityAsync(long, long)</h4>
   <div class="markdown level1 summary"><p>Returns the availability of resources required to deploy a cluster.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task&lt;HostingResourceAvailability&gt; GetResourceAvailabilityAsync(long reserveMemory = 0L, long reserveDisk = 0L)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;HostingResourceAvailability&gt; GetResourceAvailabilityAsync(long reserveMemory = 0, long reserveDisk = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2945,21 +2731,20 @@ This will not work after the node&apos;s data disk has been initialized.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">reserveMemory</span></td>
         <td><p>Optionally specifies the amount of host memory (in bytes) to be reserved for host operations.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">reserveDisk</span></td>
-        <td><p>Optionally specifies the amount of host disk disk (in bytes) to be reserved for host operations.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2975,34 +2760,34 @@ This will not work after the node&apos;s data disk has been initialized.
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetResourceAvailabilityAsync_System_Int64_System_Int64_">HostingManager.GetResourceAvailabilityAsync(Int64, Int64)</a></div>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetResourceAvailabilityAsync_System_Int64_System_Int64_">HostingManager.GetResourceAvailabilityAsync(long, long)</a></div>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetResourceAvailabilityAsync_System_Int64_System_Int64__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-The optional <code data-dev-comment-type="paramref" class="paramref">reserveMemory</code> and <code data-dev-comment-type="paramref" class="paramref">reserveDisk</code> parameters
-can be used to specify memory and disk that are to be reserved for the host environment.  Hosting 
-manager implementations are free to ignore this when they don&apos;t really makse sense.
-</p>
+    The optional <code class="paramref">reserveMemory</code> and <code class="paramref">reservedDisk</code> parameters
+    can be used to specify memory and disk that are to be reserved for the host environment.  Hosting 
+    manager implementations are free to ignore this when they don't really makse sense.
+    </p>
 <p>
-This is currently used for Hyper-V based clusters running on a user workstation or laptop to ensure
-that deployed clusters don&apos;t adverserly impact the host machine too badly.
-</p>
+    This is currently used for Hyper-V based clusters running on a user workstation or laptop to ensure
+    that deployed clusters don't adverserly impact the host machine too badly.
+    </p>
 <p>
-These parameters don&apos;t really make sense for cloud or dedicated hypervisor hosting environments because
-those environemnts will still work well when all available resources are consumed.
-</p>
+    These parameters don't really make sense for cloud or dedicated hypervisor hosting environments because
+    those environemnts will still work well when all available resources are consumed.
+    </p>
 </div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetSshEndpoint_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetSshEndpoint*"></a>
-  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetSshEndpoint_System_String_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetSshEndpoint(System.String)">GetSshEndpoint(String)</h4>
+  <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetSshEndpoint_System_String_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.GetSshEndpoint(System.String)">GetSshEndpoint(string)</h4>
   <div class="markdown level1 summary"><p>Returns the FQDN or IP address (as a string) and the port to use
-to establish a SSH connection to a specific node. </p>
+to establish a SSH connection to a specific node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override (string Address, int Port) GetSshEndpoint(string nodeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3012,15 +2797,15 @@ to establish a SSH connection to a specific node. </p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">nodeName</span></td>
-        <td><p>The target node&apos;s name.</p>
+        <td><p>The target node's name.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3029,17 +2814,17 @@ to establish a SSH connection to a specific node. </p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">(T1, T2)</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><p>A <strong>(string Address, int Port)</strong> tuple.</p>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int32-.address">Address</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int32-.port">Port</a>)</td>
+        <td><p>A <b>(string Address, int Port)</b> tuple.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetSshEndpoint_System_String_">HostingManager.GetSshEndpoint(String)</a></div>
+  <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_GetSshEndpoint_System_String_">HostingManager.GetSshEndpoint(string)</a></div>
   <h5 id="Neon_Kube_Hosting_Azure_AzureHostingManager_GetSshEndpoint_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This will return the direct private node endpoint by default.  If
-<a class="xref" href="Neon.Kube.Hosting.IHostingManager.html#Neon_Kube_Hosting_IHostingManager_EnableInternetSshAsync">EnableInternetSshAsync()</a> has been called and is supported by 
+<a class="xref" href="Neon.Kube.Hosting.IHostingManager.html#Neon_Kube_Hosting_IHostingManager_EnableInternetSshAsync">EnableInternetSshAsync()</a> has been called and is supported by
 the hosting manager, then this returns the public address of the
 cluster along with the public NAT port.</p>
 </div>
@@ -3048,26 +2833,29 @@ cluster along with the public NAT port.</p>
   <div class="markdown level1 summary"><p>Ensures that the assembly hosting this hosting manager is loaded.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Load()</code></pre>
   </div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_StartClusterAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.StartClusterAsync*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_StartClusterAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.StartClusterAsync">StartClusterAsync()</h4>
-  <div class="markdown level1 summary"><p><p>
-Starts a cluster if it&apos;s not already running.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This operation may not be supported for all environments.
-</p></div></p>
+  <div class="markdown level1 summary"><p>
+    Starts a cluster if it's not already running.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This operation may not be supported for all environments.
+    </p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task StartClusterAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task StartClusterAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3085,7 +2873,7 @@ This operation may not be supported for all environments.
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_StartClusterAsync">HostingManager.StartClusterAsync()</a></div>
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3095,27 +2883,30 @@ This operation may not be supported for all environments.
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>Thrown if the hosting environment doesn&apos;t support this operation.</p>
+        <td><p>Thrown if the hosting environment doesn't support this operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_StopClusterAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.StopClusterAsync*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_StopClusterAsync_Neon_Kube_Hosting_StopMode_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.StopClusterAsync(Neon.Kube.Hosting.StopMode)">StopClusterAsync(StopMode)</h4>
-  <div class="markdown level1 summary"><p><p>
-Shuts down a cluster if it&apos;s running.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This operation may not be supported for all environments.
-</p></div></p>
+  <div class="markdown level1 summary"><p>
+    Shuts down a cluster if it's running.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This operation may not be supported for all environments.
+    </p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task StopClusterAsync(StopMode stopMode = StopMode.Graceful)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task StopClusterAsync(StopMode stopMode = StopMode.Graceful)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3133,7 +2924,7 @@ This operation may not be supported for all environments.
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3151,7 +2942,7 @@ This operation may not be supported for all environments.
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_StopClusterAsync_Neon_Kube_Hosting_StopMode_">HostingManager.StopClusterAsync(StopMode)</a></div>
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3161,31 +2952,34 @@ This operation may not be supported for all environments.
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>Thrown if the hosting environment doesn&apos;t support this operation.</p>
+        <td><p>Thrown if the hosting environment doesn't support this operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_UpdateInternetRoutingAsync_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.UpdateInternetRoutingAsync*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_UpdateInternetRoutingAsync" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.UpdateInternetRoutingAsync">UpdateInternetRoutingAsync()</h4>
-  <div class="markdown level1 summary"><p><p>
-Updates the cluster&apos;s load balancer or router to use the current set of
-ingress rules defined by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_IngressRules">IngressRules</a> and the
-egress rules defined by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_EgressAddressRules">EgressAddressRules</a>.
-</p>
-<div class="NOTE"><h5>note</h5><p>
-This currently supported only by cloud hosting managers like for Azure,
-AWS, and Google.  This will do nothing for the on-premise hosting managers
-because we don&apos;t have the ability to manage physical routers yet.
-</p></div></p>
+  <div class="markdown level1 summary"><p>
+    Updates the cluster's load balancer or router to use the current set of
+    ingress rules defined by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_IngressRules">IngressRules</a> and the
+    egress rules defined by <a class="xref" href="Neon.Kube.ClusterDef.NetworkOptions.html#Neon_Kube_ClusterDef_NetworkOptions_EgressAddressRules">EgressAddressRules</a>.
+    </p>
+<div class="NOTE">
+  <h5>note</h5>
+  <p>
+    This currently supported only by cloud hosting managers like for Azure,
+    AWS, and Google.  This will do nothing for the on-premise hosting managers
+    because we don't have the ability to manage physical routers yet.
+    </p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task UpdateInternetRoutingAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task UpdateInternetRoutingAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3203,16 +2997,16 @@ because we don&apos;t have the ability to manage physical routers yet.
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_UpdateInternetRoutingAsync">HostingManager.UpdateInternetRoutingAsync()</a></div>
   <a id="Neon_Kube_Hosting_Azure_AzureHostingManager_Validate_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Validate*"></a>
   <h4 id="Neon_Kube_Hosting_Azure_AzureHostingManager_Validate_Neon_Kube_ClusterDef_ClusterDefinition_" data-uid="Neon.Kube.Hosting.Azure.AzureHostingManager.Validate(Neon.Kube.ClusterDef.ClusterDefinition)">Validate(ClusterDefinition)</h4>
-  <div class="markdown level1 summary"><p>Verifies that a cluster is valid for the hosting manager, customizing 
+  <div class="markdown level1 summary"><p>Verifies that a cluster is valid for the hosting manager, customizing
 properties as required.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Validate(ClusterDefinition clusterDefinition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3231,7 +3025,7 @@ properties as required.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Neon.Kube.Hosting.HostingManager.html#Neon_Kube_Hosting_HostingManager_Validate_Neon_Kube_ClusterDef_ClusterDefinition_">HostingManager.Validate(ClusterDefinition)</a></div>
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3250,24 +3044,21 @@ properties as required.</p>
   <div>
       <a class="xref" href="Neon.Kube.Hosting.IHostingManager.html">IHostingManager</a>
   </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Neon.Kube.Operator.EntityExtensions.html#Neon_Kube_Operator_EntityExtensions_CreatePatch_System_Object_System_Object_">EntityExtensions.CreatePatch(Object, Object)</a>
-  </div>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -3275,14 +3066,14 @@ properties as required.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © Copyright 2005-2023 by NEONFORGE LLC
-            
+      © Copyright 2005-2023 by NEONFORGE LLC
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
